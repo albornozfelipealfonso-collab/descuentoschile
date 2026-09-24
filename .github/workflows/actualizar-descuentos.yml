@@ -51,6 +51,8 @@ jobs:
             echo "Sin cambios en los descuentos."
           else
             git commit -m "Actualizar descuentos ($(date -u +%Y-%m-%d))"
+            # Por si alguien subió cambios mientras corría el scraper
+            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push
           fi
 
