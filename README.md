@@ -57,6 +57,17 @@ Todos los días, a las ~08:00 hora de Chile, GitHub Actions ejecuta [`actualizar
 
 La web y la APK descargan `descuentos.json` desde GitHub cada vez que se abren, así que **los usuarios ven los descuentos nuevos sin que tengas que publicar otra versión**. Sin internet, usan la última copia guardada o los datos incluidos en el build.
 
+**Bancos incluidos:**
+
+| Banco | Estado | Fuente |
+| ----- | ------ | ------ |
+| BCI | ✅ Automático | API de beneficios (`api.bciplus.cl`) leída con un navegador |
+| Banco Falabella | ✅ Automático | Datos JSON incluidos en `bancofalabella.cl/descuentos` |
+| Banco de Chile | ❌ Manual | Su protección anti-bots (Incapsula) bloquea los servidores de GitHub |
+| Santander | ❌ Manual | Bloquea todas las conexiones desde servidores en la nube |
+
+Los bancos marcados como manuales se siguen editando desde el panel admin (`initialData.js`). Para agregar un banco nuevo, crea `scripts/scrape/bancos/<banco>.mjs` siguiendo el formato de los existentes y regístralo en `scripts/scrape/bancos/index.mjs`.
+
 **Protecciones.** Si el scraper de un banco falla, trae 0 descuentos, baja a menos de la mitad de lo que había o trae más de un 30% de datos incompletos, se **conservan los datos anteriores** de ese banco. En ese caso se abre un issue en GitHub con la etiqueta `scraper` para avisarte, y se cierra solo cuando el banco vuelve a funcionar.
 
 Comandos útiles:
