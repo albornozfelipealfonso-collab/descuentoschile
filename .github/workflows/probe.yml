@@ -2,13 +2,15 @@ name: Probe (temporal)
 on:
   push:
     branches: [claude/admiring-archimedes-thrbbs]
-    paths: [scripts/probe.mjs, .github/workflows/probe.yml]
+    paths: [scripts/scrape/**, .github/workflows/probe.yml]
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 22 }
-      - run: npm i --no-save playwright@1.56.1 && npx playwright install --with-deps chromium
-      - run: node scripts/probe.mjs
+        with: { node-version: 22, cache: npm }
+      - run: npm ci && npx playwright install --with-deps chromium
+      - run: SCRAPER_DEBUG=1 node scripts/scrape/index.mjs
+      - run: node scripts/build-data.mjs
+      - run: for f in data/scraped/*.json; do echo "== $f"; head -c 3000 "$f"; echo; done

@@ -9,6 +9,7 @@ import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { normalizarDescuento, toISODate } from '../../src/utils/descuentos.js';
 import { SCRAPERS } from './bancos/index.mjs';
+import { cerrarNavegador } from './navegador.mjs';
 
 const DIR = path.resolve('data/scraped');
 const MIN_RATIO = 0.5;      // no aceptar si baja a menos de la mitad
@@ -75,6 +76,7 @@ const main = async () => {
         : `❌ ${r.banco}: ${r.error}. Se conservan ${r.conserva} descuentos anteriores.`
     );
   }
+  await cerrarNavegador();
   await writeFile(path.join(DIR, '_resumen.json'), JSON.stringify(resumen, null, 2) + '\n');
   // Código de salida 0 aunque falle un banco: los demás igual se publican.
   // El workflow lee _resumen.json para avisar de los fallos.
