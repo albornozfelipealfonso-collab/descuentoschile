@@ -29,10 +29,12 @@ if (!datos) {
   process.exit(1);
 }
 
-// Solo cambia `generado` si cambió el contenido, para no crear commits vacíos.
+// Si el contenido no cambió, no se toca el archivo (evita cambios falsos en git y commits vacíos).
 const previo = existsSync(SALIDA) ? JSON.parse(await readFile(SALIDA, 'utf8')) : null;
 const contenido = (d) => JSON.stringify([d.bancos, d.descuentos]);
 const mismoContenido = Boolean(previo) && contenido(previo) === contenido(datos);
-const salida = { version: 1, generado: mismoContenido ? previo.generado : new Date().toISOString(), ...datos };
-await writeFile(SALIDA, JSON.stringify(salida, null, 2) + '\n');
+if (!mismoContenido) {
+  const salida = { version: 1, generado: new Date().toISOString(), ...datos };
+  await writeFile(SALIDA, JSON.stringify(salida, null, 2) + '\n');
+}
 console.log(`${mismoContenido ? '=' : '✅'} descuentos.json: ${datos.bancos.length} bancos, ${datos.descuentos.length} descuentos (${scrapeados.length} scrapeados)`);
