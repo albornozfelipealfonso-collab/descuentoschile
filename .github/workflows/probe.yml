@@ -11,7 +11,6 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci && npx playwright install --with-deps chromium
-      - run: node scripts/scrape/sonda-tmp.mjs
       - run: SCRAPER_DEBUG=1 node scripts/scrape/index.mjs
       - run: node scripts/build-data.mjs
       - run: for f in data/scraped/*.json; do echo "== $f"; head -c 3000 "$f"; echo; done

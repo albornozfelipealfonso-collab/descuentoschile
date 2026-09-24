@@ -63,34 +63,81 @@ describe('protecciones del scraper', () => {
   });
 });
 
-import { parsearTarjeta } from './bancos/falabella.mjs';
+import { mapearTarjeta, extraerPayload, extraerTarjetas } from './bancos/falabella.mjs';
 import { mapearOferta } from './bancos/bci.mjs';
 
-describe('Falabella: parsearTarjeta', () => {
-  it('separa comercio, descuento, descripción y días', () => {
-    const d = parsearTarjeta({
-      titulo: 'Dcto en Casa Roque',
-      lineas: ['Exclusivo', 'Dcto en Casa Roque', 'Sin azúcar y sin gluten', 'Martes', 'Hasta', '40%', 'DESCUENTO'],
-      href: ''
-    });
-    expect(d).toMatchObject({ establecimiento: 'Casa Roque', descuento: 'Hasta 40% descuento', descripcion: 'Sin azúcar y sin gluten', dias_validos: ['martes'] });
+describe('Falabella', () => {
+  const item = {
+    benefitCard: {
+      title: 'Dcto en Doggis',
+      description: 'Presencial en totem y por la app',
+      linkUrl: '/descuentos/detalle/doggis',
+      discountDays: ['Lunes'],
+      topDiscountText: '',
+      centerDiscountText: '40%',
+      bottomDiscountText: 'Sin Tope',
+      endDate: '2026-09-30T07:00:00.000Z'
+    },
+    limitDate: '2026-09-30T07:00:00.000Z',
+    benefitTitle: 'Doggis',
+    creditCards: ['CMR Mastercard', 'Tarjeta Débito Banco Falabella']
+  };
+
+  it('extrae las tarjetas del payload de Next.js en el HTML', () => {
+    const json = JSON.stringify({ slug: 'todos', benefitCardsData: [item] });
+    const html = `<script>self.__next_f.push([1,${JSON.stringify('28:' + json)}])</script>`;
+    const tarjetas = extraerTarjetas(extraerPayload(html));
+    expect(tarjetas).toHaveLength(1);
+    expect(tarjetas[0].benefitTitle).toBe('Doggis');
   });
-  it('no usa etiquetas ni días como descripción', () => {
-    const d = parsearTarjeta({ titulo: 'Dcto Tito el Bambino', lineas: ['Dcto Tito el Bambino', 'Nuevo', 'Todos los días', '30%', 'DCTO'], href: '' });
-    expect(d.establecimiento).toBe('Tito el Bambino');
-    expect(d.descripcion).toBe('');
-    expect(d.dias_validos).toHaveLength(7);
+
+  it('mapea una tarjeta', () => {
+    expect(mapearTarjeta(item)).toMatchObject({
+      establecimiento: 'Doggis',
+      descuento: '40% Sin Tope',
+      descripcion: 'Presencial en totem y por la app',
+      dias_validos: ['lunes'],
+      tipo_tarjeta: 'ambas',
+      fecha_vencimiento: '2026-09-30',
+      url: 'https://www.bancofalabella.cl/descuentos/detalle/doggis'
+    });
+  });
+
+  it('solo CMR es crédito', () => {
+    expect(mapearTarjeta({ ...item, creditCards: ['CMR Mastercard'] }).tipo_tarjeta).toBe('credito');
   });
 });
 
 describe('BCI: mapearOferta', () => {
-  it('convierte la fecha UTC a la fecha de Chile y asume todos los días si no hay', () => {
-    const d = mapearOferta({ id: 'x', titulo: '20% dcto', subtitulo: 'Crédito o Débito Bci', comercio: { nombre: 'Tienda' }, fechaTermino: '2027-01-01T02:59:59.000Z', slug: 'tienda-1' });
-    expect(d).toMatchObject({ establecimiento: 'Tienda', fecha_vencimiento: '2026-12-31', tipo_tarjeta: 'ambas' });
-    expect(d.dias_validos).toHaveLength(7);
-    expect(d.url).toBe('https://www.bci.cl/beneficios/beneficios-bci/detalle/tienda-1');
+  const oferta = {
+    id: 'abc',
+    titulo: 'Viernes- Vitacura',
+    subtitulo: 'Exclusivo con tus tarjetas de Crédito o Débito Bci.',
+    comercio: { nombre: 'Cuerovaca' },
+    categorias: [{ titulo: 'Restaurantes' }, { titulo: 'Preferencial' }],
+    deal: { discount: { percentage: 40 } },
+    scheduling: { dayRecurrence: ['VIERNES'], recurrenceLabel: 'Todos los viernes' },
+    fechaTermino: '2026-10-01T02:59:00.000Z',
+    tieneFechaTermino: true,
+    slug: 'cuerovaca-x1'
+  };
+
+  it('usa los campos estructurados de la API', () => {
+    expect(mapearOferta(oferta)).toMatchObject({
+      establecimiento: 'Cuerovaca',
+      descuento: '40% de descuento',
+      descripcion: 'Viernes- Vitacura',
+      categoria: 'Restaurantes',
+      dias_validos: ['viernes'],
+      fecha_vencimiento: '2026-09-30',
+      tipo_tarjeta: 'ambas',
+      url: 'https://www.bci.cl/beneficios/beneficios-bci/detalle/cuerovaca-x1'
+    });
   });
-  it('respeta los días mencionados', () => {
-    expect(mapearOferta({ id: 'y', titulo: 'Jueves 20%', descripcion: 'Todos los jueves' }).dias_validos).toEqual(['jueves']);
+
+  it('cashback y "todos los días" por defecto', () => {
+    const d = mapearOferta({ ...oferta, deal: { cashback: { percentage: 0.07, tope: 7000 } }, scheduling: {}, titulo: 'Jumbo' });
+    expect(d.descuento).toBe('7% de cashback (tope $7.000)');
+    expect(d.dias_validos).toHaveLength(7);
   });
 });

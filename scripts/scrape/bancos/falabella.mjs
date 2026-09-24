@@ -1,53 +1,89 @@
-// Banco Falabella: /descuentos/todos muestra todas las tarjetas de beneficios.
-import { abrirPagina, debug } from '../navegador.mjs';
-import { extraerDias, extraerTipoTarjeta, idEstable, inferirCategoria, limpiarTexto } from '../lib.mjs';
+// Banco Falabella: la página /descuentos/todos (Next.js) trae todos los
+// beneficios como JSON dentro del HTML (`benefitCardsData`). No hace falta navegador.
 import { DIAS_SEMANA, normalizar } from '../../../src/utils/descuentos.js';
+import { debug } from '../navegador.mjs';
+import { extraerDias, extraerFecha, fetchTexto, idEstable, inferirCategoria, limpiarTexto } from '../lib.mjs';
 
-const URL = 'https://www.bancofalabella.cl/descuentos/todos';
-const ETIQUETAS = /^(nuevo|exclusivo|destacado|online|presencial|elite|cmr elite|app copec|hasta|desde|sin tope|descuento|dcto|de descuento|cashback)$/i;
-const VALOR = /(\d+\s*%|\$\s?[\d.]+|\d+\s*x\s*\d+|\ba\s+\$?[\d.]{3,}|cashback|cuotas)/i;
+const BASE = 'https://www.bancofalabella.cl';
+const URL = `${BASE}/descuentos/todos`;
 
-/** Día de la semana en Chile, desplazado `offset` días (0 = hoy). */
-const diaChile = (offset = 0) => {
-  const nombre = new Date(Date.now() + offset * 86400000).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'America/Santiago' });
-  const i = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].indexOf(nombre);
-  return DIAS_SEMANA[i];
-};
+/** Une los fragmentos `self.__next_f.push([1,"..."])` del HTML en un solo texto. */
+export const extraerPayload = (html) =>
+  [...html.matchAll(/self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)/g)]
+    .map((m) => {
+      try {
+        return JSON.parse(m[1]);
+      } catch {
+        return '';
+      }
+    })
+    .join('');
 
-export const parsearDias = (texto) => {
-  const t = normalizar(texto);
-  if (t === 'hoy') return [diaChile(0)];
-  if (t === 'manana') return [diaChile(1)];
-  return extraerDias(texto);
-};
-
-/** Convierte las líneas de texto de una tarjeta en un descuento. */
-export const parsearTarjeta = ({ titulo, lineas, href }) => {
-  const establecimiento = limpiarTexto(titulo).replace(/^(dcto\.?|descuento|beneficio)\s+((en|de|del)\s+)?/i, '');
-  const resto = lineas.map(limpiarTexto).filter((l) => l && l !== titulo);
-  const idxDia = resto.findIndex((l) => parsearDias(l).length > 0);
-  const idxValor = resto.findIndex((l, i) => i !== idxDia && VALOR.test(l));
-  let descuento = idxValor >= 0 ? resto[idxValor] : '';
-  const anterior = resto[idxValor - 1];
-  const siguiente = resto[idxValor + 1];
-  if (descuento && /^(hasta|desde)$/i.test(anterior || '')) descuento = `${anterior} ${descuento}`;
-  if (descuento && siguiente && /^(sin tope|descuento|dcto|de descuento|cashback|app copec)$/i.test(siguiente)) {
-    descuento = `${descuento} ${siguiente.toLowerCase()}`;
+/** Extrae todos los arreglos `"benefitCardsData":[...]` del payload. */
+export const extraerTarjetas = (payload) => {
+  const tarjetas = [];
+  const clave = '"benefitCardsData":';
+  let desde = 0;
+  while ((desde = payload.indexOf(clave, desde)) !== -1) {
+    const inicio = desde + clave.length;
+    let nivel = 0;
+    let enTexto = false;
+    let fin = inicio;
+    for (; fin < payload.length; fin++) {
+      const c = payload[fin];
+      if (enTexto) {
+        if (c === '\\') fin++;
+        else if (c === '"') enTexto = false;
+      } else if (c === '"') enTexto = true;
+      else if (c === '[' || c === '{') nivel++;
+      else if (c === ']' || c === '}') {
+        nivel--;
+        if (nivel === 0) break;
+      }
+    }
+    try {
+      tarjetas.push(...JSON.parse(payload.slice(inicio, fin + 1)));
+    } catch {
+      // bloque incompleto: se ignora
+    }
+    desde = fin;
   }
-  const descripcion =
-    resto.find((l, i) => i !== idxDia && i !== idxValor && !ETIQUETAS.test(l) && !parsearDias(l).length && l.length > 3 && normalizar(l) !== normalizar(descuento)) || '';
-  const texto = [titulo, ...resto].join(' ');
+  return tarjetas;
+};
+
+const tipoDeTarjetas = (tarjetas = []) => {
+  const t = normalizar(tarjetas.join(' '));
+  const debito = /debito/.test(t);
+  const credito = /cmr|credito|mastercard/.test(t.replace(/tarjeta debito[^,]*/g, ''));
+  if (debito && credito) return 'ambas';
+  if (debito) return 'debito';
+  return 'credito';
+};
+
+export const mapearTarjeta = (item) => {
+  const card = item.benefitCard || {};
+  const titulo = limpiarTexto(card.title);
+  const establecimiento =
+    limpiarTexto(item.benefitTitle) || titulo.replace(/^(dcto\.?|descuento|beneficio)\s+((en|de|del)\s+)?/i, '');
+  const descuento = [card.topDiscountText, card.centerDiscountText, card.bottomDiscountText]
+    .map(limpiarTexto)
+    .filter(Boolean)
+    .join(' ')
+    .replace(/\b(DESCUENTO|DCTO|SIN TOPE)\b/g, (m) => m.toLowerCase());
+  const diasTexto = Array.isArray(card.discountDays) ? card.discountDays.join(' ') : '';
+  const dias = extraerDias(diasTexto);
+  const url = card.linkUrl ? new globalThis.URL(card.linkUrl, BASE).href : URL;
   return {
-    id: idEstable('falabella', href || `${establecimiento}|${descripcion}`),
+    id: idEstable('falabella', card.linkUrl || `${establecimiento}|${descuento}`),
     establecimiento,
-    descuento: descuento || limpiarTexto(titulo),
-    descripcion,
-    tipo_tarjeta: /d[eé]bito/i.test(texto) ? extraerTipoTarjeta(texto) : 'credito', // la mayoría son con CMR
-    categoria: inferirCategoria(establecimiento, texto),
-    dias_validos: idxDia >= 0 ? parsearDias(resto[idxDia]) : [],
-    fecha_vencimiento: '',
-    es_delivery: /delivery|rappi|pedidos ?ya|uber ?eats/i.test(texto),
-    url: href || URL
+    descuento: descuento || titulo,
+    descripcion: limpiarTexto(card.description),
+    tipo_tarjeta: tipoDeTarjetas(item.creditCards),
+    categoria: inferirCategoria(establecimiento, titulo, card.description),
+    dias_validos: dias.length ? dias : [...DIAS_SEMANA],
+    fecha_vencimiento: extraerFecha(item.limitDate || card.endDate || ''),
+    es_delivery: /delivery|rappi|pedidos ?ya|uber ?eats/i.test(`${titulo} ${card.description}`),
+    url
   };
 };
 
@@ -56,36 +92,13 @@ export default {
   banco_nombre: 'Banco Falabella',
   url: URL,
   async scrape() {
-    const page = await abrirPagina();
-    let tarjetas = [];
-    try {
-      await page.goto(URL, { waitUntil: 'networkidle', timeout: 90000 });
-      // Desplazarse hasta que no aparezcan más tarjetas
-      let antes = -1;
-      for (let i = 0; i < 40; i++) {
-        const n = await page.locator('[class*="NewCardBenefits_container"]').count();
-        if (n === antes) break;
-        antes = n;
-        await page.mouse.wheel(0, 5000);
-        await page.waitForTimeout(800);
-        const verMas = page.getByRole('button', { name: /ver m[aá]s|cargar m[aá]s/i });
-        if (await verMas.count()) await verMas.first().click().catch(() => {});
-      }
-      tarjetas = await page.$$eval('[class*="NewCardBenefits_container"]', (els) =>
-        els.map((el) => ({
-          titulo: el.querySelector('h2, h3')?.innerText?.trim() || '',
-          lineas: el.innerText.split('\n').map((l) => l.trim()).filter(Boolean),
-          href: el.closest('a')?.href || el.querySelector('a')?.href || ''
-        }))
-      );
-    } finally {
-      await page.close();
-    }
-    debug('falabella: tarjetas', tarjetas.length);
-    tarjetas.slice(0, 4).forEach((t) => debug('falabella: tarjeta', JSON.stringify(t)));
-    const unicas = [...new Map(tarjetas.filter((t) => t.titulo).map((t) => [JSON.stringify([t.titulo, t.lineas]), t])).values()];
-    const mapeadas = unicas.map(parsearTarjeta);
-    mapeadas.slice(0, 4).forEach((d) => debug('falabella: mapeada', JSON.stringify(d)));
+    const html = await fetchTexto(URL);
+    const tarjetas = extraerTarjetas(extraerPayload(html));
+    debug('falabella: tarjetas en el HTML', tarjetas.length);
+    // La misma tarjeta aparece en varias secciones de la página
+    const unicas = [...new Map(tarjetas.map((t) => [t.benefitCard?.linkUrl || JSON.stringify(t.benefitCard), t])).values()];
+    const mapeadas = unicas.map(mapearTarjeta);
+    mapeadas.slice(0, 3).forEach((d) => debug('falabella:', JSON.stringify(d)));
     return mapeadas;
   }
 };
