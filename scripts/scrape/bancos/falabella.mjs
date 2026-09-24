@@ -51,8 +51,13 @@ export const extraerTarjetas = (payload) => {
   return tarjetas;
 };
 
-const tipoDeTarjetas = (tarjetas = []) => {
-  const t = normalizar(tarjetas.join(' '));
+/** Next.js reemplaza valores repetidos por referencias ("$28:props:..."); se ignoran. */
+const valor = (v) => (typeof v === 'string' && v.startsWith('$') ? undefined : v);
+const lista = (v) => (Array.isArray(v) ? v : []);
+
+const tipoDeTarjetas = (tarjetas) => {
+  if (!lista(tarjetas).length) return 'credito';
+  const t = normalizar(lista(tarjetas).join(' '));
   const debito = /debito/.test(t);
   const credito = /cmr|credito|mastercard/.test(t.replace(/tarjeta debito[^,]*/g, ''));
   if (debito && credito) return 'ambas';
@@ -62,27 +67,28 @@ const tipoDeTarjetas = (tarjetas = []) => {
 
 export const mapearTarjeta = (item) => {
   const card = item.benefitCard || {};
-  const titulo = limpiarTexto(card.title);
+  const titulo = limpiarTexto(valor(card.title));
   const establecimiento =
-    limpiarTexto(item.benefitTitle) || titulo.replace(/^(dcto\.?|descuento|beneficio)\s+((en|de|del)\s+)?/i, '');
+    limpiarTexto(valor(item.benefitTitle)) || titulo.replace(/^(dcto\.?|descuento|beneficio)\s+((en|de|del)\s+)?/i, '');
   const descuento = [card.topDiscountText, card.centerDiscountText, card.bottomDiscountText]
-    .map(limpiarTexto)
+    .map((v) => limpiarTexto(valor(v)))
     .filter(Boolean)
     .join(' ')
     .replace(/\b(DESCUENTO|DCTO|SIN TOPE)\b/g, (m) => m.toLowerCase());
-  const diasTexto = Array.isArray(card.discountDays) ? card.discountDays.join(' ') : '';
+  const diasTexto = lista(card.discountDays).join(' ');
   const dias = extraerDias(diasTexto);
-  const url = card.linkUrl ? new globalThis.URL(card.linkUrl, BASE).href : URL;
+  const link = valor(card.linkUrl);
+  const url = link ? new globalThis.URL(link, BASE).href : URL;
   return {
-    id: idEstable('falabella', card.linkUrl || `${establecimiento}|${descuento}`),
+    id: idEstable('falabella', link || `${establecimiento}|${descuento}`),
     establecimiento,
     descuento: descuento || titulo,
-    descripcion: limpiarTexto(card.description),
+    descripcion: limpiarTexto(valor(card.description)),
     tipo_tarjeta: tipoDeTarjetas(item.creditCards),
-    categoria: inferirCategoria(establecimiento, titulo, card.description),
+    categoria: inferirCategoria(establecimiento, titulo, valor(card.description)),
     dias_validos: dias.length ? dias : [...DIAS_SEMANA],
-    fecha_vencimiento: extraerFecha(item.limitDate || card.endDate || ''),
-    es_delivery: /delivery|rappi|pedidos ?ya|uber ?eats/i.test(`${titulo} ${card.description}`),
+    fecha_vencimiento: extraerFecha(valor(item.limitDate) || valor(card.endDate) || ''),
+    es_delivery: /delivery|rappi|pedidos ?ya|uber ?eats/i.test(`${titulo} ${valor(card.description) || ''}`),
     url
   };
 };

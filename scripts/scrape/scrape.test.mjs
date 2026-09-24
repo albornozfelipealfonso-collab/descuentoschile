@@ -103,6 +103,12 @@ describe('Falabella', () => {
     });
   });
 
+  it('ignora las referencias internas de Next.js', () => {
+    const d = mapearTarjeta({ ...item, creditCards: '$28:props:benefitCardsData:0:creditCards', benefitTitle: '$28:x' });
+    expect(d.tipo_tarjeta).toBe('credito');
+    expect(d.establecimiento).toBe('Doggis');
+  });
+
   it('solo CMR es crédito', () => {
     expect(mapearTarjeta({ ...item, creditCards: ['CMR Mastercard'] }).tipo_tarjeta).toBe('credito');
   });
