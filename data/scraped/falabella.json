@@ -11,7 +11,7 @@
       "descuento": "15% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -35,7 +35,7 @@
       "descuento": "30% dcto",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -59,7 +59,7 @@
       "descuento": "Hasta 25% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -77,7 +77,7 @@
       "descuento": "Hasta 40% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -95,7 +95,7 @@
       "descuento": "Beneficios App Copec",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Combustible",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -137,7 +137,7 @@
       "descuento": "Bebidas a 3.000 App Copec",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Combustible",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes",
         "jueves"
@@ -156,7 +156,7 @@
       "descuento": "Completo a 2.500 App Copec",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Combustible",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "miércoles"
       ],
@@ -174,7 +174,7 @@
       "descuento": "Stromboli a 4.000 App Copec",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Combustible",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "viernes"
       ],
@@ -210,7 +210,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes"
       ],
@@ -228,7 +228,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes"
       ],
@@ -246,7 +246,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes"
       ],
@@ -264,7 +264,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes"
       ],
@@ -282,7 +282,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes"
       ],
@@ -300,7 +300,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Delivery",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes"
       ],
@@ -318,7 +318,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -336,7 +336,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -354,7 +354,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -372,7 +372,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -408,7 +408,7 @@
       "descuento": "Hasta 25% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -426,7 +426,7 @@
       "descuento": "Hasta 20% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -444,7 +444,7 @@
       "descuento": "Hasta 20% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -462,7 +462,7 @@
       "descuento": "Hasta 20% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -504,7 +504,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "miércoles"
       ],
@@ -522,7 +522,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "miércoles"
       ],
@@ -540,7 +540,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "miércoles"
       ],
@@ -558,7 +558,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "miércoles"
       ],
@@ -576,7 +576,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "miércoles"
       ],
@@ -594,7 +594,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "viernes"
       ],
@@ -630,7 +630,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -669,7 +669,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes",
         "martes",
@@ -2140,7 +2140,7 @@
       "descuento": "30% dcto",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Supermercados",
       "dias_validos": [
         "jueves"
       ],
@@ -2326,7 +2326,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes"
       ],
@@ -2666,7 +2666,7 @@
       "descuento": "40% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "jueves"
       ],
@@ -2684,7 +2684,7 @@
       "descuento": "40% Tope 40.000",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "jueves"
       ],
@@ -2702,7 +2702,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes"
       ],
@@ -2720,7 +2720,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Supermercados",
       "dias_validos": [
         "martes"
       ],
@@ -2738,7 +2738,7 @@
       "descuento": "30% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "martes"
       ],
@@ -2774,7 +2774,7 @@
       "descuento": "Plan Elite",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes",
         "martes",
@@ -2822,7 +2822,7 @@
       "descuento": "12 cuotas 0.89%",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -2846,7 +2846,7 @@
       "descuento": "3 cuotas Sin interés",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Hogar",
       "dias_validos": [
         "lunes",
         "martes",
@@ -2918,7 +2918,7 @@
       "descuento": "2 ingresos gratis al año",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -2942,7 +2942,7 @@
       "descuento": "2 Ingresos Dobles Al Año",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -2990,7 +2990,7 @@
       "descuento": "2 ingresos Gratis Al mes",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3014,7 +3014,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Supermercados",
       "dias_validos": [
         "martes"
       ],
@@ -3032,7 +3032,7 @@
       "descuento": "30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Supermercados",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3074,7 +3074,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Supermercados",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3098,7 +3098,7 @@
       "descuento": "Hasta 30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
+      "categoria": "Supermercados",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3122,7 +3122,7 @@
       "descuento": "25% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Transporte",
       "dias_validos": [
         "miércoles"
       ],
@@ -3140,7 +3140,7 @@
       "descuento": "30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3164,7 +3164,7 @@
       "descuento": "30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3188,7 +3188,7 @@
       "descuento": "25% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3212,7 +3212,7 @@
       "descuento": "Hasta 20% Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3236,7 +3236,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Viajes",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3260,7 +3260,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3308,7 +3308,7 @@
       "descuento": "Canjea por 3.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3356,7 +3356,7 @@
       "descuento": "Canjea por 20.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3380,7 +3380,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Mascotas",
       "dias_validos": [
         "jueves"
       ],
@@ -3398,7 +3398,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Mascotas",
       "dias_validos": [
         "jueves"
       ],
@@ -3416,7 +3416,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Mascotas",
       "dias_validos": [
         "viernes"
       ],
@@ -3434,7 +3434,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Mascotas",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3458,7 +3458,7 @@
       "descuento": "15% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Mascotas",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3482,7 +3482,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Mascotas",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3506,7 +3506,7 @@
       "descuento": "Hasta 20% dcto Sin tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Mascotas",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3530,7 +3530,7 @@
       "descuento": "25% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Farmacias",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes",
         "sábado",
@@ -3550,7 +3550,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "miércoles"
       ],
@@ -3568,7 +3568,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "miércoles"
       ],
@@ -3610,7 +3610,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3706,7 +3706,7 @@
       "descuento": "Hasta 30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3730,7 +3730,7 @@
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3754,7 +3754,7 @@
       "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3778,7 +3778,7 @@
       "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3802,7 +3802,7 @@
       "descuento": "Hasta 40% sin tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "martes",
         "jueves"
@@ -3861,7 +3861,7 @@
       "descuento": "40% dcto Sin tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3883,7 +3883,7 @@
       "descuento": "30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes"
@@ -3902,7 +3902,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "martes"
       ],
@@ -3920,7 +3920,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "jueves"
       ],
@@ -3938,7 +3938,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "jueves"
       ],
@@ -3956,7 +3956,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3980,7 +3980,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4004,7 +4004,7 @@
       "descuento": "Bonus 24 Juegos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4028,7 +4028,7 @@
       "descuento": "30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4052,7 +4052,7 @@
       "descuento": "Hasta 25% Sin tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "miércoles"
       ],
@@ -4070,7 +4070,7 @@
       "descuento": "Hasta Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4094,7 +4094,7 @@
       "descuento": "Hasta 60% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Supermercados",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4118,7 +4118,7 @@
       "descuento": "Hasta 65% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4142,7 +4142,7 @@
       "descuento": "Hasta 30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4166,7 +4166,7 @@
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4190,7 +4190,7 @@
       "descuento": "Hasta 36 Cuotas Sin Interés",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Hogar",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4214,7 +4214,7 @@
       "descuento": "18 Cuotas Sin Interés",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Hogar",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4238,7 +4238,7 @@
       "descuento": "12 a 24 Cuotas Sin Interés",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4310,7 +4310,7 @@
       "descuento": "Hasta 50% dcto Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4334,7 +4334,7 @@
       "descuento": "Paga el Metro y Tren Nos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4376,7 +4376,7 @@
       "descuento": "20% Dcto",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4400,7 +4400,7 @@
       "descuento": "Hasta 40% Dcto",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4424,7 +4424,7 @@
       "descuento": "Hasta 25%",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Educación",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4466,7 +4466,7 @@
       "descuento": "30% Dcto",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "miércoles"
       ],
@@ -4527,7 +4527,7 @@
       "descuento": "Canjea por 5.500 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Cine y entretención",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4551,7 +4551,7 @@
       "descuento": "Desde 4.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Restaurantes",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4575,7 +4575,7 @@
       "descuento": "Desde 7.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Tecnología",
+      "categoria": "Supermercados",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4599,7 +4599,7 @@
       "descuento": "Desde 160.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "jueves"
       ],
@@ -4617,7 +4617,7 @@
       "descuento": "Desde 10.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Hogar",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4713,7 +4713,7 @@
       "descuento": "Desde 1.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4785,7 +4785,7 @@
       "descuento": "Hasta El Triple",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Combustible",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4809,7 +4809,7 @@
       "descuento": "Usa bip!QR",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Viajes",
       "dias_validos": [
         "lunes",
         "martes",
