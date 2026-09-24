@@ -2,6 +2,7 @@
 // que agrega la propia página), así que se abre con un navegador y se leen
 // las respuestas de la API.
 import { abrirPagina, debug } from '../navegador.mjs';
+import { DIAS_SEMANA } from '../../../src/utils/descuentos.js';
 import { extraerDias, extraerFecha, extraerTipoTarjeta, idEstable, inferirCategoria, limpiarTexto } from '../lib.mjs';
 
 const URL = 'https://www.bci.cl/beneficios/beneficios-bci';
@@ -30,8 +31,9 @@ export const mapearOferta = (o) => {
     terminos: limpiarTexto(o.legal).slice(0, 600),
     tipo_tarjeta: extraerTipoTarjeta(`${o.subtitulo} ${o.descripcion}`),
     categoria: categoria || inferirCategoria(comercio, texto),
-    dias_validos: extraerDias(diasTexto),
-    fecha_vencimiento: extraerFecha(primero(o, 'fechaTermino', 'fechaFin', 'fechaVencimiento', 'vigencia.hasta', 'hasta') || o.legal),
+    // Si el beneficio no menciona días, vale todos los días
+    dias_validos: extraerDias(diasTexto).length ? extraerDias(diasTexto) : [...DIAS_SEMANA],
+    fecha_vencimiento: o.tieneFechaTermino === false ? '' : extraerFecha(primero(o, 'fechaTermino', 'fechaFin', 'fechaVencimiento') || o.legal),
     es_delivery: /delivery|rappi|pedidos ?ya|uber ?eats/i.test(texto),
     url: slug && !slug.startsWith('http') ? `https://www.bci.cl/beneficios/beneficios-bci/detalle/${slug}` : slug || URL
   };

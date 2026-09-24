@@ -4,7 +4,7 @@ import { extraerDias, extraerTipoTarjeta, idEstable, inferirCategoria, limpiarTe
 import { DIAS_SEMANA, normalizar } from '../../../src/utils/descuentos.js';
 
 const URL = 'https://www.bancofalabella.cl/descuentos/todos';
-const ETIQUETAS = /^(nuevo|exclusivo|destacado|online|presencial|elite|cmr elite|app copec)$/i;
+const ETIQUETAS = /^(nuevo|exclusivo|destacado|online|presencial|elite|cmr elite|app copec|hasta|desde|sin tope|descuento|dcto|de descuento|cashback)$/i;
 const VALOR = /(\d+\s*%|\$\s?[\d.]+|\d+\s*x\s*\d+|\ba\s+\$?[\d.]{3,}|cashback|cuotas)/i;
 
 /** Día de la semana en Chile, desplazado `offset` días (0 = hoy). */
@@ -23,16 +23,19 @@ export const parsearDias = (texto) => {
 
 /** Convierte las líneas de texto de una tarjeta en un descuento. */
 export const parsearTarjeta = ({ titulo, lineas, href }) => {
-  const establecimiento = limpiarTexto(titulo).replace(/^(dcto\.?|descuento|beneficio)\s+(en|de|del)\s+/i, '');
+  const establecimiento = limpiarTexto(titulo).replace(/^(dcto\.?|descuento|beneficio)\s+((en|de|del)\s+)?/i, '');
   const resto = lineas.map(limpiarTexto).filter((l) => l && l !== titulo);
   const idxDia = resto.findIndex((l) => parsearDias(l).length > 0);
   const idxValor = resto.findIndex((l, i) => i !== idxDia && VALOR.test(l));
   let descuento = idxValor >= 0 ? resto[idxValor] : '';
+  const anterior = resto[idxValor - 1];
   const siguiente = resto[idxValor + 1];
+  if (descuento && /^(hasta|desde)$/i.test(anterior || '')) descuento = `${anterior} ${descuento}`;
   if (descuento && siguiente && /^(sin tope|descuento|dcto|de descuento|cashback|app copec)$/i.test(siguiente)) {
     descuento = `${descuento} ${siguiente.toLowerCase()}`;
   }
-  const descripcion = resto.find((l, i) => i !== idxDia && i !== idxValor && !ETIQUETAS.test(l) && !VALOR.test(l) && l.length > 3) || '';
+  const descripcion =
+    resto.find((l, i) => i !== idxDia && i !== idxValor && !ETIQUETAS.test(l) && !parsearDias(l).length && l.length > 3 && normalizar(l) !== normalizar(descuento)) || '';
   const texto = [titulo, ...resto].join(' ');
   return {
     id: idEstable('falabella', href || `${establecimiento}|${descripcion}`),

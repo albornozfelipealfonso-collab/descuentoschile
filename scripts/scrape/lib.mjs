@@ -51,6 +51,9 @@ export const extraerTipoTarjeta = (texto) => {
 /** Convierte "31/12/2025", "2025-12-31" o "31 de diciembre de 2025" a YYYY-MM-DD. */
 const MESES = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 export const extraerFecha = (texto) => {
+  // Fecha-hora ISO (UTC) → fecha en Chile: "2027-01-01T02:59:59Z" es el 31/12/2026 allá
+  const iso = String(texto ?? '').match(/\d{4}-\d{2}-\d{2}T[\d:.]+(Z|[+-]\d{2}:?\d{2})/);
+  if (iso) return new Date(iso[0]).toLocaleDateString('en-CA', { timeZone: 'America/Santiago' });
   const t = normalizar(texto);
   let m = t.match(/(\d{4})-(\d{2})-(\d{2})/);
   if (m) return `${m[1]}-${m[2]}-${m[3]}`;
