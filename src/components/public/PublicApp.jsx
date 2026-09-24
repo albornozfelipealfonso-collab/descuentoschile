@@ -13,12 +13,14 @@ const PublicApp = ({ bancos = [], descuentos = [], onLoginClick, showLoginButton
   const [busqueda, setBusqueda] = useState('');
   const [mostrarFiltros, setMostrarFiltros] = useState(false);
   const isMobile = useIsMobile();
+  // Al escribir se espera un poco antes de filtrar; al borrar se aplica al instante.
   const busquedaDebounced = useDebouncedValue(busqueda);
+  const busquedaEfectiva = busqueda === '' ? '' : busquedaDebounced;
 
   const bancosActivos = useMemo(() => bancos.filter((b) => b.activo !== false), [bancos]);
   const descuentosConBanco = useMemo(() => enriquecerConBanco(descuentos, bancos), [descuentos, bancos]);
   const categorias = useMemo(() => getCategorias(descuentosConBanco), [descuentosConBanco]);
-  const descuentosFiltrados = useFilteredDescuentos(descuentosConBanco, filtros, busquedaDebounced);
+  const descuentosFiltrados = useFilteredDescuentos(descuentosConBanco, filtros, busquedaEfectiva);
 
   const filtrosActivos = Object.entries(filtros).filter(([key, value]) => value !== FILTROS_INICIALES[key]);
   const cerrarFiltros = useCallback(() => setMostrarFiltros(false), []);
