@@ -1,124 +1,87 @@
 // src/components/admin/AdminDashboard.jsx
 import React, { useState } from 'react';
-import { BarChart3, CreditCard, Building2, LogOut } from 'lucide-react';
+import { BarChart3, CreditCard, Building2, LogOut, Eye, RotateCcw } from 'lucide-react';
 import { useIsMobile } from '../shared/hooks';
 import DashboardStats from './DashboardStats';
 import DescuentosManager from './DescuentosManager';
 import BancosManager from './BancosManager';
-import FormModal from './FormModal';
+import { normalizarBanco, normalizarDescuento, validarDatos } from '../../utils/descuentos';
+import { descargarArchivo, leerArchivoJson } from '../../utils/download';
 
-const AdminDashboard = ({ bancos, setBancos, descuentos, setDescuentos, onLogout }) => {
+const fechaArchivo = () => new Date().toISOString().split('T')[0];
+
+const AdminDashboard = ({
+  bancos,
+  setBancos,
+  descuentos,
+  setDescuentos,
+  hayCambios,
+  onDescartarCambios,
+  onVerApp,
+  onLogout,
+  showLogout
+}) => {
   const [activeTab, setActiveTab] = useState('dashboard');
   const isMobile = useIsMobile();
 
-  // Calcular estadísticas
+  const descuentosActivos = descuentos.filter((d) => d.activo);
   const stats = {
-    totalDescuentos: descuentos.filter(d => d.activo).length,
-    totalBancos: bancos.filter(b => b.activo).length,
-    descuentosDelivery: descuentos.filter(d => d.es_delivery && d.activo).length,
-    totalCategorias: new Set(descuentos.map(d => d.categoria)).size
+    totalDescuentos: descuentosActivos.length,
+    totalBancos: bancos.filter((b) => b.activo).length,
+    descuentosDelivery: descuentosActivos.filter((d) => d.es_delivery).length,
+    totalCategorias: new Set(descuentosActivos.map((d) => d.categoria).filter(Boolean)).size
   };
 
-  // FUNCIÓN CORREGIDA: Generar código para initialData.js
+  // Genera el contenido completo de src/data/initialData.js
   const generarCodigoFuente = () => {
-    try {
-      // Limpiar y normalizar los datos antes de generar el código
-      const cleanBancos = bancos.map(banco => ({
-        id: Number(banco.id),
-        nombre: banco.nombre,
-        color: banco.color,
-        logo_url: banco.logo_url || '',
-        activo: Boolean(banco.activo)
-      }));
-
-      const cleanDescuentos = descuentos.map(descuento => ({
-        id: Number(descuento.id),
-        establecimiento: descuento.establecimiento || descuento.comercio || '',
-        descripcion: descuento.descripcion || '',
-        descuento: descuento.descuento || '',
-        banco_nombre: descuento.banco_nombre || '',
-        tipo_tarjeta: descuento.tipo_tarjeta || 'debito',
-        categoria: descuento.categoria || '',
-        dias_validos: descuento.dias_validos || descuento.dias_semana || [],
-        es_delivery: Boolean(descuento.es_delivery),
-        terminos: descuento.terminos || '',
-        fecha_vencimiento: descuento.fecha_vencimiento || descuento.fecha_fin || '',
-        activo: Boolean(descuento.activo)
-      }));
-
-      const currentDate = new Date();
-      const dateStr = currentDate.toLocaleDateString('es-CL');
-      const timeStr = currentDate.toLocaleTimeString('es-CL');
-
-      // FORMATO CORRECTO: usar initialData en lugar de INITIAL_BANCOS
-      const codigoCompleto = `// src/data/initialData.js - Generado automáticamente el ${dateStr}, ${timeStr}
-export const initialData = {
-  bancos: ${JSON.stringify(cleanBancos, null, 2)},
-  descuentos: ${JSON.stringify(cleanDescuentos, null, 2)}
-};`;
-
-      // Crear archivo temporal para descargar
-      const blob = new Blob([codigoCompleto], { type: 'text/javascript' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `initialData_actualizado_${currentDate.toISOString().split('T')[0]}.js`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-
-      // También mostrar en consola para copiar fácil
-      console.log('🔥 CÓDIGO PARA src/data/initialData.js:');
-      console.log(codigoCompleto);
-      
-      alert('✅ Código generado correctamente!\n\n1. Archivo descargado\n2. Código en consola (F12)\n3. Reemplaza src/data/initialData.js\n4. Ejecuta: npm run build');
-    } catch (error) {
-      console.error('Error generando código:', error);
-      alert('❌ Error al generar código: ' + error.message);
+    const { datos, errores } = validarDatos({ bancos, descuentos });
+    if (!datos) {
+      alert(`❌ Hay datos inválidos, corrígelos antes de generar el código:\n\n${errores.slice(0, 10).join('\n')}`);
+      return;
     }
+
+    const codigo = `// src/data/initialData.js - Generado desde el panel admin el ${new Date().toLocaleString('es-CL')}
+export const initialData = {
+  bancos: ${JSON.stringify(datos.bancos, null, 2)},
+  descuentos: ${JSON.stringify(datos.descuentos, null, 2)}
+};
+`;
+    descargarArchivo(codigo, 'initialData.js', 'text/javascript');
+    alert('✅ Archivo initialData.js descargado.\n\n1. Reemplaza src/data/initialData.js con el archivo descargado\n2. Ejecuta: npm run build && npx cap sync android');
   };
 
-  // Funciones de import/export
   const exportarDatos = () => {
     const datos = {
-      bancos,
-      descuentos,
+      bancos: bancos.map(normalizarBanco),
+      descuentos: descuentos.map(normalizarDescuento),
       fecha_exportacion: new Date().toISOString(),
-      version: '1.0'
+      version: '2.0'
     };
-    
-    const blob = new Blob([JSON.stringify(datos, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `cardDiscount_backup_${new Date().toISOString().split('T')[0]}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    descargarArchivo(JSON.stringify(datos, null, 2), `cardDiscount_backup_${fechaArchivo()}.json`);
   };
 
-  const importarDatos = (event) => {
-    const file = event.target.files[0];
+  const importarDatos = async (event) => {
+    const input = event.target;
+    const file = input.files?.[0];
+    input.value = ''; // permite volver a elegir el mismo archivo
     if (!file) return;
 
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      try {
-        const datos = JSON.parse(e.target.result);
-        if (datos.bancos && datos.descuentos) {
-          setBancos(datos.bancos);
-          setDescuentos(datos.descuentos);
-          alert('Datos importados correctamente');
-        } else {
-          alert('Archivo no válido');
-        }
-      } catch (error) {
-        alert('Error al leer el archivo');
+    try {
+      const { datos, errores } = validarDatos(await leerArchivoJson(file));
+      if (!datos) {
+        const extra = errores.length > 10 ? `\n… y ${errores.length - 10} errores más` : '';
+        alert(`❌ No se importó nada. Errores encontrados:\n\n${errores.slice(0, 10).join('\n')}${extra}`);
+        return;
       }
-    };
-    reader.readAsText(file);
+      if (!window.confirm(`Se reemplazarán los datos actuales por ${datos.bancos.length} bancos y ${datos.descuentos.length} descuentos. ¿Continuar?`)) {
+        return;
+      }
+      setBancos(datos.bancos);
+      setDescuentos(datos.descuentos);
+      alert('✅ Datos importados correctamente');
+    } catch (error) {
+      alert(`❌ ${error.message}`);
+    }
   };
 
   return (
@@ -168,15 +131,42 @@ export const initialData = {
             </label>
             
             <button
-              onClick={onLogout}
-              className="flex items-center space-x-2 bg-red-500/20 text-red-300 px-3 py-2 rounded-lg hover:bg-red-500/30 transition-all text-sm"
+              onClick={onVerApp}
+              className="flex items-center space-x-2 bg-white/10 text-white px-3 py-2 rounded-lg hover:bg-white/20 transition-all text-sm"
+              title="Previsualizar la app con los cambios del borrador"
             >
-              <LogOut size={16} />
-              <span>Salir</span>
+              <Eye size={16} />
+              <span>Ver app</span>
             </button>
+
+            {showLogout && (
+              <button
+                onClick={onLogout}
+                className="flex items-center space-x-2 bg-red-500/20 text-red-300 px-3 py-2 rounded-lg hover:bg-red-500/30 transition-all text-sm"
+              >
+                <LogOut size={16} />
+                <span>Salir</span>
+              </button>
+            )}
           </div>
         </div>
       </header>
+
+      {hayCambios && (
+        <div className="bg-amber-500/15 border-b border-amber-500/30">
+          <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2 text-sm text-amber-100">
+            <span>
+              ⚠️ Tienes cambios guardados solo en este navegador. Usa <strong>💾 Generar Código</strong> para publicarlos.
+            </span>
+            <button
+              onClick={() => window.confirm('¿Descartar todos los cambios y volver a los datos publicados?') && onDescartarCambios()}
+              className="inline-flex items-center gap-1 text-amber-200 hover:text-white"
+            >
+              <RotateCcw size={14} /> Descartar cambios
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Navegación */}
       <nav className="bg-white/5 backdrop-blur-lg border-b border-white/10">
@@ -229,21 +219,21 @@ export const initialData = {
                   <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-mono">2</span>
                   <div>
                     <div className="font-medium">Clic "💾 Generar Código"</div>
-                    <div className="text-sm text-yellow-200">Se descarga el archivo actualizado y aparece en consola</div>
+                    <div className="text-sm text-yellow-200">Se descarga el archivo initialData.js validado</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-mono">3</span>
                   <div>
                     <div className="font-medium">Actualizar src/data/initialData.js</div>
-                    <div className="text-sm text-yellow-200">Reemplaza TODO el contenido del archivo con el código generado</div>
+                    <div className="text-sm text-yellow-200">Reemplaza el archivo con el descargado (el borrador local se descarta solo)</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="bg-yellow-500/20 text-yellow-300 px-2 py-1 rounded text-sm font-mono">4</span>
                   <div>
                     <div className="font-medium">Compilar nueva APK</div>
-                    <div className="text-sm text-yellow-200 font-mono">npm run build && npx cap sync && npx cap build android</div>
+                    <div className="text-sm text-yellow-200 font-mono">npm run android:sync, luego npx cap build android</div>
                   </div>
                 </div>
               </div>
@@ -263,6 +253,8 @@ export const initialData = {
           <BancosManager
             bancos={bancos}
             setBancos={setBancos}
+            descuentos={descuentos}
+            setDescuentos={setDescuentos}
           />
         )}
       </main>

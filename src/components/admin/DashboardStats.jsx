@@ -58,16 +58,16 @@ const DashboardStats = ({ stats }) => {
         <h3 className="text-xl font-bold text-white mb-4">Información del Sistema</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
           <div>
-            <span className="text-white/70">Almacenamiento:</span>
-            <span className="text-white ml-2">localStorage del navegador</span>
+            <span className="text-white/70">Datos publicados:</span>
+            <span className="text-white ml-2">src/data/initialData.js</span>
           </div>
           <div>
-            <span className="text-white/70">Backup automático:</span>
-            <span className="text-white ml-2">No (usar botón Exportar)</span>
+            <span className="text-white/70">Borrador:</span>
+            <span className="text-white ml-2">localStorage de este navegador</span>
           </div>
           <div>
-            <span className="text-white/70">Última modificación:</span>
-            <span className="text-white ml-2">{new Date().toLocaleDateString()}</span>
+            <span className="text-white/70">Respaldo:</span>
+            <span className="text-white ml-2">Manual (botón Exportar)</span>
           </div>
           <div>
             <span className="text-white/70">Modo:</span>
