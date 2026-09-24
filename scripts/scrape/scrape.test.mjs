@@ -114,6 +114,11 @@ describe('Falabella', () => {
     expect(d.descripcion).toBe('');
   });
 
+  it('usa benefitTitle cuando el título es genérico', () => {
+    const d = mapearTarjeta({ ...item, benefitTitle: 'Cuerovaca', benefitCard: { ...item.benefitCard, title: 'Dcto en Restaurante' } });
+    expect(d.establecimiento).toBe('Cuerovaca');
+  });
+
   it('ignora las referencias internas de Next.js', () => {
     const d = mapearTarjeta({ ...item, creditCards: '$28:props:benefitCardsData:0:creditCards', benefitTitle: '$28:x' });
     expect(d.tipo_tarjeta).toBe('credito');

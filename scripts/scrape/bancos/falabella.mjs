@@ -85,9 +85,11 @@ const tipoDeTarjetas = (tarjetas) => {
 export const mapearTarjeta = (item, categoriaDelSitio) => {
   const card = item.benefitCard || {};
   const titulo = limpiarTexto(valor(card.title));
-  // El título de la tarjeta ("Dcto en Doggis") es más fiable que benefitTitle, que a veces es un eslogan
-  const establecimiento =
-    titulo.replace(/^(dcto\.?|descuento|beneficios?)\s+((en|de|del)\s+)?/i, '').trim() || limpiarTexto(valor(item.benefitTitle));
+  // El título de la tarjeta ("Dcto en Doggis") es más fiable que benefitTitle, que a veces es un
+  // eslogan; pero si el título es genérico ("Dcto en Restaurante") se usa benefitTitle.
+  const delTitulo = titulo.replace(/^(dcto\.?|descuento|beneficios?)\s+((en|de|del)\s+)?/i, '').trim();
+  const generico = !delTitulo || /^(restaurantes?|tiendas?|comercios?|locales?)$/i.test(delTitulo);
+  const establecimiento = (generico && limpiarTexto(valor(item.benefitTitle))) || delTitulo;
   const descuento = [card.topDiscountText, card.centerDiscountText, card.bottomDiscountText]
     .map((v) => limpiarTexto(valor(v)))
     .filter(Boolean)
