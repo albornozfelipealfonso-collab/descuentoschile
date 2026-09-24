@@ -9,7 +9,9 @@ export default defineConfig({
     open: true
   },
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    // El paquete principal incluye descuentos.json (cientos de descuentos); es esperado
+    chunkSizeWarningLimit: 1000
   },
   test: {
     environment: 'node',

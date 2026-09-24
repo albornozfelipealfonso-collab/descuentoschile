@@ -18,13 +18,18 @@ App web y Android para consultar descuentos de tarjetas bancarias en Chile, con 
 
 ## Inicio rápido
 
+Requisitos: [Node.js 20.19+](https://nodejs.org) (recomendado 22 LTS) y [Git](https://git-scm.com).
+
 ```bash
-npm install
+git clone https://github.com/albornozfelipealfonso-collab/descuentoschile.git
+cd descuentoschile
+npm run setup        # instala todo y verifica que funcione
 npm run dev          # http://localhost:3000
 ```
 
 | Script                 | Qué hace                                         |
 | ---------------------- | ------------------------------------------------ |
+| `npm run setup`        | Instala y verifica todo (primera vez)            |
 | `npm run dev`          | Servidor de desarrollo                           |
 | `npm run build`        | Build de producción en `dist/`                   |
 | `npm run preview`      | Sirve el build de producción                     |
