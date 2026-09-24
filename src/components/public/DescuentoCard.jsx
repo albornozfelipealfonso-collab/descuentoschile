@@ -33,7 +33,9 @@ const DescuentoCard = ({ descuento }) => {
       <p className="text-green-700 font-bold text-sm mb-2">{descuento.descuento}</p>
 
       {descuento.descripcion && descuento.descripcion !== descuento.descuento && (
-        <p className="text-gray-600 text-sm mb-3">{descuento.descripcion}</p>
+        <p className="text-gray-600 text-sm mb-3 line-clamp-3" title={descuento.descripcion}>
+          {descuento.descripcion}
+        </p>
       )}
 
       <ul className="space-y-2 text-sm text-gray-600 mt-auto">
@@ -64,9 +66,10 @@ const DescuentoCard = ({ descuento }) => {
       </ul>
 
       {descuento.terminos && (
-        <p className="mt-3 pt-3 border-t border-gray-200 text-xs text-gray-500">
-          <strong>T&amp;C:</strong> {descuento.terminos}
-        </p>
+        <details className="mt-3 pt-3 border-t border-gray-200 text-xs text-gray-500">
+          <summary className="cursor-pointer select-none font-semibold">Términos y condiciones</summary>
+          <p className="mt-1">{descuento.terminos}</p>
+        </details>
       )}
 
       {descuento.url && (

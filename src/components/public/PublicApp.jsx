@@ -1,10 +1,12 @@
 // src/components/public/PublicApp.jsx
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { Filter, Search, Users, X } from 'lucide-react';
 import { useIsMobile, useFilteredDescuentos, useDebouncedValue } from '../shared/hooks';
 import { enriquecerConBanco, getCategorias, getDiaActual, FILTROS_INICIALES } from '../../utils/descuentos';
 import DescuentoCard from './DescuentoCard';
 import FilterModal from './FilterModal';
+
+const POR_PAGINA = 60;
 
 const FILTRO_LABEL = { banco: 'Banco', tipo: 'Tarjeta', dia: 'Día', categoria: 'Categoría' };
 
@@ -21,6 +23,10 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
   const descuentosConBanco = useMemo(() => enriquecerConBanco(descuentos, bancos), [descuentos, bancos]);
   const categorias = useMemo(() => getCategorias(descuentosConBanco), [descuentosConBanco]);
   const descuentosFiltrados = useFilteredDescuentos(descuentosConBanco, filtros, busquedaEfectiva);
+
+  // Se muestran de a POR_PAGINA para que la lista sea fluida con cientos de descuentos
+  const [visibles, setVisibles] = useState(POR_PAGINA);
+  useEffect(() => setVisibles(POR_PAGINA), [filtros, busquedaEfectiva]);
 
   const filtrosActivos = Object.entries(filtros).filter(([key, value]) => value !== FILTROS_INICIALES[key]);
   const cerrarFiltros = useCallback(() => setMostrarFiltros(false), []);
@@ -142,10 +148,21 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
             </p>
 
             <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {descuentosFiltrados.map((descuento) => (
+              {descuentosFiltrados.slice(0, visibles).map((descuento) => (
                 <DescuentoCard key={descuento.id} descuento={descuento} />
               ))}
             </div>
+
+            {descuentosFiltrados.length > visibles && (
+              <div className="text-center mt-8">
+                <button
+                  onClick={() => setVisibles((v) => v + POR_PAGINA)}
+                  className="bg-white/15 text-white px-6 py-3 rounded-lg hover:bg-white/25 transition-colors"
+                >
+                  Mostrar más ({descuentosFiltrados.length - visibles} restantes)
+                </button>
+              </div>
+            )}
           </>
         )}
       </main>
