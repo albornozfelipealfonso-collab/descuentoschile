@@ -22,3 +22,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Android (generados)
+android/app/build
+android/build
+android/.gradle
+android/local.properties
+android/app/src/main/assets/public
+*.keystore
+*.jks
+
+# Resumen temporal del scraper
+data/scraped/_resumen.json

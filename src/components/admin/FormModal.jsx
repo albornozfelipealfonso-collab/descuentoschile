@@ -28,6 +28,7 @@ const FormModal = ({
       setFormData(getDefaultData());
       setLogoMethod('url');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- getDefaultData solo depende de `type`
   }, [editItem, type]);
 
   const getDefaultData = () => {
@@ -57,9 +58,6 @@ const FormModal = ({
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    console.log('📝 FormModal - Datos del formulario:', formData);
-    console.log('🎯 Tipo de formulario:', type);
-    
     // Validaciones básicas
     if (type === 'banco' && !formData.nombre?.trim()) {
       alert('El nombre del banco es requerido');
@@ -81,7 +79,6 @@ const FormModal = ({
       }
     }
 
-    console.log('✅ Validaciones pasadas, enviando datos...');
 
     // Asegurar estructura correcta para bancos
     if (type === 'banco') {
@@ -92,14 +89,11 @@ const FormModal = ({
         logo_url: formData.logo_url || '',
         activo: formData.activo !== undefined ? formData.activo : true
       };
-      console.log('🏦 Datos del banco a enviar:', bancoData);
-      onSave(bancoData);
+      if (onSave(bancoData) === false) return;
     } else {
-      console.log('💳 Datos del descuento a enviar:', formData);
-      onSave(formData);
+      if (onSave(formData) === false) return;
     }
-    
-    console.log('🚪 Cerrando modal...');
+
     onClose();
   };
 

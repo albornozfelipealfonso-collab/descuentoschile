@@ -2,39 +2,49 @@
 import React, { useState } from 'react';
 import { Plus, Edit, Trash2, Eye, EyeOff, Search } from 'lucide-react';
 import FormModal from './FormModal';
+import { findBanco, nextId, normalizar } from '../../utils/descuentos';
 
-const BancosManager = ({ bancos, setBancos }) => {
+const BancosManager = ({ bancos, setBancos, descuentos, setDescuentos }) => {
   const [showModal, setShowModal] = useState(false);
   const [editItem, setEditItem] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Filtrar bancos
-  const bancosFiltrados = bancos.filter(banco => 
-    banco.nombre.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const bancosFiltrados = bancos.filter((banco) => normalizar(banco.nombre).includes(normalizar(searchTerm)));
+
+  const contarDescuentos = (nombre) => descuentos.filter((d) => normalizar(d.banco_nombre) === normalizar(nombre)).length;
 
   const handleSave = (formData) => {
+    const nombre = formData.nombre.trim();
+    const duplicado = findBanco(bancos, nombre);
+    if (duplicado && duplicado.id !== editItem?.id) {
+      alert(`Ya existe un banco llamado "${duplicado.nombre}"`);
+      return false;
+    }
+
     if (editItem) {
-      // Editar banco existente
-      setBancos(prev => prev.map(b => 
-        b.id === editItem.id ? { ...formData, id: editItem.id } : b
-      ));
+      setBancos((prev) => prev.map((b) => (b.id === editItem.id ? { ...formData, nombre, id: editItem.id } : b)));
+      // Los descuentos se enlazan por nombre: si el banco cambia de nombre, se actualizan.
+      if (nombre !== editItem.nombre) {
+        setDescuentos((prev) =>
+          prev.map((d) => (normalizar(d.banco_nombre) === normalizar(editItem.nombre) ? { ...d, banco_nombre: nombre } : d))
+        );
+      }
     } else {
-      // Agregar nuevo banco
-      const newId = Math.max(...bancos.map(b => b.id), 0) + 1;
-      const nuevoBanco = {
-        ...formData,
-        id: newId,
-        // Asegurar campos requeridos
-        nombre: formData.nombre || '',
-        color: formData.color || '#374151',
-        logo_url: formData.logo_url || '',
-        activo: formData.activo !== undefined ? formData.activo : true
-      };
-      setBancos(prev => [...prev, nuevoBanco]);
+      setBancos((prev) => [
+        ...prev,
+        {
+          ...formData,
+          id: nextId(prev),
+          nombre,
+          color: formData.color || '#374151',
+          logo_url: formData.logo_url || '',
+          activo: formData.activo !== undefined ? formData.activo : true
+        }
+      ]);
     }
     setShowModal(false);
     setEditItem(null);
+    return true;
   };
 
   const handleEdit = (banco) => {
@@ -42,9 +52,14 @@ const BancosManager = ({ bancos, setBancos }) => {
     setShowModal(true);
   };
 
-  const handleDelete = (id) => {
-    if (window.confirm('¿Estás seguro de que quieres eliminar este banco?')) {
-      setBancos(prev => prev.filter(b => b.id !== id));
+  const handleDelete = (banco) => {
+    const asociados = contarDescuentos(banco.nombre);
+    if (asociados > 0) {
+      alert(`"${banco.nombre}" tiene ${asociados} descuento(s) asociados. Elimínalos o desactiva el banco en su lugar.`);
+      return;
+    }
+    if (window.confirm(`¿Eliminar el banco "${banco.nombre}"?`)) {
+      setBancos((prev) => prev.filter((b) => b.id !== banco.id));
     }
   };
 
@@ -211,7 +226,7 @@ const BancosManager = ({ bancos, setBancos }) => {
                           <Edit className="h-4 w-4" />
                         </button>
                         <button
-                          onClick={() => handleDelete(banco.id)}
+                          onClick={() => handleDelete(banco)}
                           className="text-red-400 hover:text-red-300 p-1 rounded-lg hover:bg-red-500/20 transition-colors"
                           title="Eliminar"
                         >
@@ -237,8 +252,6 @@ const BancosManager = ({ bancos, setBancos }) => {
         onSave={handleSave}
         editItem={editItem}
         type="banco"
-        bancos={[]} // No necesita bancos para crear bancos
-        descuentos={[]} // No necesita descuentos para crear bancos
       />
     </div>
   );

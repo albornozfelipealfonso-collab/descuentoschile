@@ -2,25 +2,7 @@
 import React, { useState } from 'react';
 import { Plus, Edit, Trash2, Eye, EyeOff, Search, Filter } from 'lucide-react';
 import FormModal from './FormModal';
-
-// Función simple para colores de bancos
-const getBancoColor = (bancoNombre) => {
-  const colores = {
-    'banco estado': '#1e40af',
-    'banco de chile': '#dc2626', 
-    'santander': '#dc2626',
-    'bci': '#f59e0b',
-    'scotiabank': '#7c2d12',
-    'itau': '#ea580c',
-    'security': '#166534',
-    'falabella': '#be185d',
-    'tenpo': '#1f2937',
-    'lider bci mastercard': '#1e40af'
-  };
-  
-  const nombre = bancoNombre?.toLowerCase().trim() || '';
-  return colores[nombre] || '#374151'; // Gris por defecto
-};
+import { DEFAULT_BANCO_COLOR, findBanco, getTextColor, nextId, normalizar } from '../../utils/descuentos';
 
 const DescuentosManager = ({ descuentos, setDescuentos, bancos }) => {
   const [showModal, setShowModal] = useState(false);
@@ -41,10 +23,9 @@ const DescuentosManager = ({ descuentos, setDescuentos, bancos }) => {
   // Filtrar descuentos
   const descuentosFiltrados = React.useMemo(() => {
     return descuentos.filter(descuento => {
-      const matchSearch = !searchTerm || 
-        descuento.establecimiento.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        descuento.descripcion?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        descuento.banco_nombre.toLowerCase().includes(searchTerm.toLowerCase());
+      const termino = normalizar(searchTerm);
+      const matchSearch = !termino ||
+        normalizar([descuento.establecimiento, descuento.descripcion, descuento.banco_nombre].join(' ')).includes(termino);
       
       const matchBanco = !filterBanco || descuento.banco_nombre === filterBanco;
       const matchCategoria = !filterCategoria || descuento.categoria === filterCategoria;
@@ -54,51 +35,27 @@ const DescuentosManager = ({ descuentos, setDescuentos, bancos }) => {
   }, [descuentos, searchTerm, filterBanco, filterCategoria]);
 
   const handleSave = (formData) => {
-    try {
-      console.log('💾 Intentando guardar descuento:', formData);
-      
-      // Detectar automáticamente si es delivery basado en la categoría
-      const esDelivery = formData.categoria?.toLowerCase().includes('delivery') || false;
-      
-      if (editItem) {
-        // Editar descuento existente
-        console.log('✏️ Editando descuento existente');
-        setDescuentos(prev => prev.map(d => 
-          d.id === editItem.id ? { 
-            ...formData, 
-            id: editItem.id,
-            es_delivery: esDelivery
-          } : d
-        ));
-      } else {
-        // Agregar nuevo descuento
-        console.log('➕ Agregando nuevo descuento');
-        const newId = Math.max(...descuentos.map(d => d.id), 0) + 1;
-        const nuevoDescuento = {
-          ...formData,
-          id: newId,
-          // Asegurar campos requeridos
-          establecimiento: formData.establecimiento || '',
-          descripcion: formData.descripcion || '',
-          descuento: formData.descuento || '',
-          banco_nombre: formData.banco_nombre || '',
-          tipo_tarjeta: formData.tipo_tarjeta || 'debito',
-          categoria: formData.categoria || '',
-          dias_validos: formData.dias_validos || [],
-          es_delivery: esDelivery, // ← Auto-detectado
-          terminos: formData.terminos || '',
-          fecha_vencimiento: formData.fecha_vencimiento || '',
-          activo: formData.activo !== undefined ? formData.activo : true
-        };
-        
-        console.log('🎯 Descuento completo a agregar:', nuevoDescuento);
-        setDescuentos(prev => [...prev, nuevoDescuento]);
-      }
-      
-      console.log('✅ Descuento guardado correctamente');
-    } catch (error) {
-      console.error('❌ Error guardando descuento:', error);
-      alert('Error al guardar el descuento: ' + error.message);
+    // Delivery se detecta automáticamente a partir de la categoría
+    const esDelivery = normalizar(formData.categoria).includes('delivery');
+    const limpio = {
+      ...formData,
+      establecimiento: formData.establecimiento?.trim() || '',
+      descripcion: formData.descripcion?.trim() || '',
+      descuento: formData.descuento?.trim() || '',
+      banco_nombre: formData.banco_nombre || '',
+      tipo_tarjeta: formData.tipo_tarjeta || 'debito',
+      categoria: formData.categoria?.trim() || '',
+      dias_validos: formData.dias_validos || [],
+      terminos: formData.terminos?.trim() || '',
+      fecha_vencimiento: formData.fecha_vencimiento || '',
+      activo: formData.activo !== undefined ? formData.activo : true,
+      es_delivery: esDelivery
+    };
+
+    if (editItem) {
+      setDescuentos((prev) => prev.map((d) => (d.id === editItem.id ? { ...limpio, id: editItem.id } : d)));
+    } else {
+      setDescuentos((prev) => [...prev, { ...limpio, id: nextId(prev) }]);
     }
   };
 
@@ -275,7 +232,8 @@ const DescuentosManager = ({ descuentos, setDescuentos, bancos }) => {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {descuentosFiltrados.map((descuento) => {
-                  const banco = bancos.find(b => b.nombre === descuento.banco_nombre);
+                  const banco = findBanco(bancos, descuento.banco_nombre);
+                  const bancoColor = banco?.color || DEFAULT_BANCO_COLOR;
                   return (
                     <tr key={descuento.id} className="hover:bg-gray-50">
                       <td className="px-6 py-4 whitespace-nowrap">
@@ -308,8 +266,8 @@ const DescuentosManager = ({ descuentos, setDescuentos, bancos }) => {
                             />
                           )}
                           <span 
-                            className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium text-white"
-                            style={{ backgroundColor: getBancoColor(descuento.banco_nombre) }}
+                            className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium"
+                            style={{ backgroundColor: bancoColor, color: getTextColor(bancoColor) }}
                           >
                             {descuento.banco_nombre}
                           </span>
@@ -385,12 +343,10 @@ const DescuentosManager = ({ descuentos, setDescuentos, bancos }) => {
       <FormModal
         isOpen={showModal}
         onClose={() => {
-          console.log('🚪 Cerrando modal');
           setShowModal(false);
           setEditItem(null);
         }}
         onSave={(data) => {
-          console.log('💾 Modal enviando datos:', data);
           handleSave(data);
           setShowModal(false);
           setEditItem(null);

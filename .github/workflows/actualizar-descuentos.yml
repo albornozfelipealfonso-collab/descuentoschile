@@ -1,0 +1,82 @@
+name: Actualizar descuentos
+
+on:
+  schedule:
+    - cron: '0 11 * * *' # todos los días ~08:00 hora de Chile
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths: [src/data/initialData.js] # cambios del admin → regenerar descuentos.json
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: actualizar-descuentos
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Instalar navegador para los scrapers
+        if: github.event_name != 'push'
+        run: npx playwright install --with-deps chromium
+
+      - name: Scrapear bancos
+        if: github.event_name != 'push'
+        run: node scripts/scrape/index.mjs
+
+      - name: Generar descuentos.json
+        run: node scripts/build-data.mjs
+
+      - name: Verificar datos
+        run: npm test
+
+      - name: Publicar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/scraped src/data/descuentos.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los descuentos."
+          else
+            git commit -m "Actualizar descuentos ($(date -u +%Y-%m-%d))"
+            # Por si alguien subió cambios mientras corría el scraper
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
+          fi
+
+      - name: Avisar si algún banco falló
+        if: always() && github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RESUMEN=data/scraped/_resumen.json
+          if [ -f "$RESUMEN" ]; then
+            FALLOS=$(node -e "const r=require('./$RESUMEN');console.log(r.filter(x=>!x.ok).map(x=>'- **'+x.banco+'**: '+x.error+' (se conservan '+x.conserva+' descuentos anteriores)').join('\n'))")
+          else
+            FALLOS="- El scraper no terminó. Revisa el log de la ejecución."
+          fi
+          gh label create scraper --color B60205 --description "Fallas del scraper automático" --force >/dev/null
+          ISSUE=$(gh issue list --label scraper --state open --json number -q '.[0].number')
+          RUN="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ -n "$FALLOS" ]; then
+            BODY=$(printf "La actualización automática del %s tuvo problemas:\n\n%s\n\nLog: %s\n\nLos demás bancos se actualizaron normalmente." "$(date -u +%Y-%m-%d)" "$FALLOS" "$RUN")
+            if [ -n "$ISSUE" ]; then
+              gh issue comment "$ISSUE" --body "$BODY"
+            else
+              gh issue create --title "⚠️ Falla en la actualización automática de descuentos" --label scraper --body "$BODY"
+            fi
+          elif [ -n "$ISSUE" ]; then
+            gh issue close "$ISSUE" --comment "✅ Todos los bancos se actualizaron correctamente ($RUN)."
+          fi

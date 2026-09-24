@@ -66,7 +66,7 @@ export const initialData = {
   },
   {
     "id": 10,
-    "nombre": " Líder BCI Mastercard",
+    "nombre": "Líder BCI Mastercard",
     "color": "#1b61ac",
     "logo_url": "",
     "activo": true
@@ -204,7 +204,7 @@ export const initialData = {
     "establecimiento": "Cinepolis",
     "descripcion": " 2x1 en entradas en Cinépolis",
     "descuento": " 2x1 en entradas ",
-    "banco_nombre": " Líder BCI Mastercard",
+    "banco_nombre": "Líder BCI Mastercard",
     "tipo_tarjeta": "credito",
     "categoria": "Cine",
     "dias_validos": [
@@ -248,7 +248,7 @@ export const initialData = {
     "establecimiento": "Lipigas",
     "descripcion": "20% de descuento en Lipigas",
     "descuento": "20% de descuento en Lipigas",
-    "banco_nombre": " Líder BCI Mastercard",
+    "banco_nombre": "Líder BCI Mastercard",
     "tipo_tarjeta": "credito",
     "categoria": "Gas",
     "dias_validos": [

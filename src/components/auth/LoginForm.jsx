@@ -3,10 +3,14 @@ import React, { useState } from 'react';
 
 const LoginForm = ({ onLogin, onBack }) => {
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onLogin(password);
+    if (!onLogin(password)) {
+      setError('Contraseña incorrecta');
+      setPassword('');
+    }
   };
 
   return (
@@ -25,11 +29,22 @@ const LoginForm = ({ onLogin, onBack }) => {
             <input
               type="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => {
+                setPassword(e.target.value);
+                setError('');
+              }}
+              autoFocus
+              autoComplete="current-password"
               className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-white/40"
               placeholder="Ingresa la contraseña"
               required
+              aria-invalid={Boolean(error)}
             />
+            {error && (
+              <p role="alert" className="mt-2 text-sm text-red-300">
+                {error}
+              </p>
+            )}
           </div>
 
           <button
@@ -47,10 +62,6 @@ const LoginForm = ({ onLogin, onBack }) => {
             Volver a la App
           </button>
         </form>
-
-        <div className="mt-6 text-center text-white/60 text-sm">
-          <p>Contraseña: admin123</p>
-        </div>
       </div>
     </div>
   );

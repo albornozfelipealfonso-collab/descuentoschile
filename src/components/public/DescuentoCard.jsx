@@ -1,126 +1,93 @@
 // src/components/public/DescuentoCard.jsx
-import React from 'react';
+import React, { memo, useState } from 'react';
 import { Calendar, CreditCard, Tag, Truck } from 'lucide-react';
-import { useIsMobile } from '../shared/hooks';
+import { formatDias, formatFecha, getTextColor } from '../../utils/descuentos';
 
-// Función para obtener colores de bancos
-const getBancoColor = (bancoNombre) => {
-  const colores = {
-    'banco estado': '#1e40af',
-    'banco de chile': '#dc2626', 
-    'santander': '#dc2626',
-    'bci': '#f59e0b',
-    'scotiabank': '#7c2d12',
-    'itau': '#ea580c',
-    'security': '#166534',
-    'falabella': '#be185d',
-    'tenpo': '#1f2937',
-    'lider bci mastercard': '#1e40af'
-  };
-  
-  const nombre = bancoNombre?.toLowerCase().trim() || '';
-  return colores[nombre] || '#374151';
-};
+const TIPO_LABEL = { debito: 'Débito', credito: 'Crédito', ambas: 'Débito y crédito' };
 
 const DescuentoCard = ({ descuento }) => {
-  const isMobile = useIsMobile();
+  const [logoError, setLogoError] = useState(false);
+  const bg = descuento.banco_color;
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow">
-      {/* Header con logo y nombre del banco */}
-      <div className="flex items-center justify-between mb-3">
-        <div 
-          className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium text-white space-x-2"
-          style={{ backgroundColor: getBancoColor(descuento.banco_nombre) }}
+    <article className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow animate-fade-in flex flex-col">
+      <div className="flex items-center justify-between gap-2 mb-3">
+        <div
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium min-w-0"
+          style={{ backgroundColor: bg, color: getTextColor(bg) }}
         >
-          {/* Logo del banco */}
-          {descuento.logo_url && (
-            <img 
-              src={descuento.logo_url} 
-              alt={`Logo ${descuento.banco_nombre}`}
-              className="h-4 w-4 object-contain bg-white/20 rounded flex-shrink-0"
-              onError={(e) => {
-                e.target.style.display = 'none';
-              }}
+          {descuento.logo_url && !logoError && (
+            <img
+              src={descuento.logo_url}
+              alt=""
+              loading="lazy"
+              className="h-4 w-4 object-contain bg-white rounded flex-shrink-0"
+              onError={() => setLogoError(true)}
             />
           )}
           <span className="truncate">{descuento.banco_nombre}</span>
         </div>
-        
-        {/* Badge de descuento */}
-        <div className="bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
-          {descuento.descuento}
-        </div>
       </div>
 
-      {/* Título del establecimiento */}
-      <h3 className="text-lg font-semibold text-gray-800 mb-2">
-        {descuento.establecimiento}
-      </h3>
+      <h3 className="text-lg font-semibold text-gray-800">{descuento.establecimiento}</h3>
+      <p className="text-green-700 font-bold text-sm mb-2">{descuento.descuento}</p>
 
-      {/* Descripción */}
-      {descuento.descripcion && (
-        <p className="text-gray-600 text-sm mb-3">
+      {descuento.descripcion && descuento.descripcion !== descuento.descuento && (
+        <p className="text-gray-600 text-sm mb-3 line-clamp-3" title={descuento.descripcion}>
           {descuento.descripcion}
         </p>
       )}
 
-      {/* Información adicional */}
-      <div className="space-y-2">
-        {/* Días válidos */}
-        {descuento.dias_validos && descuento.dias_validos.length > 0 && (
-          <div className="flex items-center text-sm text-gray-600">
-            <Calendar className="h-4 w-4 mr-2 text-blue-500" />
-            <span>
-              {descuento.dias_validos.join(', ')}
-            </span>
-          </div>
+      <ul className="space-y-2 text-sm text-gray-600 mt-auto">
+        {descuento.dias_validos?.length > 0 && (
+          <li className="flex items-center">
+            <Calendar className="h-4 w-4 mr-2 text-blue-500 flex-shrink-0" aria-hidden="true" />
+            <span>{formatDias(descuento.dias_validos)}</span>
+          </li>
         )}
-
-        {/* Tipo de tarjeta */}
         {descuento.tipo_tarjeta && (
-          <div className="flex items-center text-sm text-gray-600">
-            <CreditCard className="h-4 w-4 mr-2 text-purple-500" />
-            <span className="capitalize">{descuento.tipo_tarjeta}</span>
-          </div>
+          <li className="flex items-center">
+            <CreditCard className="h-4 w-4 mr-2 text-purple-500 flex-shrink-0" aria-hidden="true" />
+            <span>{TIPO_LABEL[descuento.tipo_tarjeta] || descuento.tipo_tarjeta}</span>
+          </li>
         )}
-
-        {/* Categoría */}
         {descuento.categoria && (
-          <div className="flex items-center text-sm text-gray-600">
-            <Tag className="h-4 w-4 mr-2 text-orange-500" />
+          <li className="flex items-center">
+            <Tag className="h-4 w-4 mr-2 text-orange-500 flex-shrink-0" aria-hidden="true" />
             <span className="capitalize">{descuento.categoria}</span>
-          </div>
+          </li>
         )}
-
-        {/* Delivery disponible */}
         {descuento.es_delivery && (
-          <div className="flex items-center text-sm text-green-600">
-            <Truck className="h-4 w-4 mr-2" />
+          <li className="flex items-center text-green-600">
+            <Truck className="h-4 w-4 mr-2 flex-shrink-0" aria-hidden="true" />
             <span>Delivery disponible</span>
-          </div>
+          </li>
         )}
-      </div>
+      </ul>
 
-      {/* Términos y condiciones */}
       {descuento.terminos && (
-        <div className="mt-3 pt-3 border-t border-gray-200">
-          <p className="text-xs text-gray-500">
-            <strong>T&C:</strong> {descuento.terminos}
-          </p>
-        </div>
+        <details className="mt-3 pt-3 border-t border-gray-200 text-xs text-gray-500">
+          <summary className="cursor-pointer select-none font-semibold">Términos y condiciones</summary>
+          <p className="mt-1">{descuento.terminos}</p>
+        </details>
       )}
 
-      {/* Fecha de vencimiento */}
-      {descuento.fecha_vencimiento && (
-        <div className="mt-2">
-          <p className="text-xs text-red-500">
-            Válido hasta: {new Date(descuento.fecha_vencimiento).toLocaleDateString('es-CL')}
-          </p>
-        </div>
+      {descuento.url && (
+        <a
+          href={descuento.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 text-xs text-blue-600 hover:underline"
+        >
+          Ver condiciones en el sitio del banco ↗
+        </a>
       )}
-    </div>
+
+      {descuento.fecha_vencimiento && (
+        <p className="mt-2 text-xs text-red-500">Válido hasta: {formatFecha(descuento.fecha_vencimiento)}</p>
+      )}
+    </article>
   );
 };
 
-export default DescuentoCard;
+export default memo(DescuentoCard);
