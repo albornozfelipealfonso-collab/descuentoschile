@@ -36,7 +36,7 @@ export const mapearOferta = (o) => {
     descuento,
     // El título de BCI suele ser un gancho ("Viernes - Vitacura"); se muestra como descripción
     descripcion: normalizar(titulo) !== normalizar(descuento) && normalizar(titulo) !== normalizar(comercio) ? titulo : limpiarTexto(o.subtitulo),
-    terminos: limpiarTexto(o.legal || o.descripcion).slice(0, 600),
+    terminos: limpiarTexto(o.legal || o.descripcion).slice(0, 400),
     tipo_tarjeta: extraerTipoTarjeta(`${tarjetas} ${o.subtitulo}`),
     categoria: categoria || inferirCategoria(comercio, texto),
     // Si el beneficio no indica días, vale todos los días
@@ -78,7 +78,7 @@ export default {
     const ofertas = [...paginas.values()].flat();
     debug('bci: ofertas', ofertas.length);
     const mapeadas = ofertas.map(mapearOferta);
-    mapeadas.slice(0, 3).forEach((d) => debug('bci:', JSON.stringify(d).slice(0, 600)));
+    mapeadas.slice(0, 3).forEach((d) => debug('bci:', JSON.stringify(d).slice(0, 400)));
     return mapeadas;
   }
 };

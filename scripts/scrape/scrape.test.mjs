@@ -120,6 +120,10 @@ describe('Falabella', () => {
     expect(d.establecimiento).toBe('Doggis');
   });
 
+  it('usa la categoría del sitio si está disponible', () => {
+    expect(mapearTarjeta(item, 'Restaurantes').categoria).toBe('Restaurantes');
+  });
+
   it('solo CMR es crédito', () => {
     expect(mapearTarjeta({ ...item, creditCards: ['CMR Mastercard'] }).tipo_tarjeta).toBe('credito');
   });

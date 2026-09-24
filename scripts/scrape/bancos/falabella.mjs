@@ -7,6 +7,23 @@ import { extraerDias, extraerFecha, fetchTexto, idEstable, inferirCategoria, lim
 const BASE = 'https://www.bancofalabella.cl';
 const URL = `${BASE}/descuentos/todos`;
 
+// Páginas de categoría del sitio → categoría en la app
+const CATEGORIAS = {
+  restaurantes: 'Restaurantes',
+  antojos: 'Restaurantes',
+  mercado: 'Supermercados',
+  viajes: 'Viajes',
+  transporte: 'Transporte',
+  entretencion: 'Cine y entretención',
+  salud: 'Salud y belleza',
+  belleza: 'Salud y belleza',
+  servicios: 'Servicios',
+  hogar: 'Hogar',
+  mascotas: 'Mascotas',
+  educacion: 'Educación',
+  'cuotas-sin-interes': 'Cuotas sin interés'
+};
+
 /** Une los fragmentos `self.__next_f.push([1,"..."])` del HTML en un solo texto. */
 export const extraerPayload = (html) =>
   [...html.matchAll(/self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)/g)]
@@ -65,7 +82,7 @@ const tipoDeTarjetas = (tarjetas) => {
   return 'credito';
 };
 
-export const mapearTarjeta = (item) => {
+export const mapearTarjeta = (item, categoriaDelSitio) => {
   const card = item.benefitCard || {};
   const titulo = limpiarTexto(valor(card.title));
   // El título de la tarjeta ("Dcto en Doggis") es más fiable que benefitTitle, que a veces es un eslogan
@@ -86,7 +103,7 @@ export const mapearTarjeta = (item) => {
     descuento: descuento || titulo,
     descripcion: normalizar(valor(card.description)) === normalizar(descuento) ? '' : limpiarTexto(valor(card.description)),
     tipo_tarjeta: tipoDeTarjetas(item.creditCards),
-    categoria: inferirCategoria(establecimiento, titulo, valor(card.description)),
+    categoria: categoriaDelSitio || inferirCategoria(establecimiento, titulo, valor(card.description)),
     dias_validos: dias.length ? dias : [...DIAS_SEMANA],
     fecha_vencimiento: extraerFecha(valor(item.limitDate) || valor(card.endDate) || ''),
     es_delivery: /delivery|rappi|pedidos ?ya|uber ?eats/i.test(`${titulo} ${valor(card.description) || ''}`),
@@ -104,7 +121,24 @@ export default {
     debug('falabella: tarjetas en el HTML', tarjetas.length);
     // La misma tarjeta aparece en varias secciones de la página
     const unicas = [...new Map(tarjetas.map((t) => [t.benefitCard?.linkUrl || JSON.stringify(t.benefitCard), t])).values()];
-    const mapeadas = unicas.map(mapearTarjeta);
+
+    // Categoría de cada beneficio según la página de categoría en que aparece
+    // (si una página falla, se usa la categoría inferida por palabras clave)
+    const categoriaPorLink = new Map();
+    for (const [slug, categoria] of Object.entries(CATEGORIAS)) {
+      try {
+        const html = await fetchTexto(`${BASE}/descuentos/${slug}`);
+        for (const t of extraerTarjetas(extraerPayload(html))) {
+          const link = t.benefitCard?.linkUrl;
+          if (link && !categoriaPorLink.has(link)) categoriaPorLink.set(link, categoria);
+        }
+      } catch (error) {
+        debug(`falabella: categoría ${slug} no disponible (${error.message})`);
+      }
+    }
+    debug('falabella: beneficios con categoría del sitio', categoriaPorLink.size);
+
+    const mapeadas = unicas.map((t) => mapearTarjeta(t, categoriaPorLink.get(t.benefitCard?.linkUrl)));
     mapeadas.slice(0, 3).forEach((d) => debug('falabella:', JSON.stringify(d)));
     return mapeadas;
   }
