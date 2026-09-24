@@ -5,6 +5,30 @@
   "actualizado": "2026-09-24",
   "descuentos": [
     {
+      "id": "falabella-b0db02a150",
+      "establecimiento": "Especial Belleza con Fpuntos",
+      "descripcion": "hasta el 30 de septiembre",
+      "descuento": "Desde 5.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Salud y belleza",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/especial-belleza"
+    },
+    {
       "id": "falabella-2372896165",
       "establecimiento": "The Color Run",
       "descripcion": "Descuento en venta general",
@@ -3374,6 +3398,30 @@
       "url": "https://www.bancofalabella.cl/descuentos/detalle/primeclass-f-puntos"
     },
     {
+      "id": "falabella-39060a53d7",
+      "establecimiento": "Guau Fest",
+      "descripcion": "Exclusivo online",
+      "descuento": "20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Mascotas",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/guau-fest"
+    },
+    {
       "id": "falabella-924b3ade29",
       "establecimiento": "Petsmann",
       "descripcion": "Presencial",
@@ -4593,24 +4641,6 @@
       "url": "https://www.bancofalabella.cl/descuentos/detalle/especial-electrodomesticos"
     },
     {
-      "id": "falabella-21971e7b13",
-      "establecimiento": "Viaja Ya América",
-      "descripcion": "Este 24 de sept a las 11am",
-      "descuento": "Desde 160.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Viajes",
-      "dias_validos": [
-        "jueves"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-09-24",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/viaja-ya"
-    },
-    {
       "id": "falabella-580fcd79d6",
       "establecimiento": "Especial Audio con Fpuntos",
       "descripcion": "hasta el 30 de septiembre",
@@ -4633,30 +4663,6 @@
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/especial-audio"
-    },
-    {
-      "id": "falabella-b0db02a150",
-      "establecimiento": "Especial Belleza con Fpuntos",
-      "descripcion": "hasta el 30 de septiembre",
-      "descuento": "Desde 5.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Salud y belleza",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-09-30",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/especial-belleza"
     },
     {
       "id": "falabella-ebf32b3302",
@@ -4843,6 +4849,30 @@
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/dmng-nikkei"
+    },
+    {
+      "id": "falabella-afc1c4d246",
+      "establecimiento": "Terrazas",
+      "descripcion": "Hasta 26 de octubre",
+      "descuento": "6 CUOTAS SIN INTERÉS",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Hogar",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-25",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/6-csi-terrazas"
     }
   ]
 }

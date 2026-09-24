@@ -932,7 +932,7 @@
     {
       "id": "bci-fb8b72176f",
       "establecimiento": "Andesland",
-      "descripcion": "Aprovecha este descuento todos los viernes y sábados",
+      "descripcion": "Aprovecha este desc. todos los viernes y sábados",
       "descuento": "30% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
@@ -943,7 +943,7 @@
       ],
       "es_delivery": false,
       "terminos": "30% de descuento con tope $30.000 en compras presenciales. Para hacer efectivo el descuento Bci en tienda presencial, debes solicitarlo antes de realizar la compra. Hasta agotar stock. Los precios, calidad, estado y entrega de los productos y servicios ofrecidos son de exclusiva responsabilidad de los comercios adheridos, sin responsabilidad alguna de Bci en ello ni en la ulterior atención que se",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/aprovecha-este-descuento-todos-los-viernes-y-sabados-en-compras-presenciales-0ms8b0e"
@@ -1027,7 +1027,7 @@
       ],
       "es_delivery": false,
       "terminos": "Tesla tasa preferencial 0,49% para compras de 12 a 48 cuotas. Campaña Exlusiva pagando con Tarjeta de Crédito Bci, Black Signature o Infinite. Carga Anual Equivalente (CAE) de 6,47%, calculada aplicando una tasa de interés preferencial del 0,49% mensual sobre un monto de compra de $20.000.000 en 48 cuotas mensuales de $472.350. Costo Total del Crédito: $22.672.800. El monto de $160.000 corresponde",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tu-tesla-a-una-super-tasa-5r567c"
@@ -1845,7 +1845,7 @@
       ],
       "es_delivery": false,
       "terminos": "20% de descuento pagando con Tarjetas de Débito y Crédito Bci, con un tope de $20.000 por cliente al día. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descue",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/aprovecha-todos-los-dias-en-temuco-e3hr37l"
@@ -1864,7 +1864,7 @@
       ],
       "es_delivery": false,
       "terminos": "20% de descuento pagando con Tarjetas de Débito y Crédito Bci, con un tope de $20.000 por cliente al día. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descue",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/aprovecha-los-martes-y-miercoles-en-calama-vtspos"
@@ -2329,7 +2329,7 @@
       ],
       "es_delivery": false,
       "terminos": "40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci, Mastercard Business y Visa Business. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras pro",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/miercoles-arica-gzp7w89"
@@ -2347,7 +2347,7 @@
       ],
       "es_delivery": false,
       "terminos": "40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/viernes-antofagasta-u67bnbs"
@@ -2365,7 +2365,7 @@
       ],
       "es_delivery": false,
       "terminos": "40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci Mastercard Black, Visa Signature y Visa Infinite. Promoción incluye una cortesía de regalo. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utiliza",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/los-martes-en-paseo-los-dominicos-y-vivo-los-trapenses-x0o2gts"
@@ -2419,7 +2419,7 @@
       ],
       "es_delivery": false,
       "terminos": "40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/para-disfrutar-tu-escapada-en-pichilemu-5fhzh1"
@@ -2628,7 +2628,7 @@
       ],
       "es_delivery": false,
       "terminos": "25% de descuento pagando con Tarjetas de Débito y Crédito Bci, con un tope de $50.000 por cliente al día. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descue",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/de-martes-a-sabado-en-providencia-xj8u07j"
@@ -3488,7 +3488,7 @@
       ],
       "es_delivery": false,
       "terminos": "40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/en-concepcion-o5p6bib"
@@ -3947,7 +3947,7 @@
       ],
       "es_delivery": false,
       "terminos": "20% de descuento pagando con Tarjetas de Débito y Crédito Bci con tope de $20.000. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/vina-del-mar-3j7rrng"
@@ -4252,7 +4252,7 @@
       ],
       "es_delivery": false,
       "terminos": "20% de descuento pagando con Tarjetas de Débito y Crédito Bci con tope de $20.000. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/jueves-antofagasta-h8nnenq"
@@ -4270,7 +4270,7 @@
       ],
       "es_delivery": false,
       "terminos": "40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/nunoa-6ln4spe"
@@ -5258,8 +5258,8 @@
         "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Promoción exclusiva para personas naturales que paguen con sus Tarjetas de Crédito Bci en los establecimientos en campaña. 30% de descuento en toda la tienda Presencial y Online, sin tope. Para compra presencial debes solicitar el descuento Bci antes de realizar la compra. Para compra online, ingresa los 6 primeros dígitos de tu Tarjeta Bci como código de descuento al momento de pagar. No incluye",
-      "fecha_vencimiento": "2026-09-30",
+      "terminos": "Promoción exclusiva para personas naturales que paguen con sus Tarjetas de Crédito Bci en los establecimientos en campaña. 20% de descuento en toda la tienda Presencial y Online, sin tope. Para compra presencial debes solicitar el descuento Bci antes de realizar la compra. Para compra online, ingresa los 6 primeros dígitos de tu Tarjeta Bci como código de descuento al momento de pagar. No incluye",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/aprovecha-este-increible-beneficio-todos-los-dias-wydngj"
@@ -6563,7 +6563,7 @@
     {
       "id": "bci-795a4da435",
       "establecimiento": "Bebesit",
-      "descripcion": "Disfruta de este descuento adicional todos los días",
+      "descripcion": "Descuento adicional",
       "descuento": "10% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "ambas",
@@ -6579,7 +6579,7 @@
       ],
       "es_delivery": false,
       "terminos": "10% de descuento adicional en el total de la compra en Bebesit, GRACO, Nuna, Joie y en todos los productos de la tienda. Para compras online ingresa el cupón: BCI10 como código de descuento al momento de pagar. Hasta agotar stock. No incluye costo de envío. Se excluye venta en días Cyber, Black Friday. Los precios, calidad, estado y entrega de los productos y servicios ofrecidos son de exclusiva r",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/disfruta-10-por-ciento-de-desc.-adicional-todos-los-dias-di0y1o5"
