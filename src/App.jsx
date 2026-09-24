@@ -4,6 +4,9 @@ import { Capacitor } from '@capacitor/core';
 import PublicApp from './components/public/PublicApp';
 
 import { initialData } from './data/initialData.js';
+import datosIncluidos from './data/descuentos.json';
+import { combinarDatos } from './utils/descuentos';
+import { descargarDatos, leerCache, masReciente } from './utils/remoteData';
 import { hashDatos, cargarBorrador, guardarBorrador, descartarBorrador, limpiarClavesAntiguas } from './utils/storage';
 
 // El admin se carga bajo demanda: los usuarios de la app pública no descargan su código.
@@ -40,7 +43,21 @@ const CardDiscount = () => {
   const [currentView, setCurrentView] = useState('public');
   const [isLoggedIn, setIsLoggedIn] = useState(() => ADMIN_ENABLED && (!REQUIRES_LOGIN || readSession()));
 
-  // Borrador editable del admin. La vista pública siempre muestra initialData.
+  // Datos publicados: los incluidos en el build o, si hay, una versión más
+  // reciente descargada de GitHub (se actualizan solos cada día).
+  const [publicados, setPublicados] = useState(() => masReciente(datosIncluidos, leerCache()));
+
+  useEffect(() => {
+    let vigente = true;
+    descargarDatos().then((remotos) => {
+      if (vigente && remotos) setPublicados((actual) => masReciente(actual, remotos));
+    });
+    return () => {
+      vigente = false;
+    };
+  }, []);
+
+  // Borrador editable del admin (solo datos manuales de initialData.js).
   const [draft, setDraft] = useState(() => {
     if (!ADMIN_ENABLED) return initialData;
     return cargarBorrador(BASE_VERSION) || initialData;
@@ -92,8 +109,11 @@ const CardDiscount = () => {
 
   const openAdmin = () => setCurrentView(isLoggedIn ? 'admin' : 'login');
 
-  // En modo admin se previsualiza el borrador; si no, los datos publicados.
-  const datosPublicos = useMemo(() => (ADMIN_ENABLED ? draft : initialData), [draft]);
+  // En modo admin se previsualiza el borrador + lo scrapeado; si no, los datos publicados.
+  const datosPublicos = useMemo(() => {
+    if (!ADMIN_ENABLED) return publicados;
+    return combinarDatos(draft, publicados.descuentos.filter((d) => d.fuente));
+  }, [draft, publicados]);
 
   if (ADMIN_ENABLED && currentView === 'login' && !isLoggedIn) {
     return (
@@ -125,6 +145,7 @@ const CardDiscount = () => {
     <PublicApp
       bancos={datosPublicos.bancos}
       descuentos={datosPublicos.descuentos}
+      actualizado={publicados.generado}
       onLoginClick={openAdmin}
       showLoginButton={ADMIN_ENABLED}
     />

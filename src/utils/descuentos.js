@@ -115,12 +115,16 @@ export const getCategorias = (descuentos) =>
 
 export const nextId = (items) => Math.max(0, ...items.map((i) => Number(i.id) || 0)) + 1;
 
+/** Ids numéricos para datos manuales; ids de texto ("bci-3f9a1c") para datos scrapeados. */
+const normalizarId = (id) => (typeof id === 'string' && !/^\d+$/.test(id) ? id.trim() : Number(id));
+const idValido = (id) => (typeof id === 'string' ? id !== '' : Number.isFinite(id));
+
 // ---------------------------------------------------------------------------
 // Normalización y validación (usada por el import JSON y el generador de código)
 // ---------------------------------------------------------------------------
 
 export const normalizarBanco = (banco) => ({
-  id: Number(banco.id),
+  id: normalizarId(banco.id),
   nombre: String(banco.nombre ?? '').trim(),
   color: /^#[0-9a-f]{6}$/i.test(banco.color || '') ? banco.color : DEFAULT_BANCO_COLOR,
   logo_url: banco.logo_url || '',
@@ -129,8 +133,12 @@ export const normalizarBanco = (banco) => ({
 
 export const normalizarDescuento = (descuento) => {
   const dias = descuento.dias_validos || descuento.dias_semana || [];
+  const extra = {};
+  // Campos opcionales de los descuentos scrapeados
+  if (descuento.fuente) extra.fuente = String(descuento.fuente);
+  if (descuento.url) extra.url = String(descuento.url);
   return {
-    id: Number(descuento.id),
+    id: normalizarId(descuento.id),
     establecimiento: String(descuento.establecimiento ?? descuento.comercio ?? '').trim(),
     descripcion: String(descuento.descripcion ?? '').trim(),
     descuento: String(descuento.descuento ?? '').trim(),
@@ -141,7 +149,8 @@ export const normalizarDescuento = (descuento) => {
     es_delivery: Boolean(descuento.es_delivery),
     terminos: String(descuento.terminos ?? '').trim(),
     fecha_vencimiento: descuento.fecha_vencimiento || descuento.fecha_fin || '',
-    activo: descuento.activo !== false
+    activo: descuento.activo !== false,
+    ...extra
   };
 };
 
@@ -161,7 +170,7 @@ export const validarDatos = (entrada) => {
   const revisarIds = (items, tipo) => {
     const vistos = new Set();
     items.forEach((item, i) => {
-      if (!Number.isFinite(item.id)) errores.push(`${tipo} #${i + 1}: id inválido.`);
+      if (!idValido(item.id)) errores.push(`${tipo} #${i + 1}: id inválido.`);
       else if (vistos.has(item.id)) errores.push(`${tipo} #${i + 1}: id ${item.id} duplicado.`);
       vistos.add(item.id);
     });
@@ -181,4 +190,18 @@ export const validarDatos = (entrada) => {
   });
 
   return errores.length ? { datos: null, errores } : { datos: { bancos, descuentos }, errores };
+};
+
+/**
+ * Combina los datos manuales (initialData.js) con los descuentos scrapeados.
+ * Si un descuento scrapeado repite banco + comercio + texto de uno manual, se
+ * conserva solo el manual.
+ */
+export const combinarDatos = (manual, scrapeados) => {
+  const clave = (d) => [d.banco_nombre, d.establecimiento, d.descuento].map(normalizar).join('|');
+  const manuales = new Set(manual.descuentos.map(clave));
+  return {
+    bancos: manual.bancos,
+    descuentos: [...manual.descuentos, ...scrapeados.filter((d) => !manuales.has(clave(d)))]
+  };
 };

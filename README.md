@@ -32,6 +32,8 @@ npm run dev          # http://localhost:3000
 | `npm run lint`         | ESLint                                           |
 | `npm run check`        | Lint + tests + build (lo mismo que corre el CI)  |
 | `npm run android:sync` | Build + copia al proyecto Android                |
+| `npm run scrape`       | Ejecuta los scrapers de bancos                   |
+| `npm run data`         | Combina datos manuales + scrapeados              |
 
 ## Cómo se actualizan los datos
 
@@ -44,6 +46,28 @@ Los datos publicados viven en **`src/data/initialData.js`** y se empaquetan dent
 5. Publica: `npm run build` para la web, o `npm run android:sync` y luego `npx cap build android` para la APK.
 
 Cuando `initialData.js` cambia, el borrador anterior se descarta y se usan los datos nuevos. Si tienes cambios sin publicar, primero usa **📥 Exportar** para guardar un respaldo.
+
+## Actualización automática (scraping)
+
+Todos los días, a las ~08:00 hora de Chile, GitHub Actions ejecuta [`actualizar-descuentos.yml`](.github/workflows/actualizar-descuentos.yml):
+
+1. **Scrapea** los sitios de beneficios de los bancos (`scripts/scrape/bancos/*.mjs`) y guarda un archivo por banco en `data/scraped/`.
+2. **Combina** esos datos con los manuales de `initialData.js` y genera `src/data/descuentos.json` (`npm run data`).
+3. **Verifica** los datos con los tests y, si hubo cambios, hace commit en `master`.
+
+La web y la APK descargan `descuentos.json` desde GitHub cada vez que se abren, así que **los usuarios ven los descuentos nuevos sin que tengas que publicar otra versión**. Sin internet, usan la última copia guardada o los datos incluidos en el build.
+
+**Protecciones.** Si el scraper de un banco falla, trae 0 descuentos, baja a menos de la mitad de lo que había o trae más de un 30% de datos incompletos, se **conservan los datos anteriores** de ese banco. En ese caso se abre un issue en GitHub con la etiqueta `scraper` para avisarte, y se cierra solo cuando el banco vuelve a funcionar.
+
+Comandos útiles:
+
+```bash
+npm run scrape            # todos los bancos
+npm run scrape -- bci     # solo uno
+npm run data              # regenerar descuentos.json
+```
+
+Para ejecutarlo a mano en GitHub: pestaña **Actions** → **Actualizar descuentos** → **Run workflow**.
 
 ## Panel admin y seguridad
 

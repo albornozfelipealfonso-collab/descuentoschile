@@ -21,7 +21,10 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "check": "npm run lint && npm test && npm run build",
-    "android:sync": "npm run build && cap sync android"
+    "android:sync": "npm run build && cap sync android",
+    "prebuild": "node scripts/build-data.mjs",
+    "scrape": "node scripts/scrape/index.mjs",
+    "data": "node scripts/build-data.mjs"
   },
   "devDependencies": {
     "@capacitor/cli": "^7.4.2",

@@ -69,6 +69,17 @@ const DescuentoCard = ({ descuento }) => {
         </p>
       )}
 
+      {descuento.url && (
+        <a
+          href={descuento.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 text-xs text-blue-600 hover:underline"
+        >
+          Ver condiciones en el sitio del banco ↗
+        </a>
+      )}
+
       {descuento.fecha_vencimiento && (
         <p className="mt-2 text-xs text-red-500">Válido hasta: {formatFecha(descuento.fecha_vencimiento)}</p>
       )}

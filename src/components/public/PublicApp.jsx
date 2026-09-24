@@ -8,7 +8,7 @@ import FilterModal from './FilterModal';
 
 const FILTRO_LABEL = { banco: 'Banco', tipo: 'Tarjeta', dia: 'Día', categoria: 'Categoría' };
 
-const PublicApp = ({ bancos = [], descuentos = [], onLoginClick, showLoginButton }) => {
+const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, showLoginButton }) => {
   const [filtros, setFiltros] = useState(() => ({ ...FILTROS_INICIALES, dia: getDiaActual() }));
   const [busqueda, setBusqueda] = useState('');
   const [mostrarFiltros, setMostrarFiltros] = useState(false);
@@ -149,6 +149,12 @@ const PublicApp = ({ bancos = [], descuentos = [], onLoginClick, showLoginButton
           </>
         )}
       </main>
+
+      {actualizado && (
+        <footer className="text-center text-white/50 text-xs pb-6">
+          Datos actualizados el {new Date(actualizado).toLocaleDateString('es-CL', { day: 'numeric', month: 'long', year: 'numeric' })}
+        </footer>
+      )}
     </div>
   );
 };

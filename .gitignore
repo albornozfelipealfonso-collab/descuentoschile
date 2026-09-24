@@ -36,3 +36,6 @@ android/local.properties
 android/app/src/main/assets/public
 *.keystore
 *.jks
+
+# Resumen temporal del scraper
+data/scraped/_resumen.json
