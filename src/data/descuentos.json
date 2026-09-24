@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-09-24T05:15:40.388Z",
+  "generado": "2026-09-24T05:18:06.401Z",
   "bancos": [
     {
       "id": 1,
@@ -7954,7 +7954,7 @@
     },
     {
       "id": "falabella-62c094c376",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Restaurante Chuck E. Cheese",
       "descripcion": "Exclusivo presencial",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8455,7 +8455,7 @@
     },
     {
       "id": "falabella-e99a372bf4",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Sicily Pizzería",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8473,7 +8473,7 @@
     },
     {
       "id": "falabella-e2ce3017fa",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Pristino",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -8491,7 +8491,7 @@
     },
     {
       "id": "falabella-6555dd27c2",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Bistro Cascade",
       "descripcion": "Exclusivo presencial en BordeRío",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8509,7 +8509,7 @@
     },
     {
       "id": "falabella-43de68479b",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Kechua",
       "descripcion": "Exclusivo presencial en BordeRío",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8527,7 +8527,7 @@
     },
     {
       "id": "falabella-7fc25d53bd",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Krossbar",
       "descripcion": "Exclusivo presencial en BordeRío",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8545,7 +8545,7 @@
     },
     {
       "id": "falabella-bc6c10fc72",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La Tabla",
       "descripcion": "Exclusivo presencial en BordeRío",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8563,7 +8563,7 @@
     },
     {
       "id": "falabella-550b82f5b7",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Nelí",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8581,7 +8581,7 @@
     },
     {
       "id": "falabella-847b86d161",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Tropera Drugstore",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -8599,7 +8599,7 @@
     },
     {
       "id": "falabella-cfe26d2b3a",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Local Burger",
       "descripcion": "Presencial y Online",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8617,7 +8617,7 @@
     },
     {
       "id": "falabella-c45f4aed54",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Zulu",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -8635,7 +8635,7 @@
     },
     {
       "id": "falabella-196db95207",
-      "establecimiento": "Restaurante",
+      "establecimiento": "ROCOTO",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8653,7 +8653,7 @@
     },
     {
       "id": "falabella-15209726fc",
-      "establecimiento": "Restaurante",
+      "establecimiento": "PF Chang's",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8671,7 +8671,7 @@
     },
     {
       "id": "falabella-be994bee61",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Chili's",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8689,7 +8689,7 @@
     },
     {
       "id": "falabella-2d11f2a574",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La Maestranza",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8709,7 +8709,7 @@
     },
     {
       "id": "falabella-afd7264aba",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La santoría",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8731,7 +8731,7 @@
     },
     {
       "id": "falabella-30c6db7fa4",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Barra Olivo",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -8749,7 +8749,7 @@
     },
     {
       "id": "falabella-87e14318ee",
-      "establecimiento": "Restaurante",
+      "establecimiento": "De Barrio",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8770,7 +8770,7 @@
     },
     {
       "id": "falabella-1dea2712a2",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Vapiano",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8792,7 +8792,7 @@
     },
     {
       "id": "falabella-99714ff84a",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Paris texas",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8813,7 +8813,7 @@
     },
     {
       "id": "falabella-3b9c9b37cc",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La patrona",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8834,7 +8834,7 @@
     },
     {
       "id": "falabella-cb52d3a792",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Vendetta",
       "descripcion": "Presencial en locales seleccionados",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8855,7 +8855,7 @@
     },
     {
       "id": "falabella-393cc83bc1",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Tigre Bravo",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8873,7 +8873,7 @@
     },
     {
       "id": "falabella-e323f1d511",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Danés",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8891,7 +8891,7 @@
     },
     {
       "id": "falabella-fd4a160153",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Exò Nuit",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -8913,7 +8913,7 @@
     },
     {
       "id": "falabella-858d3b0a49",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Berlín Doner Kebab",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8932,7 +8932,7 @@
     },
     {
       "id": "falabella-e05ee5544c",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Cantina Montt",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8951,7 +8951,7 @@
     },
     {
       "id": "falabella-a24e93a5b2",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Cantina Varas",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8974,7 +8974,7 @@
     },
     {
       "id": "falabella-5ce9194605",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Kento Gourmet",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -8995,7 +8995,7 @@
     },
     {
       "id": "falabella-e403a6df34",
-      "establecimiento": "Restaurante",
+      "establecimiento": "MISCELANEO",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9017,7 +9017,7 @@
     },
     {
       "id": "falabella-f68a42d8de",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Kato",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9036,7 +9036,7 @@
     },
     {
       "id": "falabella-b476ba3373",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Cabrera al Paso",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9060,7 +9060,7 @@
     },
     {
       "id": "falabella-fa8f340ec7",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Udon",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -9084,7 +9084,7 @@
     },
     {
       "id": "falabella-944374e11f",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Siete cortes",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9108,7 +9108,7 @@
     },
     {
       "id": "falabella-01d78e25ff",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Badass",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9132,7 +9132,7 @@
     },
     {
       "id": "falabella-a2dd021fe0",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Barra Chalaca",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9156,7 +9156,7 @@
     },
     {
       "id": "falabella-3f522e4dba",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Ekeko",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9180,7 +9180,7 @@
     },
     {
       "id": "falabella-7f5d23d539",
-      "establecimiento": "Restaurante",
+      "establecimiento": "El Bodegon",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9204,7 +9204,7 @@
     },
     {
       "id": "falabella-3a6c0d6024",
-      "establecimiento": "Restaurante",
+      "establecimiento": "El japones",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9228,7 +9228,7 @@
     },
     {
       "id": "falabella-147b54dbaa",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Enrique Tomás",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9252,7 +9252,7 @@
     },
     {
       "id": "falabella-dcea7c8bbf",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Frida Kahlo",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9276,7 +9276,7 @@
     },
     {
       "id": "falabella-4c86ab9737",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Fuente Suiza",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -9300,7 +9300,7 @@
     },
     {
       "id": "falabella-6229e3a7c0",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Jalisco",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9324,7 +9324,7 @@
     },
     {
       "id": "falabella-43ed1b874e",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Kairos garden",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9343,7 +9343,7 @@
     },
     {
       "id": "falabella-14b946a39b",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La argentina",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9367,7 +9367,7 @@
     },
     {
       "id": "falabella-937a0fa34c",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La piazza",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9391,7 +9391,7 @@
     },
     {
       "id": "falabella-6873c290a0",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La sanguchera del barrio",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9415,7 +9415,7 @@
     },
     {
       "id": "falabella-75f6e476fc",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Mamma mia",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9439,7 +9439,7 @@
     },
     {
       "id": "falabella-28a6422205",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Meson del marinero",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9463,7 +9463,7 @@
     },
     {
       "id": "falabella-1795513c89",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Milá",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9487,7 +9487,7 @@
     },
     {
       "id": "falabella-fd60c28fee",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Mamut",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9511,7 +9511,7 @@
     },
     {
       "id": "falabella-bc114772d9",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Muu grill",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9535,7 +9535,7 @@
     },
     {
       "id": "falabella-9bb10a0142",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Muu Steak",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -9554,7 +9554,7 @@
     },
     {
       "id": "falabella-05bc0c7d2c",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Take a wok",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9578,7 +9578,7 @@
     },
     {
       "id": "falabella-b6da393554",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Tanta",
       "descripcion": "Presencial. Revisa día según local",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9602,7 +9602,7 @@
     },
     {
       "id": "falabella-0ecd2b47ca",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Petit",
       "descripcion": "Presencial",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9626,7 +9626,7 @@
     },
     {
       "id": "falabella-d758d81911",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Sushi & Burger Home",
       "descripcion": "Presencial en Viña del Mar y Reñaca",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9644,7 +9644,7 @@
     },
     {
       "id": "falabella-fabbfca50d",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Sushi Home",
       "descripcion": "Presencial en Reñaca",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9662,7 +9662,7 @@
     },
     {
       "id": "falabella-941edec590",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Lebol Restobar",
       "descripcion": "Presencial en Concepción",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -9680,7 +9680,7 @@
     },
     {
       "id": "falabella-462599d070",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Augusta Bar",
       "descripcion": "Presencial en Concepción",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9698,7 +9698,7 @@
     },
     {
       "id": "falabella-894474394b",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Terraangamos",
       "descripcion": "Presencial en Talcahuano",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -9716,7 +9716,7 @@
     },
     {
       "id": "falabella-3f3215c12b",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Boreal bar Rancagua",
       "descripcion": "Presencial en Rancagua",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9740,7 +9740,7 @@
     },
     {
       "id": "falabella-7b466e0ee5",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La Fabrica Talca",
       "descripcion": "Presencial en Talca",
       "descuento": "Hasta 40 Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9758,7 +9758,7 @@
     },
     {
       "id": "falabella-ca00b23d73",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Cervecería Kunstmann Valdivia",
       "descripcion": "Presencial en Valdivia",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9776,7 +9776,7 @@
     },
     {
       "id": "falabella-c492ccfcd1",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La Independiente Puerto Varas",
       "descripcion": "Domingo en Puerto Varas",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9794,7 +9794,7 @@
     },
     {
       "id": "falabella-34693f99d2",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Greed Taproom",
       "descripcion": "Presencial en Osorno",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9812,7 +9812,7 @@
     },
     {
       "id": "falabella-1beb090fac",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Nomade Nikkei",
       "descripcion": "Presencial en Buin",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9830,7 +9830,7 @@
     },
     {
       "id": "falabella-cbbcf9f233",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Terralomas Concepción",
       "descripcion": "Presencial en Concepción",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -9848,7 +9848,7 @@
     },
     {
       "id": "falabella-d3d859a7f2",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Baqueano Temuco",
       "descripcion": "Presencial en Temuco",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9866,7 +9866,7 @@
     },
     {
       "id": "falabella-161f95cf21",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Dominga Bistro Valdivia",
       "descripcion": "Presencial en Valdivia",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9884,7 +9884,7 @@
     },
     {
       "id": "falabella-6f0fbdca8a",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Dominga Bistro Pucón",
       "descripcion": "Presencial en Pucon",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9920,7 +9920,7 @@
     },
     {
       "id": "falabella-b9677b92d9",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Roberta Ostería",
       "descripcion": "Presencial Viña y Reñaca",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9938,7 +9938,7 @@
     },
     {
       "id": "falabella-7a3d3f376d",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Cattedrale Cucina Villarrica",
       "descripcion": "Presencial en Villarrica",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9956,7 +9956,7 @@
     },
     {
       "id": "falabella-80c7f23dd3",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Taurus Steak Bar Chillan",
       "descripcion": "Presencial en Chillan",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9980,7 +9980,7 @@
     },
     {
       "id": "falabella-3e565eaf18",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Martina Lounge Bar",
       "descripcion": "Presencial en Temuco",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -9998,7 +9998,7 @@
     },
     {
       "id": "falabella-de30762fac",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Mamma Gaucha Coyhaique",
       "descripcion": "Jueves en Coyhaique",
       "descuento": "40% Descuento",
       "banco_nombre": "Banco Falabella",
@@ -10016,7 +10016,7 @@
     },
     {
       "id": "falabella-0dcf35c313",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Fratello Trattoría",
       "descripcion": "Presencial en Temuco",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10034,7 +10034,7 @@
     },
     {
       "id": "falabella-f025ebb8f0",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Fogon Greed",
       "descripcion": "Presencial en Osorno",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10052,7 +10052,7 @@
     },
     {
       "id": "falabella-be068d5843",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Barros Negros",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10070,7 +10070,7 @@
     },
     {
       "id": "falabella-409d2087f3",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Umami Bar Nikkei",
       "descripcion": "Presencial en Valdivia",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10106,7 +10106,7 @@
     },
     {
       "id": "falabella-ffe427cb52",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Tololo Beach",
       "descripcion": "Presencial en La Serena",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10124,7 +10124,7 @@
     },
     {
       "id": "falabella-be2fbd600c",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Sello de Raza",
       "descripcion": "Presencial en Valdivia",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10142,7 +10142,7 @@
     },
     {
       "id": "falabella-f481af7ebd",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Cafe Haussmann",
       "descripcion": "Presencial en Valdivia",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10160,7 +10160,7 @@
     },
     {
       "id": "falabella-03dda8df60",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Tololo Beef",
       "descripcion": "Presencial en La Serena",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10178,7 +10178,7 @@
     },
     {
       "id": "falabella-ea6fcdc3b2",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Sempre Pasta",
       "descripcion": "Presencial en Concepción",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10196,7 +10196,7 @@
     },
     {
       "id": "falabella-d794d0c69d",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Naoki",
       "descripcion": "Exclusivo Tarjeta CMR Elite",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10214,7 +10214,7 @@
     },
     {
       "id": "falabella-ab4b9e7ee6",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Dagan",
       "descripcion": "Presencial con CMR Elite",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10232,7 +10232,7 @@
     },
     {
       "id": "falabella-5e22987368",
-      "establecimiento": "Restaurante",
+      "establecimiento": "La Dicha",
       "descripcion": "Presencial con CMR Elite",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10250,7 +10250,7 @@
     },
     {
       "id": "falabella-5589974356",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Sabor y Aroma",
       "descripcion": "Exclusivo Tarjeta CMR Elite",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10268,7 +10268,7 @@
     },
     {
       "id": "falabella-43d8a3a11b",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Caoba Bar",
       "descripcion": "Exclusivo presencial",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10286,7 +10286,7 @@
     },
     {
       "id": "falabella-6c56ba6eaf",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Social",
       "descripcion": "Exclusivo Tarjeta CMR Elite",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10304,7 +10304,7 @@
     },
     {
       "id": "falabella-792d230ee8",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Panchita",
       "descripcion": "Presencial hasta las 17:00",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10326,7 +10326,7 @@
     },
     {
       "id": "falabella-669e1dfad8",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Don Carlos",
       "descripcion": "Presencial con CMR Elite",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10344,7 +10344,7 @@
     },
     {
       "id": "falabella-682115d366",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Hijo Del Sol Santiago",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10368,7 +10368,7 @@
     },
     {
       "id": "falabella-92e04825e0",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Chokolata Cafeteria",
       "descripcion": "Presencial en Villarrica",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10386,7 +10386,7 @@
     },
     {
       "id": "falabella-6725b76e24",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Sakura",
       "descripcion": "En rolls y hosomakis",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -10404,7 +10404,7 @@
     },
     {
       "id": "falabella-91d96ae37d",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Club de restaurantes",
       "descripcion": "Exclusivo presencial",
       "descuento": "Desde 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -12048,7 +12048,7 @@
     },
     {
       "id": "falabella-4948ba6724",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Cuponera Gastronómica",
       "descripcion": "Exclusivo con tus tarjetas",
       "descuento": "Hasta 40% dcto Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -12210,7 +12210,7 @@
     },
     {
       "id": "falabella-6b3d21b0c6",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Kila Coffee",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin tope",
       "banco_nombre": "Banco Falabella",
@@ -12246,7 +12246,7 @@
     },
     {
       "id": "falabella-39f9d92bc5",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Hijo Del Sol 5ta Region",
       "descripcion": "Presencial Maitencillo y Algarrobo",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -12595,7 +12595,7 @@
     },
     {
       "id": "falabella-a104217bfe",
-      "establecimiento": "Restaurante",
+      "establecimiento": "Dmng Nikkei",
       "descripcion": "Exclusivo presencial",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
