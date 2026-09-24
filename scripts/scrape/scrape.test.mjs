@@ -103,6 +103,17 @@ describe('Falabella', () => {
     });
   });
 
+  it('prefiere el título de la tarjeta y no repite el descuento en la descripción', () => {
+    const d = mapearTarjeta({
+      ...item,
+      benefitTitle: '¡Un eslogan largo!',
+      benefitCard: { ...item.benefitCard, title: 'Dcto Tito el Bambino', description: '30% dcto', centerDiscountText: '30%', bottomDiscountText: 'DCTO' }
+    });
+    expect(d.establecimiento).toBe('Tito el Bambino');
+    expect(d.descuento).toBe('30% dcto');
+    expect(d.descripcion).toBe('');
+  });
+
   it('ignora las referencias internas de Next.js', () => {
     const d = mapearTarjeta({ ...item, creditCards: '$28:props:benefitCardsData:0:creditCards', benefitTitle: '$28:x' });
     expect(d.tipo_tarjeta).toBe('credito');

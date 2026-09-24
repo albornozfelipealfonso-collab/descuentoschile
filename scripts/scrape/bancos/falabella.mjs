@@ -68,8 +68,9 @@ const tipoDeTarjetas = (tarjetas) => {
 export const mapearTarjeta = (item) => {
   const card = item.benefitCard || {};
   const titulo = limpiarTexto(valor(card.title));
+  // El título de la tarjeta ("Dcto en Doggis") es más fiable que benefitTitle, que a veces es un eslogan
   const establecimiento =
-    limpiarTexto(valor(item.benefitTitle)) || titulo.replace(/^(dcto\.?|descuento|beneficio)\s+((en|de|del)\s+)?/i, '');
+    titulo.replace(/^(dcto\.?|descuento|beneficios?)\s+((en|de|del)\s+)?/i, '').trim() || limpiarTexto(valor(item.benefitTitle));
   const descuento = [card.topDiscountText, card.centerDiscountText, card.bottomDiscountText]
     .map((v) => limpiarTexto(valor(v)))
     .filter(Boolean)
@@ -83,7 +84,7 @@ export const mapearTarjeta = (item) => {
     id: idEstable('falabella', link || `${establecimiento}|${descuento}`),
     establecimiento,
     descuento: descuento || titulo,
-    descripcion: limpiarTexto(valor(card.description)),
+    descripcion: normalizar(valor(card.description)) === normalizar(descuento) ? '' : limpiarTexto(valor(card.description)),
     tipo_tarjeta: tipoDeTarjetas(item.creditCards),
     categoria: inferirCategoria(establecimiento, titulo, valor(card.description)),
     dias_validos: dias.length ? dias : [...DIAS_SEMANA],
