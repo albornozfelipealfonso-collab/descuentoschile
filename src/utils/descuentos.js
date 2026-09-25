@@ -31,6 +31,9 @@ export const toISODate = (fecha = new Date()) => {
   return `${y}-${m}-${d}`;
 };
 
+/** Último día del mes de `fecha` en formato YYYY-MM-DD. */
+export const finDeMes = (fecha = new Date()) => toISODate(new Date(fecha.getFullYear(), fecha.getMonth() + 1, 0));
+
 /** Un descuento sin fecha de vencimiento siempre está vigente. */
 export const estaVigente = (descuento, hoy = toISODate()) =>
   !descuento?.fecha_vencimiento || descuento.fecha_vencimiento >= hoy;
@@ -414,6 +417,10 @@ export const validarDatos = (entrada) => {
  * Si un descuento scrapeado repite uno manual (mismo banco, comercio, cifra y
  * días, aunque el texto esté escrito distinto) se conserva solo el manual, pero
  * completado con lo que traiga el banco y le falte (logo, enlace, vencimiento).
+ *
+ * Los manuales sin fecha de vencimiento no se publican: nadie los actualiza
+ * y quedarían para siempre (los de los bancos se renuevan cada día). Se
+ * devuelven aparte en `sinFecha` para avisar.
  */
 export const combinarDatos = (manual, scrapeados) => {
   const clave = (d) => {
@@ -430,9 +437,12 @@ export const combinarDatos = (manual, scrapeados) => {
     if (!m.url && s.url) completo.url = s.url;
     return completo;
   });
-  const clavesManuales = new Set(manual.descuentos.map(clave));
+  const publicados = manuales.filter((d) => d.fecha_vencimiento);
+  // Solo un manual que se publica tapa al del banco; si no, se pierden los dos
+  const clavesManuales = new Set(publicados.map(clave));
   return {
     bancos: manual.bancos,
-    descuentos: [...manuales, ...scrapeados.filter((d) => !clavesManuales.has(clave(d)))]
+    descuentos: [...publicados, ...scrapeados.filter((d) => !clavesManuales.has(clave(d)))],
+    sinFecha: manuales.filter((d) => !d.fecha_vencimiento)
   };
 };

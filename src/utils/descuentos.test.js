@@ -21,6 +21,7 @@ import {
   combinarDatos,
   coincideConTarjetas,
   contarTarjetas,
+  finDeMes,
   FILTROS_INICIALES
 } from './descuentos';
 import { hashDatos } from './storage';
@@ -308,5 +309,33 @@ describe('masReciente (datos al abrir la app)', () => {
     expect(masReciente(nuevo, viejo)).toBe(nuevo);
     expect(masReciente(null, { descuentos: [] })).toEqual({ descuentos: [] });
     expect(masReciente(viejo, null)).toBe(viejo);
+  });
+});
+
+describe('solo descuentos con vigencia', () => {
+  it('los manuales sin fecha de vencimiento no se publican', () => {
+    const manual = {
+      bancos: [],
+      descuentos: [
+        d({ id: 1, establecimiento: 'Rappi', fecha_vencimiento: '' }),
+        d({ id: 2, establecimiento: 'Rappi', descuento: '10% dcto', fecha_vencimiento: '2026-09-30' })
+      ]
+    };
+    const { descuentos, sinFecha } = combinarDatos(manual, [d({ id: 'bci-1', fuente: 'bci', establecimiento: 'Jumbo' })]);
+    expect(descuentos.map((x) => x.id)).toEqual([2, 'bci-1']);
+    expect(sinFecha.map((x) => x.id)).toEqual([1]);
+  });
+  it('finDeMes', () => {
+    expect(finDeMes(new Date(2026, 8, 25))).toBe('2026-09-30');
+    expect(finDeMes(new Date(2026, 1, 3))).toBe('2026-02-28');
+    expect(finDeMes(new Date(2026, 11, 31))).toBe('2026-12-31');
+  });
+});
+
+describe('manual sin fecha repetido con uno del banco', () => {
+  it('se publica el del banco', () => {
+    const manual = { bancos: [], descuentos: [d({ id: 1, banco_nombre: 'MACH', establecimiento: 'PedidosYa', descuento: '40%' })] };
+    const delBanco = d({ id: 'mach-1', banco_nombre: 'MACH', establecimiento: 'Pedidos Ya', descuento: '40% de descuento' });
+    expect(combinarDatos(manual, [delBanco]).descuentos.map((x) => x.id)).toEqual(['mach-1']);
   });
 });
