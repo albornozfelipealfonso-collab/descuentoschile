@@ -1,102 +1,109 @@
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    @apply font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
   }
-  
+
   body {
-    @apply bg-gray-900 text-white;
+    @apply bg-ink-950 text-fg;
+  }
+
+  ::selection {
+    @apply bg-volt text-ink-950;
+  }
+
+  :focus-visible {
+    @apply outline outline-1 outline-offset-2 outline-volt;
   }
 }
 
 @layer components {
-  .card-gradient {
-    @apply bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg border border-white/20;
+  /* Etiqueta técnica: mono, mayúsculas, espaciada */
+  .rotulo {
+    @apply font-mono text-[11px] uppercase tracking-[0.12em];
   }
-  
-  .btn-primary {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl;
+
+  /* Fondo con cuadrícula tenue y un resplandor del acento arriba */
+  .fondo-grilla {
+    background-color: theme('colors.ink.950');
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgb(212 255 58 / 0.07), transparent 60%),
+      linear-gradient(to right, rgb(255 255 255 / 0.028) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.028) 1px, transparent 1px);
+    background-size: 100% 100%, 48px 48px, 48px 48px;
+    background-attachment: fixed;
   }
-  
-  .btn-secondary {
-    @apply bg-white/10 text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-all duration-200 backdrop-blur-lg border border-white/20;
+
+  /* Esquinas tipo visor que aparecen al pasar el cursor */
+  .visor {
+    position: relative;
   }
-  
-  .input-field {
-    @apply w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:border-white/40 backdrop-blur-lg transition-all duration-200;
+  .visor::before,
+  .visor::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-color: theme('colors.volt.DEFAULT');
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none;
   }
-  
-  .select-field {
-    @apply w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/40 backdrop-blur-lg transition-all duration-200;
+  .visor::before {
+    top: -1px;
+    left: -1px;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    transform: translate(3px, 3px);
+  }
+  .visor::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    transform: translate(-3px, -3px);
+  }
+  .visor:hover::before,
+  .visor:hover::after,
+  .visor:focus-within::before,
+  .visor:focus-within::after {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 
 @layer utilities {
-  .text-shadow {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .glass {
-    @apply bg-white/10 backdrop-blur-lg border border-white/20;
-  }
-  
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
-}
 
-/* Animaciones personalizadas */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .tabular {
+    font-variant-numeric: tabular-nums;
   }
 }
 
-.animate-fadeInUp {
-  animation: fadeInUp 0.6s ease-out;
-}
-
-/* Estilos para formularios */
 select option {
-  @apply bg-gray-800 text-white;
+  @apply bg-ink-900 text-fg;
 }
 
-/* Estilos para checkboxes */
-input[type="checkbox"] {
-  @apply w-4 h-4 text-blue-600 bg-white/10 border-white/30 rounded focus:ring-blue-500 focus:ring-2;
-}
-
-/* Responsive table */
-@media (max-width: 768px) {
-  .table-responsive {
-    @apply block overflow-x-auto whitespace-nowrap;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
-}
-
-/* Loading spinner */
-.spinner {
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  border-top: 3px solid #fff;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
