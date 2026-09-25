@@ -19,9 +19,12 @@ import {
   iniciales,
   extraerCodigo,
   combinarDatos,
+  coincideConTarjetas,
+  contarTarjetas,
   FILTROS_INICIALES
 } from './descuentos';
 import { hashDatos } from './storage';
+import { masReciente } from './remoteData';
 import { initialData } from '../data/initialData.js';
 
 const base = {
@@ -278,5 +281,32 @@ describe('ficha de detalle', () => {
     const { descuentos } = combinarDatos(manual, [delBanco]);
     expect(descuentos).toHaveLength(1);
     expect(descuentos[0]).toMatchObject({ id: 1, logo: 'https://x/logo.png', url: 'https://machbank.cl', fecha_vencimiento: '2026-12-31' });
+  });
+});
+
+describe('mis tarjetas', () => {
+  const tarjetas = { bci: { debito: false, credito: true }, mach: { debito: true, credito: false } };
+  it('coincideConTarjetas respeta banco y tipo de tarjeta', () => {
+    expect(coincideConTarjetas(d({ banco_nombre: 'BCI', tipo_tarjeta: 'credito' }), tarjetas)).toBe(true);
+    expect(coincideConTarjetas(d({ banco_nombre: 'BCI', tipo_tarjeta: 'debito' }), tarjetas)).toBe(false);
+    expect(coincideConTarjetas(d({ banco_nombre: 'Bci', tipo_tarjeta: 'ambas' }), tarjetas)).toBe(true);
+    expect(coincideConTarjetas(d({ banco_nombre: 'Banco de Chile', tipo_tarjeta: 'ambas' }), tarjetas)).toBe(false);
+    expect(coincideConTarjetas(d({ banco_nombre: 'BCI' }), {})).toBe(false);
+  });
+  it('contarTarjetas cuenta débito y crédito por separado', () => {
+    expect(contarTarjetas(tarjetas)).toBe(2);
+    expect(contarTarjetas({ bci: { debito: true, credito: true } })).toBe(2);
+    expect(contarTarjetas(null)).toBe(0);
+  });
+});
+
+describe('masReciente (datos al abrir la app)', () => {
+  const viejo = { generado: '2026-09-01T00:00:00Z' };
+  const nuevo = { generado: '2026-09-24T00:00:00Z' };
+  it('elige el más reciente y, sin copia previa, el que llegue', () => {
+    expect(masReciente(viejo, nuevo)).toBe(nuevo);
+    expect(masReciente(nuevo, viejo)).toBe(nuevo);
+    expect(masReciente(null, { descuentos: [] })).toEqual({ descuentos: [] });
+    expect(masReciente(viejo, null)).toBe(viejo);
   });
 });

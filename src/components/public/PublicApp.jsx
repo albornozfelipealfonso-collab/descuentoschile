@@ -1,10 +1,12 @@
 // src/components/public/PublicApp.jsx
 import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react';
-import { Lock, Search, SlidersHorizontal, X } from 'lucide-react';
+import { CreditCard, Lock, Search, SlidersHorizontal, X } from 'lucide-react';
 import { useIsMobile, useFilteredDescuentos, useDebouncedValue } from '../shared/hooks';
 import {
   asignarLogos,
+  coincideConTarjetas,
   contarOpciones,
+  contarTarjetas,
   enriquecerConBanco,
   getDiaActual,
   normalizar,
@@ -14,6 +16,8 @@ import {
 import DescuentoCard from './DescuentoCard';
 import DescuentoDetalle from './DescuentoDetalle';
 import FilterModal from './FilterModal';
+import MisTarjetas from './MisTarjetas';
+import { guardarMisTarjetas, leerMisTarjetas } from '../../utils/storage';
 
 const POR_PAGINA = 60;
 
@@ -34,7 +38,7 @@ const Logo = () => (
   </div>
 );
 
-const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, showLoginButton }) => {
+const PublicApp = ({ bancos = [], descuentos = [], cargando = false, actualizado, onLoginClick, showLoginButton }) => {
   const hoy = getDiaActual();
   // Al abrir se muestran los descuentos de hoy
   const inicio = useMemo(() => ({ ...FILTROS_INICIALES, dia: hoy }), [hoy]);
@@ -49,13 +53,42 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
 
   const bancosActivos = useMemo(() => bancos.filter((b) => b.activo !== false), [bancos]);
   const descuentosConBanco = useMemo(() => asignarLogos(enriquecerConBanco(descuentos, bancos)), [descuentos, bancos]);
-  const descuentosFiltrados = useFilteredDescuentos(descuentosConBanco, filtros, busquedaEfectiva);
+
+  // Mis tarjetas: si el usuario marcó las suyas, por defecto ve solo esos descuentos
+  const [mis, setMis] = useState(() => leerMisTarjetas() || { tarjetas: {}, soloMias: true });
+  const [mostrarTarjetas, setMostrarTarjetas] = useState(false);
+  const cantidadTarjetas = contarTarjetas(mis.tarjetas);
+  const soloMias = cantidadTarjetas > 0 && mis.soloMias;
+  const actualizarMis = (siguiente) => {
+    setMis(siguiente);
+    guardarMisTarjetas(siguiente.tarjetas, siguiente.soloMias);
+  };
+  const guardarTarjetas = (tarjetas) => {
+    actualizarMis({ tarjetas, soloMias: true });
+    setMostrarTarjetas(false);
+  };
+  const cerrarTarjetas = useCallback(() => setMostrarTarjetas(false), []);
+  // Bancos con descuentos, para elegir tarjetas
+  const bancosConDescuentos = useMemo(() => {
+    const conteo = new Map();
+    descuentosConBanco.forEach((d) => conteo.set(normalizar(d.banco_nombre), (conteo.get(normalizar(d.banco_nombre)) || 0) + 1));
+    return bancosActivos
+      .map((b) => ({ ...b, banco_color: b.color, cantidad: conteo.get(normalizar(b.nombre)) || 0 }))
+      .filter((b) => b.cantidad > 0)
+      .sort((a, b) => b.cantidad - a.cantidad || a.nombre.localeCompare(b.nombre, 'es'));
+  }, [descuentosConBanco, bancosActivos]);
+
+  const base = useMemo(
+    () => (soloMias ? descuentosConBanco.filter((d) => coincideConTarjetas(d, mis.tarjetas)) : descuentosConBanco),
+    [descuentosConBanco, soloMias, mis.tarjetas]
+  );
+  const descuentosFiltrados = useFilteredDescuentos(base, filtros, busquedaEfectiva);
 
   // Opciones de los filtros con cuántos descuentos quedarían al elegirlas. Se
   // ocultan las que no tienen ninguno, salvo la que está elegida.
   const categorias = useMemo(() => {
-    const conteo = contarOpciones(descuentosConBanco, filtros, busquedaEfectiva, 'categoria');
-    const nombres = new Map(descuentosConBanco.map((d) => [normalizar(d.categoria), d.categoria]));
+    const conteo = contarOpciones(base, filtros, busquedaEfectiva, 'categoria');
+    const nombres = new Map(base.map((d) => [normalizar(d.categoria), d.categoria]));
     return [...conteo]
       .filter(([clave]) => clave)
       .map(([clave, cantidad]) => ({ valor: nombres.get(clave), cantidad }))
@@ -65,15 +98,15 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
           : []
       )
       .sort((a, b) => b.cantidad - a.cantidad || a.valor.localeCompare(b.valor, 'es'));
-  }, [descuentosConBanco, filtros, busquedaEfectiva]);
+  }, [base, filtros, busquedaEfectiva]);
 
   const opcionesBancos = useMemo(() => {
-    const conteo = contarOpciones(descuentosConBanco, filtros, busquedaEfectiva, 'banco_nombre');
+    const conteo = contarOpciones(base, filtros, busquedaEfectiva, 'banco_nombre');
     return bancosActivos
       .map((b) => ({ valor: b.nombre, cantidad: conteo.get(normalizar(b.nombre)) || 0 }))
       .filter((b) => b.cantidad > 0 || normalizar(b.valor) === normalizar(filtros.banco))
       .sort((a, b) => b.cantidad - a.cantidad || a.valor.localeCompare(b.valor, 'es'));
-  }, [descuentosConBanco, bancosActivos, filtros, busquedaEfectiva]);
+  }, [base, bancosActivos, filtros, busquedaEfectiva]);
 
   const elegirCategoria = (categoria) =>
     setFiltros((prev) => ({
@@ -84,7 +117,7 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
 
   // Se muestran de a POR_PAGINA para que la lista sea fluida con cientos de descuentos
   const [visibles, setVisibles] = useState(POR_PAGINA);
-  useEffect(() => setVisibles(POR_PAGINA), [filtros, busquedaEfectiva]);
+  useEffect(() => setVisibles(POR_PAGINA), [filtros, busquedaEfectiva, soloMias]);
 
   // "/" enfoca el buscador (como en las herramientas de desarrollo)
   useEffect(() => {
@@ -144,8 +177,9 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
     }),
     [descuentosFiltrados]
   );
-  const subtitulo =
+  const cuando =
     filtros.dia === 'todos' ? 'vigentes esta semana' : filtros.dia === hoy ? 'disponibles hoy' : `para el ${filtros.dia}`;
+  const subtitulo = soloMias ? `${cuando} con tus tarjetas` : cuando;
 
   return (
     <div className="min-h-screen fondo-grilla text-fg">
@@ -174,6 +208,14 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
 
       <DescuentoDetalle descuento={detalle} onCerrar={cerrarDetalle} />
 
+      <MisTarjetas
+        mostrar={mostrarTarjetas}
+        onClose={cerrarTarjetas}
+        bancos={bancosConDescuentos}
+        tarjetas={mis.tarjetas}
+        onGuardar={guardarTarjetas}
+      />
+
       <FilterModal
         mostrar={mostrarFiltros}
         onClose={cerrarFiltros}
@@ -187,10 +229,53 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
       <section className="max-w-7xl mx-auto px-4 pt-8 md:pt-14 pb-5">
         <p className="rotulo text-volt mb-3">// Descuentos con tarjeta · Chile</p>
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.02]">
-          <span className="text-volt tabular">{total}</span> descuentos
+          <span className="text-volt tabular">{cargando ? '···' : total}</span> descuentos
           <br />
           <span className="text-fg-dim">{subtitulo}.</span>
         </h1>
+
+        {/* Mis tarjetas */}
+        {cantidadTarjetas === 0 ? (
+          <div className="mt-6 border border-dashed border-volt/40 p-4 flex flex-col sm:flex-row sm:items-center gap-3 sm:justify-between">
+            <div>
+              <p className="font-medium">¿Qué tarjetas tienes?</p>
+              <p className="text-sm text-fg-muted">Márcalas y te mostramos solo los descuentos que puedes usar.</p>
+            </div>
+            <button
+              onClick={() => setMostrarTarjetas(true)}
+              className="rotulo bg-volt text-ink-950 font-semibold px-4 h-11 inline-flex items-center justify-center gap-2 hover:brightness-110 transition flex-shrink-0"
+            >
+              <CreditCard className="h-4 w-4" aria-hidden="true" />
+              Elegir mis tarjetas
+            </button>
+          </div>
+        ) : (
+          <div className="mt-6 flex items-center gap-3 flex-wrap">
+            <div className="inline-flex border border-line bg-ink-900" role="group" aria-label="Qué descuentos ver">
+              {[
+                [true, `Mis tarjetas (${cantidadTarjetas})`],
+                [false, 'Todas']
+              ].map(([valor, label]) => (
+                <button
+                  key={label}
+                  onClick={() => actualizarMis({ ...mis, soloMias: valor })}
+                  aria-pressed={soloMias === valor}
+                  className={`rotulo px-3 md:px-4 h-10 border-r border-line last:border-r-0 transition-colors ${
+                    soloMias === valor ? 'bg-volt text-ink-950 font-semibold' : 'text-fg-muted hover:text-fg hover:bg-ink-850'
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => setMostrarTarjetas(true)}
+              className="rotulo text-fg-dim hover:text-fg underline underline-offset-4"
+            >
+              Editar tarjetas
+            </button>
+          </div>
+        )}
 
         {/* Selector de día */}
         <div className="mt-7">
@@ -314,11 +399,29 @@ const PublicApp = ({ bancos = [], descuentos = [], actualizado, onLoginClick, sh
       </section>
 
       <main className="max-w-7xl mx-auto px-4 pb-12">
-        {total === 0 ? (
+        {cargando ? (
+          <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" aria-busy="true" aria-label="Cargando descuentos">
+            {Array.from({ length: 6 }, (_, i) => (
+              <div key={i} className="h-72 border border-line bg-ink-900 animate-pulse" />
+            ))}
+          </div>
+        ) : total === 0 ? (
           <div className="border border-dashed border-line-strong py-16 px-6 text-center">
             <p className="font-mono text-5xl text-fg-dim mb-4">0</p>
             <h2 className="text-lg font-medium mb-1">Sin resultados</h2>
-            <p className="text-fg-muted text-sm mb-6">Prueba con otro día, otra categoría o una búsqueda más corta.</p>
+            <p className="text-fg-muted text-sm mb-6">
+              {soloMias
+                ? 'Con tus tarjetas no hay descuentos para esta búsqueda. Prueba con otro día o mira los de todas las tarjetas.'
+                : 'Prueba con otro día, otra categoría o una búsqueda más corta.'}
+            </p>
+            {soloMias && (
+              <button
+                onClick={() => actualizarMis({ ...mis, soloMias: false })}
+                className="rotulo border border-line text-fg-muted hover:text-fg px-5 py-3 mb-3 mr-2 transition-colors"
+              >
+                Ver todas las tarjetas
+              </button>
+            )}
             {(hayFiltros || filtros.dia !== 'todos') && (
               <button
                 onClick={verTodos}

@@ -4,7 +4,6 @@ import { Capacitor } from '@capacitor/core';
 import PublicApp from './components/public/PublicApp';
 
 import { initialData } from './data/initialData.js';
-import datosIncluidos from './data/descuentos.json';
 import { combinarDatos, normalizarDescuento } from './utils/descuentos';
 import { descargarDatos, leerCache, masReciente } from './utils/remoteData';
 import { hashDatos, cargarBorrador, guardarBorrador, descartarBorrador, limpiarClavesAntiguas } from './utils/storage';
@@ -33,6 +32,10 @@ const REQUIRES_LOGIN = ADMIN_PASSWORD !== '';
 
 const BASE_VERSION = hashDatos(initialData);
 
+// Los descuentos incluidos en el build (~1 MB) van en un archivo aparte que se
+// carga después de mostrar la app, en vez de dentro del código principal.
+const cargarIncluidos = () => import('./data/descuentos.json').then((m) => m.default);
+
 const readSession = () => {
   try {
     return sessionStorage.getItem(SESSION_KEY) === 'true';
@@ -45,15 +48,18 @@ const CardDiscount = () => {
   const [currentView, setCurrentView] = useState('public');
   const [isLoggedIn, setIsLoggedIn] = useState(() => ADMIN_ENABLED && (!REQUIRES_LOGIN || readSession()));
 
-  // Datos publicados: los incluidos en el build o, si hay, una versión más
-  // reciente descargada de GitHub (se actualizan solos cada día).
-  const [publicados, setPublicados] = useState(() => masReciente(datosIncluidos, leerCache()));
+  // Datos publicados: al abrir se muestra al instante la última copia guardada
+  // (si hay) y luego se reemplaza por la más reciente entre los datos incluidos
+  // en el build y los descargados de GitHub (se actualizan solos cada día).
+  const [publicados, setPublicados] = useState(leerCache);
 
   useEffect(() => {
     let vigente = true;
-    descargarDatos().then((remotos) => {
-      if (vigente && remotos) setPublicados((actual) => masReciente(actual, remotos));
-    });
+    const actualizar = (datos) => {
+      if (vigente && datos) setPublicados((actual) => masReciente(actual, datos));
+    };
+    cargarIncluidos().then(actualizar, () => {});
+    descargarDatos().then(actualizar);
     return () => {
       vigente = false;
     };
@@ -123,7 +129,7 @@ const CardDiscount = () => {
   // En modo admin se previsualiza el borrador + lo scrapeado; si no, los datos publicados.
   // El borrador se normaliza igual que al publicar, para que la vista previa sea fiel.
   const datosPublicos = useMemo(() => {
-    if (!ADMIN_ENABLED) return publicados;
+    if (!ADMIN_ENABLED || !publicados) return publicados;
     const borrador = { bancos: draft.bancos, descuentos: draft.descuentos.map(normalizarDescuento) };
     return combinarDatos(borrador, publicados.descuentos.filter((d) => d.fuente));
   }, [draft, publicados]);
@@ -156,9 +162,10 @@ const CardDiscount = () => {
 
   return (
     <PublicApp
-      bancos={datosPublicos.bancos}
-      descuentos={datosPublicos.descuentos}
-      actualizado={publicados.generado}
+      bancos={datosPublicos?.bancos}
+      descuentos={datosPublicos?.descuentos}
+      cargando={!datosPublicos}
+      actualizado={publicados?.generado}
       onLoginClick={openAdmin}
       showLoginButton={ADMIN_ENABLED}
     />

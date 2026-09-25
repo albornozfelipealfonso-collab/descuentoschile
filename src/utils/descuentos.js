@@ -169,6 +169,23 @@ export const iniciales = (nombre) => {
   return (palabras[0][0] + palabras[1][0]).toUpperCase();
 };
 
+// ---------------------------------------------------------------------------
+// Mis tarjetas: { "bci": { debito: true, credito: false }, ... } (clave = banco normalizado)
+// ---------------------------------------------------------------------------
+
+/** ¿El usuario puede usar este descuento con las tarjetas que marcó? */
+export const coincideConTarjetas = (descuento, tarjetas) => {
+  const t = tarjetas?.[normalizar(descuento.banco_nombre)];
+  if (!t) return false;
+  if (descuento.tipo_tarjeta === 'debito') return Boolean(t.debito);
+  if (descuento.tipo_tarjeta === 'credito') return Boolean(t.credito);
+  return Boolean(t.debito || t.credito); // "ambas"
+};
+
+/** Cantidad de tarjetas marcadas (débito y crédito del mismo banco cuentan como 2). */
+export const contarTarjetas = (tarjetas) =>
+  Object.values(tarjetas || {}).reduce((n, t) => n + (t.debito ? 1 : 0) + (t.credito ? 1 : 0), 0);
+
 /** Filtro principal de la vista pública. */
 export const filtrarDescuentos = (descuentos, filtros = FILTROS_INICIALES, busqueda = '', hoy = toISODate()) => {
   const termino = normalizar(busqueda);
