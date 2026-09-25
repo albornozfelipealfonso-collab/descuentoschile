@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-09-24",
+  "actualizado": "2026-09-25",
   "descuentos": [
     {
       "id": "falabella-b0db02a150",
@@ -53,31 +53,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/the-color-run-2026",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1kkSvggCxzAAylVYTVcPG1/c068d1ac2352e8065da7a084b3b62dd1/COLOR_RUN_LOGO.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-f84904c596",
-      "establecimiento": "Tito el Bambino",
-      "descripcion": "",
-      "descuento": "30% dcto",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Cine y entretención",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-09-29",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/tito-el-bambino",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/1hVoyboottOa6NYslxVnLy/ba3e3b53a584a56e51373e0ab2ef2969/TITO_EL_BAMBINO_LOGO.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-a54ad36671",
@@ -4762,31 +4737,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/hijo-del-sol-5ta-region",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/4hpyME1vdQPg0ecue20caj/c05183fdfea16779ebb05c1c2c59bc70/Cards_LOGO_Web_Hijo_del_Sol.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-54bb298c9c",
-      "establecimiento": "Vestuario, Calzado y Belleza",
-      "descripcion": "Hasta el 24 de Septiembre",
-      "descuento": "3 CUOTAS SIN INTERÉS",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Salud y belleza",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-09-24",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/3csi-vestuario-calzado-belleza",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/5v7nOXUuSZnuflX4j4d7TX/59aa25d8e2c445b93dd2b4b6d061945c/02-Card-Calzado_2x.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-00bfde5da4",
