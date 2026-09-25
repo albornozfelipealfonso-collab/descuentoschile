@@ -12,49 +12,49 @@ export const initialData = {
     "id": 2,
     "nombre": "Banco de Chile",
     "color": "#1976D2",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/banco-de-chile.png",
     "activo": true
   },
   {
     "id": 3,
     "nombre": "Banco Santander",
     "color": "#D32F2F",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/banco-santander.png",
     "activo": true
   },
   {
     "id": 4,
     "nombre": "BCI",
     "color": "#F57C00",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/bci.png",
     "activo": true
   },
   {
     "id": 5,
     "nombre": "Scotiabank",
     "color": "#c53916",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/scotiabank.png",
     "activo": true
   },
   {
     "id": 6,
     "nombre": "Banco Itaú",
     "color": "#FF5722",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/banco-itau.png",
     "activo": true
   },
   {
     "id": 7,
     "nombre": "Banco Security",
     "color": "#388E3C",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/banco-security.png",
     "activo": true
   },
   {
     "id": 8,
     "nombre": "Banco Falabella",
     "color": "#E91E63",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/banco-falabella.png",
     "activo": true
   },
   {
@@ -68,7 +68,7 @@ export const initialData = {
     "id": 10,
     "nombre": "Líder BCI Mastercard",
     "color": "#1b61ac",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/lider-bci-mastercard.png",
     "activo": true
   },
   {
@@ -82,77 +82,77 @@ export const initialData = {
     "id": 12,
     "nombre": "Dale Coopeuch",
     "color": "#5d83d0",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/dale-coopeuch.png",
     "activo": true
   },
   {
     "id": 13,
     "nombre": "Banco Ripley",
     "color": "#818898",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/banco-ripley.png",
     "activo": true
   },
   {
     "id": 14,
     "nombre": "Tarjeta Spin Cruz Verde",
     "color": "#37ae65",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/tarjeta-spin-cruz-verde.png",
     "activo": true
   },
   {
     "id": 15,
     "nombre": "Cencosud",
     "color": "#274a91",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/cencosud.png",
     "activo": true
   },
   {
     "id": 16,
     "nombre": "sbpay",
     "color": "#262627",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/sbpay.png",
     "activo": true
   },
   {
     "id": 17,
     "nombre": "Coopeuch",
     "color": "#a32424",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/coopeuch.png",
     "activo": true
   },
   {
     "id": 18,
     "nombre": "Los Heroes",
     "color": "#7d4d17",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/los-heroes.png",
     "activo": true
   },
   {
     "id": 19,
     "nombre": "Banco Bice",
     "color": "#6aaad2",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/banco-bice.png",
     "activo": true
   },
   {
     "id": 20,
     "nombre": "Hites",
     "color": "#0f131a",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/hites.png",
     "activo": true
   },
   {
     "id": 21,
     "nombre": "Abc",
     "color": "#1d2025",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/abc.png",
     "activo": true
   },
   {
     "id": 22,
     "nombre": "Banco Internacional",
     "color": "#4075dd",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/banco-internacional.png",
     "activo": true
   },
   {
@@ -166,35 +166,35 @@ export const initialData = {
     "id": 24,
     "nombre": "WOM",
     "color": "#6033a3",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/wom.jpeg",
     "activo": true
   },
   {
     "id": 25,
     "nombre": "Entel",
     "color": "#1924be",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/entel.png",
     "activo": true
   },
   {
     "id": 26,
     "nombre": "Movistar",
     "color": "#129121",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/movistar.png",
     "activo": true
   },
   {
     "id": 27,
     "nombre": "Claro",
     "color": "#f32112",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/claro.png",
     "activo": true
   },
   {
     "id": 28,
     "nombre": "Copec Pay",
     "color": "#2f61c6",
-    "logo_url": "",
+    "logo_url": "/logos/bancos/copec-pay.webp",
     "activo": true
   }
 ],

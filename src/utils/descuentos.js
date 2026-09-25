@@ -51,6 +51,36 @@ export const formatDias = (dias) => {
     .join(', ');
 };
 
+// Cifras destacables, de la más a la menos informativa. `formato` deja la cifra lista para mostrar.
+const CIFRAS = [
+  { re: /\d{1,3}\s?%/, formato: (m) => m.replace(/\s+/g, '') }, // 40%
+  { re: /\b\d\s?x\s?\d\b/i, formato: (m) => m.replace(/\s+/g, '').toLowerCase() }, // 2x1
+  { re: /\$?\s?\d{1,3}(?:\.\d{3})+(?:\s?CLP\b)?/, formato: (m) => `$${m.replace(/[$\s]|CLP/g, '')}` }, // $5.000 · 100.000 CLP
+  { re: /(?:^|\s)x\s?\d{1,2}\b/i, formato: (m) => m.trim().replace(/\s+/g, '').toLowerCase() }, // x5 (cashback)
+  { re: /\b\d{1,2}x(?=\s|$)/i, formato: (m) => `x${m.slice(0, -1)}` }, // 10X cashback
+  // "3 ó 6 cuotas", "13 a 36 cuotas", "12 cuotas": la palabra "cuotas" queda en el resto
+  { re: /\b\d{1,2}(?:\s?(?:ó|o|a|y|-)\s?\d{1,2})?(?=\s?cuotas)/i, formato: (m) => m.replace(/\s?(?:ó|o|a|y|-)\s?/i, '–') }
+];
+
+/**
+ * Separa la cifra principal de un descuento para destacarla:
+ * "40% de descuento" -> { cifra: '40%', resto: 'de descuento' }.
+ * Si no hay cifra reconocible, `cifra` es null y `resto` es el texto completo.
+ */
+export const destacarDescuento = (texto) => {
+  const t = String(texto ?? '').trim();
+  for (const { re, formato } of CIFRAS) {
+    const m = t.match(re);
+    if (m) {
+      const resto = (t.slice(0, m.index) + ' ' + t.slice(m.index + m[0].length))
+        .replace(/\s+/g, ' ')
+        .replace(/^[\s,:;-]+|[\s,:;-]+$/g, '');
+      return { cifra: formato(m[0]), resto };
+    }
+  }
+  return { cifra: null, resto: t };
+};
+
 /** Texto blanco o negro según la luminancia del fondo. */
 export const getTextColor = (hex) => {
   if (!/^#[0-9a-f]{6}$/i.test(hex || '')) return '#ffffff';
@@ -81,6 +111,64 @@ export const enriquecerConBanco = (descuentos, bancos) =>
     }];
   });
 
+// ---------------------------------------------------------------------------
+// Logos de comercios
+// ---------------------------------------------------------------------------
+
+/** "Uber Eats", "UberEats" y "Rappi." dan la misma clave. */
+const claveComercio = (nombre) => normalizar(nombre).replace(/[^a-z0-9]/g, '');
+
+// Marcas frecuentes con logo incluido en la app (funcionan sin internet).
+// `salvo`: si el texto del descuento calza, se respeta el logo del banco
+// (un descuento de "PedidosYa Market" lleva el logo de Market).
+const LOGOS_INCLUIDOS = [
+  { marca: /^rappi/, logo: '/logos/comercios/rappi.png' },
+  { marca: /^ubereats/, logo: '/logos/comercios/ubereats.svg' },
+  { marca: /^pedidosya/, logo: '/logos/comercios/pedidosya.webp', salvo: /market/ }
+];
+
+const logoIncluido = (d) => {
+  const clave = claveComercio(d.establecimiento);
+  const texto = normalizar(`${d.descuento} ${d.descripcion}`);
+  return LOGOS_INCLUIDOS.find(({ marca, salvo }) => marca.test(clave) && !(salvo?.test(texto) && d.logo))?.logo;
+};
+
+/**
+ * Asigna `logo` a cada descuento: primero un logo incluido de la marca, luego
+ * el que entregó el banco y, si no hay, el de otro descuento del mismo comercio
+ * (así un descuento manual de Cinepolis usa el logo que trae BCI).
+ */
+export const asignarLogos = (descuentos) => {
+  const porComercio = new Map();
+  descuentos.forEach((d) => {
+    const clave = claveComercio(d.establecimiento);
+    if (d.logo && clave && !porComercio.has(clave)) porComercio.set(clave, d.logo);
+  });
+  return descuentos.map((d) => {
+    const clave = claveComercio(d.establecimiento);
+    const logo = logoIncluido(d) || d.logo || porComercio.get(clave) || null;
+    return logo === d.logo ? d : { ...d, logo };
+  });
+};
+
+// "código: SBPAYJUL25", "cupón MACHBANK30", "con el código de descuento BCIPIZZA07"
+const CODIGO = /(?:c[oó]digo|cup[oó]n)(?: de descuento| promocional)?(?: es)?[:\s]+["“'«]?([A-Z0-9][A-Z0-9-]{3,19})\b/;
+
+/** Código de descuento mencionado en el texto (en mayúsculas y con al menos una letra), o null. */
+export const extraerCodigo = (d) => {
+  const texto = [d?.descuento, d?.descripcion, d?.terminos].filter(Boolean).join(' ');
+  const codigo = texto.match(CODIGO)?.[1];
+  return codigo && /[A-Z]/.test(codigo) && /\d|[A-Z]{5,}/.test(codigo) ? codigo : null;
+};
+
+/** Iniciales para cuando no hay logo: "Uber Eats" -> "UE", "Sushi" -> "SU". */
+export const iniciales = (nombre) => {
+  const palabras = String(nombre ?? '').replace(/[^\p{L}\p{N}\s]/gu, '').trim().split(/\s+/).filter(Boolean);
+  if (palabras.length === 0) return '?';
+  if (palabras.length === 1) return palabras[0].slice(0, 2).toUpperCase();
+  return (palabras[0][0] + palabras[1][0]).toUpperCase();
+};
+
 /** Filtro principal de la vista pública. */
 export const filtrarDescuentos = (descuentos, filtros = FILTROS_INICIALES, busqueda = '', hoy = toISODate()) => {
   const termino = normalizar(busqueda);
@@ -110,10 +198,117 @@ export const filtrarDescuentos = (descuentos, filtros = FILTROS_INICIALES, busqu
   });
 };
 
+/**
+ * Con un día elegido, primero los descuentos exclusivos de ese día y después
+ * los que valen todos los días (el orden original se mantiene dentro de cada grupo).
+ */
+export const ordenarPorDia = (descuentos, dia) => {
+  if (!dia || dia === 'todos') return descuentos;
+  const todosLosDias = (d) => (d.dias_validos?.length === DIAS_SEMANA.length ? 1 : 0);
+  return [...descuentos].sort((a, b) => todosLosDias(a) - todosLosDias(b));
+};
+
+/**
+ * Cuántos descuentos quedarían por cada valor de `campo` ('banco_nombre' o
+ * 'categoria') si se eligiera ese valor, respetando el resto de los filtros.
+ * Devuelve un Map { valor normalizado -> cantidad }.
+ */
+export const contarOpciones = (descuentos, filtros, busqueda, campo, hoy = toISODate()) => {
+  const filtro = campo === 'banco_nombre' ? { banco: 'todos' } : { categoria: 'todas' };
+  const conteo = new Map();
+  filtrarDescuentos(descuentos, { ...filtros, ...filtro }, busqueda, hoy).forEach((d) => {
+    const clave = normalizar(d[campo]);
+    conteo.set(clave, (conteo.get(clave) || 0) + 1);
+  });
+  return conteo;
+};
+
+/** Días que faltan para que venza (0 = vence hoy), o null si no tiene fecha. */
+export const diasParaVencer = (fechaVencimiento, hoy = toISODate()) => {
+  if (!fechaVencimiento) return null;
+  const aFecha = (iso) => {
+    const [y, m, d] = String(iso).split('-').map(Number);
+    return Date.UTC(y, m - 1, d);
+  };
+  const dias = Math.round((aFecha(fechaVencimiento) - aFecha(hoy)) / 86400000);
+  return Number.isFinite(dias) ? dias : null;
+};
+
+export const TIPO_TARJETA_CORTO = { debito: 'Débito', credito: 'Crédito', ambas: 'Déb + Créd' };
+export const TIPO_TARJETA_LARGO = { debito: 'Tarjeta de débito', credito: 'Tarjeta de crédito', ambas: 'Débito y crédito' };
+
+const AVISO_VENCE = 7; // días
+
+/** "Vence hoy" / "Vence en 3 días" (urgente) o "Hasta 31-12-2026". */
+export const describirVencimiento = (fecha, hoy = toISODate()) => {
+  const dias = diasParaVencer(fecha, hoy);
+  if (dias === 0) return { texto: 'Vence hoy', urgente: true };
+  if (dias === 1) return { texto: 'Vence mañana', urgente: true };
+  if (dias !== null && dias <= AVISO_VENCE) return { texto: `Vence en ${dias} días`, urgente: true };
+  return { texto: `Hasta ${formatFecha(fecha)}`, urgente: false };
+};
+
 export const getCategorias = (descuentos) =>
   [...new Set(descuentos.map((d) => d.categoria?.trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'es'));
 
-export const nextId = (items) => Math.max(0, ...items.map((i) => Number(i.id) || 0)) + 1;
+// ---------------------------------------------------------------------------
+// Categorías: cada banco usa sus propios nombres; se unifican para que el
+// filtro no muestre "Cine" y "Cine y entretención" como cosas distintas.
+// ---------------------------------------------------------------------------
+
+/** Categoría a partir de palabras clave (si el banco no entrega una útil). */
+const CATEGORIAS_POR_TEXTO = [
+  ['Delivery', /rappi|pedidos ?ya|uber ?eats|delivery|justo|cornershop/],
+  ['Restaurantes', /restauran|sushi|pizza|papa john|domino|burger|mcdonald|kfc|starbucks|cafe|bar\b|gastronom|comida/],
+  ['Supermercados', /supermercad|lider|jumbo|unimarc|tottus|santa isabel|acuenta|botiller|liquidos/],
+  ['Combustible', /copec|shell|petrobras|aramco|bencina|combustible/],
+  ['Farmacias', /farmacia|cruz verde|salcobrand|ahumada/],
+  ['Cine y entretención', /cine|cinemark|cinepolis|cineplanet|hoyts|teatro|concierto|entretenci/],
+  ['Viajes', /viaje|hotel|aerolinea|latam|sky airline|jetsmart|turismo/],
+  ['Salud y belleza', /salud|clinica|dental|optica|belleza|spa|peluquer/],
+  ['Moda y vestuario', /vestuario|ropa|zapat|moda|calzado/],
+  ['Tecnología', /tecnolog|electro|celular|computador/],
+  ['Educación', /educaci|curso|libreria|libro/],
+  ['Hogar', /hogar|mueble|decoraci|sodimac|easy|construc/],
+  ['Tiendas online', /amazon|aliexpress|mercado ?libre|shein|temu/]
+];
+
+export const inferirCategoria = (...textos) => {
+  const t = normalizar(textos.join(' '));
+  return CATEGORIAS_POR_TEXTO.find(([, re]) => re.test(t))?.[0] || 'Otros';
+};
+
+// Nombre normalizado → nombre unificado
+const SINONIMOS_CATEGORIA = {
+  cine: 'Cine y entretención',
+  entretencion: 'Cine y entretención',
+  'moda y vestuario': 'Moda y vestuario',
+  vestuario: 'Moda y vestuario',
+  'tecnologia y marketplace': 'Tecnología',
+  ninos: 'Infantil',
+  wellness: 'Bienestar',
+  'mall sport': 'Deportes',
+  'educacion y librerias': 'Educación',
+  salud: 'Salud y belleza'
+};
+
+// Categorías de campaña que no dicen de qué rubro es el descuento
+const CATEGORIAS_SIN_RUBRO = new Set([
+  '', 'otros', 'paga en cuotas', 'mas beneficios', 'activalo y usalo', 'dia de la madre', 'market', 'compras online',
+  'shopping', 'cuotas'
+]);
+
+/**
+ * Unifica el nombre de una categoría. Si no describe un rubro, la deduce del
+ * texto del descuento (`contexto`).
+ */
+export const unificarCategoria = (categoria, ...contexto) => {
+  const clave = normalizar(categoria);
+  if (CATEGORIAS_SIN_RUBRO.has(clave)) return inferirCategoria(...contexto);
+  return SINONIMOS_CATEGORIA[clave] || String(categoria).trim();
+};
+
+export const nextId =(items) => Math.max(0, ...items.map((i) => Number(i.id) || 0)) + 1;
 
 /** Ids numéricos para datos manuales; ids de texto ("bci-3f9a1c") para datos scrapeados. */
 const normalizarId = (id) => (typeof id === 'string' && !/^\d+$/.test(id) ? id.trim() : Number(id));
@@ -137,14 +332,19 @@ export const normalizarDescuento = (descuento) => {
   // Campos opcionales de los descuentos scrapeados
   if (descuento.fuente) extra.fuente = String(descuento.fuente);
   if (descuento.url) extra.url = String(descuento.url);
+  // Logo del comercio (solo https, para no cargar contenido inseguro)
+  if (/^https:\/\//.test(descuento.logo || '')) extra.logo = descuento.logo;
+  const establecimiento = String(descuento.establecimiento ?? descuento.comercio ?? '').trim();
+  const descripcion = String(descuento.descripcion ?? '').trim();
+  const categoria = descuento.categoria ?? '';
   return {
     id: normalizarId(descuento.id),
-    establecimiento: String(descuento.establecimiento ?? descuento.comercio ?? '').trim(),
-    descripcion: String(descuento.descripcion ?? '').trim(),
+    establecimiento,
+    descripcion,
     descuento: String(descuento.descuento ?? '').trim(),
     banco_nombre: String(descuento.banco_nombre ?? '').trim(),
     tipo_tarjeta: TIPOS_TARJETA.includes(descuento.tipo_tarjeta) ? descuento.tipo_tarjeta : 'debito',
-    categoria: String(descuento.categoria ?? '').trim(),
+    categoria: unificarCategoria(categoria, establecimiento, descripcion),
     dias_validos: DIAS_SEMANA.filter((dia) => dias.map(normalizar).includes(normalizar(dia))),
     es_delivery: Boolean(descuento.es_delivery),
     terminos: String(descuento.terminos ?? '').trim(),
@@ -194,14 +394,28 @@ export const validarDatos = (entrada) => {
 
 /**
  * Combina los datos manuales (initialData.js) con los descuentos scrapeados.
- * Si un descuento scrapeado repite banco + comercio + texto de uno manual, se
- * conserva solo el manual.
+ * Si un descuento scrapeado repite uno manual (mismo banco, comercio, cifra y
+ * días, aunque el texto esté escrito distinto) se conserva solo el manual, pero
+ * completado con lo que traiga el banco y le falte (logo, enlace, vencimiento).
  */
 export const combinarDatos = (manual, scrapeados) => {
-  const clave = (d) => [d.banco_nombre, d.establecimiento, d.descuento].map(normalizar).join('|');
-  const manuales = new Set(manual.descuentos.map(clave));
+  const clave = (d) => {
+    const { cifra, resto } = destacarDescuento(d.descuento);
+    const dias = (d.dias_validos || []).map(normalizar).sort().join(',');
+    return [normalizar(d.banco_nombre), claveComercio(d.establecimiento), cifra ?? normalizar(resto), dias].join('|');
+  };
+  const delBanco = new Map(scrapeados.map((d) => [clave(d), d]));
+  const manuales = manual.descuentos.map((m) => {
+    const s = delBanco.get(clave(m));
+    if (!s) return m;
+    const completo = { ...m, fecha_vencimiento: m.fecha_vencimiento || s.fecha_vencimiento || '' };
+    if (!m.logo && s.logo) completo.logo = s.logo;
+    if (!m.url && s.url) completo.url = s.url;
+    return completo;
+  });
+  const clavesManuales = new Set(manual.descuentos.map(clave));
   return {
     bancos: manual.bancos,
-    descuentos: [...manual.descuentos, ...scrapeados.filter((d) => !manuales.has(clave(d)))]
+    descuentos: [...manuales, ...scrapeados.filter((d) => !clavesManuales.has(clave(d)))]
   };
 };

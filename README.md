@@ -68,8 +68,17 @@ La web y la APK descargan `descuentos.json` desde GitHub cada vez que se abren, 
 | ----- | ------ | ------ |
 | BCI | ✅ Automático | API de beneficios (`api.bciplus.cl`) leída con un navegador |
 | Banco Falabella | ✅ Automático | Datos JSON incluidos en `bancofalabella.cl/descuentos` |
+| Banco BICE | ✅ Automático | Lista de beneficios dentro del widget de `banco.bice.cl/personas/beneficios`, leída con un navegador |
+| MACH | ✅ Automático | CMS de beneficios (`bci.cl/api/content/spaces/mach`) leído con un navegador |
+| Banco Ripley | ✅ Automático | Restaurantes "Restofans" desde `bancoripley.cl/api/call-sp-api`, leída con un navegador |
+| Tarjeta Spin (Cruz Verde) | ✅ Automático | CMS público `cms.tarjetaspin.cl/benefits` (con navegador: el servidor no envía su certificado intermedio) |
+| Tarjeta Cencosud | ✅ Automático | Datos JSON incluidos en `tarjetacencosud.cl/publico/beneficios` |
 | Banco de Chile | ❌ Manual | Su protección anti-bots (Incapsula) bloquea los servidores de GitHub |
 | Santander | ❌ Manual | Bloquea todas las conexiones desde servidores en la nube |
+| Itaú, BancoEstado, Coopeuch | ❌ Manual | Bloquean los navegadores automatizados |
+| Scotiabank | ❌ Manual | Sus beneficios (ScotiaRewards) no tienen datos estructurados; habría que leer el HTML |
+
+Los descuentos de los bancos se combinan con los manuales: si uno manual repite a uno scrapeado (mismo banco, comercio, cifra y días) se muestra una sola vez, el manual.
 
 Los bancos marcados como manuales se siguen editando desde el panel admin (`initialData.js`). Para agregar un banco nuevo, crea `scripts/scrape/bancos/<banco>.mjs` siguiendo el formato de los existentes y regístralo en `scripts/scrape/bancos/index.mjs`.
 

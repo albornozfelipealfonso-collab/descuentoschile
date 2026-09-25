@@ -9,6 +9,16 @@ import {
   formatDias,
   validarDatos,
   nextId,
+  unificarCategoria,
+  ordenarPorDia,
+  contarOpciones,
+  diasParaVencer,
+  normalizarDescuento,
+  destacarDescuento,
+  asignarLogos,
+  iniciales,
+  extraerCodigo,
+  combinarDatos,
   FILTROS_INICIALES
 } from './descuentos';
 import { hashDatos } from './storage';
@@ -140,5 +150,133 @@ describe('datos publicados (initialData.js)', () => {
   it('hashDatos es estable y detecta cambios', () => {
     expect(hashDatos(initialData)).toBe(hashDatos(JSON.parse(JSON.stringify(initialData))));
     expect(hashDatos({ a: 1 })).not.toBe(hashDatos({ a: 2 }));
+  });
+});
+
+describe('categorías', () => {
+  it('unificarCategoria junta sinónimos', () => {
+    expect(unificarCategoria('Cine')).toBe('Cine y entretención');
+    expect(unificarCategoria('Moda y Vestuario')).toBe('Moda y vestuario');
+    expect(unificarCategoria('Wellness')).toBe('Bienestar');
+    expect(unificarCategoria(' Restaurantes ')).toBe('Restaurantes');
+  });
+  it('unificarCategoria deduce el rubro si la categoría es de campaña', () => {
+    expect(unificarCategoria('Paga en cuotas', 'Sushi Bar')).toBe('Restaurantes');
+    expect(unificarCategoria('Más Beneficios', 'Algo raro')).toBe('Otros');
+    expect(unificarCategoria('', 'Rappi')).toBe('Delivery');
+  });
+  it('normalizarDescuento unifica la categoría', () => {
+    expect(normalizarDescuento({ ...base, id: 1, categoria: 'Cine' }).categoria).toBe('Cine y entretención');
+  });
+});
+
+describe('orden y conteos', () => {
+  const soloJueves = d({ id: 1, dias_validos: ['jueves'] });
+  const siempre = d({ id: 2, dias_validos: ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'] });
+
+  it('ordenarPorDia pone primero los exclusivos del día', () => {
+    expect(ordenarPorDia([siempre, soloJueves], 'jueves').map((x) => x.id)).toEqual([1, 2]);
+    expect(ordenarPorDia([siempre, soloJueves], 'todos').map((x) => x.id)).toEqual([2, 1]);
+  });
+
+  it('contarOpciones ignora el filtro del mismo campo y respeta los demás', () => {
+    const lista = [
+      d({ banco_nombre: 'BCI', categoria: 'Delivery' }),
+      d({ banco_nombre: 'BCI', categoria: 'Viajes' }),
+      d({ banco_nombre: 'Banco de Chile', categoria: 'Delivery' })
+    ];
+    const filtros = { ...FILTROS_INICIALES, banco: 'BCI', categoria: 'Delivery' };
+    expect(Object.fromEntries(contarOpciones(lista, filtros, '', 'categoria'))).toEqual({ delivery: 1, viajes: 1 });
+    expect(Object.fromEntries(contarOpciones(lista, filtros, '', 'banco_nombre'))).toEqual({
+      bci: 1,
+      'banco de chile': 1
+    });
+  });
+
+  it('diasParaVencer', () => {
+    expect(diasParaVencer('2026-09-24', '2026-09-24')).toBe(0);
+    expect(diasParaVencer('2026-10-01', '2026-09-24')).toBe(7);
+    expect(diasParaVencer('2026-11-01', '2026-10-31')).toBe(1);
+    expect(diasParaVencer('')).toBeNull();
+  });
+});
+
+describe('destacarDescuento', () => {
+  it.each([
+    ['40% de descuento', '40%', 'de descuento'],
+    ['2 x 1 en entradas', '2x1', 'en entradas'],
+    ['Uber One $6.000', '$6.000', 'Uber One'],
+    ['100.000 CLP de descuento', '$100.000', 'de descuento'],
+    ['Multiplica x5 tu cashback', 'x5', 'Multiplica tu cashback'],
+    ['10X CB en restaurantes', 'x10', 'CB en restaurantes'],
+    ['Paga en 3 ó 6 cuotas', '3–6', 'Paga en cuotas']
+  ])('%s', (texto, cifra, resto) => {
+    expect(destacarDescuento(texto)).toEqual({ cifra, resto });
+  });
+  it('sin cifra devuelve el texto completo', () => {
+    expect(destacarDescuento('Maleta adicional')).toEqual({ cifra: null, resto: 'Maleta adicional' });
+  });
+});
+
+describe('logos de comercios', () => {
+  it('usa el logo incluido de la marca, aunque el nombre venga escrito distinto', () => {
+    const [a, b] = asignarLogos([d({ establecimiento: 'UberEats' }), d({ establecimiento: 'Rappi.' })]);
+    expect(a.logo).toBe('/logos/comercios/ubereats.svg');
+    expect(b.logo).toBe('/logos/comercios/rappi.png');
+  });
+  it('reutiliza el logo de otro descuento del mismo comercio', () => {
+    const logo = 'https://banco.cl/cinepolis.png';
+    const [, manual] = asignarLogos([
+      d({ establecimiento: 'Cinépolis', logo }),
+      d({ establecimiento: 'Cinepolis' })
+    ]);
+    expect(manual.logo).toBe(logo);
+  });
+  it('sin logo conocido queda en null', () => {
+    expect(asignarLogos([d({ establecimiento: 'Comercio X' })])[0].logo).toBeNull();
+  });
+  it('iniciales', () => {
+    expect(iniciales('Uber Eats')).toBe('UE');
+    expect(iniciales('Sushi')).toBe('SU');
+    expect(iniciales('')).toBe('?');
+  });
+  it('normalizarDescuento solo acepta logos https', () => {
+    expect(normalizarDescuento({ ...base, id: 1, logo: 'https://a.cl/x.png' }).logo).toBe('https://a.cl/x.png');
+    expect(normalizarDescuento({ ...base, id: 1, logo: 'http://a.cl/x.png' }).logo).toBeUndefined();
+  });
+});
+
+describe('ficha de detalle', () => {
+  it('extraerCodigo encuentra el código en el texto', () => {
+    expect(extraerCodigo(d({ descripcion: 'aplicando el cupón SBPAYJUL25.' }))).toBe('SBPAYJUL25');
+    expect(extraerCodigo(d({ terminos: 'ingresando el código de descuento MACHFXBF antes de pagar' }))).toBe('MACHFXBF');
+    expect(extraerCodigo(d({ descripcion: 'Sin código, descuento directo' }))).toBeNull();
+    expect(extraerCodigo(d({ descripcion: 'usa el cupón de tu app' }))).toBeNull();
+  });
+
+  it('PedidosYa usa su logo, salvo los descuentos de PedidosYa Market con logo del banco', () => {
+    const market = 'https://banco.cl/market.png';
+    const [general, soloMarket] = asignarLogos([
+      d({ establecimiento: 'PedidosYa', descuento: '30% en todas las categorías', logo: market }),
+      d({ establecimiento: 'PedidosYa', descuento: '40% en PedidosYa Market', logo: market })
+    ]);
+    expect(general.logo).toBe('/logos/comercios/pedidosya.webp');
+    expect(soloMarket.logo).toBe(market);
+  });
+
+  it('combinarDatos completa el manual repetido con el logo, enlace y vencimiento del banco', () => {
+    const manual = { bancos: [], descuentos: [d({ id: 1, banco_nombre: 'MACH', establecimiento: 'PedidosYa', descuento: '40% OFF' })] };
+    const delBanco = d({
+      id: 'mach-1',
+      banco_nombre: 'MACH',
+      establecimiento: 'Pedidos Ya',
+      descuento: '40% de descuento',
+      logo: 'https://x/logo.png',
+      url: 'https://machbank.cl',
+      fecha_vencimiento: '2026-12-31'
+    });
+    const { descuentos } = combinarDatos(manual, [delBanco]);
+    expect(descuentos).toHaveLength(1);
+    expect(descuentos[0]).toMatchObject({ id: 1, logo: 'https://x/logo.png', url: 'https://machbank.cl', fecha_vencimiento: '2026-12-31' });
   });
 });
