@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-09-24",
+  "actualizado": "2026-09-25",
   "descuentos": [
     {
       "id": "falabella-b0db02a150",
@@ -4543,30 +4543,6 @@
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/hijo-del-sol-5ta-region"
-    },
-    {
-      "id": "falabella-54bb298c9c",
-      "establecimiento": "Vestuario, Calzado y Belleza",
-      "descripcion": "Hasta el 24 de Septiembre",
-      "descuento": "3 CUOTAS SIN INTERÉS",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Salud y belleza",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-09-24",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/3csi-vestuario-calzado-belleza"
     },
     {
       "id": "falabella-00bfde5da4",
