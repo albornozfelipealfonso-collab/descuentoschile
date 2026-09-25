@@ -3,12 +3,15 @@
 // las respuestas JSON de la API.
 import { DIAS_SEMANA, normalizar } from '../../../src/utils/descuentos.js';
 import { abrirPagina, debug } from '../navegador.mjs';
-import { extraerDias, extraerFecha, extraerTipoTarjeta, idEstable, inferirCategoria, limpiarTexto } from '../lib.mjs';
+import { extraerDias, extraerFecha, extraerTipoTarjeta, idEstable, inferirCategoria, limpiarTexto, recortar } from '../lib.mjs';
 
 const URL = 'https://www.bci.cl/beneficios/beneficios-bci';
 const API = /bff-loyalty-beneficios\/v1\/offers\?/;
 // Categorías de BCI que no describen el rubro
-const CATEGORIAS_GENERICAS = new Set(['descuentos', 'preferencial', 'presencial', 'online', 'cashback', 'black-signature-infinite']);
+const CATEGORIAS_GENERICAS = new Set([
+  'descuentos', 'preferencial', 'presencial', 'online', 'cashback', 'black-signature-infinite',
+  'paga en cuotas', 'mas beneficios', 'activalo y usalo', 'dia de la madre'
+]);
 
 const textoDescuento = (o) => {
   const pct = o.deal?.discount?.percentage ?? o.beneficio?.discount?.porcentajeDescuento;
@@ -30,20 +33,28 @@ export const mapearOferta = (o) => {
   const tarjetas = (o.deal?.total?.tarjetas || []).map((t) => t.tipo).join(' ');
   const descuento = textoDescuento(o);
   const titulo = limpiarTexto(o.titulo);
+  // El título de BCI suele ser un gancho con lugar u horario ("Akun Bar - Las Condes
+  // desde las 16.00 hrs"): va primero, seguido de la descripción completa del beneficio.
+  const gancho = normalizar(titulo) !== normalizar(descuento) && normalizar(titulo) !== normalizar(comercio) ? titulo : '';
+  const cuerpo = limpiarTexto(o.descripcion);
+  const descripcion = [gancho.replace(/[.\s]+$/, ''), cuerpo].filter(Boolean).join('. ') || limpiarTexto(o.subtitulo);
+  // El subtítulo dice con qué tarjetas vale ("Exclusivo con tus Tarjetas … Black")
+  const condicion = limpiarTexto(o.subtitulo).replace(/[.\s]+$/, '');
   return {
     id: idEstable('bci', o.id ?? o.slug ?? o.titulo),
     establecimiento: comercio,
     descuento,
-    // El título de BCI suele ser un gancho ("Viernes - Vitacura"); se muestra como descripción
-    descripcion: normalizar(titulo) !== normalizar(descuento) && normalizar(titulo) !== normalizar(comercio) ? titulo : limpiarTexto(o.subtitulo),
-    terminos: limpiarTexto(o.legal || o.descripcion).slice(0, 400),
+    descripcion: recortar(descripcion, 700),
+    terminos: recortar([condicion, limpiarTexto(o.legal)].filter(Boolean).join('. '), 500),
     tipo_tarjeta: extraerTipoTarjeta(`${tarjetas} ${o.subtitulo}`),
     categoria: categoria || inferirCategoria(comercio, texto),
     // Si el beneficio no indica días, vale todos los días
     dias_validos: dias.length ? dias : [...DIAS_SEMANA],
     fecha_vencimiento: o.tieneFechaTermino === false ? '' : extraerFecha(o.fechaTermino || ''),
     es_delivery: /delivery|rappi|pedidos ?ya|uber ?eats/i.test(texto),
-    url: o.slug ? `https://www.bci.cl/beneficios/beneficios-bci/detalle/${o.slug}` : URL
+    url: o.slug ? `https://www.bci.cl/beneficios/beneficios-bci/detalle/${o.slug}` : URL,
+    // imagen4 es el logo del comercio (las otras son fotos de la campaña)
+    logo: o.imagenes?.imagen4 || ''
   };
 };
 

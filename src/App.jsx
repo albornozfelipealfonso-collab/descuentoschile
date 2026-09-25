@@ -4,8 +4,7 @@ import { Capacitor } from '@capacitor/core';
 import PublicApp from './components/public/PublicApp';
 
 import { initialData } from './data/initialData.js';
-import datosIncluidos from './data/descuentos.json';
-import { combinarDatos } from './utils/descuentos';
+import { combinarDatos, normalizarDescuento } from './utils/descuentos';
 import { descargarDatos, leerCache, masReciente } from './utils/remoteData';
 import { hashDatos, cargarBorrador, guardarBorrador, descartarBorrador, limpiarClavesAntiguas } from './utils/storage';
 
@@ -14,7 +13,9 @@ const LoginForm = lazy(() => import('./components/auth/LoginForm'));
 const AdminDashboard = lazy(() => import('./components/admin/AdminDashboard'));
 
 const Cargando = () => (
-  <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white/70">Cargando…</div>
+  <div className="min-h-screen fondo-grilla flex items-center justify-center rotulo text-fg-muted">
+    Cargando<span className="text-volt animate-parpadeo">_</span>
+  </div>
 );
 
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || '';
@@ -31,6 +32,10 @@ const REQUIRES_LOGIN = ADMIN_PASSWORD !== '';
 
 const BASE_VERSION = hashDatos(initialData);
 
+// Los descuentos incluidos en el build (~1 MB) van en un archivo aparte que se
+// carga después de mostrar la app, en vez de dentro del código principal.
+const cargarIncluidos = () => import('./data/descuentos.json').then((m) => m.default);
+
 const readSession = () => {
   try {
     return sessionStorage.getItem(SESSION_KEY) === 'true';
@@ -43,25 +48,37 @@ const CardDiscount = () => {
   const [currentView, setCurrentView] = useState('public');
   const [isLoggedIn, setIsLoggedIn] = useState(() => ADMIN_ENABLED && (!REQUIRES_LOGIN || readSession()));
 
-  // Datos publicados: los incluidos en el build o, si hay, una versión más
-  // reciente descargada de GitHub (se actualizan solos cada día).
-  const [publicados, setPublicados] = useState(() => masReciente(datosIncluidos, leerCache()));
+  // Datos publicados: al abrir se muestra al instante la última copia guardada
+  // (si hay) y luego se reemplaza por la más reciente entre los datos incluidos
+  // en el build y los descargados de GitHub (se actualizan solos cada día).
+  const [publicados, setPublicados] = useState(leerCache);
 
   useEffect(() => {
     let vigente = true;
-    descargarDatos().then((remotos) => {
-      if (vigente && remotos) setPublicados((actual) => masReciente(actual, remotos));
-    });
+    const actualizar = (datos) => {
+      if (vigente && datos) setPublicados((actual) => masReciente(actual, datos));
+    };
+    cargarIncluidos().then(actualizar, () => {});
+    descargarDatos().then(actualizar);
     return () => {
       vigente = false;
     };
   }, []);
 
   // Borrador editable del admin (solo datos manuales de initialData.js).
-  const [draft, setDraft] = useState(() => {
-    if (!ADMIN_ENABLED) return initialData;
-    return cargarBorrador(BASE_VERSION) || initialData;
-  });
+  // Se guarda junto a la versión de initialData.js a la que pertenece: si el
+  // archivo cambia con la app abierta (recarga en caliente al pegar el código
+  // generado), el borrador anterior deja de valer en vez de pisar los datos nuevos.
+  const [borrador, setBorrador] = useState(() => ({
+    base: BASE_VERSION,
+    datos: (ADMIN_ENABLED && cargarBorrador(BASE_VERSION)) || initialData
+  }));
+  const draft = borrador.base === BASE_VERSION ? borrador.datos : initialData;
+  const setDraft = (actualizar) =>
+    setBorrador((prev) => {
+      const actual = prev.base === BASE_VERSION ? prev.datos : initialData;
+      return { base: BASE_VERSION, datos: typeof actualizar === 'function' ? actualizar(actual) : actualizar };
+    });
 
   useEffect(() => {
     limpiarClavesAntiguas();
@@ -110,9 +127,11 @@ const CardDiscount = () => {
   const openAdmin = () => setCurrentView(isLoggedIn ? 'admin' : 'login');
 
   // En modo admin se previsualiza el borrador + lo scrapeado; si no, los datos publicados.
+  // El borrador se normaliza igual que al publicar, para que la vista previa sea fiel.
   const datosPublicos = useMemo(() => {
-    if (!ADMIN_ENABLED) return publicados;
-    return combinarDatos(draft, publicados.descuentos.filter((d) => d.fuente));
+    if (!ADMIN_ENABLED || !publicados) return publicados;
+    const borrador = { bancos: draft.bancos, descuentos: draft.descuentos.map(normalizarDescuento) };
+    return combinarDatos(borrador, publicados.descuentos.filter((d) => d.fuente));
   }, [draft, publicados]);
 
   if (ADMIN_ENABLED && currentView === 'login' && !isLoggedIn) {
@@ -143,9 +162,10 @@ const CardDiscount = () => {
 
   return (
     <PublicApp
-      bancos={datosPublicos.bancos}
-      descuentos={datosPublicos.descuentos}
-      actualizado={publicados.generado}
+      bancos={datosPublicos?.bancos}
+      descuentos={datosPublicos?.descuentos}
+      cargando={!datosPublicos}
+      actualizado={publicados?.generado}
       onLoginClick={openAdmin}
       showLoginButton={ADMIN_ENABLED}
     />

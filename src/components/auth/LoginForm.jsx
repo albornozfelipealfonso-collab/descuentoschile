@@ -14,19 +14,21 @@ const LoginForm = ({ onLogin, onBack }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-pink-800 flex items-center justify-center p-4">
-      <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 w-full max-w-md border border-white/20">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-white mb-2">🎯 CardDiscount</h1>
-          <p className="text-white/80">Panel de Administración</p>
+    <div className="min-h-screen fondo-grilla flex items-center justify-center p-4">
+      <div className="bg-ink-900 border border-line w-full max-w-sm">
+        <div className="px-6 h-14 flex items-center border-b border-line">
+          <span className="rotulo text-fg">
+            <span className="text-volt">//</span> Acceso admin
+          </span>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="p-6 space-y-5">
           <div>
-            <label className="block text-white/90 text-sm font-medium mb-2">
-              Contraseña de Admin
+            <label htmlFor="admin-password" className="rotulo block text-fg-dim mb-2">
+              Contraseña
             </label>
             <input
+              id="admin-password"
               type="password"
               value={password}
               onChange={(e) => {
@@ -35,13 +37,13 @@ const LoginForm = ({ onLogin, onBack }) => {
               }}
               autoFocus
               autoComplete="current-password"
-              className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-white/40"
-              placeholder="Ingresa la contraseña"
+              className="w-full h-11 bg-ink-950 border border-line focus:border-volt/60 px-3 text-fg placeholder:text-fg-dim outline-none transition-colors"
+              placeholder="••••••••"
               required
               aria-invalid={Boolean(error)}
             />
             {error && (
-              <p role="alert" className="mt-2 text-sm text-red-300">
+              <p role="alert" className="rotulo mt-2 text-alerta">
                 {error}
               </p>
             )}
@@ -49,17 +51,17 @@ const LoginForm = ({ onLogin, onBack }) => {
 
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all"
+            className="w-full h-12 rotulo bg-volt text-ink-950 font-semibold hover:brightness-110 transition"
           >
-            Iniciar Sesión
+            Entrar
           </button>
 
           <button
             type="button"
             onClick={onBack}
-            className="w-full bg-white/10 text-white py-3 rounded-lg font-medium hover:bg-white/20 transition-all"
+            className="w-full rotulo text-fg-dim hover:text-fg transition-colors"
           >
-            Volver a la App
+            ← Volver a la app
           </button>
         </form>
       </div>

@@ -2,7 +2,16 @@
 // beneficios como JSON dentro del HTML (`benefitCardsData`). No hace falta navegador.
 import { DIAS_SEMANA, normalizar } from '../../../src/utils/descuentos.js';
 import { debug } from '../navegador.mjs';
-import { extraerDias, extraerFecha, fetchTexto, idEstable, inferirCategoria, limpiarTexto } from '../lib.mjs';
+import {
+  extraerArreglos,
+  extraerDias,
+  extraerFecha,
+  extraerPayload,
+  fetchTexto,
+  idEstable,
+  inferirCategoria,
+  limpiarTexto
+} from '../lib.mjs';
 
 const BASE = 'https://www.bancofalabella.cl';
 const URL = `${BASE}/descuentos/todos`;
@@ -24,53 +33,20 @@ const CATEGORIAS = {
   'cuotas-sin-interes': 'Cuotas sin interés'
 };
 
-/** Une los fragmentos `self.__next_f.push([1,"..."])` del HTML en un solo texto. */
-export const extraerPayload = (html) =>
-  [...html.matchAll(/self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)/g)]
-    .map((m) => {
-      try {
-        return JSON.parse(m[1]);
-      } catch {
-        return '';
-      }
-    })
-    .join('');
+export { extraerPayload };
 
 /** Extrae todos los arreglos `"benefitCardsData":[...]` del payload. */
-export const extraerTarjetas = (payload) => {
-  const tarjetas = [];
-  const clave = '"benefitCardsData":';
-  let desde = 0;
-  while ((desde = payload.indexOf(clave, desde)) !== -1) {
-    const inicio = desde + clave.length;
-    let nivel = 0;
-    let enTexto = false;
-    let fin = inicio;
-    for (; fin < payload.length; fin++) {
-      const c = payload[fin];
-      if (enTexto) {
-        if (c === '\\') fin++;
-        else if (c === '"') enTexto = false;
-      } else if (c === '"') enTexto = true;
-      else if (c === '[' || c === '{') nivel++;
-      else if (c === ']' || c === '}') {
-        nivel--;
-        if (nivel === 0) break;
-      }
-    }
-    try {
-      tarjetas.push(...JSON.parse(payload.slice(inicio, fin + 1)));
-    } catch {
-      // bloque incompleto: se ignora
-    }
-    desde = fin;
-  }
-  return tarjetas;
-};
+export const extraerTarjetas = (payload) => extraerArreglos(payload, 'benefitCardsData');
 
 /** Next.js reemplaza valores repetidos por referencias ("$28:props:..."); se ignoran. */
 const valor = (v) => (typeof v === 'string' && v.startsWith('$') ? undefined : v);
 const lista = (v) => (Array.isArray(v) ? v : []);
+
+/** Logo del comercio desde Contentful, pedido en tamaño pequeño (el original pesa cientos de KB). */
+const urlLogo = (logo) => {
+  if (typeof logo !== 'string' || !logo.includes('ctfassets.net')) return '';
+  return `${logo.startsWith('//') ? 'https:' : ''}${logo}?w=160&h=160&fit=pad&fm=webp&q=80`;
+};
 
 const tipoDeTarjetas = (tarjetas) => {
   if (!lista(tarjetas).length) return 'credito';
@@ -109,7 +85,8 @@ export const mapearTarjeta = (item, categoriaDelSitio) => {
     dias_validos: dias.length ? dias : [...DIAS_SEMANA],
     fecha_vencimiento: extraerFecha(valor(item.limitDate) || valor(card.endDate) || ''),
     es_delivery: /delivery|rappi|pedidos ?ya|uber ?eats/i.test(`${titulo} ${valor(card.description) || ''}`),
-    url
+    url,
+    logo: urlLogo(valor(card.logoCard))
   };
 };
 

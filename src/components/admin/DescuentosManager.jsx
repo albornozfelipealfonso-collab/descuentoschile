@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Plus, Edit, Trash2, Eye, EyeOff, Search, Filter } from 'lucide-react';
 import FormModal from './FormModal';
-import { DEFAULT_BANCO_COLOR, findBanco, getTextColor, nextId, normalizar } from '../../utils/descuentos';
+import { DEFAULT_BANCO_COLOR, estaVigente, findBanco, getTextColor, nextId, normalizar } from '../../utils/descuentos';
 
 const DescuentosManager = ({ descuentos, setDescuentos, bancos }) => {
   const [showModal, setShowModal] = useState(false);
@@ -311,6 +311,14 @@ const DescuentosManager = ({ descuentos, setDescuentos, bancos }) => {
                             </>
                           )}
                         </button>
+                        {/* Sin fecha no se publica; vencido tampoco se muestra en la app */}
+                        {!descuento.fecha_vencimiento ? (
+                          <p className="mt-1 text-xs text-amber-700" title="Ponle fecha de vencimiento para publicarlo">
+                            Sin fecha: no se publica
+                          </p>
+                        ) : (
+                          !estaVigente(descuento) && <p className="mt-1 text-xs text-red-700">Vencido</p>
+                        )}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <div className="flex items-center justify-end space-x-2">

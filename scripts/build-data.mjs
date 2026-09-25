@@ -23,7 +23,8 @@ const manual = {
   bancos: initialData.bancos.map(normalizarBanco),
   descuentos: initialData.descuentos.map(normalizarDescuento)
 };
-const { datos, errores } = validarDatos(combinarDatos(manual, scrapeados));
+const combinados = combinarDatos(manual, scrapeados);
+const { datos, errores } = validarDatos(combinados);
 if (!datos) {
   console.error('❌ Datos inválidos, no se genera descuentos.json:\n' + errores.join('\n'));
   process.exit(1);
@@ -36,5 +37,12 @@ const mismoContenido = Boolean(previo) && contenido(previo) === contenido(datos)
 if (!mismoContenido) {
   const salida = { version: 1, generado: new Date().toISOString(), ...datos };
   await writeFile(SALIDA, JSON.stringify(salida, null, 2) + '\n');
+}
+if (combinados.sinFecha.length) {
+  console.log(
+    `⚠️  ${combinados.sinFecha.length} descuentos manuales sin fecha de vencimiento no se publican ` +
+      '(ponles fecha en el panel admin):\n' +
+      combinados.sinFecha.map((d) => `   · ${d.banco_nombre}: ${d.establecimiento} — ${d.descuento}`).join('\n')
+  );
 }
 console.log(`${mismoContenido ? '=' : '✅'} descuentos.json: ${datos.bancos.length} bancos, ${datos.descuentos.length} descuentos (${scrapeados.length} scrapeados)`);

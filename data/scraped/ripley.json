@@ -1,0 +1,1227 @@
+{
+  "fuente": "ripley",
+  "banco_nombre": "Banco Ripley",
+  "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+  "actualizado": "2026-09-24",
+  "descuentos": [
+    {
+      "id": "ripley-ce402ddee5",
+      "establecimiento": "Pastamore",
+      "descripcion": "Italiana · R.M. (Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-pastamore_1782319986473.jpg?alt=media&token=d16bac38-fc51-4f17-99ee-d9364137b81a"
+    },
+    {
+      "id": "ripley-9402e5032f",
+      "establecimiento": "Kuntsmann CraftBar",
+      "descripcion": "Restobar · R.M. (La Florida / Ñuñoa / Providencia)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Kunstmann-Craftbar_1782315611991.jpg?alt=media&token=fc47ea98-51ec-42ca-97ee-aeb0407a22a1"
+    },
+    {
+      "id": "ripley-6e107e8abf",
+      "establecimiento": "Tropicalia",
+      "descripcion": "Pizzas y sandiwch · R.M. (Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-tropicalia_1782315869747.jpg?alt=media&token=9879e583-ca2f-44c1-9051-9b824b823f46"
+    },
+    {
+      "id": "ripley-992bd59ac2",
+      "establecimiento": "Fogón Austral",
+      "descripcion": "Carnes a la parrilla · R.M. (Las Condes)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "credito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard Black exclusivamente los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $50.000. Para hacer efectivo el descuento, se deberá realizar lo…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-fogon-austral_1782308333889.jpg?alt=media&token=95bb3a5a-f5d0-423d-896c-ab25b9becfac"
+    },
+    {
+      "id": "ripley-a16a1f0029",
+      "establecimiento": "Loca Pasta",
+      "descripcion": "Comida Italiana · R.M. (Las Condes)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-loca-pasta_1785245125867.jpg?alt=media&token=66861801-2df5-4d94-9788-df58cc955c25"
+    },
+    {
+      "id": "ripley-a991bdccd1",
+      "establecimiento": "Taringa",
+      "descripcion": "Pizzas y sandiwch · R.M. (Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-taringa_1782320279896.jpg?alt=media&token=c77d5168-7ee8-4185-9211-3d4161c1bffe"
+    },
+    {
+      "id": "ripley-e59c43ae90",
+      "establecimiento": "Majestic",
+      "descripcion": "India · R.M. (Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-majestic_1787239015885.jpg?alt=media&token=b70bab9e-c254-49b6-9de8-d11ad51acae4"
+    },
+    {
+      "id": "ripley-adeab0495d",
+      "establecimiento": "El Quincho del Cacho",
+      "descripcion": "Carnes a la parrilla · R.M. (Cerrillos / Pte Alto / Sn Bernardo)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-El-Quincho-del-Cacho_1787239747238.jpg?alt=media&token=e9888598-b8eb-43c6-9153-05aa91a8e6c6"
+    },
+    {
+      "id": "ripley-a34f1dc638",
+      "establecimiento": "Gracielo Bar",
+      "descripcion": "Bar · R.M. (Providencia)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Gracielo-Bar_1769031592513.jpg?alt=media&token=21ede05b-ab90-4803-af78-ebbcecdbeae3"
+    },
+    {
+      "id": "ripley-70ffccf912",
+      "establecimiento": "Antonella Bar",
+      "descripcion": "Burgers - Pizza · R.M. (Las Condes / Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Antonella-bar_1780952374129.jpg?alt=media&token=aedee549-ff6f-4b72-a8d9-93555f560006"
+    },
+    {
+      "id": "ripley-4eb10003bc",
+      "establecimiento": "Koychi",
+      "descripcion": "Korean Street Food · R.M. (Providencia / Las Condes / La Florida / Ñuñoa)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-koychi_1785186069662.jpg?alt=media&token=58b664e4-6a92-4f60-8701-72dfcdc43307"
+    },
+    {
+      "id": "ripley-718a5939d3",
+      "establecimiento": "Los Vikingos",
+      "descripcion": "Carnes y Parrilladas · R.M. (Santiago)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-vikingos_1774874732459.jpg?alt=media&token=23b2aa70-e95c-4eef-9736-67304de7882a"
+    },
+    {
+      "id": "ripley-a285c6dfb7",
+      "establecimiento": "Ocean Pacific's",
+      "descripcion": "Pescados y Mariscos · R.M. (Santiago / Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-ocean-pacifics_1774872389846.jpg?alt=media&token=df030481-4c43-4c33-aaa3-f8e3c1be23da"
+    },
+    {
+      "id": "ripley-e233239eca",
+      "establecimiento": "Psiquis bar",
+      "descripcion": "Hamburguesas · R.M. (Providencia)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-psiquis-bar_1776883975220.jpg?alt=media&token=5c93359c-1d99-440e-b4e7-1b0cbd4a3814"
+    },
+    {
+      "id": "ripley-9fdd429eb9",
+      "establecimiento": "Soho Thai",
+      "descripcion": "Tailandesa · R.M. (Santiago / Las Condes)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-soho-thai_1782316762659.jpg?alt=media&token=254d6825-3660-4303-b6f9-051fc7673c1a"
+    },
+    {
+      "id": "ripley-296b3534f4",
+      "establecimiento": "La Yunta",
+      "descripcion": "Sandwich Gourmet · R.M. (Vitacura / Las Condes / Providencia)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-la-yunta_1774872874706.jpg?alt=media&token=3bba164a-a3c6-4607-8bd7-e0ac4ca39204"
+    },
+    {
+      "id": "ripley-b8f5e1f290",
+      "establecimiento": "Sabor y Aroma",
+      "descripcion": "Peruana Asiatica · R.M. (Lo Barnechea)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Sabor-Aroma_1785185024398.jpg?alt=media&token=90e34f7f-79dc-482d-beb4-27479b15d291"
+    },
+    {
+      "id": "ripley-7533833bbc",
+      "establecimiento": "Don Carlos",
+      "descripcion": "Carnes · R.M. (Las Condes)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "credito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Don-carlos_1787841786807.jpg?alt=media&token=863af9a8-c150-47ae-9761-8f608a7c3399"
+    },
+    {
+      "id": "ripley-2adbabdb04",
+      "establecimiento": "TPM",
+      "descripcion": "Mediterranea · R.M. (Las Condes / Providencia)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "sábado"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-TMP_1774876485089.jpg?alt=media&token=376266cc-7d53-4d2d-9dca-b9fdf785bf6b"
+    },
+    {
+      "id": "ripley-6576b07bc4",
+      "establecimiento": "La Parrilla del Guaton Jeréz",
+      "descripcion": "Parrilladas · R.M. (Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "credito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "sábado"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard Black exclusivamente los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $50.000. Para hacer efectivo el descuento, se deberá realizar lo…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-La-Parrilla-del-Guaton-Jerez_1787241799322.jpg?alt=media&token=f1a85c36-ccee-4696-aa37-f3480417e05c"
+    },
+    {
+      "id": "ripley-04b5c2c66a",
+      "establecimiento": "La Dicha",
+      "descripcion": "Internacional · R.M. (Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-La-Dicha-_1787242064585.jpg?alt=media&token=14d6a2da-c0d7-4416-b199-41a877cc61a8"
+    },
+    {
+      "id": "ripley-ebdd74f272",
+      "establecimiento": "Zulú",
+      "descripcion": "Mediterranea de autor · R.M. (Vitacura)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-zulu_1785184195738.jpg?alt=media&token=2f338434-dfbf-40ad-9715-03318eca8aef"
+    },
+    {
+      "id": "ripley-5d1374dc26",
+      "establecimiento": "La Fabrica 737",
+      "descripcion": "Sushi, Tablas Pizzas · X Región (Osorno)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-fabrica_1785273542500.jpg?alt=media&token=81dbc9ac-052a-4e59-a0d6-29a87c3e930a"
+    },
+    {
+      "id": "ripley-d3f38b3b12",
+      "establecimiento": "Otra Cozza",
+      "descripcion": "Italiana · V Región (Viña del Mar / Reñaca / Olmue)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-otra-coza_1782400154996.jpg?alt=media&token=e4e23e64-7333-4acf-83c0-9c5683030d93"
+    },
+    {
+      "id": "ripley-40240d6939",
+      "establecimiento": "Kuntsmann CraftBar",
+      "descripcion": "Restobar · II, V y VIII Región (Antofagasta / Viña del Mar / Concepción)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Kunstmann-Craftbar_1782340000687.jpg?alt=media&token=83e979ab-7777-4541-a4a4-8bb1097efe89"
+    },
+    {
+      "id": "ripley-883257addb",
+      "establecimiento": "Cervecería Kunstmann",
+      "descripcion": "Bar Restaurante · XIV Región (Valdivia)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo--kuntsmann_1781012218310.jpg?alt=media&token=004ba241-99ff-4e1a-a0f1-ea986371b0e7"
+    },
+    {
+      "id": "ripley-120cab9521",
+      "establecimiento": "La Isla",
+      "descripcion": "Fusion peruana · I Región (Iquique)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-la-isla_1776887573460.jpg?alt=media&token=e383d05d-402c-43cc-8ade-463e397b5de1"
+    },
+    {
+      "id": "ripley-6c689e35f6",
+      "establecimiento": "Wake Up! Cofee & Food",
+      "descripcion": "Cafetería y Comida Mediterranea · VII Región (Curicó)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Wake-Up_1787263015507.jpg?alt=media&token=bca67e86-ee17-4cfc-894a-83d371f6bc9b"
+    },
+    {
+      "id": "ripley-dec7c9ead6",
+      "establecimiento": "Gallardía",
+      "descripcion": "Bar Restaurante · X Región (Osorno)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Gallardi%CC%81a-_1779287438052.jpg?alt=media&token=603e5e25-3ab5-4d65-bef8-2b546102b50a"
+    },
+    {
+      "id": "ripley-e8eae6d54b",
+      "establecimiento": "El Galpón",
+      "descripcion": "Carne Premium · X Región (Osorno)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Galpon-Osorno_1785254612751.jpg?alt=media&token=f8c4d655-67ae-4526-8205-daec0da194b9"
+    },
+    {
+      "id": "ripley-992a677b58",
+      "establecimiento": "Trybar",
+      "descripcion": "Tablas, sandwichs, burgers. · X Región (Osorno)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Trybar_1785254852347.jpg?alt=media&token=a2c1e861-a1e9-4ad6-ac1e-fbdc37940e7b"
+    },
+    {
+      "id": "ripley-927c331675",
+      "establecimiento": "Reses Bar y Brasas",
+      "descripcion": "Carnes a la parrilla · V Región (Los Andes)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Reses-y-Brasas-_1787320252430.jpg?alt=media&token=91453779-0ee8-4fd3-82cf-98193fe52c3d"
+    },
+    {
+      "id": "ripley-2671637e25",
+      "establecimiento": "Reses Bar y Brasas",
+      "descripcion": "Carnes a la parrilla · V Región (Viña del Mar)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Reses-y-Brasas-_1787320252430.jpg?alt=media&token=91453779-0ee8-4fd3-82cf-98193fe52c3d"
+    },
+    {
+      "id": "ripley-862eb4c6e2",
+      "establecimiento": "La Negra Restaurant",
+      "descripcion": "Criolla Peruana · XV Región (Arica)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-la-negra_1782333606509.jpg?alt=media&token=d88d9f6a-610f-4499-bd8e-9afa94793887"
+    },
+    {
+      "id": "ripley-6112fda3dc",
+      "establecimiento": "Bar Nomade",
+      "descripcion": "Bar, pizzas · II Región (Antofagasta)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-bar-nomade_1780954198727.jpg?alt=media&token=ba095813-77f9-4ac0-92f9-f685a0fc3a7b"
+    },
+    {
+      "id": "ripley-b438329224",
+      "establecimiento": "Blind Bar",
+      "descripcion": "Bar · II Región (Calama)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-blind-bar_1782333857693.jpg?alt=media&token=cf7ae3f4-bc10-459e-8ab2-718bfe78bbf3"
+    },
+    {
+      "id": "ripley-f0417da00b",
+      "establecimiento": "Sazón Peruana",
+      "descripcion": "Peruana · V Región (Viña del Mar)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-sazon-peruana_1776888767136.jpg?alt=media&token=d6f5a36f-3d13-4a70-a627-9f1c5572f52a"
+    },
+    {
+      "id": "ripley-ea97eb73cc",
+      "establecimiento": "Quinta pata al Gato",
+      "descripcion": "Platillos de autor · V Región (Quilpue)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-quinta-pal-gato_1782338334868.jpg?alt=media&token=05553c58-db4e-47d3-b1a0-2561a8bb9c30"
+    },
+    {
+      "id": "ripley-e232f5ab54",
+      "establecimiento": "Cervecería Nogg",
+      "descripcion": "Bar · VII Región (Machalí)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Cerveceria-Nogg_1785256444686.jpg?alt=media&token=58ddc46f-abbf-46d6-8554-fe56dc3d9981"
+    },
+    {
+      "id": "ripley-31cd013818",
+      "establecimiento": "Barros Negros Restaurant",
+      "descripcion": "Carnes Premium · VI Región (Rancagua)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-barros-negros_1782400794163.jpg?alt=media&token=d1a469c6-a18d-4e5d-85bc-203d0e9fb371"
+    },
+    {
+      "id": "ripley-f5855126c5",
+      "establecimiento": "Toro Bayo",
+      "descripcion": "Carnes a la parrilla · VII Región (Talca)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-toro-bayo_1767646104893.jpg?alt=media&token=36f6acc3-5a06-43c2-9407-5066c88e6603"
+    },
+    {
+      "id": "ripley-207d518f05",
+      "establecimiento": "Dynos2",
+      "descripcion": "Carnes angus ,sangucheria. Tablas y otros. · XVI Región (Chillan)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-dynos-2_1776962740587.jpg?alt=media&token=129b8c94-0ac2-4741-81db-accf1cb8c580"
+    },
+    {
+      "id": "ripley-ba12242295",
+      "establecimiento": "Taurus Steakbar",
+      "descripcion": "Carnes angus ,sangucheria. Tablas y otros. · XVI Región (Chillan)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-taurus_1776962977920.jpg?alt=media&token=51308f92-c217-49bf-aa82-269714e67378"
+    },
+    {
+      "id": "ripley-cd538e1e07",
+      "establecimiento": "La Pasta de la Nonna",
+      "descripcion": "Italiana · VIII Región (Concepción / San Pedro de la Paz)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-La-Pasta-de-la-Nonna_1769093626265.jpg?alt=media&token=2551e4e7-7811-4642-9898-75af957ffdb7"
+    },
+    {
+      "id": "ripley-59d6c28de4",
+      "establecimiento": "Augusta Bar",
+      "descripcion": "Internacional · VIII Región (Concepción)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-agusta-bar_1785257888859.jpg?alt=media&token=06bbd5f5-9b4a-456e-b261-7537dd29dba2"
+    },
+    {
+      "id": "ripley-bfcbe66ed4",
+      "establecimiento": "Hashigo",
+      "descripcion": "Sushi · VIII Región (Temuco)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Hashigo-_1785258087784.jpg?alt=media&token=44390057-0dc3-4c92-bef8-a0b784183317"
+    },
+    {
+      "id": "ripley-399c2a1ea8",
+      "establecimiento": "Carnivo",
+      "descripcion": "Carne · IX Region (Temuco)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-carnivoro_1776956545586.jpg?alt=media&token=286b5d62-00c1-4853-80e0-f2415dae0dc6"
+    },
+    {
+      "id": "ripley-62f2763818",
+      "establecimiento": "Martina Lougne",
+      "descripcion": "Hamburguesas y Tablas · IX Region (Temuco)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-la-martina_1785271460952.jpg?alt=media&token=733f700a-5fa7-4fac-a299-7854a35a0723"
+    },
+    {
+      "id": "ripley-d934acc516",
+      "establecimiento": "Inca Pecador",
+      "descripcion": "Comida Peruana · X Región (Osorno / Puerto Varas)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Inca-Pecador_1779285372063.jpg?alt=media&token=bfc24a5c-a689-4e03-a887-f72632fe98fc"
+    },
+    {
+      "id": "ripley-fac0b9e3a5",
+      "establecimiento": "Baqueano",
+      "descripcion": "Carnes · IX Region (Temuco)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-baquedano_1786115444456.jpg?alt=media&token=a9d81ee1-6db9-4b09-9a18-38d47c004f49"
+    },
+    {
+      "id": "ripley-9eb56db6c0",
+      "establecimiento": "Matureo Bar",
+      "descripcion": "Comida Rapida · X Región (Osorno)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/09/26 al 30/09/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Matureo-bar_1779287726818.jpg?alt=media&token=5dfa969d-745c-4a58-9047-98106fcd642d"
+    },
+    {
+      "id": "ripley-1859c27d52",
+      "establecimiento": "Brasas del Arriero",
+      "descripcion": "Parrilladas · R.M. (La Florida)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-brasas-arriero_1767716446911.jpg?alt=media&token=cae36b9c-7e6b-4c9e-893e-acce5deb0eaf"
+    },
+    {
+      "id": "ripley-bfac3c12ff",
+      "establecimiento": "Sanbar",
+      "descripcion": "Restobar · R.M. (Ñuñoa)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-sanbar_1769437794753.jpg?alt=media&token=2c2e9880-05ed-4c10-bd55-5ae60b1ec962"
+    },
+    {
+      "id": "ripley-6353c4f471",
+      "establecimiento": "Ora Bar",
+      "descripcion": "Gastronomia Nikkei · R.M. (Ñuñoa)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Ora-bar_1767717069551.jpg?alt=media&token=fef0f9fa-71e8-4e6a-9d18-1ddc3d76e7b1"
+    },
+    {
+      "id": "ripley-1fcf2aa54d",
+      "establecimiento": "Porfirio",
+      "descripcion": "Fusión Chilena, Peruana y Mexicana · R.M. (Providencia)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-porfirio_1782403712748.jpg?alt=media&token=1dcd65b5-c2bc-4ad6-a228-692d6c15ac01"
+    },
+    {
+      "id": "ripley-cd89251d95",
+      "establecimiento": "Expendio",
+      "descripcion": "Mexicana, Chilena y Peruana · R.M. (Providencia)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-expendioMMpntt_1753721332692.jpeg?alt=media&token=d793db5f-06b5-4b0d-af0d-122788afadbc"
+    },
+    {
+      "id": "ripley-357b375ef3",
+      "establecimiento": "Don Taco",
+      "descripcion": "Mexicana · II Región (Antofagasta)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-don-taco_1772026371422.jpg?alt=media&token=46a8aaf3-0c88-4131-938f-9f9a971bb404"
+    },
+    {
+      "id": "ripley-a1875587f1",
+      "establecimiento": "Koala Sushi",
+      "descripcion": "Sushi · V Región (Viña del Mar / Valparaíso)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-koala_1769439208458.jpg?alt=media&token=7cc66cd1-9d8e-40c4-a97d-a142c681a75d"
+    },
+    {
+      "id": "ripley-71d8c6ed34",
+      "establecimiento": "Rossonero",
+      "descripcion": "Italiano · V Región (Viña del Mar)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": true,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-rossonero_1767723387861.jpg?alt=media&token=7f2a7317-9c79-4dae-9cb2-cecf19a42984"
+    },
+    {
+      "id": "ripley-3122ee88e3",
+      "establecimiento": "Gustó Restobar",
+      "descripcion": "Saludable · VIII Región (Concepción)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": true,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-gusto_1767724669526.jpg?alt=media&token=9948af08-ba9f-45a2-9ab5-355680eeab7c"
+    },
+    {
+      "id": "ripley-b9e623e005",
+      "establecimiento": "Lebol",
+      "descripcion": "Fusión Chilena-Peruana · VIII Región (Concepción)",
+      "descuento": "20% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida hasta 30/09/2026, pagando con Tarjetas Banco Ripley exclusivamente en los restaurantes y día de la promoción indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. La disponibilidad de productos y entrega de los descuentos es de responsabilidad exclusiva del restaurante. El descuento no incluye el costo del despacho…",
+      "fecha_vencimiento": "2026-09-30",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-lebol_1760037575366.jpg?alt=media&token=d2253a16-118a-4d91-8bd8-699c1b263528"
+    }
+  ]
+}

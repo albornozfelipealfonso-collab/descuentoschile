@@ -7,6 +7,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { normalizarDescuento, toISODate } from '../../src/utils/descuentos.js';
 import { SCRAPERS } from './bancos/index.mjs';
 import { cerrarNavegador } from './navegador.mjs';
@@ -82,6 +83,7 @@ const main = async () => {
   // El workflow lee _resumen.json para avisar de los fallos.
 };
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+// pathToFileURL: en Windows la URL es file:///C:/... y argv[1] es C:\...
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   main();
 }

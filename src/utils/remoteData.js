@@ -11,8 +11,8 @@ const CACHE_KEY = 'cardDiscount_datos_remotos';
 
 const conFecha = (datos, generado) => ({ generado: generado || '', ...datos });
 
-/** El más reciente según `generado` (ISO); ante empate gana `a`. */
-export const masReciente = (a, b) => (b && (b.generado || '') > (a?.generado || '') ? b : a);
+/** El más reciente según `generado` (ISO); ante empate gana `a`, y si falta uno, el otro. */
+export const masReciente = (a, b) => (b && (!a || (b.generado || '') > (a.generado || '')) ? b : a);
 
 export const leerCache = () => {
   try {

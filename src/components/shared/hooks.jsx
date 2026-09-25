@@ -1,6 +1,6 @@
 // src/components/shared/hooks.jsx
 import { useState, useEffect, useMemo } from 'react';
-import { filtrarDescuentos } from '../../utils/descuentos';
+import { filtrarDescuentos, ordenarPorDia } from '../../utils/descuentos';
 
 const MOBILE_QUERY = '(max-width: 767px)';
 
@@ -20,7 +20,10 @@ export const useIsMobile = () => {
 };
 
 export const useFilteredDescuentos = (descuentos, filtros, busqueda) =>
-  useMemo(() => filtrarDescuentos(descuentos || [], filtros, busqueda), [descuentos, filtros, busqueda]);
+  useMemo(
+    () => ordenarPorDia(filtrarDescuentos(descuentos || [], filtros, busqueda), filtros.dia),
+    [descuentos, filtros, busqueda]
+  );
 
 /** Devuelve `value` con retraso, para no filtrar en cada tecla. */
 export const useDebouncedValue = (value, delay = 200) => {

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Upload, Link, Trash2 } from 'lucide-react';
 import CategorySelector from './CategorySelector';
+import { finDeMes } from '../../utils/descuentos';
 
 const FormModal = ({ 
   isOpen, 
@@ -49,7 +50,8 @@ const FormModal = ({
         categoria: '',
         dias_validos: [],
         terminos: '',
-        fecha_vencimiento: '',
+        // Los descuentos manuales deben vencer: por defecto, a fin de este mes
+        fecha_vencimiento: finDeMes(),
         activo: true
       };
     }
@@ -75,6 +77,10 @@ const FormModal = ({
       }
       if (!formData.banco_nombre?.trim()) {
         alert('El banco es requerido');
+        return;
+      }
+      if (!formData.fecha_vencimiento) {
+        alert('La fecha de vencimiento es requerida: los descuentos sin fecha no se publican');
         return;
       }
     }
@@ -444,10 +450,11 @@ const FormModal = ({
               {/* Fecha de vencimiento */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Fecha de vencimiento
+                  Fecha de vencimiento *
                 </label>
                 <input
                   type="date"
+                  required
                   value={formData.fecha_vencimiento || ''}
                   onChange={(e) => handleChange('fecha_vencimiento', e.target.value)}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900"

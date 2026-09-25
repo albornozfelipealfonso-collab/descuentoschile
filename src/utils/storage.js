@@ -40,3 +40,20 @@ export const guardarBorrador = (baseVersion, bancos, descuentos) =>
   safe(() => localStorage.setItem(DRAFT_KEY, JSON.stringify({ baseVersion, bancos, descuentos })));
 
 export const descartarBorrador = () => safe(() => localStorage.removeItem(DRAFT_KEY));
+
+// ---------------------------------------------------------------------------
+// Preferencias del usuario en este dispositivo: sus tarjetas y si ver solo esas.
+// ---------------------------------------------------------------------------
+
+const TARJETAS_KEY = 'cardDiscount_mis_tarjetas';
+
+/** { tarjetas: { banco: { debito, credito } }, soloMias: boolean } */
+export const leerMisTarjetas = () =>
+  safe(() => {
+    const guardado = JSON.parse(localStorage.getItem(TARJETAS_KEY));
+    if (!guardado || typeof guardado.tarjetas !== 'object') return null;
+    return { tarjetas: guardado.tarjetas, soloMias: guardado.soloMias !== false };
+  });
+
+export const guardarMisTarjetas = (tarjetas, soloMias) =>
+  safe(() => localStorage.setItem(TARJETAS_KEY, JSON.stringify({ tarjetas, soloMias })));
