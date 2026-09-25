@@ -256,6 +256,7 @@ describe('ficha de detalle', () => {
     expect(extraerCodigo(d({ terminos: 'ingresando el código de descuento MACHFXBF antes de pagar' }))).toBe('MACHFXBF');
     expect(extraerCodigo(d({ descripcion: 'Sin código, descuento directo' }))).toBeNull();
     expect(extraerCodigo(d({ descripcion: 'usa el cupón de tu app' }))).toBeNull();
+    expect(extraerCodigo(d({ descripcion: 'con el cupón FULL y 30% con el cupón CPFULL' }))).toBe('CPFULL');
   });
 
   it('PedidosYa usa su logo, salvo los descuentos de PedidosYa Market con logo del banco', () => {

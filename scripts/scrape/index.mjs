@@ -46,7 +46,14 @@ export const validarResultado = (crudos, previo, scraper) => {
 const main = async () => {
   await mkdir(DIR, { recursive: true });
   const filtro = process.argv.slice(2);
-  const scrapers = SCRAPERS.filter((s) => filtro.length === 0 || filtro.includes(s.id));
+  // En GitHub Actions (CI) no hay pantalla: los scrapers `soloLocal` se saltan y
+  // se conservan sus datos anteriores (se actualizan con `npm run scrape` en un PC).
+  const enServidor = Boolean(process.env.CI);
+  const elegidos = SCRAPERS.filter((s) => filtro.length === 0 || filtro.includes(s.id));
+  for (const s of elegidos.filter((s) => enServidor && s.soloLocal)) {
+    console.log(`⏭  ${s.id}: solo se actualiza desde un computador (npm run scrape ${s.id}). Se conservan sus datos.`);
+  }
+  const scrapers = elegidos.filter((s) => !(enServidor && s.soloLocal));
   const resumen = [];
 
   for (const scraper of scrapers) {

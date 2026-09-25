@@ -155,13 +155,19 @@ export const asignarLogos = (descuentos) => {
 };
 
 // "código: SBPAYJUL25", "cupón MACHBANK30", "con el código de descuento BCIPIZZA07"
-const CODIGO = /(?:c[oó]digo|cup[oó]n)(?: de descuento| promocional)?(?: es)?[:\s]+["“'«]?([A-Z0-9][A-Z0-9-]{3,19})\b/;
+const CODIGO = /(?:c[oó]digo|cup[oó]n)(?: de descuento| promocional)?(?: es)?[:\s]+["“'«]?([A-Z0-9][A-Z0-9-]{3,19})\b/g;
 
-/** Código de descuento mencionado en el texto (en mayúsculas y con al menos una letra), o null. */
+/**
+ * Código de descuento mencionado en el texto (en mayúsculas, con una letra y
+ * un número o 5+ letras), o null. Si hay varios ("cupón FULL … cupón CPFULL"),
+ * el primero que cumpla.
+ */
 export const extraerCodigo = (d) => {
   const texto = [d?.descuento, d?.descripcion, d?.terminos].filter(Boolean).join(' ');
-  const codigo = texto.match(CODIGO)?.[1];
-  return codigo && /[A-Z]/.test(codigo) && /\d|[A-Z]{5,}/.test(codigo) ? codigo : null;
+  for (const [, codigo] of texto.matchAll(CODIGO)) {
+    if (/[A-Z]/.test(codigo) && /\d|[A-Z]{5,}/.test(codigo)) return codigo;
+  }
+  return null;
 };
 
 /** Iniciales para cuando no hay logo: "Uber Eats" -> "UE", "Sushi" -> "SU". */
@@ -309,7 +315,11 @@ const SINONIMOS_CATEGORIA = {
   wellness: 'Bienestar',
   'mall sport': 'Deportes',
   'educacion y librerias': 'Educación',
-  salud: 'Salud y belleza'
+  salud: 'Salud y belleza',
+  restaurante: 'Restaurantes',
+  'moda y accesorios': 'Moda y vestuario',
+  movilidad: 'Transporte',
+  'mascota y hogar': 'Hogar'
 };
 
 // Categorías de campaña que no dicen de qué rubro es el descuento

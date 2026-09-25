@@ -16,6 +16,9 @@ import { mapearBeneficio as machMapear } from './bancos/mach.mjs';
 import { mapearBeneficio as ripleyMapear } from './bancos/ripley.mjs';
 import { mapearBeneficio as cencosudMapear, esDescuento as esDescuentoCencosud } from './bancos/cencosud.mjs';
 import { mapearBeneficio as biceMapear, textoDescuento as biceTexto } from './bancos/bice.mjs';
+import { mapearBeneficio as copecMapear } from './bancos/copecpay.mjs';
+import { mapearTarjeta as tenpoMapear, vencimientoDelEnlace as tenpoVence } from './bancos/tenpo.mjs';
+import { mapearBeneficio as bchMapear, textoDescuento as bchTexto } from './bancos/bancochile.mjs';
 
 describe('helpers del scraper', () => {
   it('extraerDias entiende rangos, listas y "todos los días"', () => {
@@ -355,5 +358,90 @@ describe('Banco BICE', () => {
     const d = biceMapear({ meta: {}, fields: { Marca: 'Cuotas', 'Titulo-sitio-publico': 'Despegar', 'Texto-promo-big': '3 o 6', 'Texto-promo-small': 'cuotas' } });
     expect(d.establecimiento).toBe('Despegar');
     expect(d.descuento).toBe('3 o 6 cuotas');
+  });
+});
+
+describe('Copec Pay', () => {
+  const b = {
+    id: 6980,
+    title: 'Mariberico',
+    link: 'https://copecpay.cl/beneficios/restaurante/mariberico/',
+    acf: {
+      descripcion_beneficio_principal: '40% descuento días viernes, sábados y domingos pagando con Copec Pay',
+      descripcion_corta_int_bene: '20% con todo medio de pago agregando el cupón FULL y 30% con Copec Pay con el cupón CPFULL.',
+      fecha_de_termino: '30/09/2026',
+      lista_personalizada: [{ pasos: 'Descarga la app Copec' }]
+    },
+    taxonomies: {
+      dias: [{ name: 'Lunes' }, { name: 'Martes' }],
+      'categorias-beneficios': [{ name: 'Combustible' }],
+      comercio: [{ name: 'Mariberico', image: 'https://copecpay.cl/logo.png' }]
+    }
+  };
+  it('manda el texto sobre las etiquetas de días y no confunde "Copec" con bencina', () => {
+    expect(copecMapear(b)).toMatchObject({
+      establecimiento: 'Mariberico',
+      descuento: '40% descuento días viernes, sábados y domingos',
+      dias_validos: ['viernes', 'sábado', 'domingo'],
+      fecha_vencimiento: '2026-09-30',
+      categoria: 'Otros',
+      logo: 'https://copecpay.cl/logo.png'
+    });
+    expect(copecMapear(b).terminos).toMatch(/^Cómo usarlo: 1\) Descarga la app Copec/);
+  });
+});
+
+describe('Tenpo', () => {
+  const tarjeta = `class="beneficio-collection-item w-dyn-item"><div fs-cmsfilter-field="Tipo" class="x">Tarjeta de Crédito</div>
+    <div fs-cmsfilter-field="Name" class="display-none">Despegar</div><img src="https://cdn/logo.webp" class="brand-partner"/>
+    <div class="cat-dias"><div role="listitem"><div>Martes</div></div></div>
+    <div class="titulo-beneficio b-titulo"><div class="titulo-beneficio-all">$50.000 de devolución en Despegar.</div></div>
+    <div class="texto-beneficio"><div class="p-text-beneficio-copy">Viaja más.</div></div>
+    <a href="/beneficios/despegar-septiembre-2026" class="cta-beneficio">Saber más</a>`;
+  it('lee los campos de la tarjeta y el vencimiento del enlace', () => {
+    expect(tenpoMapear(tarjeta)).toMatchObject({
+      establecimiento: 'Despegar',
+      descuento: '$50.000 de devolución en Despegar.',
+      tipo_tarjeta: 'credito',
+      dias_validos: ['martes'],
+      fecha_vencimiento: '2026-09-30',
+      url: 'https://www.tenpo.cl/beneficios/despegar-septiembre-2026',
+      logo: 'https://cdn/logo.webp'
+    });
+  });
+  it('vencimientoDelEnlace', () => {
+    expect(tenpoVence('/beneficios/samsung-febrero-2027')).toBe('2027-02-28');
+    expect(tenpoVence('/beneficios/samsung')).toBe('');
+  });
+});
+
+describe('Banco de Chile', () => {
+  it('textoDescuento normaliza "20%; dto."', () => {
+    expect(bchTexto('20%; dto.')).toBe('20% de descuento');
+    expect(bchTexto('Hasta; 25% dto.')).toBe('Hasta 25% de descuento');
+    expect(bchTexto('15%; dto adicional.')).toBe('15% de descuento adicional');
+  });
+  it('mapea una entrada: días del extracto, lugar sin etiquetas internas', () => {
+    const d = bchMapear({
+      meta: { slug: 'sky-bar', uuid: 'u1', tags: ['lunes', 'martes', 'los ríos', 'valdivia', 'segmentado', 'invierno-2026'], category_name: 'restaurantes-y-bares' },
+      fields: {
+        Titulo: 'SKY BAR',
+        'Tipo Beneficio': '20%; dto.',
+        Extracto: 'lunes y martes presencial',
+        Vigencia: 'Promoción válida hasta el 31 de marzo de 2027.',
+        'Tarjetas Permitidas': ['visa-credito-infinite', 'visa-debito-bch'],
+        Logo: { url: 'https://assets/logo.jpg' }
+      }
+    });
+    expect(d).toMatchObject({
+      establecimiento: 'SKY BAR',
+      descuento: '20% de descuento',
+      dias_validos: ['lunes', 'martes'],
+      fecha_vencimiento: '2027-03-31',
+      categoria: 'Restaurantes',
+      tipo_tarjeta: 'ambas',
+      url: 'https://sitiospublicos.bancochile.cl/personas/beneficios/detalle/sky-bar'
+    });
+    expect(d.descripcion).toBe('Lunes y martes presencial. Dónde: Los Ríos, Valdivia');
   });
 });

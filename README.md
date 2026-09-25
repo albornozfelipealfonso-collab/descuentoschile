@@ -73,10 +73,22 @@ La web y la APK descargan `descuentos.json` desde GitHub cada vez que se abren, 
 | Banco Ripley | ✅ Automático | Restaurantes "Restofans" desde `bancoripley.cl/api/call-sp-api`, leída con un navegador |
 | Tarjeta Spin (Cruz Verde) | ✅ Automático | CMS público `cms.tarjetaspin.cl/benefits` (con navegador: el servidor no envía su certificado intermedio) |
 | Tarjeta Cencosud | ✅ Automático | Datos JSON incluidos en `tarjetacencosud.cl/publico/beneficios` |
-| Banco de Chile | ❌ Manual | Su protección anti-bots (Incapsula) bloquea los servidores de GitHub |
+| Copec Pay | ✅ Automático | API de WordPress `copecpay.cl/wp-json/custom/v1/beneficios/` |
+| Tenpo | ✅ Automático | Tarjetas en el HTML de `tenpo.cl/beneficios` (paginado) |
+| Banco de Chile | 🖥️ Desde tu PC | API de contenidos de `sitiospublicos.bancochile.cl`; su protección (Incapsula) bloquea a GitHub y al navegador oculto, así que abre una ventana de Chromium. Ver abajo |
 | Santander | ❌ Manual | Bloquea todas las conexiones desde servidores en la nube |
-| Itaú, BancoEstado, Coopeuch | ❌ Manual | Bloquean los navegadores automatizados |
+| Itaú, BancoEstado, Coopeuch, Banco Security | ❌ Manual | Bloquean los navegadores automatizados |
+| sbpay | ❌ Manual | Los días y condiciones solo vienen como imagen |
 | Scotiabank | ❌ Manual | Sus beneficios (ScotiaRewards) no tienen datos estructurados; habría que leer el HTML |
+
+**Banco de Chile (desde tu PC).** La actualización diaria de GitHub lo salta y conserva sus datos. Para renovarlos, cada tanto (por ejemplo una vez al mes) corre en tu computador:
+
+```bash
+npm run scrape bancochile
+npm run data
+```
+
+Se abrirá una ventana de Chromium por unos segundos. Luego haz commit y push de `data/scraped/bancochile.json` y `src/data/descuentos.json`. Sus descuentos traen fecha de término, así que los vencidos desaparecen solos aunque no lo actualices.
 
 Los descuentos de los bancos se combinan con los manuales: si uno manual repite a uno scrapeado (mismo banco, comercio, cifra y días) se muestra una sola vez, el manual.
 
