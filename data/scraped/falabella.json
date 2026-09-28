@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-09-27",
+  "actualizado": "2026-09-28",
   "descuentos": [
     {
       "id": "falabella-b0db02a150",
@@ -28,6 +28,31 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/especial-belleza",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/4gPYL48KzGSf8CqKzIx5Ud/1c35a4bf8cc140127cc24b4c22a300d4/Cards_Fpuntos_Logo_Web_Especial_Belleza.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-b99f878c35",
+      "establecimiento": "Hoteles del mes",
+      "descripcion": "A través de Viajes Falabella",
+      "descuento": "Desde 60.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Viajes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-04",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/hoteles-del-mes",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/3Pp7zwuWn8r01p7HjsMts1/81ce2e0516d9c92940428ddf3225dfa1/4adcfe8d-49bc-4025-b1f1-d8e26f6ee6a3.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-2372896165",
