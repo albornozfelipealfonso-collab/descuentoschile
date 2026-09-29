@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-09-28",
+  "actualizado": "2026-09-29",
   "descuentos": [
     {
       "id": "falabella-b0db02a150",
@@ -2920,7 +2920,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Supermercados",
       "dias_validos": [
         "jueves"
       ],
@@ -4890,7 +4890,7 @@
     },
     {
       "id": "falabella-86c4524e5c",
-      "establecimiento": "Viajes Falabella",
+      "establecimiento": "Canje Traslado al Aeropuerto",
       "descripcion": "Canjea ida o vuelta al aeropuerto",
       "descuento": "Desde 39.500 Fpuntos",
       "banco_nombre": "Banco Falabella",

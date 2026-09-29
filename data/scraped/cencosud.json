@@ -2,7 +2,7 @@
   "fuente": "cencosud",
   "banco_nombre": "Cencosud",
   "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/descuentos-comida",
-  "actualizado": "2026-09-28",
+  "actualizado": "2026-09-29",
   "descuentos": [
     {
       "id": "cencosud-c1dfd96eea",
@@ -891,7 +891,7 @@
       "id": "cencosud-5e796e4833",
       "establecimiento": "Anwo",
       "descripcion": "¡Siente el calor del ahorro!",
-      "descuento": "13 a 16 cuotas sin interés en todo Anwo",
+      "descuento": "13 a 36 cuotas sin interés en todo Anwo",
       "banco_nombre": "Cencosud",
       "tipo_tarjeta": "credito",
       "categoria": "Salud y belleza",
