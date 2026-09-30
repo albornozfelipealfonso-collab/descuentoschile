@@ -2,7 +2,7 @@
   "fuente": "cencosud",
   "banco_nombre": "Cencosud",
   "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/descuentos-comida",
-  "actualizado": "2026-09-29",
+  "actualizado": "2026-09-30",
   "descuentos": [
     {
       "id": "cencosud-c1dfd96eea",
@@ -226,7 +226,7 @@
     {
       "id": "cencosud-d435a6cdd7",
       "establecimiento": "La Ruta Del Sabor",
-      "descripcion": "Sigue la Ruta del Sabor, donde encontrarás los mejores restaurantes de tu zona",
+      "descripcion": "Sigue la Ruta del Sabor, donde encontrarás los mejores restaurantes de tu zona. Encuentra restaurantes como Margó, Gueros, Caoba bar, Rishtedar, Don Vito, Vicenzo, Sabor y Aroma, Galpón Italia, la Yunta, Margo y más.",
       "descuento": "Hasta 40% de descuento en restaurantes",
       "banco_nombre": "Cencosud",
       "tipo_tarjeta": "credito",

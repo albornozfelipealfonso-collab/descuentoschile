@@ -2,7 +2,7 @@
   "fuente": "spin",
   "banco_nombre": "Tarjeta Spin Cruz Verde",
   "url": "https://www.tarjetaspin.cl/",
-  "actualizado": "2026-09-29",
+  "actualizado": "2026-09-30",
   "descuentos": [
     {
       "id": "spin-356a192b79",
@@ -250,7 +250,7 @@
     {
       "id": "spin-12c6fc06c9",
       "establecimiento": "Maicao",
-      "descripcion": "Válido para compras presenciales y/o online",
+      "descripcion": "Válido para compras presenciales",
       "descuento": "7 cuotas sin interés",
       "banco_nombre": "Tarjeta Spin Cruz Verde",
       "tipo_tarjeta": "credito",
