@@ -2,7 +2,7 @@
   "fuente": "bci",
   "banco_nombre": "BCI",
   "url": "https://www.bci.cl/beneficios/beneficios-bci",
-  "actualizado": "2026-10-01",
+  "actualizado": "2026-10-02",
   "descuentos": [
     {
       "id": "bci-557d8ffe37",
@@ -1237,6 +1237,31 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/sabado-chicureo-pckgowf",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Al-Pesto-Restaurante_34743d0a_20-52_4.png"
+    },
+    {
+      "id": "bci-597812f394",
+      "establecimiento": "Visa Days",
+      "descripcion": "Visa Days en las tiendas Arrow - Victorinox - Ashley - CIC - Lippi y mucho más. Hasta 40% de descuento en tiendas adheridas. Fecha: 2 y 3 de octubre de 2026 Tarjetas aplicables: Tarjetas de crédito y débito Visa. Mecánica: Para acceder al beneficio, los clientes deben pagar presencialmente con sus tarjetas Visa en las tiendas adheridas participantes. Malls participantes: Mall Marina Mall Curicó Mall del Centro Concepción Parque Arauco Arauco Maipú Marcas participantes: Arrow, Victorinox, Kaya Unite, Ashley, CIC, Lee, Lippi, Merrell, Ópticas Schilling, Haka Honu, New Balance y BSOUL, ¡y muchas más!",
+      "descuento": "40% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Moda y vestuario",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. Promoción válida únicamente para compras presenciales realizadas los días 2 y 3 de octubre de 2026 en tiendas adheridas ubicadas en Mall Marina, Mall Curicó, Mall del Centro Concepción, Parque Arauco y Arauco Maipú. Los descuentos y condiciones particulares son definidos y otorgados exclusivamente por cada tienda participante. Para acceder al beneficio es requisito pagar con tarjetas Visa crédito o débito. Beneficio sujeto a stock y…",
+      "fecha_vencimiento": "2026-10-03",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/visa-days-en-las-tiendas-arrow-victorinox-ashley-cic-lippi-y-mucho-mas-ckkcul",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Visa-Days_77cb533d_20-33_4.png"
     },
     {
       "id": "bci-5db8aa13d7",
@@ -3986,6 +4011,25 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Anima-Cocktail-Lab_cf34cb2e_19-40_4.png"
     },
     {
+      "id": "bci-cc262d2046",
+      "establecimiento": "Aroma Limeño",
+      "descripcion": "Machalí. 30% de descuento con tope de $30.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "30% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 30% de descuento en el total de la cuenta, con tope de $30.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/machali-acwuzc",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Aroma-Lime%C3%B1o_5f279ff3_20-18_4.png"
+    },
+    {
       "id": "bci-113ba0a8c8",
       "establecimiento": "Bandura Restobar",
       "descripcion": "Concepción. 20% de descuento con tope de $30.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
@@ -4003,6 +4047,31 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/concepcion-52ybqx7",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Bandura-Restobar_b334ecbd_19-57_4.png"
+    },
+    {
+      "id": "bci-c2ad647437",
+      "establecimiento": "Bar La Trova",
+      "descripcion": "Todos los días - Santiago. 20% de descuento con tope de $20.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "20% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci con tope de $20.000. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se aplica de…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/todos-los-dias-santiago-sdgph5",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Bar-La-Trova_f1764bf0_20-21_4.png"
     },
     {
       "id": "bci-3269e08ef2",
@@ -4046,7 +4115,26 @@
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/martes-vitacura-3cgqoom",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Capogrossi_7dad1d45_20-53_4.png"
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Capogrossi_7dad1d45_12-3_4.png"
+    },
+    {
+      "id": "bci-fcfd92b84e",
+      "establecimiento": "Casa Do Acaí",
+      "descripcion": "Lunes en Linares. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "40% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Antojos",
+      "dias_validos": [
+        "lunes"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/lunes-en-linares-nwi5zd",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Casa-Do-Aca%C3%AD_fd34eea2_15-39_4.png"
     },
     {
       "id": "bci-fb2844808f",
@@ -4087,6 +4175,31 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/vina-del-mar-srnyze",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Fud-Market_7e350fdb_21-33_4.png"
+    },
+    {
+      "id": "bci-2460d0421c",
+      "establecimiento": "Totoy Zamudio",
+      "descripcion": "Colección exclusiva. Compra online: El descuento será de un 10% sobre el total de la compra en la tienda online sin tope, siempre que los clientes utilicen como medio de pago sus Tarjetas de Débito o Crédito Bci. El descuento se hara efectivo utilizando el código “BCI10” como cupón de descuento al momento de pagar. El descuento no es acumulable con otros descuentos o beneficios, promociones y ofertas vigentes. El descuento no incluye el costo de envío.",
+      "descuento": "10% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Otros",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. Compra online: El descuento será de un 10% sobre el total de la compra en la tienda online sin tope, siempre que los clientes utilicen como medio de pago sus Tarjetas de Débito o Crédito Bci. El descuento se hara efectivo utilizando el código “BCI10” como cupón de descuento al momento de pagar. El descuento no es acumulable con otros descuentos o beneficios, promociones y ofertas vigentes. El descuento no incluye el costo de envío. Los…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/coleccion-exclusiva-33eeccr",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Totoy-Zamudio_80767ab1_15-36_4.png"
     },
     {
       "id": "bci-40b3f4dd45",
@@ -4153,6 +4266,31 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/valparaiso-y-vina-del-mar-6q2uu9",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Koala-Sushi_84286329_12-15_4.png"
+    },
+    {
+      "id": "bci-d5fbc0134d",
+      "establecimiento": "Trattoria al Dente",
+      "descripcion": "Todos los días - Santiago. 20% de descuento con tope de $20.000 por cliente al día. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "20% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci con un tope de $20.000 por cliente al día. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/todos-los-dias-santiago-3dm1o9m",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Trattoria-al-Dente_90359e26_15-43_4.png"
     },
     {
       "id": "bci-603cffce56",
@@ -4287,6 +4425,25 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/de-12.30-a-23.00-horas-af8r6rh",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/The-Bistr%C3%B3_f335c67b_13-43_4.png"
+    },
+    {
+      "id": "bci-86e5b0305a",
+      "establecimiento": "The Courtner",
+      "descripcion": "Hotel Courtyard By Marriott. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "40% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/hotel-courtyard-by-marriott-pzs4vl",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/The-Courtner_bc29124d_18-15_4.png"
     },
     {
       "id": "bci-e146726f80",
@@ -5723,6 +5880,28 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Play-KIDS-Linares_c0344506_12-38_4.png"
     },
     {
+      "id": "bci-3b2d94e871",
+      "establecimiento": "Café Meche",
+      "descripcion": "Providencia. 20% de descuento con tope de $20.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "20% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci con tope de $20.000. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se aplica de…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/providencia-3qwqhe5",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Caf%C3%A9-Meche_bf349878_15-38_4.png"
+    },
+    {
       "id": "bci-0fa583f401",
       "establecimiento": "PedidosYa",
       "descripcion": "Multiplica x5 tu cashback en PedidosYa Market. El supermercado directo a tu casa. Todas tus compras con Tarjeta de Crédito Bci en PedidosYa Market multiplican x5 tu cashback Valido para compras en App PedidisYa sección Market Se excluyen de este beneficio a clientes de Tarjetas de Crédito Aadvantage",
@@ -5748,13 +5927,32 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/PedidosYa_0d34e4f4_20-33_4.png"
     },
     {
-      "id": "bci-2460d0421c",
-      "establecimiento": "Totoy Zamudio",
-      "descripcion": "Colección exclusiva. Compra online: El descuento será de un 10% sobre el total de la compra en la tienda online sin tope, siempre que los clientes utilicen como medio de pago sus Tarjetas de Débito o Crédito Bci. El descuento se hara efectivo utilizando el código “BCI10” como cupón de descuento al momento de pagar. El descuento no es acumulable con otros descuentos o beneficios, promociones y ofertas vigentes. El descuento no incluye el costo de envío.",
-      "descuento": "10% de descuento",
+      "id": "bci-3e512b9bab",
+      "establecimiento": "Dulchi",
+      "descripcion": "Cafetería de especialidad. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "40% de descuento",
       "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "tipo_tarjeta": "credito",
+      "categoria": "Antojos",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/cafeteria-de-especialidad-v3vvp6",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Dulchi_8a2386ac_15-40_4.png"
+    },
+    {
+      "id": "bci-f92c15a6ce",
+      "establecimiento": "Red de Salud UC CHRISTUS",
+      "descripcion": "En Red de Salud UC CHRISTUS Con tus Tarjetas de Crédito Bci Vigencia desde el 1 al 31 de octubre de 2026.",
+      "descuento": "Paga en 3 a 24 cuotas sin interés",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Hogar",
       "dias_validos": [
         "lunes",
         "martes",
@@ -5765,12 +5963,12 @@
         "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. Compra online: El descuento será de un 10% sobre el total de la compra en la tienda online sin tope, siempre que los clientes utilicen como medio de pago sus Tarjetas de Débito o Crédito Bci. El descuento se hara efectivo utilizando el código “BCI10” como cupón de descuento al momento de pagar. El descuento no es acumulable con otros descuentos o beneficios, promociones y ofertas vigentes. El descuento no incluye el costo de envío. Los…",
+      "terminos": "Exclusivo con tus Tarjeta de Crédito Bci. Promoción paga en 3 a 24 cuotas sin interés en Red de Salud UC CHRISTUS: CAE de 0,77% calculado bajo un monto de compra de $1.000.000 en 24 cuotas. Costo total del Crédito: $1.008.000. Los $8.000 corresponden al cargo por el cálculo del impuesto timbres DL3475 y el $1.000.000 corresponden al monto total de la compra sin intereses si el cliente paga oportunamente al vencimiento de cada estado de cuenta. Promoción válida hasta el 31/10/2026, para pagos…",
       "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/coleccion-exclusiva-33eeccr",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Totoy-Zamudio_80767ab1_21-58_4.png"
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/paga-en-3-a-24-cuotas-sin-interes-xqja11",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Red-de-Salud-UC-CHRI_57d71834_16-15_4.png"
     },
     {
       "id": "bci-74a82d6bf6",
@@ -6095,47 +6293,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Restobar-Bravos_2c262137_15-9_4.png"
     },
     {
-      "id": "bci-3b2d94e871",
-      "establecimiento": "Café Meche",
-      "descripcion": "Providencia. 20% de descuento con tope de $20.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "20% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci con tope de $20.000. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se aplica de…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/providencia-3qwqhe5",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Caf%C3%A9-Meche_bf349878_15-21_4.png"
-    },
-    {
-      "id": "bci-cc262d2046",
-      "establecimiento": "Aroma Limeño",
-      "descripcion": "Machalí. 30% de descuento con tope de $30.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "30% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "miércoles"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 30% de descuento en el total de la cuenta, con tope de $30.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/machali-acwuzc",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Aroma-Lime%C3%B1o_5f279ff3_19-45_4.png"
-    },
-    {
       "id": "bci-64589e5aa8",
       "establecimiento": "Bagual Las Trancas",
       "descripcion": "Las Trancas - Chillán. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
@@ -6155,31 +6312,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Bagual-Las-Trancas_2c27a2b8_19-48_4.png"
     },
     {
-      "id": "bci-c2ad647437",
-      "establecimiento": "Bar La Trova",
-      "descripcion": "Todos los días - Santiago. 20% de descuento con tope de $20.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "20% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci con tope de $20.000. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se aplica de…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/todos-los-dias-santiago-sdgph5",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Bar-La-Trova_f1764bf0_20-3_4.png"
-    },
-    {
       "id": "bci-67c711e42c",
       "establecimiento": "Cafettino Cafetería",
       "descripcion": "Constitución. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
@@ -6197,25 +6329,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/constitucion-gjaoepq",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Cafettino-Cafeter%C3%ADa_e68ec3b3_20-19_4.png"
-    },
-    {
-      "id": "bci-fcfd92b84e",
-      "establecimiento": "Casa Do Acaí",
-      "descripcion": "Lunes en Linares. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "40% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "Antojos",
-      "dias_validos": [
-        "lunes"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/lunes-en-linares-nwi5zd",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Casa-Do-Aca%C3%AD_fd34eea2_21-1_4.png"
     },
     {
       "id": "bci-bd4eb5706f",
@@ -6260,25 +6373,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/penalolen-gwdh35",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Diksabaa-Shawarmas_9c9a58e9_21-9_4.png"
-    },
-    {
-      "id": "bci-3e512b9bab",
-      "establecimiento": "Dulchi",
-      "descripcion": "Cafetería de especialidad. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "40% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "Antojos",
-      "dias_validos": [
-        "martes"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/cafeteria-de-especialidad-v3vvp6",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Dulchi_8a2386ac_21-13_4.png"
     },
     {
       "id": "bci-6ff5ab9a5e",
@@ -6348,31 +6442,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/kombucha-online-d375198",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Kombuchu_e817b32b_12-20_4.png"
-    },
-    {
-      "id": "bci-d5fbc0134d",
-      "establecimiento": "Trattoria al Dente",
-      "descripcion": "Todos los días - Santiago. 20% de descuento con tope de $20.000 por cliente al día. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "20% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci con un tope de $20.000 por cliente al día. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/todos-los-dias-santiago-3dm1o9m",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Trattoria-al-Dente_90359e26_12-24_4.png"
     },
     {
       "id": "bci-f8e8d98733",
