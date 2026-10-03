@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-02",
+  "actualizado": "2026-10-03",
   "descuentos": [
     {
       "id": "falabella-b99f878c35",
@@ -950,7 +950,7 @@
     {
       "id": "falabella-5ce9194605",
       "establecimiento": "Kento Gourmet",
-      "descripcion": "Exclusivo presencial",
+      "descripcion": "Presencial y online",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
@@ -2294,7 +2294,7 @@
       "descuento": "12 cuotas 0.89%",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Hogar",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -2444,7 +2444,7 @@
       "descuento": "2 ingresos Gratis Al mes",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -2557,7 +2557,7 @@
       "descuento": "25% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Transporte",
       "dias_validos": [
         "miércoles"
       ],
@@ -2676,7 +2676,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Viajes",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3481,7 +3481,7 @@
       "descuento": "Hasta 25% Sin tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Hogar",
+      "categoria": "Servicios",
       "dias_validos": [
         "miércoles"
       ],
@@ -3500,7 +3500,7 @@
       "descuento": "Hasta Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3550,7 +3550,7 @@
       "descuento": "Hasta 65% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Hogar",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3575,7 +3575,7 @@
       "descuento": "Hasta 30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3600,7 +3600,7 @@
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3675,7 +3675,7 @@
       "descuento": "12 a 24 Cuotas Sin Interés",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Cuotas sin interés",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3888,7 +3888,7 @@
       "descuento": "Desde 1.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Hogar",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -3963,7 +3963,7 @@
       "descuento": "Hasta El Triple",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Combustible",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -4304,7 +4304,7 @@
       "descuento": "25% de dcto",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",

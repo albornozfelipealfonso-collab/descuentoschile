@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-02T16:27:04.550Z",
+  "generado": "2026-10-03T15:01:15.279Z",
   "bancos": [
     {
       "id": 1,
@@ -6233,8 +6233,8 @@
     {
       "id": "bci-f92c15a6ce",
       "establecimiento": "Red de Salud UC CHRISTUS",
-      "descripcion": "En Red de Salud UC CHRISTUS Con tus Tarjetas de Crédito Bci Vigencia desde el 1 al 31 de octubre de 2026.",
-      "descuento": "Paga en 3 a 24 cuotas sin interés",
+      "descripcion": "El pago de 3 a 18 cuotas sin interés es válido únicamente para operaciones individuales superiores a 100.000 CLP y aplica a todos los servicios de UC CHRISTUS. Para el pago de cuentas hospitalarias asociado a este convenio, este beneficio aplica exclusivamente a través del portal web de UC CHRISTUS, sujeto a la disponibilidad, condiciones y vigencia de cada convenio. Vigencia desde el 1 al 31 de diciembre de 2026.",
+      "descuento": "Paga en 3 a 18 cuotas sin interés",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
       "categoria": "Hogar",
@@ -6248,8 +6248,8 @@
         "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjeta de Crédito Bci. Promoción paga en 3 a 24 cuotas sin interés en Red de Salud UC CHRISTUS: CAE de 0,77% calculado bajo un monto de compra de $1.000.000 en 24 cuotas. Costo total del Crédito: $1.008.000. Los $8.000 corresponden al cargo por el cálculo del impuesto timbres DL3475 y el $1.000.000 corresponden al monto total de la compra sin intereses si el cliente paga oportunamente al vencimiento de cada estado de cuenta. Promoción válida hasta el 31/10/2026, para pagos…",
-      "fecha_vencimiento": "2026-10-31",
+      "terminos": "Exclusivo con tus Tarjeta de Crédito Bci. Promoción paga en 3 a 18 cuotas válido únicamente para operaciones individuales superiores a $100.000 sin interés en Red de Salud UC CHRISTUS: CAE de 0,77% calculado bajo un monto de compra de $1.000.000 en 18 cuotas. Costo total del Crédito: $1.008.000. Los $8.000 corresponden al cargo por el cálculo del impuesto timbres DL3475 y el $1.000.000 corresponden al monto total de la compra sin intereses si el cliente paga oportunamente al vencimiento de cada…",
+      "fecha_vencimiento": "2026-12-31",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/paga-en-3-a-24-cuotas-sin-interes-xqja11",
@@ -12468,7 +12468,7 @@
     {
       "id": "falabella-5ce9194605",
       "establecimiento": "Kento Gourmet",
-      "descripcion": "Exclusivo presencial",
+      "descripcion": "Presencial y online",
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
@@ -13812,7 +13812,7 @@
       "descuento": "12 cuotas 0.89%",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Hogar",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -13962,7 +13962,7 @@
       "descuento": "2 ingresos Gratis Al mes",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -14075,7 +14075,7 @@
       "descuento": "25% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Transporte",
       "dias_validos": [
         "miércoles"
       ],
@@ -14194,7 +14194,7 @@
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Viajes",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -14999,7 +14999,7 @@
       "descuento": "Hasta 25% Sin tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Hogar",
+      "categoria": "Servicios",
       "dias_validos": [
         "miércoles"
       ],
@@ -15018,7 +15018,7 @@
       "descuento": "Hasta Descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -15068,7 +15068,7 @@
       "descuento": "Hasta 65% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Hogar",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -15093,7 +15093,7 @@
       "descuento": "Hasta 30% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -15118,7 +15118,7 @@
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -15193,7 +15193,7 @@
       "descuento": "12 a 24 Cuotas Sin Interés",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Cuotas sin interés",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -15406,7 +15406,7 @@
       "descuento": "Desde 1.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Hogar",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -15481,7 +15481,7 @@
       "descuento": "Hasta El Triple",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Combustible",
+      "categoria": "Transporte",
       "dias_validos": [
         "lunes",
         "martes",
@@ -15822,7 +15822,7 @@
       "descuento": "25% de dcto",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -16480,7 +16480,7 @@
     {
       "id": "ripley-ec39113ec9",
       "establecimiento": "Kuntsmann CraftBar",
-      "descripcion": "Restobar · R.M. (La Florida / Ñuñoa / Providencia)",
+      "descripcion": "Restobar · R.M. (La Florida / Providencia)",
       "descuento": "40% de descuento",
       "banco_nombre": "Banco Ripley",
       "tipo_tarjeta": "ambas",

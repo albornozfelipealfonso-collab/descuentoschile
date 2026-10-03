@@ -2,7 +2,7 @@
   "fuente": "ripley",
   "banco_nombre": "Banco Ripley",
   "url": "https://www.bancoripley.cl/beneficios-y-promociones",
-  "actualizado": "2026-10-02",
+  "actualizado": "2026-10-03",
   "descuentos": [
     {
       "id": "ripley-840bc52e36",
@@ -26,7 +26,7 @@
     {
       "id": "ripley-ec39113ec9",
       "establecimiento": "Kuntsmann CraftBar",
-      "descripcion": "Restobar · R.M. (La Florida / Ñuñoa / Providencia)",
+      "descripcion": "Restobar · R.M. (La Florida / Providencia)",
       "descuento": "40% de descuento",
       "banco_nombre": "Banco Ripley",
       "tipo_tarjeta": "ambas",
