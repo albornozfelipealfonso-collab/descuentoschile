@@ -2,7 +2,7 @@
   "fuente": "bci",
   "banco_nombre": "BCI",
   "url": "https://www.bci.cl/beneficios/beneficios-bci",
-  "actualizado": "2026-10-03",
+  "actualizado": "2026-10-04",
   "descuentos": [
     {
       "id": "bci-557d8ffe37",
@@ -270,6 +270,31 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/30-por-ciento-de-desc.-con-tus-tdc-bci-en-los-packs-light-smart-full-flex-k8nfiof",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_ff20f3fc_15-42_4.png"
+    },
+    {
+      "id": "bci-de1fe4e065",
+      "establecimiento": "Viajes.Bci.cl",
+      "descripcion": "Cyber - en Viajes Bci con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 80.000 de descuento en Paquetes, Vuelos y Hoteles ● DESTINOS EUROPA 30% de descuento en pagando con Tarjeta de Crédito Bci Tope $80.000 ● DESTINOS CARIBE Y NORTEAMÉRICA 20% de descuento pagando con Tarjeta de Crédito Bci Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call Center (800 231 242) Tope $50.000 ● DESTINOS SUDAMÉRICA 10% de descuento pagando con Tarjeta de Crédito Bci Tope $50.000 ● DESTINOS NACIONALES 10% de descuento pagando con Tarjeta de Crédito Bci Tope $30.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional El descuento se verá…",
+      "descuento": "30% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "CyberClicks",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Campaña Viajes Bci - Cyber Vigencia: La presente promoción tendrá vigencia desde 5 al 11 de octubre de 2026, inclusive, o hasta agotar stock disponible, lo que ocurra primero. Elegibilidad: Promoción válida para pagos con Tarjetas de Crédito BCI. Beneficio: (i) Sudamérica: 10% de descuento en paquetes, vuelos y hoteles con tope máximo de CLP $50.000; (ii) Caribe y Norteaméroca: Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call…",
+      "fecha_vencimiento": "2026-10-11",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/cyber-en-viajes-bci-con-descuentos-en-paquetes-vuelos-y-hoteles-i0msj5",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Viajes.Bci.cl_c18e4da6_14-35_4.png"
     },
     {
       "id": "bci-03b0e959c9",
@@ -625,6 +650,31 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tu-cafe-favorito-y-el-momento-perfecto-para-recargar-tu-dia.-2o9y6qk",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Starbucks_7ed3eb5e_13-37_4.png"
+    },
+    {
+      "id": "bci-2a73a0ab32",
+      "establecimiento": "Despegar.cl",
+      "descripcion": "Despegar con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 40.000 de descuento en Paquetes, Vuelos y Hoteles pagando con Tarjeta de Crédito Bci en Despegar ● Vuelos Internacionales Beneficio: 20% de descuento en Vuelos internacionales Tope: 30.000 Vigencia: Beneficio exclusivo 5 de Octubre ● Paquetes Beneficio: 30% de descuento en Paquetes o Hoteles Tope: 40.000 Cupón: BCIPAQUETES Vigencia: 5 al 7 de octubre o hasta agotar stock de usos ● Hoteles Beneficio: 10% de descuento en Hoteles Tope: 20.000 Cupón: BCIHOTELES Vigencia: 5 al 7 de octubre o hasta agotar stock ¿Cómo puedo acceder al beneficio? Ingresa a Despegar.cl En Vuelos Internacionales: En el check out de la…",
+      "descuento": "30% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Viajes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción Cyber BCI válida para reservas de vuelos internacionales efectuados a través del sitio web, app, call center, videollamada, WhatsApp o tiendas de Despegar. Vigencia 5 de octubre 2026 o hasta agotar stock de presupuesto de $15.000.000 CLP en descuentos, lo que suceda primero. Las tarifas que cumplan estos requisitos verán reflejado un descuento del 20% con tope de $30.000 en vuelos internacionales pagando con su tarjeta de crédito BCI. Solo…",
+      "fecha_vencimiento": "2026-10-05",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/despegar-con-descuentos-en-paquetes-vuelos-y-hoteles-frhv6gk",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Despegar.cl_36cc1b5f_15-12_4.png"
     },
     {
       "id": "bci-5b94d64614",
@@ -1237,31 +1287,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/sabado-chicureo-pckgowf",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Al-Pesto-Restaurante_34743d0a_20-52_4.png"
-    },
-    {
-      "id": "bci-597812f394",
-      "establecimiento": "Visa Days",
-      "descripcion": "Visa Days en las tiendas Arrow - Victorinox - Ashley - CIC - Lippi y mucho más. Hasta 40% de descuento en tiendas adheridas. Fecha: 2 y 3 de octubre de 2026 Tarjetas aplicables: Tarjetas de crédito y débito Visa. Mecánica: Para acceder al beneficio, los clientes deben pagar presencialmente con sus tarjetas Visa en las tiendas adheridas participantes. Malls participantes: Mall Marina Mall Curicó Mall del Centro Concepción Parque Arauco Arauco Maipú Marcas participantes: Arrow, Victorinox, Kaya Unite, Ashley, CIC, Lee, Lippi, Merrell, Ópticas Schilling, Haka Honu, New Balance y BSOUL, ¡y muchas más!",
-      "descuento": "40% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Moda y vestuario",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. Promoción válida únicamente para compras presenciales realizadas los días 2 y 3 de octubre de 2026 en tiendas adheridas ubicadas en Mall Marina, Mall Curicó, Mall del Centro Concepción, Parque Arauco y Arauco Maipú. Los descuentos y condiciones particulares son definidos y otorgados exclusivamente por cada tienda participante. Para acceder al beneficio es requisito pagar con tarjetas Visa crédito o débito. Beneficio sujeto a stock y…",
-      "fecha_vencimiento": "2026-10-03",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/visa-days-en-las-tiendas-arrow-victorinox-ashley-cic-lippi-y-mucho-mas-ckkcul",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Visa-Days_77cb533d_20-33_4.png"
     },
     {
       "id": "bci-5db8aa13d7",
