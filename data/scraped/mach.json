@@ -2,7 +2,7 @@
   "fuente": "mach",
   "banco_nombre": "MACH",
   "url": "https://www.machbank.cl/beneficios",
-  "actualizado": "2026-10-04",
+  "actualizado": "2026-10-05",
   "descuentos": [
     {
       "id": "mach-89819de442",
@@ -350,6 +350,87 @@
       "url": "https://www.machbank.cl/beneficios"
     },
     {
+      "id": "mach-ccc71c7283",
+      "establecimiento": "Macrotel.cl",
+      "descripcion": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% cashback en Macrotel.cl",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "debito",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-c128b7dd9c",
+      "establecimiento": "Curacaribs",
+      "descripcion": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% cashback en Curacaribs",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "debito",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-d48a7f1912",
+      "establecimiento": "Liquidos.cl",
+      "descripcion": "$10.000 de descuento, en compras sobre $50.000 en Liquidos.cl.",
+      "descuento": "10.000 descuento en Líquidos.cl",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "debito",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "$10.000 de descuento, en compras sobre $50.000 en Liquidos.cl.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-cf22162e5e",
+      "establecimiento": "JetSMART",
+      "descripcion": "Aprovecha este descuento exclusivo hasta el 5/06/2026.",
+      "descuento": "10% dcto. adicional en JetSMART.com",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Aprovecha este descuento exclusivo hasta el 5/06/2026.",
+      "fecha_vencimiento": "",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios",
+      "logo": "https://cdn3.bci.cl/uploads/86f3a1af-bc22-48bd-8e7a-d92028568ba6/original/logo-jetsmart.png"
+    },
+    {
       "id": "mach-2f20e4da26",
       "establecimiento": "Hasta 20% dcto. en Vuelos Nacionales e Internacionales",
       "descripcion": "Paga con Tarjeta de Débito o Prepago con el código BCIMACHD",
@@ -430,6 +511,514 @@
       "fuente": "mach",
       "url": "https://www.machbank.cl/beneficios",
       "logo": "https://cdn3.bci.cl/uploads/f0f4fac3-f71d-479c-b68f-2e32ef2913e9/original/Isotipo-dark.png"
+    },
+    {
+      "id": "mach-664f78fbee",
+      "establecimiento": "Mercado Libre",
+      "descripcion": "Aprovecha este descuento exclusivo hasta el 07/10/2026 en productos seleccionados de Deporte y Belleza.",
+      "descuento": "Hasta 40% dcto. en Mercado Libre",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Aprovecha este descuento exclusivo hasta el 07/10/2026 en productos seleccionados de Deporte y Belleza.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios",
+      "logo": "https://cdn3.bci.cl/uploads/4765d6e9-dfd6-4cf1-bbfc-964f374ba2ab/original/logo-meli.png"
+    },
+    {
+      "id": "mach-af838807b9",
+      "establecimiento": "Salcobrand",
+      "descripcion": "Aprovecha este descuento exclusivo hasta el 07/10/2026.",
+      "descuento": "20% cashback adicional en Salcobrand.cl",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Aprovecha este descuento exclusivo hasta el 07/10/2026.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios",
+      "logo": "https://cdn3.bci.cl/uploads/e2634b50-a829-485e-81df-36450ba2f1dc/original/logosb.png"
+    },
+    {
+      "id": "mach-fefca2a60c",
+      "establecimiento": "Hotmart",
+      "descripcion": "25% de cashback adicional, tope $8.000, una transacción por usuario.",
+      "descuento": "25% de cashback adicional en Hotmart",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "debito",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "25% de cashback adicional, tope $8.000, una transacción por usuario.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-4d5dc31d3c",
+      "establecimiento": "Andesland",
+      "descripcion": "Aprovecha 20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% de cashback en Andesland",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "debito",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Aprovecha 20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-5fef83c699",
+      "establecimiento": "Oneill",
+      "descripcion": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% cashback en Oneill",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-5299c2a991",
+      "establecimiento": "FilaCero",
+      "descripcion": "40% de cashback, tope $10.000, una transacción por usuario",
+      "descuento": "40% de cashback adicional en FilaCero",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "40% de cashback, tope $10.000, una transacción por usuario",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-5fb9fb6c38",
+      "establecimiento": "Pichara",
+      "descripcion": "20% de cashback en compras sobre $20.000, tope $10.000.",
+      "descuento": "20% cashback en Pichara.cl",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $20.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-74686a3063",
+      "establecimiento": "JetSMART",
+      "descripcion": "Aprovecha este descuento exclusivo desde el 06/10/2026 al 09/10/2026",
+      "descuento": "20% de descuento adicional con Tarjeta de Crédito",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "Aprovecha este descuento exclusivo desde el 06/10/2026 al 09/10/2026",
+      "fecha_vencimiento": "2026-10-10",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios",
+      "logo": "https://cdn3.bci.cl/uploads/86f3a1af-bc22-48bd-8e7a-d92028568ba6/original/logo-jetsmart.png"
+    },
+    {
+      "id": "mach-844bad7c71",
+      "establecimiento": "Airolite",
+      "descripcion": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% cashback en Airolite.cl",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-d21df48376",
+      "establecimiento": "Leonisa",
+      "descripcion": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% cashback en Leonisa.cl",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-70cb310877",
+      "establecimiento": "Canadienne, Penguin, Trial, Florsheim o Perry Ellis",
+      "descripcion": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% cashback en Canadienne, Penguin, Trial, Florsheim o Perry Ellis",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-2522a3a165",
+      "establecimiento": "Preunic",
+      "descripcion": "20% de Cashback adicional en Preunic hasta el 07/10/2026.",
+      "descuento": "20% cashback adicional en Preunic",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de Cashback adicional en Preunic hasta el 07/10/2026.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-9651b8e946",
+      "establecimiento": "Compra Igenix",
+      "descripcion": "Aprovecha 20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% de cashback en Compraigenix.cl",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Aprovecha 20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios",
+      "logo": "https://cdn3.bci.cl/uploads/127b84a4-2f7f-4e8a-b117-5dc809ceb319/original/logo-igenix.png"
+    },
+    {
+      "id": "mach-dc895f3a9d",
+      "establecimiento": "Electrolux, Fensa y Mademsa",
+      "descripcion": "10% de cashback con tope $10.000.",
+      "descuento": "10% cashback en Electrolux, Fensa y Mademsa",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "10% de cashback con tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-3f8239f751",
+      "establecimiento": "Despegar",
+      "descripcion": "30% de descuento en todos los productos con Tarjeta de Crédito y 15% con Tarjeta de Débito.",
+      "descuento": "Hasta 30% de descuento en Despegar",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "30% de descuento en todos los productos con Tarjeta de Crédito y 15% con Tarjeta de Débito.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-407122fcd9",
+      "establecimiento": "Latam",
+      "descripcion": "10% de cashback, tope $10.000, una transacción por usuario.",
+      "descuento": "10% de cashback en LATAM",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "10% de cashback, tope $10.000, una transacción por usuario.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-6c2ad4aafa",
+      "establecimiento": "Green Dolphin",
+      "descripcion": "Aprovecha 30% de cashback con tope $10.000.",
+      "descuento": "30% de cashback en Green Dolphin",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Aprovecha 30% de cashback con tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-85dbccbb6a",
+      "establecimiento": "Portaldisc",
+      "descripcion": "40% de cashback, tope $10.000, una transacción por usuario",
+      "descuento": "40% de cashback adicional en Portaldisc",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "40% de cashback, tope $10.000, una transacción por usuario",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-0c917a50de",
+      "establecimiento": "Mashini",
+      "descripcion": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% cashback en MASHINI",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-8a7af57632",
+      "establecimiento": "TUA",
+      "descripcion": "20% de cashback en compras sobre $20.000, tope $10.000.",
+      "descuento": "20% cashback en TUA.cl",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $20.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-0362f859de",
+      "establecimiento": "Eliteperfumes",
+      "descripcion": "40% de cashback adicional, tope $10.000, una transacción por usuario.",
+      "descuento": "40% de cashback adicional en Eliteperfumes",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "40% de cashback adicional, tope $10.000, una transacción por usuario.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-3ec04ab689",
+      "establecimiento": "Garena",
+      "descripcion": "30% de cashback, tope $10.000, una transacción por usuario.",
+      "descuento": "30% de cashback en Garena",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "30% de cashback, tope $10.000, una transacción por usuario.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-4da84e376b",
+      "establecimiento": "BBZ Barbizon",
+      "descripcion": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "descuento": "20% cashback en BBZ Barbizon",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback en compras sobre $40.000, tope $10.000.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-eabd5bfadf",
+      "establecimiento": "Xsolla",
+      "descripcion": "20% de cashback adicional, tope $5.000, una transacción por usuario.",
+      "descuento": "20% de cashback adicional en Xsolla",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "20% de cashback adicional, tope $5.000, una transacción por usuario.",
+      "fecha_vencimiento": "2026-10-08",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios"
+    },
+    {
+      "id": "mach-e373f2416e",
+      "establecimiento": "JetSMART",
+      "descripcion": "Aprovecha este descuento exclusivo desde el 06/10/2026 al 09/10/2026",
+      "descuento": "10% dcto adicional con Tarjeta de Débito, Prepago o botón en JetSMART",
+      "banco_nombre": "MACH",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cyber",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "Aprovecha este descuento exclusivo desde el 06/10/2026 al 09/10/2026",
+      "fecha_vencimiento": "2026-10-10",
+      "activo": true,
+      "fuente": "mach",
+      "url": "https://www.machbank.cl/beneficios",
+      "logo": "https://cdn3.bci.cl/uploads/86f3a1af-bc22-48bd-8e7a-d92028568ba6/original/logo-jetsmart.png"
     }
   ]
 }

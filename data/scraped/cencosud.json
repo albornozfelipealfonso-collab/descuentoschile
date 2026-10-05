@@ -2,7 +2,7 @@
   "fuente": "cencosud",
   "banco_nombre": "Cencosud",
   "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/descuentos-comida",
-  "actualizado": "2026-10-04",
+  "actualizado": "2026-10-05",
   "descuentos": [
     {
       "id": "cencosud-c1dfd96eea",
@@ -1049,6 +1049,31 @@
       "fuente": "cencosud",
       "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/sky-mastercard",
       "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/9486922657802073-logo-skymc.webp"
+    },
+    {
+      "id": "cencosud-097ccd4f03",
+      "establecimiento": "Paris",
+      "descripcion": "Cyber en Paris",
+      "descuento": "10 cuotas sin interés en Paris.cl – App Paris – kioscos tiendas. Desde el 5 al 7 de Octubre.",
+      "banco_nombre": "Cencosud",
+      "tipo_tarjeta": "credito",
+      "categoria": "Otros",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoci&oacute;n 10 CSI en Todo Paris APP, Paris.cl y Kioscos de las tiendas. La campa&ntilde;a estar&aacute; vigente desde el 5 al 7 de Octubre de 2026. Promoci&oacute;n v&aacute;lida para Paris APP, Paris.cl y Kioscos de las tiendas pagando el monto total de la compra con Tarjetas Cencosud Scotiabank MasterCard o Visa. Excluye Tiendas Paris. Solo compras con Boleta. Para 10 cuotas CAE de 1,45%…",
+      "fecha_vencimiento": "2026-10-07",
+      "activo": true,
+      "fuente": "cencosud",
+      "url": "https://www.paris.cl",
+      "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/9447426056235586-paris-logo.webp"
     }
   ]
 }
