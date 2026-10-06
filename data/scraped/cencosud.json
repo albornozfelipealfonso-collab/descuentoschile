@@ -2,7 +2,7 @@
   "fuente": "cencosud",
   "banco_nombre": "Cencosud",
   "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/descuentos-comida",
-  "actualizado": "2026-10-05",
+  "actualizado": "2026-10-06",
   "descuentos": [
     {
       "id": "cencosud-c1dfd96eea",
@@ -227,7 +227,7 @@
       "id": "cencosud-d435a6cdd7",
       "establecimiento": "La Ruta Del Sabor",
       "descripcion": "Sigue la Ruta del Sabor, donde encontrarás los mejores restaurantes de tu zona. Encuentra restaurantes como Margó, Gueros, Caoba bar, Rishtedar, Don Vito, Vicenzo, Sabor y Aroma, Galpón Italia, la Yunta, Margo y más.",
-      "descuento": "Hasta 40% de descuento en restaurantes",
+      "descuento": "Hasta 50% de descuento en restaurantes",
       "banco_nombre": "Cencosud",
       "tipo_tarjeta": "credito",
       "categoria": "Restaurantes",
@@ -1074,6 +1074,56 @@
       "fuente": "cencosud",
       "url": "https://www.paris.cl",
       "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/9447426056235586-paris-logo.webp"
+    },
+    {
+      "id": "cencosud-a3d12597f9",
+      "establecimiento": "Integramedica",
+      "descripcion": "Aprovéchalo usando tu Tarjeta Cencosud Scotiabank​",
+      "descuento": "Hasta 12 Cuotas sin interés en IntegraMédica",
+      "banco_nombre": "Cencosud",
+      "tipo_tarjeta": "credito",
+      "categoria": "Otros",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "",
+      "activo": true,
+      "fuente": "cencosud",
+      "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/integramedica",
+      "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/16495516797548126-beneficio-integramedica-logo-2.webp"
+    },
+    {
+      "id": "cencosud-6b6277afcb",
+      "establecimiento": "Redsalud",
+      "descripcion": "Cuida tu sonrisa con este beneficio",
+      "descuento": "Hasta 12 Cuotas sin interés en RedSalud",
+      "banco_nombre": "Cencosud",
+      "tipo_tarjeta": "credito",
+      "categoria": "Salud y belleza",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "",
+      "activo": true,
+      "fuente": "cencosud",
+      "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/redsalud",
+      "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/1772451185023498-redsalud-logo.webp"
     }
   ]
 }

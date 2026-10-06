@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-05T19:28:25.263Z",
+  "generado": "2026-10-06T17:01:58.821Z",
   "bancos": [
     {
       "id": 1,
@@ -960,6 +960,56 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Viajes.Bci.cl_8eae8ffc_18-27_4.png"
     },
     {
+      "id": "bci-57bad2e398",
+      "establecimiento": "Concurso Servipag",
+      "descripcion": "Participa en el concurso de 40 premios de $100.000 pagando con botón de pago App Bci",
+      "descuento": "Gana 100.000 en Servipag",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Servicios",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo Pagando con Botón de Pago App Bci. Promoción válida desde el 1 al 31 de octubre de 2026. Podrán participar en el sorteo sólo personas naturales, clientes de Bci que a) realicen compras mediante pago QR de la App Bci durante la vigencia de la promoción, en servipag.cl o en el botón de pago de Servipag. b) Cada compra es una opción de participar en el sorteo. El premio corresponde a un abono de $100.000 vía cashback. Stock: 40 abonos. Se realizara un sorteo computacional el día 6 de…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/gana-100.000-en-servipag-l2eqjpm",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Concurso-Servipag_b23abdc0_20-25_4.png"
+    },
+    {
+      "id": "bci-16022172fd",
+      "establecimiento": "Unimarc",
+      "descripcion": "- Exclusivo pagando con QR App Bci - Desde el 01/10/2026 hasta el 31/12/2026 10% de cashback pagando con App Bci en Unimarc - Exclusivo en foramto presencial - Revisar las condiciones especiales en “Condiciones de la oferta”.",
+      "descuento": "10 por ciento de CB en Unimarc en tu primera compra del mes",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo Pagando con Botón de Pago App Bci. Vigencia desde 01 de octubre de 2026 al 31 de diciembre de 2026. Promoción válida para clientes personas naturales que paguen de forma presencial con QR desde la App Bci en los supermercados Unimarc, Mayorista 10 y ALVI. La promoción consiste en un 10% de cashback solo en la primera compra de cada mes de vigencia, con un tope de $10.000 por mes. El abono lo realizará Krip CBF SpA dentro de los 30 días posteriores a la compra en la cuenta registrada…",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/10-por-ciento-de-cb-en-unimarc-en-tu-primera-compra-del-mes-y97xpdm",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Unimarc_992e6777_20-29_4.png"
+    },
+    {
       "id": "bci-629ae8089f",
       "establecimiento": "Copec",
       "descripcion": "Más kilómetros y más lucas en tu bolsillo desde App Copec. - Aprovéchalo solo los días jueves y viaja con más ganas. - Asegúrate de hacer el pago con tu Tarjeta de Crédito Bci a través de tu App Copec. - Tienes un tope diario de $7.000 de cashback. - Este cashback no es acumulable con otras promociones.",
@@ -1107,31 +1157,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Starbucks_7ed3eb5e_13-37_4.png"
     },
     {
-      "id": "bci-2a73a0ab32",
-      "establecimiento": "Despegar.cl",
-      "descripcion": "Despegar con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 40.000 de descuento en Paquetes, Vuelos y Hoteles pagando con Tarjeta de Crédito Bci en Despegar ● AGOTADO POR ÉXITO DE USOS ̶V̶u̶e̶l̶o̶s̶ ̶I̶n̶t̶e̶r̶n̶a̶c̶i̶o̶n̶a̶l̶e̶s̶ ̶B̶e̶n̶e̶f̶i̶c̶i̶o̶:̶ ̶2̶0̶%̶ ̶d̶e̶ ̶d̶e̶s̶c̶u̶e̶n̶t̶o̶ ̶e̶n̶ ̶V̶u̶e̶l̶o̶s̶ ̶i̶n̶t̶e̶r̶n̶a̶c̶i̶o̶n̶a̶l̶e̶s̶ ̶T̶o̶p̶e̶:̶ ̶3̶0̶.̶0̶0̶0̶ ̶V̶i̶g̶e̶n̶c̶i̶a̶:̶ ̶B̶e̶n̶e̶f̶i̶c̶i̶o̶ ̶e̶x̶c̶l̶u̶s̶i̶v̶o̶ ̶5̶ ̶d̶e̶ ̶O̶c̶t̶u̶b̶r̶e̶ ̶ ● Vuelos Beneficio: 20% de descuento en Vuelos Tope: 20.000 Cupón: BCIVUELOS Vigencia: 5 al 7 de octubre o hasta agotar stock de usos ● Paquetes Beneficio: 30% de descuento en Paquetes o Hoteles Tope: 40.000 Cupón: BCIPAQUETES…",
-      "descuento": "30% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción Paquetes - Promoción válida para reservas de paquetes, efectuadas a través del sitio web, app, call center y tiendas de Despegar. Vigencia desde el 05/10/2026 hasta el 07/10/2026. Las tarifas que cumplan estos requisitos verán reflejado un descuento del 30% con tope de $40.000 en descuento, ingresando el cupón BCIPAQUETES y pagando con Tarjeta de Crédito Bci en el checkout. El descuento se verá reflejado en el último paso del proceso de…",
-      "fecha_vencimiento": "2026-10-05",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/despegar-con-descuentos-en-paquetes-vuelos-y-hoteles-frhv6gk",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Despegar.cl_36cc1b5f_15-12_4.png"
-    },
-    {
       "id": "bci-408de396b2",
       "establecimiento": "Tasa Preferencial en Automotriz",
       "descripcion": "En rubro Automotriz 0,59% para Tarjetas Black, Signature e Infinite; CAE de 7,82% calculado bajo un monto de compra de $5.000.000 en 36 cuotas, Costo total del Crédito: $5.610.600 0,89% para Tarjetas de de Crédito Classic, Gold, Platinum o Empresario; CAE de 11,89% calculado bajo un monto de compra de $5.000.000 en 36 cuotas. Costo total del Crédito: $5.909.040 Vigencia desde el 1 de agosto al 30 de diciembre de 2026",
@@ -1174,6 +1199,56 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/las-condes-3in1py",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Cl%C3%ADnica-Leventis_ed94c00d_15-28_4.png"
+    },
+    {
+      "id": "bci-1859e78653",
+      "establecimiento": "Alvi",
+      "descripcion": "- Exclusivo pagando con QR App Bci - Desde el 01/10/2026 hasta el 31/12/2026 10% de cashback pagando con App Bci en Alvi - Exclusivo en foramto presencial - Revisar las condiciones especiales en “Condiciones de la oferta”.",
+      "descuento": "10 por ciento de CB en Alvi en tu primera compra del mes",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Otros",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo Pagando con Botón de Pago App Bci. Vigencia desde 01 de octubre de 2026 al 31 de diciembre de 2026. Promoción válida para clientes personas naturales que paguen de forma presencial con QR desde la App Bci en los supermercados Unimarc, Mayorista 10 y ALVI. La promoción consiste en un 10% de cashback solo en la primera compra de cada mes de vigencia, con un tope de $10.000 por mes. El abono lo realizará Krip CBF SpA dentro de los 30 días posteriores a la compra en la cuenta registrada…",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/10-por-ciento-de-cb-en-alvi-en-tu-primera-compra-del-mes-wzkp5z",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Alvi_41d34972_15-30_4.png"
+    },
+    {
+      "id": "bci-e79c8b7c7d",
+      "establecimiento": "Super 10",
+      "descripcion": "- Exclusivo pagando con QR App Bci - Desde el 01/10/2026 hasta el 31/12/2026 10% de cashback pagando con App Bci en Super 10 - Exclusivo en foramto presencial - Revisar las condiciones especiales en “Condiciones de la oferta”.",
+      "descuento": "10 por ciento de CB en Super 10 en tu primera compra del mes",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Otros",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo Pagando con Botón de Pago App Bci. Vigencia desde 01 de octubre de 2026 al 31 de diciembre de 2026. Promoción válida para clientes personas naturales que paguen de forma presencial con QR desde la App Bci en los supermercados Unimarc, Super 10 y ALVI. La promoción consiste en un 10% de cashback solo en la primera compra de cada mes de vigencia, con un tope de $10.000 por mes. El abono lo realizará Krip CBF SpA dentro de los 30 días posteriores a la compra en la cuenta registrada en el…",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/10-por-ciento-de-cb-en-mayorista-10-en-tu-primera-compra-del-mes-shitwt",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Super-10_25db43f3_15-28_4.png"
     },
     {
       "id": "bci-5b94d64614",
@@ -4151,7 +4226,7 @@
       "tipo_tarjeta": "ambas",
       "categoria": "Restaurantes",
       "dias_validos": [
-        "jueves"
+        "martes"
       ],
       "es_delivery": false,
       "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. 20% de descuento en el total de la cuenta, con tope de $20.000 pagando con Tarjetas de Débito y Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El…",
@@ -4700,6 +4775,25 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Bar-La-Trova_f1764bf0_20-21_4.png"
     },
     {
+      "id": "bci-67c711e42c",
+      "establecimiento": "Cafettino Cafetería",
+      "descripcion": "Constitución. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "30% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Antojos",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. 30% de descuento en el total de la cuenta, con tope de $30.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/constitucion-gjaoepq",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Cafettino-Cafeter%C3%ADa_e68ec3b3_19-41_4.png"
+    },
+    {
       "id": "bci-3269e08ef2",
       "establecimiento": "Viajes.Bci.cl",
       "descripcion": "x3 de cashback en tus compras en ViajesBci.cl. - Multiplica x3 de cashback pagando con tus Tarjetas de Crédito Bci - Promoción válida hasta el 31/12/2026 - Se excluyen en la promoción Tarjetas de Crédito AAdvantage",
@@ -4866,31 +4960,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Tiny-Kids_c8c49f5d_22-22_4.png"
     },
     {
-      "id": "bci-5a7526c8a6",
-      "establecimiento": "Marliz Café Restaurant",
-      "descripcion": "Vitacura. 20% de descuento con tope de $50.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "20% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci, con un tope de $50.000 al momento de pagar en el comercio. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/vitacura-7u214x6",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Marliz-Caf%C3%A9-Restaura_3dad4bac_22-27_4.png"
-    },
-    {
       "id": "bci-005032248e",
       "establecimiento": "Lao Lao Foods",
       "descripcion": "Providencia. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
@@ -4974,25 +5043,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/santiago-icrw8ock",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Tres-Valles-Restaura_b935a258_15-45_4.png"
-    },
-    {
-      "id": "bci-603cffce56",
-      "establecimiento": "La Botica",
-      "descripcion": "Coyhaique. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "40% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "miércoles"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/coyhaique-ojcbwek",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/La-Botica_3acd4728_13-4_4.png"
     },
     {
       "id": "bci-1a4fe984e4",
@@ -5146,6 +5196,27 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/hotel-courtyard-by-marriott-pzs4vl",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/The-Courtner_bc29124d_18-15_4.png"
+    },
+    {
+      "id": "bci-90532205ad",
+      "establecimiento": "Marliz Café Restaurant",
+      "descripcion": "Vitacura. 20% de descuento con tope de $50.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "20% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci, con un tope de $50.000 al momento de pagar en el comercio. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/vitacura-tnbkz4g",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Marliz-Caf%C3%A9-Restaura_287cd117_19-38_4.png"
     },
     {
       "id": "bci-e146726f80",
@@ -6848,6 +6919,56 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/PreUCV_302e3df0_19-6_4.png"
     },
     {
+      "id": "bci-b04e70a804",
+      "establecimiento": "Bestwork",
+      "descripcion": "Con tus Tarjetas de Crédito Bci Vigencia desde el 1 de enero al 31 de diciembre de 2026.",
+      "descuento": "Paga en 3 a 12 cuotas sin interés",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Educación",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción compra en 3 a 12 cuotas sin interés en Bestwork: CAE de 0,77% calculado bajo un monto de compra de $1.000.000 en 24 cuotas. Costo total del Crédito: $1.008.000. Los $8.000 corresponden al cargo por el cálculo del impuesto timbres DL3475 y el $1.000.000 corresponden al monto total de la compra sin intereses si el cliente paga oportunamente al vencimiento de cada estado de cuenta. Promoción válida desde el 1/1/2026 hasta el 31/12/2026, para…",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/paga-en-3-a-12-cuotas-sin-interes-t3i8wxd",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Bestwork_0229f1a7_19-48_4.png"
+    },
+    {
+      "id": "bci-be86b4dd39",
+      "establecimiento": "Piscinería",
+      "descripcion": "Con tus Tarjetas de Crédito Bci Vive la experiencia de tener un Robot limpia piscina. Robot Dolphin, el mejor robot del mercado. Vigencia desde el 1de enero al 31 de diciembre de 2026.",
+      "descuento": "Paga en 13 a 36 cuotas sin interés",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Hogar",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción compra en 13 a 36 cuotas sin interés en La Piscinería: CAE de 0,77% calculado bajo un monto de compra de $1.000.000 en 24 cuotas. Costo total del Crédito: $1.008.000. Los $8.000 corresponden al cargo por el cálculo del impuesto timbres DL3475 y el $1.000.000 corresponden al monto total de la compra sin intereses si el cliente paga oportunamente al vencimiento de cada estado de cuenta. Promoción válida desde el 1/06/2026 hasta el 31/12/2026…",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/paga-en-13-a-36-cuotas-sin-interes-iny6e19",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Pisciner%C3%ADa_dc3bbe01_19-56_4.png"
+    },
+    {
       "id": "bci-74a82d6bf6",
       "establecimiento": "Centro Odontológico Padre Mariano",
       "descripcion": "Todos los días. 60% de descuento en todas las especialidades clínicas dentales, de nuestras clínicas. Excluye servicios de Laboratorio. Reserva tu hora llamando al 56-224857000 o en https://www.padremariano.com/ La promoción se aplica al momento de pagar con tus tarjetas del Banco Bci, directamente en la clínica, mencionando que eres cliente Bci Direcciones: Alcántara 295, Las Condes - Metro Alcántara Burgos 345, Las Condes - Metro Alcántara Tenderini 153, Santiago Centro - Metro Santa Lucía Alameda 1146, Santiago Centro - Metro U. de Chile Providencia 1744 Providencia, Metro Pedro de Valdivia Visita: www.padremariano.com",
@@ -7162,25 +7283,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Educaci%C3%B3n%2C-cuotas-si_bcabf177_13-8_4.png"
     },
     {
-      "id": "bci-67c711e42c",
-      "establecimiento": "Cafettino Cafetería",
-      "descripcion": "Constitución. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "40% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "Antojos",
-      "dias_validos": [
-        "miércoles"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/constitucion-gjaoepq",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Cafettino-Cafeter%C3%ADa_e68ec3b3_20-19_4.png"
-    },
-    {
       "id": "bci-bd4eb5706f",
       "establecimiento": "Cava & Barrica",
       "descripcion": "Todos los días - Santiago. 20% de descuento con tope de $20.000 al momento de pagar en el comercio Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
@@ -7229,31 +7331,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/kombucha-online-d375198",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Kombuchu_e817b32b_12-20_4.png"
-    },
-    {
-      "id": "bci-57bad2e398",
-      "establecimiento": "Concurso Servipag",
-      "descripcion": "Participa en el concurso de 40 premios de $100.000 pagando con botón de pago App Bci",
-      "descuento": "Gana 100.000 en Servipag",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Servicios",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo Pagando con Botón de Pago App Bci. Promoción válida desde el 1 al 31 de octubre de 2026. Podrán participar en el sorteo sólo personas naturales, clientes de Bci que a) realicen compras mediante pago QR de la App Bci durante la vigencia de la promoción, en servipag.cl o en el botón de pago de Servipag. b) Cada compra es una opción de participar en el sorteo. El premio corresponde a un abono de $100.000 vía cashback. Stock: 40 abonos. Se realizara un sorteo computacional el día 6 de…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/gana-100.000-en-servipag-l2eqjpm",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Concurso-Servipag_b23abdc0_12-31_4.png"
     },
     {
       "id": "bice-02eb55a241",
@@ -11188,7 +11265,7 @@
       "id": "cencosud-d435a6cdd7",
       "establecimiento": "La Ruta Del Sabor",
       "descripcion": "Sigue la Ruta del Sabor, donde encontrarás los mejores restaurantes de tu zona. Encuentra restaurantes como Margó, Gueros, Caoba bar, Rishtedar, Don Vito, Vicenzo, Sabor y Aroma, Galpón Italia, la Yunta, Margo y más.",
-      "descuento": "Hasta 40% de descuento en restaurantes",
+      "descuento": "Hasta 50% de descuento en restaurantes",
       "banco_nombre": "Cencosud",
       "tipo_tarjeta": "credito",
       "categoria": "Restaurantes",
@@ -12037,6 +12114,102 @@
       "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/9447426056235586-paris-logo.webp"
     },
     {
+      "id": "cencosud-a3d12597f9",
+      "establecimiento": "Integramedica",
+      "descripcion": "Aprovéchalo usando tu Tarjeta Cencosud Scotiabank​",
+      "descuento": "Hasta 12 Cuotas sin interés en IntegraMédica",
+      "banco_nombre": "Cencosud",
+      "tipo_tarjeta": "credito",
+      "categoria": "Otros",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "",
+      "activo": true,
+      "fuente": "cencosud",
+      "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/integramedica",
+      "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/16495516797548126-beneficio-integramedica-logo-2.webp"
+    },
+    {
+      "id": "cencosud-6b6277afcb",
+      "establecimiento": "Redsalud",
+      "descripcion": "Cuida tu sonrisa con este beneficio",
+      "descuento": "Hasta 12 Cuotas sin interés en RedSalud",
+      "banco_nombre": "Cencosud",
+      "tipo_tarjeta": "credito",
+      "categoria": "Salud y belleza",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "",
+      "activo": true,
+      "fuente": "cencosud",
+      "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/redsalud",
+      "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/1772451185023498-redsalud-logo.webp"
+    },
+    {
+      "id": "falabella-157d769cdd",
+      "establecimiento": "Cyber Farmacias Ahumada",
+      "descripcion": "En productos seleccionadas",
+      "descuento": "Hasta 55%",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Salud y belleza",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-farmacias-ahumada",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/3O17B0kLTiq9LPa0CgI1cK/75ea41de0ff8ebffca18068e42a89070/Logos_Cards_Sitio_Beneficios_FASA.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-8de381eebf",
+      "establecimiento": "Cyber Carnes",
+      "descripcion": "Hasta 7 de octubre",
+      "descuento": "Hasta 40% de ahorro",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-07",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-octubre-tottus-carnes",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-8d902f4125",
       "establecimiento": "Cyber Vinos",
       "descripcion": "Hasta 7 de octubre",
@@ -12265,7 +12438,7 @@
       "id": "falabella-8cd68597a4",
       "establecimiento": "Canjea Cyber en Falabella.com",
       "descripcion": "Hasta el 7 de octubre",
-      "descuento": "Desde 20.000 Fpuntos",
+      "descuento": "Desde 12.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
       "categoria": "Restaurantes",
@@ -12289,8 +12462,8 @@
     {
       "id": "falabella-8c07023291",
       "establecimiento": "Cyber Sodimac Muebles",
-      "descripcion": "3 y 6 cuotas sin interés",
-      "descuento": "Hasta 60% de ahorro",
+      "descripcion": "Hasta 60% de ahorro",
+      "descuento": "3 y 6 CUOTAS SIN INTERÉS",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
       "categoria": "Hogar",
@@ -12314,8 +12487,8 @@
     {
       "id": "falabella-87ba19328d",
       "establecimiento": "Cyber Aire Libre",
-      "descripcion": "3 y 6 cuotas sin interés",
-      "descuento": "Hasta 60% de ahorro",
+      "descripcion": "Hasta 60% de ahorro",
+      "descuento": "3 y 6 CUOTAS SIN INTERÉS",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
       "categoria": "Hogar",
@@ -12339,8 +12512,8 @@
     {
       "id": "falabella-07a99cf8c2",
       "establecimiento": "Cyber Sodimac Electrohogar",
-      "descripcion": "6 y 10 cuotas sin interés",
-      "descuento": "Hasta 50% de ahorro",
+      "descripcion": "hasta 50% de ahorro",
+      "descuento": "6 y 10 CUOTAS SIN INTERÉS",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
       "categoria": "Hogar",
@@ -14667,7 +14840,7 @@
       "id": "falabella-5c0f4479d0",
       "establecimiento": "Automotriz",
       "descripcion": "En el pago de automotriz",
-      "descuento": "12 cuotas 0.89%",
+      "descuento": "12 a 36 cuotas 0.89%",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
       "categoria": "Servicios",
@@ -14762,6 +14935,31 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/traslado-al-aeropuerto-elite",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/2iMamaCbur2aoFvO266XyO/a3ec8b254c2f516dcaf8b193673b0dfb/Logos_Logo_Viajes_Falabella.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-558d24b3f5",
+      "establecimiento": "VIP Primeclass",
+      "descripcion": "Exclusivo CMR Elite",
+      "descuento": "2 ingresos gratis al año",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Viajes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/primeclass-elite",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2XIkgfqCXZCpPSv14v0yxO/547fec69a622d98517d80591176f818b/Logos_Cards_Sitio_Beneficios_Primeclass_Pacifico.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-b98e652614",
@@ -15870,27 +16068,6 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1H3DYxcIkchrpxjY8zzJpK/48a67f4c9f5772112a0523630fe863fa/Cards_Logo_Web_5aSec.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
-      "id": "falabella-157d769cdd",
-      "establecimiento": "Cyber Farmacias Ahumada",
-      "descripcion": "En productos seleccionadas",
-      "descuento": "Hasta 55%",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Salud y belleza",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-farmacias-ahumada",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/3O17B0kLTiq9LPa0CgI1cK/75ea41de0ff8ebffca18068e42a89070/Logos_Cards_Sitio_Beneficios_FASA.png?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
       "id": "falabella-ba5afba2c6",
       "establecimiento": "Lipigas",
       "descripcion": "Exclusivo online",
@@ -15922,7 +16099,7 @@
       "descuento": "Hasta 60% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Supermercados",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
@@ -17042,6 +17219,331 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/canje-infantil-cyber",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/3bnH6p4unlgjcNWf3e1tBv/ae73b96140575c422fe4575d8809e915/Banners_Cyber_Fpuntos_Logo_App_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-53de25673f",
+      "establecimiento": "Shopdog",
+      "descripcion": "Presencial en los Locales",
+      "descuento": "Hasta 20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "debito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/shopdog",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/4vxkZ0cPlboN191H2cQ9et/b3f98b3742195fed2cc9ffc99d695c63/Cards_Octubre_Logo_Web_Schopdog.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-97361be8c9",
+      "establecimiento": "Cream Roll",
+      "descripcion": "Presencial en los Locales",
+      "descuento": "Hasta 20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "debito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cream-roll",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/7GZSKamlDWarlPGT9AIAY6/7a3d79b84ecae00b1fa74f063bb39f43/Cards_Octubre_Logo_Web_CreamRoll.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-4c500fa0e0",
+      "establecimiento": "Costa Sushi",
+      "descripcion": "Presencial en los Locales",
+      "descuento": "Hasta 20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "debito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/costa-sushi",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/39UZwZcCUl2exOuAVUkLnh/d469f60c1a101d7c5e3aeaeb2046dfeb/Cards_Octubre_Logo_Web_Costa_Sushi.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-b9527c6564",
+      "establecimiento": "Inca Pecador",
+      "descripcion": "Presencial en los Locales",
+      "descuento": "Hasta 20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "debito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/inca-pecador",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/3317vP2cON7SKPsCNTXnVw/79e043deb6b886c58e16758aca3ac93c/Cards_Octubre_Logo_Web_Inca_Pecador.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-7a73315d3e",
+      "establecimiento": "Il Peccato",
+      "descripcion": "Presencial en los Locales",
+      "descuento": "Hasta 20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "debito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/il-peccato",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/7jJHWOccRvcn6wyptY1zi7/87c68abb16f1d90f13bac6284b747f48/Cards_Octubre_Logo_Web_Il_Peccato.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-6c444dbf93",
+      "establecimiento": "Educación",
+      "descripcion": "Exclusivo Tarjeta CMR Elite",
+      "descuento": "10 Cuotas Sin Interés",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Educación",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/10csi-educacion",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/4SK5ETVKW9TNlM15hSQaAu/39367795fd73def146ff0a0dbbd3470b/CSI_Educacion_LogoWeb.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-2972dd0cee",
+      "establecimiento": "minutos extras",
+      "descripcion": "Exclusivo Mallplaza",
+      "descuento": "30 min extras",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/mr-joy-mallplaza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/1id7HFwRT4IdodkCqpVGAW/ebda844130acb8a2869453773987e208/MrJoy_152x48.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-4be58e6ef2",
+      "establecimiento": "Infinity Jump",
+      "descripcion": "Exclusivo Mallplaza",
+      "descuento": "Hasta 25% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/infinity-jump-mallplaza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/4xxvNVO9LMDMRBTaY4Gw3a/60020bde91acb2f4564141846ee120b5/alt_image.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-1bffa62912",
+      "establecimiento": "Family Park",
+      "descripcion": "Exclusivo Mallplaza",
+      "descuento": "20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/family-park-mallplaza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/1HRuYhk1fPObeLnnJvdRGS/e0744eb921a16b1a45f5985c94bfa4ed/Logos_Cards_Sitio_Beneficios_Family_Park.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-28eca6005b",
+      "establecimiento": "Chuck E. Cheese",
+      "descripcion": "Exclusivo Mallplaza",
+      "descuento": "20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/chuck-e-cheese-mallplaza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/keYWEWaa7yF0BtLq4oYis/a1736ef54113825944290526bac44356/Logos_Cards_Sitio_Beneficios_Chuk_n_Cheese_old.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-f9873839df",
+      "establecimiento": "Fun4all",
+      "descripcion": "Exclusivo Mallplaza",
+      "descuento": "20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/fun4all-mallplaza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/1IaOzWhQLTgBAKNAU3YKKF/d776c2bec3154f33708fdfcebe25b982/alt_image__3_.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-a601ce4e0a",
+      "establecimiento": "Parque Aventura Kids",
+      "descripcion": "Exclusivo Mallplaza",
+      "descuento": "Hasta 40% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/parque-aventura-kids-mallplaza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/3rYVBkj06FBPzBqFcjsLcO/ed87af5244b35cd81b680c298f4d0d54/Cards_LOGO_Web_Parque_Aventura_Kids.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-cc78699f7a",
+      "establecimiento": "Parque Aventura Inmersivo",
+      "descripcion": "Exclusivo Mallplaza",
+      "descuento": "Hasta 40% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/parque-aventura-inmersivo-mallplaza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/31JuwnLExgBqJlJoK37HRR/4f3941c220e32bda686fd8c76b76f762/alt_image__2_.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-591e951a95",
+      "establecimiento": "Desafío Escape Room",
+      "descripcion": "Exclusivo Mallplaza",
+      "descuento": "30% sin tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "martes",
+        "miércoles",
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/desafio-escape-room-mallplaza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/1G6g8z44DH1HXIsIoNV7uj/f082ff83f78797c54c64b27843441366/alt_image__1_.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "mach-89819de442",
