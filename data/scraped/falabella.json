@@ -2,8 +2,58 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-06",
+  "actualizado": "2026-10-07",
   "descuentos": [
+    {
+      "id": "falabella-feb9bf9254",
+      "establecimiento": "Experiencias Cyber con tus Fpuntos",
+      "descripcion": "Hasta el 7 de octubre",
+      "descuento": "Desde 2.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-07",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-fpuntos-experiencias",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/8axL2AZoRUAR34WzD6fXx/8a3aefa0e53a3b65e0391c5a98f9cc4e/Banners_Cyber_Fpuntos_Logo_Web_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-8cd68597a4",
+      "establecimiento": "Canjea Cyber en Falabella.com",
+      "descripcion": "Hasta el 7 de octubre",
+      "descuento": "Desde 12.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-07",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-fpuntos-retail",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/8axL2AZoRUAR34WzD6fXx/8a3aefa0e53a3b65e0391c5a98f9cc4e/Banners_Cyber_Fpuntos_Logo_Web_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
     {
       "id": "falabella-157d769cdd",
       "establecimiento": "Cyber Farmacias Ahumada",
@@ -19,7 +69,7 @@
       ],
       "es_delivery": false,
       "terminos": "",
-      "fecha_vencimiento": "2026-10-31",
+      "fecha_vencimiento": "2026-10-07",
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-farmacias-ahumada",
@@ -249,56 +299,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-octubre-electro",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1MUgzQZeb6ipJORbspE5gN/5ab3333046428e7c0c3a53cfce960c01/Logo_falabella.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-feb9bf9254",
-      "establecimiento": "Experiencias Cyber con tus Fpuntos",
-      "descripcion": "Hasta el 7 de octubre",
-      "descuento": "Desde 2.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-07",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-fpuntos-experiencias",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/8axL2AZoRUAR34WzD6fXx/8a3aefa0e53a3b65e0391c5a98f9cc4e/Banners_Cyber_Fpuntos_Logo_Web_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-8cd68597a4",
-      "establecimiento": "Canjea Cyber en Falabella.com",
-      "descripcion": "Hasta el 7 de octubre",
-      "descuento": "Desde 12.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "credito",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-07",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-fpuntos-retail",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/8axL2AZoRUAR34WzD6fXx/8a3aefa0e53a3b65e0391c5a98f9cc4e/Banners_Cyber_Fpuntos_Logo_Web_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-8c07023291",
@@ -2487,6 +2487,25 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/hijo-del-sol-santiago",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/6TwMVJ8C7hEKcS71gseLDg/09ed809373dc3745267dbbf2f1c01785/Cards_LOGO_Web_Hijo_del_Sol.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-4b049a7407",
+      "establecimiento": "Prima Bar",
+      "descripcion": "Exclusivo presencial",
+      "descuento": "40% dcto",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/prima-bar",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6VJk4hrMoF7Kb6FWL39LPt/97aa4e69a41c535dd20aa2e85a4e010f/Cards_Beneficios_Agosto_LOGO_Prima_Bar.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-92e04825e0",
@@ -4854,7 +4873,7 @@
       "tipo_tarjeta": "ambas",
       "categoria": "Restaurantes",
       "dias_validos": [
-        "miércoles"
+        "martes"
       ],
       "es_delivery": false,
       "terminos": "",
@@ -5213,7 +5232,7 @@
     },
     {
       "id": "falabella-2972dd0cee",
-      "establecimiento": "minutos extras",
+      "establecimiento": "Mr. Joy Mallplaza",
       "descripcion": "Exclusivo Mallplaza",
       "descuento": "30 min extras",
       "banco_nombre": "Banco Falabella",

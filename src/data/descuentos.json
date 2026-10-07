@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-06T17:01:58.821Z",
+  "generado": "2026-10-07T17:38:05.320Z",
   "bancos": [
     {
       "id": 1,
@@ -267,6 +267,30 @@
       "activo": true,
       "url": "https://banco.bice.cl/personas/beneficios/pedidosya",
       "logo": "https://bice.modyocdn.com/uploads/bf3a5f89-1a59-4787-a1e2-301a7ebaab18/original/MicrosoftTeams-image_25_.png"
+    },
+    {
+      "id": 22,
+      "establecimiento": "PedidosYa",
+      "descripcion": "30% de descuento en l a categorías Mascotas. Este beneficio tiene un tope de $10.000 y se puede usar una sola vez desde el 21 al 27 de julio.",
+      "descuento": "30% de descuento en l a categorías Mascotas",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "Delivery",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": true,
+      "terminos": "",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tu-pedido-en-tu-casa-ya-no-tienes-que-ir-al-supermercado-con-pedidosya-hjjwl2",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/PedidosYa_fa3ee52a_13-31_4.png"
     },
     {
       "id": 47,
@@ -722,6 +746,56 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/En-el-2026-compra-TO_55293693_12-39_4.png"
     },
     {
+      "id": "bci-760fa29fe0",
+      "establecimiento": "Grandes tiendas",
+      "descripcion": "Haz tus compras más convenientes con nuestra promoción especial. Podrás pagar en 3, 6 o 12 cuotas sin interés en todas tus compras nacionales en rubro Viaje y Grandes Tiendas realizadas bajo la modalidad \"\"compra en cuotas\"\". CAE es del 1,36% para una compra de $400.000 en 6 cuotas, resultando en un costo total de $401.587 Esta campaña es válida desde el 06 al 07 de octubre de 2026 para todas las Tarjetas de Crédito Bci vigentes. Tus compras con tu Tarjeta de Crédito Bci sobre $100.000 participan en el sorteo de 10 Gift Cards de $500.000 para uso en Viajes.Bci.cl.",
+      "descuento": "En Cyber compra todo VIAJES y GRANDES TIENDAS en 3 - 6 ó 12 cuotas sin interes",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "CyberClicks",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción 3,6 ó 12 cuotas sin Interés Viaje y Grandes Tiendas: CAE de 1,48% calculado bajo un monto de compra de $1.000.000 en 12 cuotas. Costo total del Crédito: $1.008.000 Los $8.000 corresponden al cargo por el cálculo del impuesto timbres DL3475 y los $1.000.000 corresponden al monto total de la compra sin intereses si el cliente paga oportunamente al vencimiento de cada estado de cuenta. Promoción válida desde el 06/10/2026 hasta el 07/10/2026…",
+      "fecha_vencimiento": "2026-10-07",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/en-cyber-compra-todo-viajes-y-grandes-tiendas-en-3-6-o-12-cuotas-sin-interes-tmqzs64",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Grandes-tiendas_9edd0746_19-33_4.png"
+    },
+    {
+      "id": "bci-51be2d7004",
+      "establecimiento": "Despegar.cl",
+      "descripcion": "Despegar con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 40.000 de descuento en Paquetes, Vuelos y Hoteles pagando con Tarjeta de Crédito Bci en Despegar ● Paquetes Beneficio: 30% de descuento en Paquetes o Hoteles Tope: 40.000 Cupón: BCIPAQUETES Vigencia: 5 al 7 de octubre o hasta agotar stock de usos ● Vuelos Beneficio: 20% de descuento en Vuelos Tope: 20.000 Vigencia: 7 al 11 de octubre o hasta agotar stock de usos ● Hoteles Beneficio: 10% de descuento en Hoteles Tope: 20.000 Cupón: BCIHOTELES Vigencia: 5 al 7 de octubre o hasta agotar stock ● AGOTADO POR ÉXITO DE USOS ̶V̶u̶e̶l̶o̶s̶ ̶I̶n̶t̶e̶r̶n̶a̶c̶i̶o̶n̶a̶l̶e̶s̶ ̶B̶e̶n̶e̶f̶i̶c̶i̶o̶:̶ ̶2̶0̶%̶ ̶d̶e̶…",
+      "descuento": "30% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "CyberClicks",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción Paquetes - Promoción válida para reservas de paquetes, efectuadas a través del sitio web, app, call center y tiendas de Despegar. Vigencia desde el 05/10/2026 hasta el 07/10/2026. Las tarifas que cumplan estos requisitos verán reflejado un descuento del 30% con tope de $40.000 en descuento, ingresando el cupón BCIPAQUETES y pagando con Tarjeta de Crédito Bci en el checkout. El descuento se verá reflejado en el último paso del proceso de…",
+      "fecha_vencimiento": "2026-10-11",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/despegar-con-descuentos-en-paquetes-vuelos-y-hoteles-cxnb9s",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Despegar.cl_5c31f435_14-9_4.png"
+    },
+    {
       "id": "bci-03b0e959c9",
       "establecimiento": "ViajesBci.cl",
       "descripcion": "¡Exclusivo con Tarjetas de Crédito Visa Signature o Mastercard Black! Tienes dos cupones de descuento por $50.000 cada uno en Viajes Bci para tus próximo viaje, estadía o escapada. ¿Qué debo saber antes de comprar? - Entra a tu App Bci, ingresa a la sección de 'Beneficios', busca la categoría ”Viajes” y obtén tus códigos - Selecciona todo lo que quieras comprar en viajes.bci.cl - En la sección ¿Tienes un cupón?, haz clic en “Ingrésalo acá” - Valida tu cupón y ¡Listo! Condiciones: - Cupón válido en compras sobre $150.000 y pagando con Tarjeta de Crédito Bci Visa Signature o Mastercard Black. - Cupones válidos por año calendario - Válido un cupón por transacción - No acumulables con otras…",
@@ -1160,7 +1234,7 @@
       "id": "bci-408de396b2",
       "establecimiento": "Tasa Preferencial en Automotriz",
       "descripcion": "En rubro Automotriz 0,59% para Tarjetas Black, Signature e Infinite; CAE de 7,82% calculado bajo un monto de compra de $5.000.000 en 36 cuotas, Costo total del Crédito: $5.610.600 0,89% para Tarjetas de de Crédito Classic, Gold, Platinum o Empresario; CAE de 11,89% calculado bajo un monto de compra de $5.000.000 en 36 cuotas. Costo total del Crédito: $5.909.040 Vigencia desde el 1 de agosto al 30 de diciembre de 2026",
-      "descuento": "13 a 36 Cuotas",
+      "descuento": "18 a 36 Cuotas",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
       "categoria": "Otros",
@@ -1179,7 +1253,7 @@
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/13-a-36-cuotas-0t41zkn",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Tasa-Preferencial-en_05a03753_12-56_4.png"
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Tasa-Preferencial-en_05a03753_17-27_4.png"
     },
     {
       "id": "bci-f806e53c51",
@@ -1936,6 +2010,25 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/paga-en-13-a-36-cuotas-sin-interes-3ajufh",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/CopecFlux_da3b26c2_16-55_4.png"
+    },
+    {
+      "id": "bci-da794fcc8d",
+      "establecimiento": "Jeró Bistró",
+      "descripcion": "Viernes - Maitencillo. 20% de descuento con tope de $40.000 por cliente al día. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "20% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci, con un tope de $40.000 por cliente al día. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/viernes-maitencillo-8fks8lm",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Jer%C3%B3-Bistr%C3%B3_a02d4d61_15-16_4.png"
     },
     {
       "id": "bci-bee2aed1ef",
@@ -12164,6 +12257,56 @@
       "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/1772451185023498-redsalud-logo.webp"
     },
     {
+      "id": "falabella-feb9bf9254",
+      "establecimiento": "Experiencias Cyber con tus Fpuntos",
+      "descripcion": "Hasta el 7 de octubre",
+      "descuento": "Desde 2.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-07",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-fpuntos-experiencias",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/8axL2AZoRUAR34WzD6fXx/8a3aefa0e53a3b65e0391c5a98f9cc4e/Banners_Cyber_Fpuntos_Logo_Web_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-8cd68597a4",
+      "establecimiento": "Canjea Cyber en Falabella.com",
+      "descripcion": "Hasta el 7 de octubre",
+      "descuento": "Desde 12.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-07",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-fpuntos-retail",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/8axL2AZoRUAR34WzD6fXx/8a3aefa0e53a3b65e0391c5a98f9cc4e/Banners_Cyber_Fpuntos_Logo_Web_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-157d769cdd",
       "establecimiento": "Cyber Farmacias Ahumada",
       "descripcion": "En productos seleccionadas",
@@ -12178,7 +12321,7 @@
       ],
       "es_delivery": false,
       "terminos": "",
-      "fecha_vencimiento": "2026-10-31",
+      "fecha_vencimiento": "2026-10-07",
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-farmacias-ahumada",
@@ -12408,56 +12551,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-octubre-electro",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1MUgzQZeb6ipJORbspE5gN/5ab3333046428e7c0c3a53cfce960c01/Logo_falabella.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-feb9bf9254",
-      "establecimiento": "Experiencias Cyber con tus Fpuntos",
-      "descripcion": "Hasta el 7 de octubre",
-      "descuento": "Desde 2.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-07",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-fpuntos-experiencias",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/8axL2AZoRUAR34WzD6fXx/8a3aefa0e53a3b65e0391c5a98f9cc4e/Banners_Cyber_Fpuntos_Logo_Web_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-8cd68597a4",
-      "establecimiento": "Canjea Cyber en Falabella.com",
-      "descripcion": "Hasta el 7 de octubre",
-      "descuento": "Desde 12.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "credito",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-07",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/cyber-fpuntos-retail",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/8axL2AZoRUAR34WzD6fXx/8a3aefa0e53a3b65e0391c5a98f9cc4e/Banners_Cyber_Fpuntos_Logo_Web_Cyber_Fpuntos.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-8c07023291",
@@ -14646,6 +14739,25 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/hijo-del-sol-santiago",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/6TwMVJ8C7hEKcS71gseLDg/09ed809373dc3745267dbbf2f1c01785/Cards_LOGO_Web_Hijo_del_Sol.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-4b049a7407",
+      "establecimiento": "Prima Bar",
+      "descripcion": "Exclusivo presencial",
+      "descuento": "40% dcto",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/prima-bar",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6VJk4hrMoF7Kb6FWL39LPt/97aa4e69a41c535dd20aa2e85a4e010f/Cards_Beneficios_Agosto_LOGO_Prima_Bar.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-92e04825e0",
@@ -17013,7 +17125,7 @@
       "tipo_tarjeta": "ambas",
       "categoria": "Restaurantes",
       "dias_validos": [
-        "miércoles"
+        "martes"
       ],
       "es_delivery": false,
       "terminos": "",
@@ -17372,7 +17484,7 @@
     },
     {
       "id": "falabella-2972dd0cee",
-      "establecimiento": "minutos extras",
+      "establecimiento": "Mr. Joy Mallplaza",
       "descripcion": "Exclusivo Mallplaza",
       "descuento": "30 min extras",
       "banco_nombre": "Banco Falabella",
@@ -17949,27 +18061,6 @@
       "activo": true,
       "fuente": "mach",
       "url": "https://www.machbank.cl/beneficios"
-    },
-    {
-      "id": "mach-cf22162e5e",
-      "establecimiento": "JetSMART",
-      "descripcion": "Aprovecha este descuento exclusivo hasta el 5/06/2026.",
-      "descuento": "10% dcto. adicional en JetSMART.com",
-      "banco_nombre": "MACH",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Cyber",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles"
-      ],
-      "es_delivery": false,
-      "terminos": "Aprovecha este descuento exclusivo hasta el 5/06/2026.",
-      "fecha_vencimiento": "",
-      "activo": true,
-      "fuente": "mach",
-      "url": "https://www.machbank.cl/beneficios",
-      "logo": "https://cdn3.bci.cl/uploads/86f3a1af-bc22-48bd-8e7a-d92028568ba6/original/logo-jetsmart.png"
     },
     {
       "id": "mach-2f20e4da26",
@@ -18601,7 +18692,7 @@
     },
     {
       "id": "ripley-cf0d7d3aca",
-      "establecimiento": "Uncle Flecth",
+      "establecimiento": "Uncle Fletch",
       "descripcion": "Hamburguesas · R.M. (Ñuñoa / Las Condes)",
       "descuento": "40% de descuento",
       "banco_nombre": "Banco Ripley",
@@ -19149,6 +19240,25 @@
       "fuente": "ripley",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Reses-y-Brasas-_1787320252430.jpg?alt=media&token=91453779-0ee8-4fd3-82cf-98193fe52c3d"
+    },
+    {
+      "id": "ripley-585c0005b6",
+      "establecimiento": "Mr Hern Fish & Chips Bistr",
+      "descripcion": "Tablas, sandwichs, burgers. · X Región (Puerto Montt)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/10/26 al 31/10/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Mr_hern_1791388562626.jpg?alt=media&token=321759fa-27b6-46af-af4e-33097647e2cf"
     },
     {
       "id": "ripley-2942dbe5f5",

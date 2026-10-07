@@ -2,7 +2,7 @@
   "fuente": "ripley",
   "banco_nombre": "Banco Ripley",
   "url": "https://www.bancoripley.cl/beneficios-y-promociones",
-  "actualizado": "2026-10-06",
+  "actualizado": "2026-10-07",
   "descuentos": [
     {
       "id": "ripley-840bc52e36",
@@ -44,7 +44,7 @@
     },
     {
       "id": "ripley-cf0d7d3aca",
-      "establecimiento": "Uncle Flecth",
+      "establecimiento": "Uncle Fletch",
       "descripcion": "Hamburguesas · R.M. (Ñuñoa / Las Condes)",
       "descuento": "40% de descuento",
       "banco_nombre": "Banco Ripley",
@@ -592,6 +592,25 @@
       "fuente": "ripley",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Reses-y-Brasas-_1787320252430.jpg?alt=media&token=91453779-0ee8-4fd3-82cf-98193fe52c3d"
+    },
+    {
+      "id": "ripley-585c0005b6",
+      "establecimiento": "Mr Hern Fish & Chips Bistr",
+      "descripcion": "Tablas, sandwichs, burgers. · X Región (Puerto Montt)",
+      "descuento": "40% de descuento",
+      "banco_nombre": "Banco Ripley",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "Promoción válida desde el 01/10/26 al 31/10/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "ripley",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/banco-ripley-sp-2-0.appspot.com/o/logo-Mr_hern_1791388562626.jpg?alt=media&token=321759fa-27b6-46af-af4e-33097647e2cf"
     },
     {
       "id": "ripley-2942dbe5f5",

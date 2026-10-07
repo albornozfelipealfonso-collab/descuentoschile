@@ -2,7 +2,7 @@
   "fuente": "mach",
   "banco_nombre": "MACH",
   "url": "https://www.machbank.cl/beneficios",
-  "actualizado": "2026-10-06",
+  "actualizado": "2026-10-07",
   "descuentos": [
     {
       "id": "mach-89819de442",
@@ -408,27 +408,6 @@
       "activo": true,
       "fuente": "mach",
       "url": "https://www.machbank.cl/beneficios"
-    },
-    {
-      "id": "mach-cf22162e5e",
-      "establecimiento": "JetSMART",
-      "descripcion": "Aprovecha este descuento exclusivo hasta el 5/06/2026.",
-      "descuento": "10% dcto. adicional en JetSMART.com",
-      "banco_nombre": "MACH",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Cyber",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles"
-      ],
-      "es_delivery": false,
-      "terminos": "Aprovecha este descuento exclusivo hasta el 5/06/2026.",
-      "fecha_vencimiento": "",
-      "activo": true,
-      "fuente": "mach",
-      "url": "https://www.machbank.cl/beneficios",
-      "logo": "https://cdn3.bci.cl/uploads/86f3a1af-bc22-48bd-8e7a-d92028568ba6/original/logo-jetsmart.png"
     },
     {
       "id": "mach-2f20e4da26",
