@@ -2,8 +2,33 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-08",
+  "actualizado": "2026-10-09",
   "descuentos": [
+    {
+      "id": "falabella-148057c3cf",
+      "establecimiento": "Especial Canjes del Mes",
+      "descripcion": "Cada día un canje distinto",
+      "descuento": "Desde 3.200 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/canjes-del-mes",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/1jN0IYzJZEHbj3PmtxjriL/92088145a4df6a1dd9df3e77e7e8f419/ultra_rebajado.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
     {
       "id": "falabella-2372896165",
       "establecimiento": "The Color Run",
@@ -2172,7 +2197,7 @@
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/sakura",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/3JwOaEiG0RUF8IqyJGYgu9/cca0005bca2c0756632ef06a05fffae3/Logos_Cards_Sitio_Beneficios_Sakura.png?w=160&h=160&fit=pad&fm=webp&q=80"
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/o0pJE6RC7soRr4RlCaWYN/0ed4b7678083abb0e0a9cb4870f07267/sakura_152x48_sin_deformar.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-91d96ae37d",
@@ -2476,10 +2501,10 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/7cgYoj1LGYTrWWbN0SfQDZ/eb41d4becb087031ac1fcbf368028e3a/Logos_Cards_Sitio_Beneficios_Pacific_Club.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
-      "id": "falabella-beffe4d1b9",
+      "id": "falabella-8f69eff364",
       "establecimiento": "Envío gratis Falabella, Sodimac y Tottus",
       "descripcion": "Exclusivo Tarjeta CMR Elite",
-      "descuento": "Despachos Gratis Ilimitados",
+      "descuento": "Despachos Gratis",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
       "categoria": "Supermercados",
@@ -2497,7 +2522,7 @@
       "fecha_vencimiento": "2026-12-31",
       "activo": true,
       "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/despacho-gratis-ilimitado",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/despacho-gratis",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/Uzdq5j8Ydt9WYY4B9OBm4/b3e18e89549b893dd399ec7234aee669/Card_Despacho_Gratis_Elite_Logo_Web.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
@@ -5084,6 +5109,25 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/mallplaza-el-mall-de-la-entretencion",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/6BilScQlLzExvLiHpOWgLk/df552aac7b45ec1f47efb45025ec6294/mallplaza-card.jpg?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-b8a72e25da",
+      "establecimiento": "Santo Aire Restobar",
+      "descripcion": "Presencial en Concepción",
+      "descuento": "Hasta 40% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "debito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/santo-aire-restobar",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2RywLeVoMG3UH8JSxgWhuQ/511818976632a849f55659cf93b7e0a9/Cards_Logo_Web_Santo_Aire.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     }
   ]
 }

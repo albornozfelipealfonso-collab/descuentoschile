@@ -2,7 +2,7 @@
   "fuente": "bci",
   "banco_nombre": "BCI",
   "url": "https://www.bci.cl/beneficios/beneficios-bci",
-  "actualizado": "2026-10-08",
+  "actualizado": "2026-10-09",
   "descuentos": [
     {
       "id": "bci-557d8ffe37",
@@ -294,7 +294,7 @@
     {
       "id": "bci-de1fe4e065",
       "establecimiento": "Viajes.Bci.cl",
-      "descripcion": "Cyber - en Viajes Bci con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 80.000 de descuento en Paquetes, Vuelos y Hoteles ● DESTINOS EUROPA 30% de descuento en pagando con Tarjeta de Crédito Bci Tope $80.000 ● DESTINOS CARIBE Y NORTEAMÉRICA 20% de descuento pagando con Tarjeta de Crédito Bci Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call Center (800 231 242) Tope $50.000 ● DESTINOS SUDAMÉRICA 10% de descuento pagando con Tarjeta de Crédito Bci Tope $50.000 ● DESTINOS NACIONALES 10% de descuento pagando con Tarjeta de Crédito Bci Tope $30.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional El descuento se verá…",
+      "descripcion": "Cyber - en Viajes Bci con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 80.000 de descuento en Paquetes, Vuelos y Hoteles ● DESTINOS EUROPA 30% de descuento en pagando con Tarjeta de Crédito Bci Tope $80.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional ● DESTINOS CARIBE Y NORTEAMÉRICA 20% de descuento pagando con Tarjeta de Crédito Bci Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call Center (800 231 242) Tope $50.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional ● DESTINOS SUDAMERICA 20% de descuento en pagando con Tarjeta de Crédito Bci Tope $20.000 Vigencia desde 9 al 11 de…",
       "descuento": "30% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
@@ -309,7 +309,7 @@
         "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Campaña Viajes Bci - Cyber Vigencia: La presente promoción tendrá vigencia desde 5 al 11 de octubre de 2026, inclusive, o hasta agotar stock disponible, lo que ocurra primero. Elegibilidad: Promoción válida para pagos con Tarjetas de Crédito BCI. Beneficio: (i) Sudamérica: 10% de descuento en paquetes, vuelos y hoteles con tope máximo de CLP $50.000; (ii) Caribe y Norteaméroca: Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call…",
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Campaña Viajes Bci - Cyber Vigencia: La presente promoción tendrá vigencia desde 5 al 11 de octubre de 2026, inclusive, o hasta agotar stock disponible, lo que ocurra primero. Elegibilidad: Promoción válida para pagos con Tarjetas de Crédito BCI. Beneficio: (i) Sudamérica: 15% de descuento en paquetes, vuelos y hoteles con tope máximo de CLP $20.000; (ii) Caribe y Norteamérica: Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call…",
       "fecha_vencimiento": "2026-10-11",
       "activo": true,
       "fuente": "bci",
@@ -460,6 +460,31 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/despegar-con-descuentos-en-paquetes-vuelos-y-hoteles-cxnb9s",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Despegar.cl_5c31f435_14-9_4.png"
+    },
+    {
+      "id": "bci-4efb2c1113",
+      "establecimiento": "Grandes tiendas",
+      "descripcion": "Haz tus compras más convenientes con nuestra promoción especial. Podrás pagar en 3, 6 o 12 cuotas sin interés en todas tus compras nacionales en rubro Viaje y Grandes Tiendas realizadas bajo la modalidad \"\"compra en cuotas\"\". CAE es del 1,36% para una compra de $400.000 en 6 cuotas, resultando en un costo total de $401.587 Esta campaña es válida desde el 06 al 07 de octubre de 2026 para todas las Tarjetas de Crédito Bci vigentes. Tus compras con tu Tarjeta de Crédito Bci sobre $100.000 participan en el sorteo de 10 Gift Cards de $500.000 para uso en Viajes.Bci.cl.",
+      "descuento": "En Cyber compra todo VIAJES y GRANDES TIENDAS en 3 - 6 ó 12 cuotas sin interes",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "credito",
+      "categoria": "CyberClicks",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción 3,6 ó 12 cuotas sin Interés Viaje y Grandes Tiendas: CAE de 1,48% calculado bajo un monto de compra de $1.000.000 en 12 cuotas. Costo total del Crédito: $1.008.000 Los $8.000 corresponden al cargo por el cálculo del impuesto timbres DL3475 y los $1.000.000 corresponden al monto total de la compra sin intereses si el cliente paga oportunamente al vencimiento de cada estado de cuenta. Promoción válida desde el 06/10/2026 hasta el 11/10/2026…",
+      "fecha_vencimiento": "2026-10-11",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/en-cyber-compra-todo-viajes-y-grandes-tiendas-en-3-6-o-12-cuotas-sin-interes-huhg1eh",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Grandes-tiendas_e59d106d_14-28_4.png"
     },
     {
       "id": "bci-03b0e959c9",
@@ -5198,31 +5223,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/AIR-TRAIL---Mall-Spo_bd0c18f9_20-49_4.png"
     },
     {
-      "id": "bci-d96da3678e",
-      "establecimiento": "Portal de Ortodoncia",
-      "descripcion": "Todos los días. Beneficios Exclusivos para Clientes Banco BCI Banco BCI, en alianza con Portal de Ortodoncia, pone a disposición de sus clientes y grupo familiar descuentos preferenciales en tratamientos dentales y estética facial, con atención profesional y tecnología de vanguardia. 75% de descuento en tratamientos de ortodoncia metálica Válido para adultos y niños Incluye: Instalación de brackets metálicos Controles de brackets metálicos y estéticos Estudio inicial de ortodoncia quirúrgica Control de contención Microtornillos 62% de descuento adicional En todas las especialidades dentales (excluye laboratorio) y en tratamientos de Estética Facial. Especialidades Odontológicas…",
-      "descuento": "75% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Bienestar",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjeta de Crédito o Débito Bci. Beneficios Exclusivos para Clientes Banco BCI Banco BCI, en alianza con Portal de Ortodoncia, pone a disposición de sus clientes y grupo familiar descuentos preferenciales en tratamientos dentales y estética facial, con atención profesional y tecnología de vanguardia. 75% de descuento en tratamientos de ortodoncia metálica Válido para adultos y niños Incluye: Instalación de brackets metálicos Controles de brackets metálicos y estéticos Estudio…",
-      "fecha_vencimiento": "2026-12-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/todos-los-dias-28chwv4",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Portal-de-Ortodoncia_06172cd8_15-42_4.png"
-    },
-    {
       "id": "bci-5f93c61450",
       "establecimiento": "GRAVITY - Mall Sport",
       "descripcion": "Centro de escalada y boulder para todos los niveles. 30% de descuento todos los miércoles pagando con tarjeta de crédito y débito BCI. Para acceder al descuento solicítalo antes de realizar el pago. Promoción no acumulable con otras promociones vigentes. Exclusivo Mall Sport",
@@ -6801,6 +6801,56 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tu-pedido-en-tu-casa-ya-no-tienes-que-ir-al-supermercado-con-pedidosya-hjjwl2",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/PedidosYa_fa3ee52a_13-31_4.png"
+    },
+    {
+      "id": "bci-af65690946",
+      "establecimiento": "Portal de Ortodoncia",
+      "descripcion": "Tratamientos dentales. 75% de descuento en tratamientos de ortodoncia metálica, válido para adultos y niños, incluye: Instalación de brackets metálicos Controles de brackets metálicos y estéticos Estudio inicial de ortodoncia quirúrgica Control de contención Microtornillos 62% de descuento adicional En todas las especialidades dentales (excluye laboratorio). Especialidades Odontológicas: Odontopediatría, Periodoncia, Operatoria, Rehabilitación, Cirugía, Endodoncia, Implantología y Disfunción.estética, garantizando una atención de excelencia. Ubicación de Clínicas: Antonio Varas 445, Providencia Reserva tu hora: Llamando al +56 2 2757 4500 o agendando en https://portalortodoncia.cl/",
+      "descuento": "75% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Bienestar",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. Hasta un 75% de descuento en tratamientos de ortodoncia metálica, válido para adultos y niños, incluye: Instalación de brackets metálicos, controles de brackets metálicos y estéticos, estudio inicial de ortodoncia quirúrgica, control de contención y microtornillos. 62% de descuento adicional en todas las especialidades dentales (excluye laboratorio). Especialidades Odontológicas: Odontopediatría, Periodoncia, Operatoria, Rehabilitación…",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tratamientos-dentales-z51vvpi",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Portal-de-Ortodoncia_413714b4_14-13_4.png"
+    },
+    {
+      "id": "bci-fa9ed5b07c",
+      "establecimiento": "Portal de Ortodoncia",
+      "descripcion": "Tratamientos Estéticos. 30% de descuento en Estética Facial; Botox 3 zonas, Ácido Hialurónico y Bioestimulantes. No acumulable con otras promociones y/o descuentos.",
+      "descuento": "30% de descuento",
+      "banco_nombre": "BCI",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Bienestar",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. 30% de descuento en Estética Facial; Botox 3 zonas, Ácido Hialurónico y Bioestimulantes. No acumulable con otras promociones y/o descuentos. Pagando con tus Tarjetas de Débito o Crédito Bci.",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "bci",
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tratamientos-esteticos-yf9g9me",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Portal-de-Ortodoncia_0b440f85_14-31_4.png"
     },
     {
       "id": "bci-74a82d6bf6",
