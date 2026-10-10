@@ -2,7 +2,7 @@
   "fuente": "bci",
   "banco_nombre": "BCI",
   "url": "https://www.bci.cl/beneficios/beneficios-bci",
-  "actualizado": "2026-10-09",
+  "actualizado": "2026-10-10",
   "descuentos": [
     {
       "id": "bci-557d8ffe37",
@@ -272,26 +272,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_ff20f3fc_15-42_4.png"
     },
     {
-      "id": "bci-b1389e7f9f",
-      "establecimiento": "JetSmart",
-      "descripcion": "Cyber - 20 por ciento de desc. en todas las rutas y tarifas incluyendo las promocionales. 20% de descuento en todas las rutas y tarifas, incluyendo las promocionales en JetSMART.com, pagando con Tarjeta Crédito Bci, Lider Bci y MACHBANK. Fecha de vuelo: desde el 19 de octubre al 18 de marzo Fecha de venta: martes 6 a viernes 9 de octubre. Código: CYBERBCI",
-      "descuento": "20% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "martes",
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. Promoción de 20% de descuento fijo en la tarifa de todos los vuelos nacionales e internacionales (desde/hacia Chile) en JetSMART.com, pagando con tarjetas Bci, MACHBANK, y Lider Bci. Incluye tarifas promocionales, excluyendo tarifas PROMO FLASH (clase V). Vigencia de compra: Válido únicamente desde el martes 6 hasta el viernes 9 de octubre de 2026. Cómo acceder: Para acceder al beneficio, debes ingresar el código \"\"CYBERBCI\"\" en JetSMART.com antes de…",
-      "fecha_vencimiento": "2026-10-09",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/cyber-20-por-ciento-de-desc.-en-todas-las-rutas-y-tarifas-incluyendo-las-promocionales.-792759g",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_aeac06cf_20-55_4.png"
-    },
-    {
       "id": "bci-de1fe4e065",
       "establecimiento": "Viajes.Bci.cl",
       "descripcion": "Cyber - en Viajes Bci con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 80.000 de descuento en Paquetes, Vuelos y Hoteles ● DESTINOS EUROPA 30% de descuento en pagando con Tarjeta de Crédito Bci Tope $80.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional ● DESTINOS CARIBE Y NORTEAMÉRICA 20% de descuento pagando con Tarjeta de Crédito Bci Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call Center (800 231 242) Tope $50.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional ● DESTINOS SUDAMERICA 20% de descuento en pagando con Tarjeta de Crédito Bci Tope $20.000 Vigencia desde 9 al 11 de…",
@@ -365,26 +345,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/descuentos-exclusivos-en-productos-seleccionados-de-categoria-herramientas-hlvpj5h",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Mercado-Libre_47346f3b_15-7_4.png"
-    },
-    {
-      "id": "bci-6b89638270",
-      "establecimiento": "JetSmart",
-      "descripcion": "Cyber - 10 por ciento de desc. en todas las rutas y tarifas incluyendo las promocionales. 10% de descuento en todas las rutas y tarifas, incluyendo las promocionales en JetSMART.com, pagando con Tarjeta de Débito Bci y MACHBANK. Fecha de vuelo: desde el 19 de octubre al 18 de marzo Fecha de venta: martes 6 a viernes 9 de octubre. Código: MACHTD10",
-      "descuento": "10% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "debito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "martes",
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Débito Bci. Promoción de 10% de descuento fijo en la tarifa de todos los vuelos nacionales e internacionales (desde/hacia Chile) en JetSMART.com, pagando con tarjetas Bci y MACHBANK. Incluye tarifas promocionales, excluyendo tarifas PROMO FLASH (clase V). Vigencia de compra: Válido únicamente desde el martes 6 hasta el viernes 9 de octubre de 2026. Cómo acceder: Para acceder al beneficio, debes ingresar el código \"\"MACHTD10\"\" en JetSMART.com antes de cotizar tu…",
-      "fecha_vencimiento": "2026-10-09",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/cyber-10-por-ciento-de-desc.-en-todas-las-rutas-y-tarifas-incluyendo-las-promocionales.-bom2nzm",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_9576732e_21-37_4.png"
     },
     {
       "id": "bci-0213819af9",

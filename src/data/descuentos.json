@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-09T17:16:40.232Z",
+  "generado": "2026-10-10T16:03:43.740Z",
   "bancos": [
     {
       "id": 1,
@@ -581,26 +581,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_ff20f3fc_15-42_4.png"
     },
     {
-      "id": "bci-b1389e7f9f",
-      "establecimiento": "JetSmart",
-      "descripcion": "Cyber - 20 por ciento de desc. en todas las rutas y tarifas incluyendo las promocionales. 20% de descuento en todas las rutas y tarifas, incluyendo las promocionales en JetSMART.com, pagando con Tarjeta Crédito Bci, Lider Bci y MACHBANK. Fecha de vuelo: desde el 19 de octubre al 18 de marzo Fecha de venta: martes 6 a viernes 9 de octubre. Código: CYBERBCI",
-      "descuento": "20% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "martes",
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci. Promoción de 20% de descuento fijo en la tarifa de todos los vuelos nacionales e internacionales (desde/hacia Chile) en JetSMART.com, pagando con tarjetas Bci, MACHBANK, y Lider Bci. Incluye tarifas promocionales, excluyendo tarifas PROMO FLASH (clase V). Vigencia de compra: Válido únicamente desde el martes 6 hasta el viernes 9 de octubre de 2026. Cómo acceder: Para acceder al beneficio, debes ingresar el código \"\"CYBERBCI\"\" en JetSMART.com antes de…",
-      "fecha_vencimiento": "2026-10-09",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/cyber-20-por-ciento-de-desc.-en-todas-las-rutas-y-tarifas-incluyendo-las-promocionales.-792759g",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_aeac06cf_20-55_4.png"
-    },
-    {
       "id": "bci-de1fe4e065",
       "establecimiento": "Viajes.Bci.cl",
       "descripcion": "Cyber - en Viajes Bci con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 80.000 de descuento en Paquetes, Vuelos y Hoteles ● DESTINOS EUROPA 30% de descuento en pagando con Tarjeta de Crédito Bci Tope $80.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional ● DESTINOS CARIBE Y NORTEAMÉRICA 20% de descuento pagando con Tarjeta de Crédito Bci Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call Center (800 231 242) Tope $50.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional ● DESTINOS SUDAMERICA 20% de descuento en pagando con Tarjeta de Crédito Bci Tope $20.000 Vigencia desde 9 al 11 de…",
@@ -674,26 +654,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/descuentos-exclusivos-en-productos-seleccionados-de-categoria-herramientas-hlvpj5h",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Mercado-Libre_47346f3b_15-7_4.png"
-    },
-    {
-      "id": "bci-6b89638270",
-      "establecimiento": "JetSmart",
-      "descripcion": "Cyber - 10 por ciento de desc. en todas las rutas y tarifas incluyendo las promocionales. 10% de descuento en todas las rutas y tarifas, incluyendo las promocionales en JetSMART.com, pagando con Tarjeta de Débito Bci y MACHBANK. Fecha de vuelo: desde el 19 de octubre al 18 de marzo Fecha de venta: martes 6 a viernes 9 de octubre. Código: MACHTD10",
-      "descuento": "10% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "debito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "martes",
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Débito Bci. Promoción de 10% de descuento fijo en la tarifa de todos los vuelos nacionales e internacionales (desde/hacia Chile) en JetSMART.com, pagando con tarjetas Bci y MACHBANK. Incluye tarifas promocionales, excluyendo tarifas PROMO FLASH (clase V). Vigencia de compra: Válido únicamente desde el martes 6 hasta el viernes 9 de octubre de 2026. Cómo acceder: Para acceder al beneficio, debes ingresar el código \"\"MACHTD10\"\" en JetSMART.com antes de cotizar tu…",
-      "fecha_vencimiento": "2026-10-09",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/cyber-10-por-ciento-de-desc.-en-todas-las-rutas-y-tarifas-incluyendo-las-promocionales.-bom2nzm",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_9576732e_21-37_4.png"
     },
     {
       "id": "bci-0213819af9",
@@ -16079,6 +16039,25 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/3OcALMhpxx4o0ATmNBqFHh/a387035be62c2d215a0c26142e6232d4/Cards_Cuponeras_Logo_Web_Cuponera_Elite.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
+      "id": "falabella-b8a72e25da",
+      "establecimiento": "Santo Aire Restobar",
+      "descripcion": "Presencial en Concepción",
+      "descuento": "Hasta 40% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "debito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/santo-aire-restobar",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2RywLeVoMG3UH8JSxgWhuQ/511818976632a849f55659cf93b7e0a9/Cards_Logo_Web_Santo_Aire.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-4948ba6724",
       "establecimiento": "Cuponera Gastronómica",
       "descripcion": "Exclusivo con tus tarjetas",
@@ -16212,6 +16191,31 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/4hpyME1vdQPg0ecue20caj/c05183fdfea16779ebb05c1c2c59bc70/Cards_LOGO_Web_Hijo_del_Sol.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
+      "id": "falabella-dbf8ae2811",
+      "establecimiento": "Acumula más en Shell",
+      "descripcion": "Pagando con App Shell",
+      "descuento": "Hasta El Triple",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Transporte",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/acumulacion-y-canje-shell",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/NlY8UcRt2UMqFQwY9F4F1/f8ea825698fecad0a22ebcbf8974ee13/Logos_Cards_Sitio_Beneficios_Shell.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-ebf32b3302",
       "establecimiento": "Canje de maletas",
       "descripcion": "Complementa tu viaje con Fpuntos",
@@ -16335,31 +16339,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/paga-menos-viajes-falabella",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/2iMamaCbur2aoFvO266XyO/a3ec8b254c2f516dcaf8b193673b0dfb/Logos_Logo_Viajes_Falabella.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-dbf8ae2811",
-      "establecimiento": "Acumula más en Shell",
-      "descripcion": "Pagando con App Shell",
-      "descuento": "Hasta El Triple",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Transporte",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-12-31",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/acumulacion-y-canje-shell",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/NlY8UcRt2UMqFQwY9F4F1/f8ea825698fecad0a22ebcbf8974ee13/Logos_Cards_Sitio_Beneficios_Shell.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-6ac5bd88cb",
@@ -16781,9 +16760,9 @@
     },
     {
       "id": "falabella-fee6b8d822",
-      "establecimiento": "Kmi-Studi",
+      "establecimiento": "K-Mi Studio",
       "descripcion": "Exclusivo presencial en Mallplaza",
-      "descuento": "Hasta 40% Sin Tope",
+      "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
       "categoria": "Salud y belleza",
@@ -17361,25 +17340,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/mallplaza-el-mall-de-la-entretencion",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/6BilScQlLzExvLiHpOWgLk/df552aac7b45ec1f47efb45025ec6294/mallplaza-card.jpg?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-b8a72e25da",
-      "establecimiento": "Santo Aire Restobar",
-      "descripcion": "Presencial en Concepción",
-      "descuento": "Hasta 40% Sin Tope",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "debito",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "jueves"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/santo-aire-restobar",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/2RywLeVoMG3UH8JSxgWhuQ/511818976632a849f55659cf93b7e0a9/Cards_Logo_Web_Santo_Aire.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "mach-89819de442",

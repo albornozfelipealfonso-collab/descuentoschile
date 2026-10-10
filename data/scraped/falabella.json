@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-09",
+  "actualizado": "2026-10-10",
   "descuentos": [
     {
       "id": "falabella-148057c3cf",
@@ -3827,6 +3827,25 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/3OcALMhpxx4o0ATmNBqFHh/a387035be62c2d215a0c26142e6232d4/Cards_Cuponeras_Logo_Web_Cuponera_Elite.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
+      "id": "falabella-b8a72e25da",
+      "establecimiento": "Santo Aire Restobar",
+      "descripcion": "Presencial en Concepción",
+      "descuento": "Hasta 40% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "debito",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/santo-aire-restobar",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2RywLeVoMG3UH8JSxgWhuQ/511818976632a849f55659cf93b7e0a9/Cards_Logo_Web_Santo_Aire.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-4948ba6724",
       "establecimiento": "Cuponera Gastronómica",
       "descripcion": "Exclusivo con tus tarjetas",
@@ -3960,6 +3979,31 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/4hpyME1vdQPg0ecue20caj/c05183fdfea16779ebb05c1c2c59bc70/Cards_LOGO_Web_Hijo_del_Sol.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
+      "id": "falabella-dbf8ae2811",
+      "establecimiento": "Acumula más en Shell",
+      "descripcion": "Pagando con App Shell",
+      "descuento": "Hasta El Triple",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Transporte",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/acumulacion-y-canje-shell",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/NlY8UcRt2UMqFQwY9F4F1/f8ea825698fecad0a22ebcbf8974ee13/Logos_Cards_Sitio_Beneficios_Shell.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-ebf32b3302",
       "establecimiento": "Canje de maletas",
       "descripcion": "Complementa tu viaje con Fpuntos",
@@ -4083,31 +4127,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/paga-menos-viajes-falabella",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/2iMamaCbur2aoFvO266XyO/a3ec8b254c2f516dcaf8b193673b0dfb/Logos_Logo_Viajes_Falabella.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-dbf8ae2811",
-      "establecimiento": "Acumula más en Shell",
-      "descripcion": "Pagando con App Shell",
-      "descuento": "Hasta El Triple",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Transporte",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-12-31",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/acumulacion-y-canje-shell",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/NlY8UcRt2UMqFQwY9F4F1/f8ea825698fecad0a22ebcbf8974ee13/Logos_Cards_Sitio_Beneficios_Shell.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-6ac5bd88cb",
@@ -4529,9 +4548,9 @@
     },
     {
       "id": "falabella-fee6b8d822",
-      "establecimiento": "Kmi-Studi",
+      "establecimiento": "K-Mi Studio",
       "descripcion": "Exclusivo presencial en Mallplaza",
-      "descuento": "Hasta 40% Sin Tope",
+      "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
       "categoria": "Salud y belleza",
@@ -5109,25 +5128,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/mallplaza-el-mall-de-la-entretencion",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/6BilScQlLzExvLiHpOWgLk/df552aac7b45ec1f47efb45025ec6294/mallplaza-card.jpg?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-b8a72e25da",
-      "establecimiento": "Santo Aire Restobar",
-      "descripcion": "Presencial en Concepción",
-      "descuento": "Hasta 40% Sin Tope",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "debito",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "jueves"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/santo-aire-restobar",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/2RywLeVoMG3UH8JSxgWhuQ/511818976632a849f55659cf93b7e0a9/Cards_Logo_Web_Santo_Aire.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     }
   ]
 }
