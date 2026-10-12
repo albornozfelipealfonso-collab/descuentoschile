@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-10T16:03:43.740Z",
+  "generado": "2026-10-12T20:04:57.645Z",
   "bancos": [
     {
       "id": 1,
@@ -581,13 +581,13 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_ff20f3fc_15-42_4.png"
     },
     {
-      "id": "bci-de1fe4e065",
-      "establecimiento": "Viajes.Bci.cl",
-      "descripcion": "Cyber - en Viajes Bci con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 80.000 de descuento en Paquetes, Vuelos y Hoteles ● DESTINOS EUROPA 30% de descuento en pagando con Tarjeta de Crédito Bci Tope $80.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional ● DESTINOS CARIBE Y NORTEAMÉRICA 20% de descuento pagando con Tarjeta de Crédito Bci Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call Center (800 231 242) Tope $50.000 Vigencia desde 5 al 11 de octubre 2026 o hasta agotar stock de fondo promocional ● DESTINOS SUDAMERICA 20% de descuento en pagando con Tarjeta de Crédito Bci Tope $20.000 Vigencia desde 9 al 11 de…",
+      "id": "bci-c1f539e40e",
+      "establecimiento": "miCoca-Cola.cl",
+      "descripcion": "Tus bebidas favoritas de la familia miCoca-Cola.cl directo a la casa. 30% de descuento en miCoca-Cola.cl con tope de $30.000 de dcto por usuario y despacho gratis por compras sobre $25.000, para obtener el beneficio ingresar los primeros 6 dígitos de tu tarjeta de credito como cupón de descuento, beneficio exclusivo para tarjetas de crédito Bci. Válido desde el 12 al 18 de Octubre. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
       "descuento": "30% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
+      "categoria": "Antojos",
       "dias_validos": [
         "lunes",
         "martes",
@@ -598,62 +598,12 @@
         "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Campaña Viajes Bci - Cyber Vigencia: La presente promoción tendrá vigencia desde 5 al 11 de octubre de 2026, inclusive, o hasta agotar stock disponible, lo que ocurra primero. Elegibilidad: Promoción válida para pagos con Tarjetas de Crédito BCI. Beneficio: (i) Sudamérica: 15% de descuento en paquetes, vuelos y hoteles con tope máximo de CLP $20.000; (ii) Caribe y Norteamérica: Beneficio exclusivo reservando por canal WhatsApp (+56228407573) o Call…",
-      "fecha_vencimiento": "2026-10-11",
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 30% de descuento en miCoca-Cola.cl con tope de $30.000 de dcto por usuario y despacho gratis por compras sobre $25.000, para obtener el beneficio ingresar los primeros 6 dígitos de tu tarjeta de credito como cupón de descuento, beneficio exclusivo para tarjetas de crédito Bci No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de…",
+      "fecha_vencimiento": "2026-10-18",
       "activo": true,
       "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/cyber-en-viajes-bci-con-descuentos-en-paquetes-vuelos-y-hoteles-i0msj5",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Viajes.Bci.cl_c18e4da6_14-35_4.png"
-    },
-    {
-      "id": "bci-9a651290b0",
-      "establecimiento": "Mercado Libre",
-      "descripcion": "Descuentos exclusivos en productos seleccionados de categoría Tecnología. 10% de descuento en productos seleccionados de la categoría Tecnología Beneficio exclusivo pagando con tu Tarjeta de Crédito Bci Tope: $30.000 Mínimo de compra: $99.990 Vigencia desde 5 al 11 de octubre o hasta agotar stock de fondo promocional El descuento se verá reflejado en el último paso del proceso de compra, al momento de ingresar los datos del medio de pago ¿Cómo puedo acceder al beneficio? Ingresa a www.mercadolibre.cl Los productos que apliquen en la campaña estarán señalizados como 10% OFF BCI en productos seleccionados de la categoría Tecnología En el check out debes ingresar como medio de pago tu Tarjeta…",
-      "descuento": "10% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Términos y condiciones - Beneficio de 10% OFF con tope de $30.000 de descuento válido sólo para compras de productos seleccionados de la categoría Tecnología en el Marketplace de Mercado Libre desde 5 al 11 de septiembre 2026 o hasta agotar el fondo promocional de $30.000.000, lo que ocurra primero. Exclusivamente pagando con Tarjetas de Crédito Bci a través de la aplicación móvil (App) de Mercado Libre o en www.mercadolibre.cl al momento de pagar. El…",
-      "fecha_vencimiento": "2026-10-11",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/descuentos-exclusivos-en-productos-seleccionados-de-categoria-tecnologia-rhj238k",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Mercado-Libre_57c3f03f_14-44_4.png"
-    },
-    {
-      "id": "bci-17cf646751",
-      "establecimiento": "Mercado Libre",
-      "descripcion": "Descuentos exclusivos en productos seleccionados de categoría Herramientas. 20% de descuento en productos seleccionados de la categoría Herramientas Beneficio exclusivo pagando con tu Tarjeta de Crédito Bci Tope: $10.000 Mínimo de compra: $39.990 Vigencia: 5/10/2026 y 11/10/2026 o hasta agotar stock de fondo promocional El descuento se verá reflejado en el último paso del proceso de compra, al momento de ingresar los datos del medio de pago ¿Cómo puedo acceder al beneficio? Ingresa a www.mercadolibre.cl Los productos que apliquen en la campaña estarán señalizados como 20% OFF BCI en productos seleccionados de la categoría Herramientas En el check out debes ingresar como medio de pago tu…",
-      "descuento": "20% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Términos y condiciones - Beneficio de 20% OFF con tope de $10.000 de descuento válido sólo para compras de productos seleccionados de la categoría Herramientas en el Marketplace de Mercado Libre desde 5 al 11 de octubre 2026 o hasta agotar el fondo promocional de $15.000.000, lo que ocurra primero. Exclusivamente pagando con Tarjetas de Crédito Bci a través de la aplicación móvil (App) de Mercado Libre o en www.mercadolibre.cl al momento de pagar. El…",
-      "fecha_vencimiento": "2026-10-11",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/descuentos-exclusivos-en-productos-seleccionados-de-categoria-herramientas-hlvpj5h",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Mercado-Libre_47346f3b_15-7_4.png"
+      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tus-bebidas-favoritas-de-la-familia-micoca-cola.cl-directo-a-la-casa-9141y6o",
+      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/miCoca-Cola.cl_bf75386c_20-37_4.png"
     },
     {
       "id": "bci-0213819af9",
@@ -704,56 +654,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/paga-en-3-o-6-cuotas-con-tus-tarjetas-de-credito-bci.-xkx1qqj",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/En-el-2026-compra-TO_55293693_12-39_4.png"
-    },
-    {
-      "id": "bci-51be2d7004",
-      "establecimiento": "Despegar.cl",
-      "descripcion": "Despegar con descuentos en Paquetes Vuelos y Hoteles. En este Cyber obtén hasta 40.000 de descuento en Paquetes, Vuelos y Hoteles pagando con Tarjeta de Crédito Bci en Despegar ● Paquetes Beneficio: 30% de descuento en Paquetes o Hoteles Tope: 40.000 Cupón: BCIPAQUETES Vigencia: 5 al 7 de octubre o hasta agotar stock de usos ● Vuelos Beneficio: 20% de descuento en Vuelos Tope: 20.000 Vigencia: 7 al 11 de octubre o hasta agotar stock de usos ● Hoteles Beneficio: 10% de descuento en Hoteles Tope: 20.000 Cupón: BCIHOTELES Vigencia: 5 al 7 de octubre o hasta agotar stock ● AGOTADO POR ÉXITO DE USOS ̶V̶u̶e̶l̶o̶s̶ ̶I̶n̶t̶e̶r̶n̶a̶c̶i̶o̶n̶a̶l̶e̶s̶ ̶B̶e̶n̶e̶f̶i̶c̶i̶o̶:̶ ̶2̶0̶%̶ ̶d̶e̶…",
-      "descuento": "30% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción Paquetes - Promoción válida para reservas de paquetes, efectuadas a través del sitio web, app, call center y tiendas de Despegar. Vigencia desde el 05/10/2026 hasta el 07/10/2026. Las tarifas que cumplan estos requisitos verán reflejado un descuento del 30% con tope de $40.000 en descuento, ingresando el cupón BCIPAQUETES y pagando con Tarjeta de Crédito Bci en el checkout. El descuento se verá reflejado en el último paso del proceso de…",
-      "fecha_vencimiento": "2026-10-11",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/despegar-con-descuentos-en-paquetes-vuelos-y-hoteles-cxnb9s",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Despegar.cl_5c31f435_14-9_4.png"
-    },
-    {
-      "id": "bci-4efb2c1113",
-      "establecimiento": "Grandes tiendas",
-      "descripcion": "Haz tus compras más convenientes con nuestra promoción especial. Podrás pagar en 3, 6 o 12 cuotas sin interés en todas tus compras nacionales en rubro Viaje y Grandes Tiendas realizadas bajo la modalidad \"\"compra en cuotas\"\". CAE es del 1,36% para una compra de $400.000 en 6 cuotas, resultando en un costo total de $401.587 Esta campaña es válida desde el 06 al 07 de octubre de 2026 para todas las Tarjetas de Crédito Bci vigentes. Tus compras con tu Tarjeta de Crédito Bci sobre $100.000 participan en el sorteo de 10 Gift Cards de $500.000 para uso en Viajes.Bci.cl.",
-      "descuento": "En Cyber compra todo VIAJES y GRANDES TIENDAS en 3 - 6 ó 12 cuotas sin interes",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. Promoción 3,6 ó 12 cuotas sin Interés Viaje y Grandes Tiendas: CAE de 1,48% calculado bajo un monto de compra de $1.000.000 en 12 cuotas. Costo total del Crédito: $1.008.000 Los $8.000 corresponden al cargo por el cálculo del impuesto timbres DL3475 y los $1.000.000 corresponden al monto total de la compra sin intereses si el cliente paga oportunamente al vencimiento de cada estado de cuenta. Promoción válida desde el 06/10/2026 hasta el 11/10/2026…",
-      "fecha_vencimiento": "2026-10-11",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/en-cyber-compra-todo-viajes-y-grandes-tiendas-en-3-6-o-12-cuotas-sin-interes-huhg1eh",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Grandes-tiendas_e59d106d_14-28_4.png"
     },
     {
       "id": "bci-03b0e959c9",
@@ -881,31 +781,6 @@
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/ViajesBci.cl_9a0651a6_18-25_4.png"
     },
     {
-      "id": "bci-f3930aa978",
-      "establecimiento": "VCARB - Sao Paulo",
-      "descripcion": "Inscríbete en la sección de Experiencias Upgrade en tu Banco en Línea y participa por 4 paquetes dobles a Sao Paulo con tus Tarjetas de Crédito Bci Visa. ¿Cómo participar? ¡Muy fácil! Ingresa a tu Banco en Línea y ve a la sección de Experiencias Upgrade. Ingresa a \"Ver Cartelera\" en la sección \"Deportes\". Inscríbete en el Evento de VCARB - Sao Paulo y ya estarás participando. Comienza a utilizar tus Tarjetas de Crédito Bci Visa y suma puntos para el ranking por cada transacción válida sobre $3.000 que realices. Condiciones de acumulación y ganadores: Una vez inscrito, todas las transacciones válidas sobre $3.000 realizadas entre el 08/07/2026 y el 04/10/2026 acumulan puntos. El premio se…",
-      "descuento": "Viaja a Sao Paulo con tus Tarjetas de Crédito Bci Visa",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "Viajes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito Bci Visa. Promoción válida desde el 8 de julio de 2026 hasta el 4 de octubre 2026, para titulares de Tarjeta de Crédito Bci Visa registrados en la promoción. La participación está limitada exclusivamente a clientes personas naturales, que pertenezcan a la banca Preferencial, y que sean titulares de una Tarjeta de Crédito Bci Visa emitida en Chile. Los clientes deben: (a) inscribirse en el módulo de la promoción, alojado en módulo de Experiencias Upgrade en…",
-      "fecha_vencimiento": "2026-10-11",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/viaja-a-sao-paulo-con-tus-tarjetas-de-credito-bci-visa-w5bp7gq",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/VCARB_6b06d605_18-43_4.png"
-    },
-    {
       "id": "bci-f252958928",
       "establecimiento": "La Pizka",
       "descripcion": "Jueves de octubre. Compra online: 40% de descuento en toda la tienda online sin tope. Para hacer el efectivo el descuento debes ingresar los 6 primeros dígitos de tu Tarjeta de Crédito Bci Mastercard Black, Visa Signature o Visa Infinte como código de descuento al momento de pagar. No incluye costo de envío. Descuento no acumulable con otras promociones y/o descuentos. Hasta agotar stock. https://lapizka.cl/",
@@ -942,56 +817,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/las-condes-desde-las-18.00-hrs-44nbkxb",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Marriott_f88c731c_18-43_4.png"
-    },
-    {
-      "id": "bci-ed6fe4bf26",
-      "establecimiento": "Viajes.Bci.cl",
-      "descripcion": "Mecánica: sorteo de 2 pasajes de cortesía Avianca (ida y vuelta, cabina económica, rutas internacionales operadas por Avianca, excepto Europa y Canadá) entre quienes compren un vuelo o paquete con vuelo Avianca durante todo octubre 2026. Vigencia del vuelo: Desde el 1 de Enero al 30 de Junio 2027, sujeto a disponibilidad y blackouts del la aerolínea Contacto al ganador: Entre el 1 y 10 de Noviembre",
-      "descuento": "Concursa por un pasaje aéreo doble con Avianca en Viajes Bci",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Viajes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. Mecánica: sorteo de 2 pasajes de cortesía Avianca (ida y vuelta, cabina económica, rutas internacionales operadas por Avianca, excepto Europa y Canadá) entre quienes compren un vuelo o paquete con vuelo Avianca durante todo octubre 2026. Vigencia del vuelo: Desde el 1 de Enero al 30 de Junio 2027, sujeto a disponibilidad y blackouts del la aerolínea Contacto al ganador: Entre el 1 y 10 de Noviembre",
-      "fecha_vencimiento": "2026-10-11",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/concursa-por-un-pasaje-aereo-doble-con-avianca-en-viajes-bci-pjvj5dm",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Viajes.Bci.cl_06c5cbdb_18-25_4.png"
-    },
-    {
-      "id": "bci-bb4391c4e1",
-      "establecimiento": "Viajes.Bci.cl",
-      "descripcion": "Avianca - Cupón de descuento Vuelos y Paquetes Beneficio: Ingresa AVIANCA26 como cupón CLP $200.000 de descuento en paquetes o vuelos Avianca comprando en Viajes Bci Compra mínima: CLP $2.500.000 Vigencia: desde el 5 al 11 de octubre o hasta agotar stock Stock: 19 cupos. Cupón: AVIANCA26 ¿Cómo puedo acceder al beneficio? Ingresa a viajes.bci.cl y selecciona un vuelo o paquete con Avianca En el check out de la reserva debes ingresar el cupón AVIANCA26 y verás reflejado el descuento antes de pagar.",
-      "descuento": "200.000 de descuento en vuelos o paquetes en Avianca con Viajes Bci",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus Tarjetas de Crédito o Débito Bci. LEGAL AVIANCA DESCUENTO — CYBER VIAJES BCI Vigencia de compra: 5 al 11 de octubre de 2026. Promoción válida introduciendo el código promocional AVIANCA26 en el proceso de compra. Válida para la compra de vuelos y paquetes con vuelo operado por Avianca en rutas internacionales. Descuento de CLP $200.000 aplicable sobre compras superiores a CLP $2.500.000. La promoción es válida únicamente para compras realizadas a través del sitio web…",
-      "fecha_vencimiento": "2026-10-11",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/200.000-de-descuento-en-vuelos-o-paquetes-en-avianca-con-viajes-bci-29ltam1",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Viajes.Bci.cl_8eae8ffc_18-27_4.png"
     },
     {
       "id": "bci-57bad2e398",
