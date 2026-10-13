@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-12",
+  "actualizado": "2026-10-13",
   "descuentos": [
     {
       "id": "falabella-148057c3cf",
@@ -114,7 +114,7 @@
     {
       "id": "falabella-f76164aaf7",
       "establecimiento": "Juan Maestro",
-      "descripcion": "Presencial en totem y por la app",
+      "descripcion": "Valido vía Tótem y por la app",
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
@@ -5128,6 +5128,25 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/mallplaza-el-mall-de-la-entretencion",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/6BilScQlLzExvLiHpOWgLk/df552aac7b45ec1f47efb45025ec6294/mallplaza-card.jpg?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-fe9039ae1f",
+      "establecimiento": "Martes de Belleza",
+      "descripcion": "Comercios seleccionados",
+      "descuento": "40% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Salud y belleza",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/martes-de-belleza",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2DWpf7kuaAHKojXa6XkRaA/5617760b0c3ffab1b5791336eded3f92/Cards_Agendra_Pro_Logo_Web_Agenda_Pro.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     }
   ]
 }

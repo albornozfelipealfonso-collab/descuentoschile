@@ -2,7 +2,7 @@
   "fuente": "bci",
   "banco_nombre": "BCI",
   "url": "https://www.bci.cl/beneficios/beneficios-bci",
-  "actualizado": "2026-10-12",
+  "actualizado": "2026-10-13",
   "descuentos": [
     {
       "id": "bci-557d8ffe37",
@@ -295,31 +295,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tus-bebidas-favoritas-de-la-familia-micoca-cola.cl-directo-a-la-casa-9141y6o",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/miCoca-Cola.cl_bf75386c_20-37_4.png"
-    },
-    {
-      "id": "bci-0213819af9",
-      "establecimiento": "Salcobrand",
-      "descripcion": "Ultimo Click Bci Salcobrand. 20% de cashback adicional con tope de $10.000. Un solo uso por cliente. Promoción válida del 08-10-2026 al 12-10-2026 ambas fechas incluidas.",
-      "descuento": "20% de cashback (tope $10.000)",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "CyberClicks",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo pagando con tarjetas de Crédito Bci en Salcobrand.cl. Último Click: 20% de cashback adicional con tope de $10.000. Un solo uso por cliente. Promoción válida del 08-10-2026 al 12-10-2026 ambas fechas incluidas. Promoción válida comprando en www.salcobrand.cl y pagando con Tarjetas de Crédito BCI, Tarjeta de Crédito Líder BCI o Tarjetas de Crédito, Prepago y Débito MACHBANK en los productos asociados a la promoción. Venta sujeta a cumplimiento de Norma Sanitaria de Venta. Máximo 10…",
-      "fecha_vencimiento": "2026-10-12",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/ultimo-click-bci-salcobrand-ztg13gk",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Salcobrand_6baf856b_13-17_4.png"
     },
     {
       "id": "bci-0c2e3d254d",
@@ -2845,25 +2820,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/viernes-en-renaca-54w3mph",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/Casa-Re%C3%B1aca_1c9672b8_14-0_4.png"
-    },
-    {
-      "id": "bci-c9a1e37800",
-      "establecimiento": "La Vermutería del Pobre Vermut",
-      "descripcion": "Disfruta de este beneficio los jueves. 20% de descuento sin tope al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "20% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "jueves"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento en el total de la cuenta, sin tope pagando con Tarjetas de Débito y Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio…",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/disfruta-de-este-beneficio-los-jueves-rsvdzqu",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/La-Vermuter%C3%ADa-del-Po_a9de2ef9_21-24_4.png"
     },
     {
       "id": "bci-e6a9345dcb",
