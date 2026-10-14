@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-13T17:53:47.967Z",
+  "generado": "2026-10-14T15:40:24.761Z",
   "bancos": [
     {
       "id": 1,
@@ -14876,31 +14876,6 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/2XIkgfqCXZCpPSv14v0yxO/547fec69a622d98517d80591176f818b/Logos_Cards_Sitio_Beneficios_Primeclass_Pacifico.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
-      "id": "falabella-39060a53d7",
-      "establecimiento": "Guau Fest",
-      "descripcion": "Exclusivo online",
-      "descuento": "20% Sin Tope",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Mascotas",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/guau-fest",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/QJKUABWWTZuMIahliihDr/885e956403c45ee731fa3cc8b0808507/GUAU_FEST_LOGO.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
       "id": "falabella-924b3ade29",
       "establecimiento": "Petsmann",
       "descripcion": "Presencial",
@@ -15886,7 +15861,7 @@
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/cuponera-generica",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/6ECdyoKlXFZLJwrGWCnTU6/403e4ab44fc1cf17fc372bcfb706158e/2ff1ca8d-5289-4e08-97df-73bafa0eafbb.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/5FPJp3CVDF7oAVHoLCxYT6/95da03964b3b1016d6e7eb84c37e59a9/90ea2b9e-6f55-4df9-88dd-1b2b6e89383c.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-a32767e63f",
@@ -16078,7 +16053,7 @@
       "descuento": "Desde 1.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Supermercados",
+      "categoria": "Servicios",
       "dias_validos": [
         "lunes",
         "martes",
