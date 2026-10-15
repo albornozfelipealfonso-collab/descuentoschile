@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-14T15:40:24.761Z",
+  "generado": "2026-10-15T15:26:33.020Z",
   "bancos": [
     {
       "id": 1,
@@ -5852,7 +5852,7 @@
     {
       "id": "bci-b86bb84fb5",
       "establecimiento": "Natura",
-      "descripcion": "Arma tu rutina con Natura. 20% de descuento sobre el total de la compra, sin tope. Exclusivo pagando con tus Tarjetas de Débito o Crédito Bci. Para compras online, en la pagina web o app de Natura, debes ingresar los 6 primeros dígitos de tu Tarjeta Bci como código de descuento pagando el linea. El descuento no aplica a Outlet, Alta Perfumería y Consultoras de belleza. No incluye costo de envío y no es acumulable con otras promociones y/o descuentos. Hasta agotar stock. Aplica a 1 uso por cliente al día.",
+      "descripcion": "Arma tu rutina con Natura www.natura.cl ó app Natura. 20% de descuento sobre el total de la compra, sin tope. Exclusivo pagando con tus Tarjetas de Débito o Crédito Bci. Para compras online, en la pagina web o app de Natura, debes ingresar los 6 primeros dígitos de tu Tarjeta Bci como código de descuento pagando el linea. El descuento no aplica a Outlet, Alta Perfumería y Consultoras de belleza. No incluye costo de envío y no es acumulable con otras promociones y/o descuentos. Hasta agotar stock. Aplica a 1 uso por cliente al día.",
       "descuento": "20% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "ambas",
@@ -12023,6 +12023,31 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1jN0IYzJZEHbj3PmtxjriL/92088145a4df6a1dd9df3e77e7e8f419/ultra_rebajado.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
+      "id": "falabella-eba2368756",
+      "establecimiento": "The Top Burger",
+      "descripcion": "Exclusivo presencial",
+      "descuento": "Exclusivo",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-25",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/the-top-burger",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/22bRXSRekGTb1ULPkzvjA6/fff9da0e8856380430f3461a2dce803f/Cards_Noviembre_LOGO_The_Top.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-2372896165",
       "establecimiento": "The Color Run",
       "descripcion": "Descuento en venta general",
@@ -12524,6 +12549,31 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/boka-sushi",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/28LpWyiyJe1hJPNEM2Jrd3/6a9f9ced9f0fca96511b690925a0c1d2/Cards_LOGO_Boka.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-abb26dcb22",
+      "establecimiento": "Vidaintergra",
+      "descripcion": "Presencial",
+      "descuento": "20% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Salud y belleza",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/vidaintergra",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/3XGUeMpVP3LsqHxFi1t3BJ/7bdda162671bdefedc712218283b317c/Cards_Logo_Web_Vidaintegra.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-6555dd27c2",

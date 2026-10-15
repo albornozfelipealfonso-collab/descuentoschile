@@ -2,7 +2,7 @@
   "fuente": "bci",
   "banco_nombre": "BCI",
   "url": "https://www.bci.cl/beneficios/beneficios-bci",
-  "actualizado": "2026-10-14",
+  "actualizado": "2026-10-15",
   "descuentos": [
     {
       "id": "bci-557d8ffe37",
@@ -5543,7 +5543,7 @@
     {
       "id": "bci-b86bb84fb5",
       "establecimiento": "Natura",
-      "descripcion": "Arma tu rutina con Natura. 20% de descuento sobre el total de la compra, sin tope. Exclusivo pagando con tus Tarjetas de Débito o Crédito Bci. Para compras online, en la pagina web o app de Natura, debes ingresar los 6 primeros dígitos de tu Tarjeta Bci como código de descuento pagando el linea. El descuento no aplica a Outlet, Alta Perfumería y Consultoras de belleza. No incluye costo de envío y no es acumulable con otras promociones y/o descuentos. Hasta agotar stock. Aplica a 1 uso por cliente al día.",
+      "descripcion": "Arma tu rutina con Natura www.natura.cl ó app Natura. 20% de descuento sobre el total de la compra, sin tope. Exclusivo pagando con tus Tarjetas de Débito o Crédito Bci. Para compras online, en la pagina web o app de Natura, debes ingresar los 6 primeros dígitos de tu Tarjeta Bci como código de descuento pagando el linea. El descuento no aplica a Outlet, Alta Perfumería y Consultoras de belleza. No incluye costo de envío y no es acumulable con otras promociones y/o descuentos. Hasta agotar stock. Aplica a 1 uso por cliente al día.",
       "descuento": "20% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "ambas",
