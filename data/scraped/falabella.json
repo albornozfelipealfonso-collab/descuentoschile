@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-15",
+  "actualizado": "2026-10-16",
   "descuentos": [
     {
       "id": "falabella-148057c3cf",
@@ -53,6 +53,25 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/the-top-burger",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/22bRXSRekGTb1ULPkzvjA6/fff9da0e8856380430f3461a2dce803f/Cards_Noviembre_LOGO_The_Top.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-21971e7b13",
+      "establecimiento": "Viaja Ya Especial Hoteles",
+      "descripcion": "Este 23 de octubre a las 11am",
+      "descuento": "Desde 50.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Viajes",
+      "dias_validos": [
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-23",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/viaja-ya",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2FIcOvIQqAVhBKOs1hAju7/f0bc592f4cd835c66912a5c386d05480/Viaja_Ya_Especial_Hoteles_Logo_OU.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-2372896165",
