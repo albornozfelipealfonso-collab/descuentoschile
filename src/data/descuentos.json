@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-16T15:06:20.836Z",
+  "generado": "2026-10-19T17:17:48.756Z",
   "bancos": [
     {
       "id": 1,
@@ -579,31 +579,6 @@
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/30-por-ciento-de-desc.-con-tus-tdc-bci-en-los-packs-light-smart-full-flex-k8nfiof",
       "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/JetSmart_ff20f3fc_15-42_4.png"
-    },
-    {
-      "id": "bci-c1f539e40e",
-      "establecimiento": "miCoca-Cola.cl",
-      "descripcion": "Tus bebidas favoritas de la familia miCoca-Cola.cl directo a la casa. 30% de descuento en miCoca-Cola.cl con tope de $30.000 de dcto por usuario y despacho gratis por compras sobre $25.000, para obtener el beneficio ingresar los primeros 6 dígitos de tu tarjeta de credito como cupón de descuento, beneficio exclusivo para tarjetas de crédito Bci. Válido desde el 12 al 18 de Octubre. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "30% de descuento",
-      "banco_nombre": "BCI",
-      "tipo_tarjeta": "credito",
-      "categoria": "Antojos",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 30% de descuento en miCoca-Cola.cl con tope de $30.000 de dcto por usuario y despacho gratis por compras sobre $25.000, para obtener el beneficio ingresar los primeros 6 dígitos de tu tarjeta de credito como cupón de descuento, beneficio exclusivo para tarjetas de crédito Bci No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de…",
-      "fecha_vencimiento": "2026-10-18",
-      "activo": true,
-      "fuente": "bci",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/tus-bebidas-favoritas-de-la-familia-micoca-cola.cl-directo-a-la-casa-9141y6o",
-      "logo": "https://www.bciplus.cl/storages/loyalty/campaigns-images/miCoca-Cola.cl_bf75386c_20-37_4.png"
     },
     {
       "id": "bci-0c2e3d254d",
