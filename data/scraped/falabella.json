@@ -2,8 +2,52 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-19",
+  "actualizado": "2026-10-20",
   "descuentos": [
+    {
+      "id": "falabella-20b0404fe5",
+      "establecimiento": "Halloween con Fpuntos",
+      "descripcion": "Canjea experiencias",
+      "descuento": "Desde 2.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-11-01",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/halloween-fpuntos",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/1jN0IYzJZEHbj3PmtxjriL/92088145a4df6a1dd9df3e77e7e8f419/ultra_rebajado.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-21971e7b13",
+      "establecimiento": "Viaja Ya Especial Hoteles",
+      "descripcion": "Este 23 de octubre a las 11am",
+      "descuento": "Desde 50.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Viajes",
+      "dias_validos": [
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-23",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/viaja-ya",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2FIcOvIQqAVhBKOs1hAju7/f0bc592f4cd835c66912a5c386d05480/Viaja_Ya_Especial_Hoteles_Logo_OU.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
     {
       "id": "falabella-148057c3cf",
       "establecimiento": "Especial Canjes del Mes",
@@ -53,25 +97,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/the-top-burger",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/22bRXSRekGTb1ULPkzvjA6/fff9da0e8856380430f3461a2dce803f/Cards_Noviembre_LOGO_The_Top.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-21971e7b13",
-      "establecimiento": "Viaja Ya Especial Hoteles",
-      "descripcion": "Este 23 de octubre a las 11am",
-      "descuento": "Desde 50.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Viajes",
-      "dias_validos": [
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-23",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/viaja-ya",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/2FIcOvIQqAVhBKOs1hAju7/f0bc592f4cd835c66912a5c386d05480/Viaja_Ya_Especial_Hoteles_Logo_OU.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-2372896165",
@@ -5100,31 +5125,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/rossie-la-loca",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/7DTkx0Xq3G9KrQrkYR7lRP/0036c03d2ead39ff83d18e93b578ff34/Cards_Octubre_Logo_Web_Rossie_La_Loca.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-625c90ee49",
-      "establecimiento": "Barbazul",
-      "descripcion": "Exclusivo presencial",
-      "descuento": "Hasta 20%",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "debito",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-31",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/barbazul",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/66HTO6MCYQ3y3WYr7HVuTB/02296cbcaf1081f7e401914d8e5d6fce/Cards_Octubre_Logo_Web_Barba_Azul.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-051b0783de",

@@ -2,7 +2,7 @@
   "fuente": "bci",
   "banco_nombre": "BCI",
   "url": "https://www.bci.cl/beneficios/beneficios-bci",
-  "actualizado": "2026-10-19",
+  "actualizado": "2026-10-20",
   "descuentos": [
     {
       "id": "bci-557d8ffe37",
@@ -4302,7 +4302,7 @@
     {
       "id": "bci-67c711e42c",
       "establecimiento": "Cafettino Cafetería",
-      "descripcion": "Constitución. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descripcion": "Constitución. 30% de descuento con tope de $30.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
       "descuento": "30% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
