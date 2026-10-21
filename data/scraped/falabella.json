@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-20",
+  "actualizado": "2026-10-21",
   "descuentos": [
     {
       "id": "falabella-20b0404fe5",
@@ -122,6 +122,31 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/the-color-run-2026",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1kkSvggCxzAAylVYTVcPG1/c068d1ac2352e8065da7a084b3b62dd1/COLOR_RUN_LOGO.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-9cdf740307",
+      "establecimiento": "CMR Days",
+      "descripcion": "CMR Days",
+      "descuento": "Hasta 50%",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Salud y belleza",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-23",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cmr-days-farmacias-ahumadas-agosto",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/63GOOS892y2BMQmzMdhWK5/049c7e17111c997c46ca7236e4494a55/Cards_Beneficios2Logo_CMR_Days_FASA.svg?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-a54ad36671",
@@ -603,7 +628,7 @@
     },
     {
       "id": "falabella-abb26dcb22",
-      "establecimiento": "Vidaintergra",
+      "establecimiento": "Vidaintegra",
       "descripcion": "Presencial",
       "descuento": "20% Sin Tope",
       "banco_nombre": "Banco Falabella",
@@ -4873,7 +4898,7 @@
       ],
       "es_delivery": false,
       "terminos": "",
-      "fecha_vencimiento": "2026-10-31",
+      "fecha_vencimiento": "2027-03-31",
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/10csi-educacion",
