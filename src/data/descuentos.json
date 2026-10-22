@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-21T15:47:22.911Z",
+  "generado": "2026-10-22T15:46:17.039Z",
   "bancos": [
     {
       "id": 1,
@@ -990,7 +990,7 @@
     {
       "id": "bci-85d7a30cae",
       "establecimiento": "JetSmart",
-      "descripcion": "Hasta 20 por ciento de desc. en tarifas de vuelos nac. e intern. desde/hacia Chile. Hasta 20% de descuento en tarifas de vuelos nacionales e internacionales desde/hacia Chile en JetSMART.com, pagando con Tarjeta de Débito Bci . El descuento es escalonado según la clase tarifaria disponible al momento de la compra: a menor clase tarifaria, mayor descuento, con condiciones diferenciadas para tarifas promocionales. Vigencia de compra: Válida únicamente los días miércoles hasta fin de año. Codigo promocional para aplicar el descuento: BCIMACHD",
+      "descripcion": "Hasta 20 por ciento de dcto. en tarifas de vuelos nac. e intern. desde/hacia Chile. Hasta 20% de descuento en tarifas de vuelos nacionales e internacionales desde/hacia Chile en JetSMART.com, pagando con Tarjeta de Débito Bci . El descuento es escalonado según la clase tarifaria disponible al momento de la compra: a menor clase tarifaria, mayor descuento, con condiciones diferenciadas para tarifas promocionales. Vigencia de compra: Válida únicamente los días miércoles hasta fin de año. Codigo promocional para aplicar el descuento: BCIMACHD",
       "descuento": "20% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "debito",
@@ -1009,7 +1009,7 @@
     {
       "id": "bci-c1b576163e",
       "establecimiento": "JetSmart",
-      "descripcion": "Hasta 30 por ciento de desc. en tarifas de vuelos nac. e intern. desde/hacia Chile. Hasta 30% de descuento en tarifas de vuelos nacionales e internacionales desde/hacia Chile en JetSMART.com, pagando con Tarjeta de Crédito Bci . El descuento es escalonado según la clase tarifaria disponible al momento de la compra: a menor clase tarifaria, mayor descuento, con condiciones diferenciadas para tarifas promocionales. Vigencia de compra: Válida únicamente los días miércoles hasta fin de año. Codigo promocional para aplicar el descuento: BCIMACHC",
+      "descripcion": "Hasta 30 por ciento de dcto. en tarifas de vuelos nac. e intern. desde/hacia Chile. Hasta 30% de descuento en tarifas de vuelos nacionales e internacionales desde/hacia Chile en JetSMART.com, pagando con Tarjeta de Crédito Bci . El descuento es escalonado según la clase tarifaria disponible al momento de la compra: a menor clase tarifaria, mayor descuento, con condiciones diferenciadas para tarifas promocionales. Vigencia de compra: Válida únicamente los días miércoles hasta fin de año. Codigo promocional para aplicar el descuento: BCIMACHC",
       "descuento": "30% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
@@ -4623,8 +4623,8 @@
     {
       "id": "bci-64589e5aa8",
       "establecimiento": "Bagual Las Trancas",
-      "descripcion": "Las Trancas - Chillán. 40% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
-      "descuento": "40% de descuento",
+      "descripcion": "Las Trancas - Chillán. 20% de descuento con tope de $40.000 al momento de pagar en el comercio. Para hacer efectivo el descuento Bci, debes solicitarlo en el restaurante antes de realizar la compra. Descuento no aplica sobre el costo de propina. No acumulable con otras promociones y/o descuentos. Se excluyen de este beneficio Tarjetas de Crédito Corporate, tarjetas emitidas por filiales y sociedades de apoyo al giro de Bci, como Tarjeta Líder Bci.",
+      "descuento": "20% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
       "categoria": "Restaurantes",
@@ -4632,7 +4632,7 @@
         "jueves"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci Mastercard Black, Visa Signature y Visa Infinite. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica…",
+      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 20% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci Mastercard Black, Visa Signature y Visa Infinite. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica…",
       "fecha_vencimiento": "2026-10-31",
       "activo": true,
       "fuente": "bci",
@@ -11998,6 +11998,31 @@
       "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/1772451185023498-redsalud-logo.webp"
     },
     {
+      "id": "falabella-695c420976",
+      "establecimiento": "Halloween Tottus",
+      "descripcion": "En dulces halloween",
+      "descuento": "40% descuento",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-25",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/40-dcto-dulces-halloween",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-20b0404fe5",
       "establecimiento": "Halloween con Fpuntos",
       "descripcion": "Canjea experiencias",
@@ -15173,6 +15198,44 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/3O17B0kLTiq9LPa0CgI1cK/75ea41de0ff8ebffca18068e42a89070/Logos_Cards_Sitio_Beneficios_FASA.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
+      "id": "falabella-066bc88b87",
+      "establecimiento": "Falabella",
+      "descripcion": "Online en todo suplementos",
+      "descuento": "20% Adicional",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/suplementos-falabella",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/100FPt3xjwEIgYotzPVMK7/11f130913f2e1d7450c4f38777994d8e/Cards_Beneficios_Falabella_LOGO_1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-d0768da69d",
+      "establecimiento": "Falabella",
+      "descripcion": "Online en todo pañales",
+      "descuento": "20% Adicional",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/panales-falabella",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/100FPt3xjwEIgYotzPVMK7/11f130913f2e1d7450c4f38777994d8e/Cards_Beneficios_Falabella_LOGO_1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-c4146fa1cf",
       "establecimiento": "Palumbo",
       "descripcion": "Exclusivo presencial",
@@ -17209,6 +17272,44 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/martes-de-belleza",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/2DWpf7kuaAHKojXa6XkRaA/5617760b0c3ffab1b5791336eded3f92/Cards_Agendra_Pro_Logo_Web_Agenda_Pro.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-8a5f97f8d3",
+      "establecimiento": "Día D Carnes",
+      "descripcion": "Todos los Miércoles",
+      "descuento": "20% descuento",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2027-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/dias-d-20-carnes-de-vacuno",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-ba360074e4",
+      "establecimiento": "Día D Pollo y Pavo",
+      "descripcion": "Todos los Martes",
+      "descuento": "20% descuento",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2027-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/dias-d-20-pollo-y-pavo",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "mach-89819de442",

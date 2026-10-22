@@ -2,8 +2,33 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-21",
+  "actualizado": "2026-10-22",
   "descuentos": [
+    {
+      "id": "falabella-695c420976",
+      "establecimiento": "Halloween Tottus",
+      "descripcion": "En dulces halloween",
+      "descuento": "40% descuento",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-25",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/40-dcto-dulces-halloween",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
     {
       "id": "falabella-20b0404fe5",
       "establecimiento": "Halloween con Fpuntos",
@@ -3180,6 +3205,44 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/3O17B0kLTiq9LPa0CgI1cK/75ea41de0ff8ebffca18068e42a89070/Logos_Cards_Sitio_Beneficios_FASA.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
+      "id": "falabella-066bc88b87",
+      "establecimiento": "Falabella",
+      "descripcion": "Online en todo suplementos",
+      "descuento": "20% Adicional",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/suplementos-falabella",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/100FPt3xjwEIgYotzPVMK7/11f130913f2e1d7450c4f38777994d8e/Cards_Beneficios_Falabella_LOGO_1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-d0768da69d",
+      "establecimiento": "Falabella",
+      "descripcion": "Online en todo pañales",
+      "descuento": "20% Adicional",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-12-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/panales-falabella",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/100FPt3xjwEIgYotzPVMK7/11f130913f2e1d7450c4f38777994d8e/Cards_Beneficios_Falabella_LOGO_1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-c4146fa1cf",
       "establecimiento": "Palumbo",
       "descripcion": "Exclusivo presencial",
@@ -5216,6 +5279,44 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/martes-de-belleza",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/2DWpf7kuaAHKojXa6XkRaA/5617760b0c3ffab1b5791336eded3f92/Cards_Agendra_Pro_Logo_Web_Agenda_Pro.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-8a5f97f8d3",
+      "establecimiento": "Día D Carnes",
+      "descripcion": "Todos los Miércoles",
+      "descuento": "20% descuento",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2027-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/dias-d-20-carnes-de-vacuno",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-ba360074e4",
+      "establecimiento": "Día D Pollo y Pavo",
+      "descripcion": "Todos los Martes",
+      "descuento": "20% descuento",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2027-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/dias-d-20-pollo-y-pavo",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     }
   ]
 }
