@@ -2,8 +2,52 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-22",
+  "actualizado": "2026-10-23",
   "descuentos": [
+    {
+      "id": "falabella-21971e7b13",
+      "establecimiento": "Viaja Ya Especial Hoteles",
+      "descripcion": "Este 23 de octubre a las 11am",
+      "descuento": "Desde 50.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Viajes",
+      "dias_validos": [
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-23",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/viaja-ya",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2FIcOvIQqAVhBKOs1hAju7/f0bc592f4cd835c66912a5c386d05480/Viaja_Ya_Especial_Hoteles_Logo_OU.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-6087c9f5a2",
+      "establecimiento": "Disfraces Infantil Falabella",
+      "descripcion": "Hasta el de 2 de Noviembre",
+      "descuento": "Hasta 50% DE AHORRO",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-11-02",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/disfraces-falabella",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/1MUgzQZeb6ipJORbspE5gN/5ab3333046428e7c0c3a53cfce960c01/Logo_falabella.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
     {
       "id": "falabella-695c420976",
       "establecimiento": "Halloween Tottus",
@@ -11,7 +55,7 @@
       "descuento": "40% descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
+      "categoria": "Supermercados",
       "dias_validos": [
         "lunes",
         "martes",
@@ -36,7 +80,7 @@
       "descuento": "Desde 2.000 Fpuntos",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
+      "categoria": "Otros",
       "dias_validos": [
         "lunes",
         "martes",
@@ -53,25 +97,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/halloween-fpuntos",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1jN0IYzJZEHbj3PmtxjriL/92088145a4df6a1dd9df3e77e7e8f419/ultra_rebajado.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-21971e7b13",
-      "establecimiento": "Viaja Ya Especial Hoteles",
-      "descripcion": "Este 23 de octubre a las 11am",
-      "descuento": "Desde 50.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Viajes",
-      "dias_validos": [
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-23",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/viaja-ya",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/2FIcOvIQqAVhBKOs1hAju7/f0bc592f4cd835c66912a5c386d05480/Viaja_Ya_Especial_Hoteles_Logo_OU.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-148057c3cf",
@@ -3540,6 +3565,27 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/4MiS9aRWk21QZhIXPTojPc/43b2650e6beb1e1d1ac6860837ed1226/Logos_Cards_Sitio_Beneficios_Cinemark.png?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
+      "id": "falabella-4974fbb73b",
+      "establecimiento": "Cinemark",
+      "descripcion": "En entradas",
+      "descuento": "Desde En Entradas",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Cine y entretención",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/cinemark",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/22r9GC966DplrQ6OHi1ZxC/f62e057c327abfd075c60eb6284e4317/Logos_Cards_Sitio_Beneficios_Cinemark.png?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-8cb025ed85",
       "establecimiento": "Funpark",
       "descripcion": "Presencial en entrada general",
@@ -5287,7 +5333,7 @@
       "descuento": "20% descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
+      "categoria": "Supermercados",
       "dias_validos": [
         "miércoles"
       ],
@@ -5306,7 +5352,7 @@
       "descuento": "20% descuento",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
+      "categoria": "Supermercados",
       "dias_validos": [
         "martes"
       ],
@@ -5317,6 +5363,31 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/dias-d-20-pollo-y-pavo",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-b10c7f2ebf",
+      "establecimiento": "Muebles IKEA",
+      "descripcion": "Hasta el 8 de noviembre",
+      "descuento": "3, 6 y 10 CUOTAS SIN INTERÉS",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "credito",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-11-08",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/muebles-ikea",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/3GitdwrPIroHwQGcTO4IdB/e8d19055145443c1aa2b7792671b8bf0/Cards_IKEA_Logo_IKEA-01.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     }
   ]
 }
