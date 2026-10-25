@@ -2,27 +2,8 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-23",
+  "actualizado": "2026-10-25",
   "descuentos": [
-    {
-      "id": "falabella-21971e7b13",
-      "establecimiento": "Viaja Ya Especial Hoteles",
-      "descripcion": "Este 23 de octubre a las 11am",
-      "descuento": "Desde 50.000 Fpuntos",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Viajes",
-      "dias_validos": [
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-23",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/viaja-ya",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/2FIcOvIQqAVhBKOs1hAju7/f0bc592f4cd835c66912a5c386d05480/Viaja_Ya_Especial_Hoteles_Logo_OU.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
     {
       "id": "falabella-6087c9f5a2",
       "establecimiento": "Disfraces Infantil Falabella",
@@ -172,31 +153,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/the-color-run-2026",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1kkSvggCxzAAylVYTVcPG1/c068d1ac2352e8065da7a084b3b62dd1/COLOR_RUN_LOGO.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-9cdf740307",
-      "establecimiento": "CMR Days",
-      "descripcion": "CMR Days",
-      "descuento": "Hasta 50%",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "credito",
-      "categoria": "Salud y belleza",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-23",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/cmr-days-farmacias-ahumadas-agosto",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/63GOOS892y2BMQmzMdhWK5/049c7e17111c997c46ca7236e4494a55/Cards_Beneficios2Logo_CMR_Days_FASA.svg?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-a54ad36671",
@@ -2329,6 +2285,25 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/prima-bar",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/6VJk4hrMoF7Kb6FWL39LPt/97aa4e69a41c535dd20aa2e85a4e010f/Cards_Beneficios_Agosto_LOGO_Prima_Bar.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-1fbd55e21b",
+      "establecimiento": "Taringa",
+      "descripcion": "Exclusivo presencial",
+      "descuento": "Hasta 40% Sin Tope",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "sábado"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/taringa",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6RoJmSsq8ViSWreZtVVAOT/5aa939abeedf8bb18bc74f7446184bc5/Cards_Noviembre_2_LOGO_Taringa.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-92e04825e0",
