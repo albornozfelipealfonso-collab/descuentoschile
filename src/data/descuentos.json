@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generado": "2026-10-25T14:43:32.428Z",
+  "generado": "2026-10-26T17:05:39.406Z",
   "bancos": [
     {
       "id": 1,
@@ -533,7 +533,7 @@
       ],
       "es_delivery": false,
       "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $100.000 pagando con Tarjetas de Crédito Bci. Promoción incluye una cortesía de regalo pagando con tus Tarjetas de Crédito Bci Mastercard Black, Visa Signature y Visa Infinte. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez…",
-      "fecha_vencimiento": "2026-10-31",
+      "fecha_vencimiento": "2026-11-30",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/akun-bar-las-condes-desde-las-16.00-hrs-xcn7fog",
@@ -554,8 +554,8 @@
         "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci sin tope. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se aplica de manera…",
-      "fecha_vencimiento": "2026-10-31",
+      "terminos": "Exclusivo con tus tarjetas de crédito o débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci sin tope. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se aplica de manera…",
+      "fecha_vencimiento": "2026-11-30",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/las-condes-y-vitacura-mnqaxi",
@@ -1262,7 +1262,7 @@
     {
       "id": "bci-fb8b72176f",
       "establecimiento": "Andesland",
-      "descripcion": "Aprovecha este desc. todos los viernes y sábados. 30% de descuento con tope $30.000 en compras presenciales. Para hacer efectivo el descuento Bci en tienda presencial, debes solicitarlo antes de realizar la compra. Hasta agotar stock.",
+      "descripcion": "Todos los viernes y sábados. 30% de descuento con tope $30.000 en compras presenciales. Para hacer efectivo el descuento Bci en tienda presencial, debes solicitarlo antes de realizar la compra. Hasta agotar stock. No acumulable con otras promociones y/o descuentos. No aplica en eventos especiales como Black Friday.",
       "descuento": "30% de descuento",
       "banco_nombre": "BCI",
       "tipo_tarjeta": "credito",
@@ -1272,8 +1272,8 @@
         "sábado"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 30% de descuento con tope $30.000 en compras presenciales. Para hacer efectivo el descuento Bci en tienda presencial, debes solicitarlo antes de realizar la compra. Hasta agotar stock. Los precios, calidad, estado y entrega de los productos y servicios ofrecidos son de exclusiva responsabilidad de los comercios adheridos, sin responsabilidad alguna de Bci en ello ni en la ulterior atención que se demande. Se excluyen de este beneficio Tarjetas de…",
-      "fecha_vencimiento": "2026-10-31",
+      "terminos": "Exclusivo con tus tarjetas de crédito Bci. 30% de descuento con tope $30.000 en compras presenciales. Para hacer efectivo el descuento Bci en tienda presencial, debes solicitarlo antes de realizar la compra. Hasta agotar stock. Los precios, calidad, estado y entrega de los productos y servicios ofrecidos son de exclusiva responsabilidad de los comercios adheridos, sin responsabilidad alguna de Bci en ello ni en la ulterior atención que se demande. Se excluyen de este beneficio Tarjetas de…",
+      "fecha_vencimiento": "2026-11-30",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/aprovecha-este-descuento-todos-los-viernes-y-sabados-en-compras-presenciales-0ms8b0e",
@@ -2124,8 +2124,8 @@
         "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci, con un tope de $20.000 por cliente al día. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El…",
-      "fecha_vencimiento": "2026-10-31",
+      "terminos": "Exclusivo con tus tarjetas de crédito o débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci, con un tope de $20.000 por cliente al día. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El…",
+      "fecha_vencimiento": "2026-11-30",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/aprovecha-todos-los-dias-en-temuco-e3hr37l",
@@ -2468,8 +2468,8 @@
         "miércoles"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci, Mastercard Business y Visa Business. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el…",
-      "fecha_vencimiento": "2026-10-31",
+      "terminos": "Exclusivo con tus tarjetas de crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci, Mastercard Business y Visa Business. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el…",
+      "fecha_vencimiento": "2026-11-30",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/miercoles-arica-gzp7w89",
@@ -3154,8 +3154,8 @@
         "sábado"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
-      "fecha_vencimiento": "2026-10-31",
+      "terminos": "Exclusivo con tus tarjetas de crédito Bci. 40% de descuento en el total de la cuenta, con tope de $40.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
+      "fecha_vencimiento": "2026-11-30",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/en-concepcion-o5p6bib",
@@ -3432,8 +3432,8 @@
         "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Exclusivo con tus tarjetas de Crédito o Débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci con tope de $20.000. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se aplica de…",
-      "fecha_vencimiento": "2026-10-31",
+      "terminos": "Exclusivo con tus tarjetas de crédito o débito Bci. 20% de descuento pagando con Tarjetas de Débito y Crédito Bci con tope de $20.000. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se aplica de…",
+      "fecha_vencimiento": "2026-11-30",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/vina-del-mar-3j7rrng",
@@ -4614,7 +4614,7 @@
       ],
       "es_delivery": false,
       "terminos": "Exclusivo con tus tarjetas de Crédito Bci. 30% de descuento en el total de la cuenta, con tope de $30.000 pagando con Tarjetas de Crédito Bci. Válido solo para compras presenciales, no se consideran las compras a través de otros canales. Para hacer efectivo el descuento, debes solicitarlo al momento de pedir la cuenta. Este beneficio se podrá utilizar solo una vez al día y no es acumulable con otras promociones y/o descuentos. Descuento no aplica sobre el costo de propina. El beneficio se…",
-      "fecha_vencimiento": "2026-10-31",
+      "fecha_vencimiento": "2026-11-30",
       "activo": true,
       "fuente": "bci",
       "url": "https://www.bci.cl/beneficios/beneficios-bci/detalle/machali-acwuzc",
@@ -11998,6 +11998,56 @@
       "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/1772451185023498-redsalud-logo.webp"
     },
     {
+      "id": "falabella-0e7f2eadd9",
+      "establecimiento": "Destino del mes",
+      "descripcion": "A través de Viajes Falabella",
+      "descuento": "Desde 410.000 CMR Puntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-11-01",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/destino-del-mes",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/5qnqfy5YbB82LnGM5MLJWe/36c228bc9c2892c9c08c6cc4be423fa8/0cd6a04a-e3dd-4d25-8b06-bce1b9261bf1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-b99f878c35",
+      "establecimiento": "Hoteles del mes",
+      "descripcion": "A través de Viajes Falabella",
+      "descuento": "Desde 70.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-11-01",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/hoteles-del-mes",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/5qnqfy5YbB82LnGM5MLJWe/36c228bc9c2892c9c08c6cc4be423fa8/0cd6a04a-e3dd-4d25-8b06-bce1b9261bf1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
       "id": "falabella-6087c9f5a2",
       "establecimiento": "Disfraces Infantil Falabella",
       "descripcion": "Hasta el de 2 de Noviembre",
@@ -12021,31 +12071,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/disfraces-falabella",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1MUgzQZeb6ipJORbspE5gN/5ab3333046428e7c0c3a53cfce960c01/Logo_falabella.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-695c420976",
-      "establecimiento": "Halloween Tottus",
-      "descripcion": "En dulces halloween",
-      "descuento": "40% descuento",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Supermercados",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-25",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/40-dcto-dulces-halloween",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-20b0404fe5",
@@ -12096,31 +12121,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/canjes-del-mes",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1jN0IYzJZEHbj3PmtxjriL/92088145a4df6a1dd9df3e77e7e8f419/ultra_rebajado.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-eba2368756",
-      "establecimiento": "The Top Burger",
-      "descripcion": "Exclusivo presencial",
-      "descuento": "Exclusivo",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-25",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/the-top-burger",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/22bRXSRekGTb1ULPkzvjA6/fff9da0e8856380430f3461a2dce803f/Cards_Noviembre_LOGO_The_Top.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-2372896165",
@@ -14368,7 +14368,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "lunes"
       ],
@@ -15242,7 +15242,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "miércoles"
       ],
@@ -15261,7 +15261,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "miércoles"
       ],
@@ -15404,7 +15404,7 @@
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "jueves"
       ],
@@ -16344,31 +16344,6 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/38Yd0n9jxelV1dImXGc6G2/72275c7a8bf020c883830adb1159e464/Cards_Octubre_Logo_Web_Casa_Abierta.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
-      "id": "falabella-afc1c4d246",
-      "establecimiento": "Terrazas",
-      "descripcion": "Hasta 26 de octubre",
-      "descuento": "6 CUOTAS SIN INTERÉS",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Hogar",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-25",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/6-csi-terrazas",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/7yNcgdKPwItUDExxJsPM6v/54c9922c74b2b7b6bbd1b6d2aad06663/Cards_Logo_Sodimac_2.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
       "id": "falabella-23cadbe7b2",
       "establecimiento": "Barroco Restobar",
       "descripcion": "Presencial en San Pedro de la Paz",
@@ -16527,7 +16502,7 @@
       "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "jueves"
       ],
@@ -16724,7 +16699,7 @@
       "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "jueves"
       ],

@@ -2,8 +2,58 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-25",
+  "actualizado": "2026-10-26",
   "descuentos": [
+    {
+      "id": "falabella-0e7f2eadd9",
+      "establecimiento": "Destino del mes",
+      "descripcion": "A través de Viajes Falabella",
+      "descuento": "Desde 410.000 CMR Puntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-11-01",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/destino-del-mes",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/5qnqfy5YbB82LnGM5MLJWe/36c228bc9c2892c9c08c6cc4be423fa8/0cd6a04a-e3dd-4d25-8b06-bce1b9261bf1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-b99f878c35",
+      "establecimiento": "Hoteles del mes",
+      "descripcion": "A través de Viajes Falabella",
+      "descuento": "Desde 70.000 Fpuntos",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Supermercados",
+      "dias_validos": [
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-11-01",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/hoteles-del-mes",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/5qnqfy5YbB82LnGM5MLJWe/36c228bc9c2892c9c08c6cc4be423fa8/0cd6a04a-e3dd-4d25-8b06-bce1b9261bf1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
     {
       "id": "falabella-6087c9f5a2",
       "establecimiento": "Disfraces Infantil Falabella",
@@ -28,31 +78,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/disfraces-falabella",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1MUgzQZeb6ipJORbspE5gN/5ab3333046428e7c0c3a53cfce960c01/Logo_falabella.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-695c420976",
-      "establecimiento": "Halloween Tottus",
-      "descripcion": "En dulces halloween",
-      "descuento": "40% descuento",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Supermercados",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-25",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/40-dcto-dulces-halloween",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/6mqOwdSG5Plk57tRyLTg0r/83af17bc0cea71adb383b7a240bc008c/Cards_Tottus_Logo_Tottus.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-20b0404fe5",
@@ -103,31 +128,6 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/canjes-del-mes",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1jN0IYzJZEHbj3PmtxjriL/92088145a4df6a1dd9df3e77e7e8f419/ultra_rebajado.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
-      "id": "falabella-eba2368756",
-      "establecimiento": "The Top Burger",
-      "descripcion": "Exclusivo presencial",
-      "descuento": "Exclusivo",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Restaurantes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-25",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/the-top-burger",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/22bRXSRekGTb1ULPkzvjA6/fff9da0e8856380430f3461a2dce803f/Cards_Noviembre_LOGO_The_Top.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-2372896165",
@@ -2375,7 +2375,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "lunes"
       ],
@@ -3249,7 +3249,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "miércoles"
       ],
@@ -3268,7 +3268,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "miércoles"
       ],
@@ -3411,7 +3411,7 @@
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "jueves"
       ],
@@ -4351,31 +4351,6 @@
       "logo": "https://images.ctfassets.net/p6eyia4djstu/38Yd0n9jxelV1dImXGc6G2/72275c7a8bf020c883830adb1159e464/Cards_Octubre_Logo_Web_Casa_Abierta.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
-      "id": "falabella-afc1c4d246",
-      "establecimiento": "Terrazas",
-      "descripcion": "Hasta 26 de octubre",
-      "descuento": "6 CUOTAS SIN INTERÉS",
-      "banco_nombre": "Banco Falabella",
-      "tipo_tarjeta": "ambas",
-      "categoria": "Hogar",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "2026-10-25",
-      "activo": true,
-      "fuente": "falabella",
-      "url": "https://www.bancofalabella.cl/descuentos/detalle/6-csi-terrazas",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/7yNcgdKPwItUDExxJsPM6v/54c9922c74b2b7b6bbd1b6d2aad06663/Cards_Logo_Sodimac_2.webp?w=160&h=160&fit=pad&fm=webp&q=80"
-    },
-    {
       "id": "falabella-23cadbe7b2",
       "establecimiento": "Barroco Restobar",
       "descripcion": "Presencial en San Pedro de la Paz",
@@ -4534,7 +4509,7 @@
       "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "jueves"
       ],
@@ -4731,7 +4706,7 @@
       "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Salud y belleza",
+      "categoria": "Otros",
       "dias_validos": [
         "jueves"
       ],
