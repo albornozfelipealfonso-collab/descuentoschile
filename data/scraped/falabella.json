@@ -2,7 +2,7 @@
   "fuente": "falabella",
   "banco_nombre": "Banco Falabella",
   "url": "https://www.bancofalabella.cl/descuentos/todos",
-  "actualizado": "2026-10-26",
+  "actualizado": "2026-10-27",
   "descuentos": [
     {
       "id": "falabella-0e7f2eadd9",
@@ -27,7 +27,7 @@
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/destino-del-mes",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/5qnqfy5YbB82LnGM5MLJWe/36c228bc9c2892c9c08c6cc4be423fa8/0cd6a04a-e3dd-4d25-8b06-bce1b9261bf1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/2yAfYQDHq9ngszzURiolCD/2b05af6a64347ca88c0e7ca7d12cd51f/8e6262ab-9b3e-4f32-a01c-de0a2851bb4d.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-b99f878c35",
@@ -52,7 +52,7 @@
       "activo": true,
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/hoteles-del-mes",
-      "logo": "https://images.ctfassets.net/p6eyia4djstu/5qnqfy5YbB82LnGM5MLJWe/36c228bc9c2892c9c08c6cc4be423fa8/0cd6a04a-e3dd-4d25-8b06-bce1b9261bf1.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/6zgw1f8KURbeQ18SsRJVQj/d717b44b61155bac7b73688fb5fec671/c604633b-bae4-4fd8-a7bf-938465ae1712.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-6087c9f5a2",
@@ -172,6 +172,64 @@
       "fuente": "falabella",
       "url": "https://www.bancofalabella.cl/descuentos/detalle/martes-de-dulzura-mallplaza",
       "logo": "https://images.ctfassets.net/p6eyia4djstu/1lTzB5RBvXDLPpicrVc48M/3e3a0044c0c504a1c9a0b2a7ca1b679d/Cards_Logo_Web_Martes_de_Dulzura.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-52dff9ab89",
+      "establecimiento": "Juan Valdez",
+      "descripcion": "Pagando con Mastercard en App Copec",
+      "descuento": "Bebidas a 3.000 App Copec",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "martes",
+        "jueves"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/juan-valdez-copec",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/7EHqUswKMFsqhe7abnLlku/f8c6af36ab97b98a307a892938932eef/Cards_Logo_Web_Juan_Valdez.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-eedc0fc1b2",
+      "establecimiento": "Pronto Copec",
+      "descripcion": "Pagando con Mastercard en App Copec",
+      "descuento": "Completo a 2.000 App Copec",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "miércoles"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/pronto-copec",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/5DUiczzbRv7bDsZCMr0Pje/5ec988ac452f97bf85dd2029a0d9636e/Cards_Logo_Web_Pronto_Copec.webp?w=160&h=160&fit=pad&fm=webp&q=80"
+    },
+    {
+      "id": "falabella-55f6a2225a",
+      "establecimiento": "SBARRO",
+      "descripcion": "Pagando con Mastercard en App Copec",
+      "descuento": "Combo a 4.500 App Copec",
+      "banco_nombre": "Banco Falabella",
+      "tipo_tarjeta": "ambas",
+      "categoria": "Restaurantes",
+      "dias_validos": [
+        "viernes"
+      ],
+      "es_delivery": false,
+      "terminos": "",
+      "fecha_vencimiento": "2026-10-31",
+      "activo": true,
+      "fuente": "falabella",
+      "url": "https://www.bancofalabella.cl/descuentos/detalle/sbarro",
+      "logo": "https://images.ctfassets.net/p6eyia4djstu/5sDQHkuJL5UrR0krsnqzbU/dd242484646a08febacabc6505f96342/Cards_Logo_Web_SBarro.webp?w=160&h=160&fit=pad&fm=webp&q=80"
     },
     {
       "id": "falabella-4fab6ca908",
@@ -2375,7 +2433,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "credito",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "lunes"
       ],
@@ -3249,7 +3307,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "miércoles"
       ],
@@ -3268,7 +3326,7 @@
       "descuento": "40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "miércoles"
       ],
@@ -3411,7 +3469,7 @@
       "descuento": "Hasta 40% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "jueves"
       ],
@@ -4509,7 +4567,7 @@
       "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "ambas",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "jueves"
       ],
@@ -4706,7 +4764,7 @@
       "descuento": "Hasta 20% Sin Tope",
       "banco_nombre": "Banco Falabella",
       "tipo_tarjeta": "debito",
-      "categoria": "Otros",
+      "categoria": "Salud y belleza",
       "dias_validos": [
         "jueves"
       ],
