@@ -2,7 +2,7 @@
   "fuente": "cencosud",
   "banco_nombre": "Cencosud",
   "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/descuentos-comida",
-  "actualizado": "2026-10-27",
+  "actualizado": "2026-10-28",
   "descuentos": [
     {
       "id": "cencosud-c1dfd96eea",
@@ -26,7 +26,7 @@
     {
       "id": "cencosud-902ba3cda1",
       "establecimiento": "Despegar",
-      "descripcion": "En dos traslados al año desde y hacia Aeropuerto Internacional. Exclusivo para Tarjeta Cencosud Scotiabank Black.",
+      "descripcion": "En dos traslados al año desde y hacia los principales aeropuertos de Chile: Santiago, Calama, Iquique, San Pedro de Atacama, La Serena, Concepción, Puerto Varas y Puerto Montt.",
       "descuento": "50% dcto. en traslados por Despegar",
       "banco_nombre": "Cencosud",
       "tipo_tarjeta": "credito",
@@ -226,7 +226,7 @@
     {
       "id": "cencosud-d435a6cdd7",
       "establecimiento": "La Ruta Del Sabor",
-      "descripcion": "Sigue la Ruta del Sabor, donde encontrarás los mejores restaurantes de tu zona. Encuentra restaurantes como Margó, Gueros, Caoba bar, Rishtedar, Don Vito, Vicenzo, Sabor y Aroma, Galpón Italia, la Yunta, Margo y más.",
+      "descripcion": "Sigue la Ruta del Sabor, donde encontrarás los mejores restaurantes de tu zona. Margó, Gueros, Caoba bar, Rishtedar, Don Vito, Vicenzo, Sabor y Aroma, Galpón Italia, la Yunta y Margo. Los días lunes, martes, miércoles, jueves, viernes, sábado y domingo.",
       "descuento": "Hasta 50% de descuento en restaurantes",
       "banco_nombre": "Cencosud",
       "tipo_tarjeta": "credito",
