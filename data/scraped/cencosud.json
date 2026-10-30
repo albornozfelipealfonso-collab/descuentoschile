@@ -2,7 +2,7 @@
   "fuente": "cencosud",
   "banco_nombre": "Cencosud",
   "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/descuentos-comida",
-  "actualizado": "2026-10-29",
+  "actualizado": "2026-10-30",
   "descuentos": [
     {
       "id": "cencosud-c1dfd96eea",
@@ -1124,31 +1124,6 @@
       "fuente": "cencosud",
       "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/redsalud",
       "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/1772451185023498-redsalud-logo.webp"
-    },
-    {
-      "id": "cencosud-fd93751649",
-      "establecimiento": "Uber",
-      "descripcion": "Obtén hasta 3 viajes al mes con descuento en Uber y ahorra en tus trayectos usando tu Tarjeta Cencosud Scotiabank.",
-      "descuento": "30% de descuento en Uber",
-      "banco_nombre": "Cencosud",
-      "tipo_tarjeta": "credito",
-      "categoria": "Viajes",
-      "dias_validos": [
-        "lunes",
-        "martes",
-        "miércoles",
-        "jueves",
-        "viernes",
-        "sábado",
-        "domingo"
-      ],
-      "es_delivery": false,
-      "terminos": "",
-      "fecha_vencimiento": "",
-      "activo": true,
-      "fuente": "cencosud",
-      "url": "https://www.tarjetacencosud.cl/publico/beneficios/landing/uber",
-      "logo": "https://staticresourcesfiles.blob.core.windows.net/content/wpub/static/8556053843278963-beneficio-uber-logo.webp"
     }
   ]
 }
