@@ -2,7 +2,7 @@
   "fuente": "mach",
   "banco_nombre": "MACH",
   "url": "https://www.machbank.cl/beneficios",
-  "actualizado": "2026-09-24",
+  "actualizado": "2026-10-30",
   "descuentos": [
     {
       "id": "mach-89819de442",
@@ -104,25 +104,6 @@
       "fuente": "mach",
       "url": "https://www.machbank.cl/beneficios",
       "logo": "https://cdn3.bci.cl/uploads/9c0ceefb-b2f5-4921-9cba-42bc9144bf1f/original/logo_mcdonalds.png"
-    },
-    {
-      "id": "mach-1284fa17cf",
-      "establecimiento": "Amazon",
-      "descripcion": "Promoción de 20% de descuento en Amazon en compras sobre 50USD. Tope de descuento 20USD. Solo los días viernes del mes.",
-      "descuento": "20% de descuento en Amazon en compras sobre 50USD",
-      "banco_nombre": "MACH",
-      "tipo_tarjeta": "credito",
-      "categoria": "Tiendas online",
-      "dias_validos": [
-        "viernes"
-      ],
-      "es_delivery": false,
-      "terminos": "Promoción de 20% de descuento en Amazon en compras sobre 50USD. Tope de descuento 20USD. Solo los días viernes del mes.",
-      "fecha_vencimiento": "",
-      "activo": true,
-      "fuente": "mach",
-      "url": "https://www.machbank.cl/beneficios",
-      "logo": "https://cdn3.bci.cl/uploads/f8938447-1575-4da0-b1f9-7b764b7afa47/original/logo_amazon.png"
     },
     {
       "id": "mach-8c93f5a4d1",
@@ -415,16 +396,22 @@
     {
       "id": "mach-e8258f90cf",
       "establecimiento": "AgendaPro",
-      "descripcion": "Lunes, 40% de descuento agendando servicios en app AgendaPro y pagando con botón MACHBANK.",
+      "descripcion": "40% de descuento agendando servicios en app AgendaPro y pagando con botón MACHBANK.",
       "descuento": "40% de descuento app AgendaPro",
       "banco_nombre": "MACH",
       "tipo_tarjeta": "ambas",
       "categoria": "Otros",
       "dias_validos": [
-        "lunes"
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado",
+        "domingo"
       ],
       "es_delivery": false,
-      "terminos": "Lunes, 40% de descuento agendando servicios en app AgendaPro y pagando con botón MACHBANK.",
+      "terminos": "40% de descuento agendando servicios en app AgendaPro y pagando con botón MACHBANK.",
       "fecha_vencimiento": "",
       "activo": true,
       "fuente": "mach",

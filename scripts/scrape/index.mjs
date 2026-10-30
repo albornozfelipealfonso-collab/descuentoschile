@@ -3,7 +3,9 @@
 // Protecciones: si un scraper falla, trae muy pocos descuentos o demasiados
 // inválidos, se conservan los datos anteriores de ese banco.
 //
-// Uso: node scripts/scrape/index.mjs [banco1 banco2 ...]
+// Uso: node scripts/scrape/index.mjs [banco1 banco2 ...] [--forzar]
+// --forzar acepta una baja grande de descuentos (cuando el banco de verdad
+// publicó menos y no es un error del sitio).
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -45,7 +47,9 @@ export const validarResultado = (crudos, previo, scraper) => {
 
 const main = async () => {
   await mkdir(DIR, { recursive: true });
-  const filtro = process.argv.slice(2);
+  const args = process.argv.slice(2);
+  const forzar = args.includes('--forzar');
+  const filtro = args.filter((a) => !a.startsWith('--'));
   // En GitHub Actions (CI) no hay pantalla: los scrapers `soloLocal` se saltan y
   // se conservan sus datos anteriores (se actualizan con `npm run scrape` en un PC).
   const enServidor = Boolean(process.env.CI);
@@ -61,7 +65,7 @@ const main = async () => {
     const previo = await leerPrevio(scraper.id);
     try {
       const crudos = await scraper.scrape();
-      const descuentos = validarResultado(crudos, previo, scraper);
+      const descuentos = validarResultado(crudos, forzar ? null : previo, scraper);
       const salida = {
         fuente: scraper.id,
         banco_nombre: scraper.banco_nombre,
