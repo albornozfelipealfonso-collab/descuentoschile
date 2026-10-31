@@ -2,7 +2,7 @@
   "fuente": "ripley",
   "banco_nombre": "Banco Ripley",
   "url": "https://www.bancoripley.cl/beneficios-y-promociones",
-  "actualizado": "2026-10-30",
+  "actualizado": "2026-10-31",
   "descuentos": [
     {
       "id": "ripley-840bc52e36",
@@ -283,7 +283,7 @@
       ],
       "es_delivery": false,
       "terminos": "Promoción válida desde el 01/10/26 al 31/10/26, 40% de descuento pagando con Tarjetas Banco Ripley Mastercard exclusivamente en los restaurantes los días indicados, como también en los canales indicados para cada restaurante en la app Banco Ripley o www.bancoripley.cl. Tope de descuento $40.000. Clientes Gold: 50% de descuento. Tope de descuento: $40.000. Para hacer efectivo el descuento, se…",
-      "fecha_vencimiento": "2026-09-30",
+      "fecha_vencimiento": "2027-09-30",
       "activo": true,
       "fuente": "ripley",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
